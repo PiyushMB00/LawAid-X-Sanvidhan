@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Constitution Explainer - LawAid X Sanvidhaan{% endblock %}
+
+{% block extra_styles %}
+<style>
+    .page-container {
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+
+    .page-container h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .page-container p {
+        font-size: 1.2rem;
+        color: var(--text-muted);
+        margin-bottom: 2rem;
+    }
+
+    .page-container .coming-soon {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <h1>📖 Constitution Explainer</h1>
+    <p>Learn about Articles of the Indian Constitution</p>
+    <p class="coming-soon">Coming Soon...</p>
+</div>
+{% endblock %}

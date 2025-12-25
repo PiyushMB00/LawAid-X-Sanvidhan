@@ -1,0 +1,68 @@
+[
+    {
+        "id": "IPC_378",
+        "title": "Theft (IPC Section 378)",
+        "description": "Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.",
+        "punishment": "IPC Section 379: Imprisonment of up to 3 years, or fine, or both.",
+        "keywords": [
+            "theft",
+            "steal",
+            "stealing",
+            "robbery",
+            "stolen",
+            "moveable property"
+        ]
+    },
+    {
+        "id": "MV_161",
+        "title": "Hit and Run (Motor Vehicles Act Section 161)",
+        "description": "Compensation for death or injury in hit and run cases. The law mandates compensation for victims of hit-and-run motor accidents.",
+        "punishment": "Imprisonment, heavy fines, and seizure of vehicle depending on severity.",
+        "keywords": [
+            "hit and run",
+            "accident",
+            "car crash",
+            "compensation",
+            "vehicle"
+        ]
+    },
+    {
+        "id": "IPC_302",
+        "title": "Punishment for Murder (IPC Section 302)",
+        "description": "Whoever commits murder shall be punished with death, or imprisonment for life, and shall also be liable to fine.",
+        "punishment": "Death or Life Imprisonment + Fine",
+        "keywords": [
+            "murder",
+            "kill",
+            "homicide",
+            "death"
+        ]
+    },
+    {
+        "id": "DK_BASU",
+        "title": "D.K. Basu Guidelines (Arrest Rights)",
+        "description": "Guidelines that police must follow during arrest and detention: 1. Police must identify themselves clearly. 2. Memo of arrest must be prepared. 3. Family/friend must be informed. 4. Right to lawyer during interrogation.",
+        "punishment": "Departmental action and contempt of court for police officers violating these.",
+        "keywords": [
+            "arrest",
+            "police",
+            "custody",
+            "detention",
+            "rights",
+            "lawyer"
+        ]
+    },
+    {
+        "id": "RTE_2009",
+        "title": "Right to Education Act 2009",
+        "description": "Every child between the ages of 6 to 14 years has the right to free and compulsory education.",
+        "punishment": "Schools can be fined or derecognized for non-compliance.",
+        "keywords": [
+            "education",
+            "fee",
+            "school",
+            "child",
+            "study"
+        ]
+    }
+]

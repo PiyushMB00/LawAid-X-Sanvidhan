@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LawAid X Sanvidhaan - Know Your Rights</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        :root {
+            --bg-color: #1a1f3a;
+            --bg-lighter: #252b45;
+            --text-color: #ffffff;
+            --accent-color: #3b82f6;
+            --gold-color: #d4af37;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            background: var(--bg-color);
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 80px;
+            width: auto;
+            border: 2px solid var(--gold-color);
+            border-radius: 8px;
+            padding: 8px;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .sos-btn {
+            border: 1px solid white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            color: white !important;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+        }
+
+        .nav-overlay.active {
+            display: block;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 280px;
+            height: 100vh;
+            background: var(--bg-lighter);
+            z-index: 1000;
+            transition: right 0.3s ease;
+            padding: 2rem;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .mobile-nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.1rem;
+        }
+
+        .mobile-nav .sos-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 4rem 3rem 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h1 .highlight {
+            color: var(--gold-color);
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 3rem 4rem;
+        }
+
+        .card {
+            background: white;
+            color: #0f172a;
+            padding: 2rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            text-decoration: none;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .card p {
+            color: #475569;
+            font-size: 0.9rem;
+        }
+
+        /* How It Works */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .step {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .step-number {
+            background: var(--accent-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .step h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .step p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Benefits */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .benefit {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+        }
+
+        .benefit-icon {
+            font-size: 2rem;
+        }
+
+        /* Topics Grid */
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .topic {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            padding: 3rem 3rem 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            display: block;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem 1.5rem;
+            }
+
+            .logo img {
+                height: 50px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav a {
+                font-size: 0.85rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                padding: 2rem 1.5rem 1rem;
+            }
+
+            .section {
+                padding: 2rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+                padding: 0 1.5rem 2rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+
+            .card h3 {
+                font-size: 1.1rem;
+            }
+
+            .card p {
+                font-size: 0.85rem;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .topics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .topics-grid .topic:last-child:nth-child(odd) {
+                grid-column: span 2;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="static/logo.png" alt="LawAid X Sanvidhaan">
+            </a>
+        </div>
+        <nav id="desktop-nav">
+            <a href="/chat-ui">Ask</a>
+            <a href="/articles">Articles</a>
+            <a href="/documents">Documents</a>
+            <a href="/sos-shield" class="sos-btn">SOS Shield</a>
+        </nav>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-overlay" id="navOverlay" onclick="toggleMobileMenu()"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" onclick="toggleMobileMenu()">&times;</button>
+        <a href="/chat-ui">Ask</a>
+        <a href="/articles">Articles</a>
+        <a href="/documents">Documents</a>
+        <a href="/sos-shield" class="sos-btn">SOS Shield</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Know Your Rights.<br>Use Them <span class="highlight">Now</span>.</h1>
+        <div class="subtitle">
+            A web-based AI legal help & rights platform<br>for Indian citizens
+        </div>
+    </div>
+
+    <!-- Core Features -->
+    <div class="cards-grid">
+        <a href="/chat-ui" class="card">
+            <div class="card-icon"><i class="fas fa-comments"></i></div>
+            <h3>Ask Legal Doubt</h3>
+            <p>Get answers to your legal questions using AI</p>
+        </a>
+
+        <a href="/constitution" class="card">
+            <div class="card-icon"><i class="fas fa-book"></i></div>
+            <h3>Constitution Explainer</h3>
+            <p>Learn about Articles of Constitution</p>
+        </a>
+
+        <a href="/document-generator" class="card">
+            <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+            <h3>Legal Document Generator</h3>
+            <p>Create complaints, notices, and RTI requests</p>
+        </a>
+
+        <a href="/rights-library" class="card">
+            <div class="card-icon"><i class="fas fa-book-open"></i></div>
+            <h3>Rights Library</h3>
+            <p>Browse various categories of legal rights</p>
+        </a>
+
+        <a href="/rightnow" class="card">
+            <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+            <h3>RightNow!</h3>
+            <p>Find out what to do in legal situations</p>
+        </a>
+
+        <a href="/sos-shield" class="card">
+            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>SOS Shield</h3>
+            <p>Send emergency alerts with your location</p>
+        </a>
+    </div>
+
+    <!-- Section 2: How It Works -->
+    <div class="section">
+        <h2 class="section-title">How LawAid X Sanvidhaan Works</h2>
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Ask a Question</h4>
+                <p>Ask legal questions in simple language using AI</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>AI Understands the Law</h4>
+                <p>Our system processes Indian constitutional and legal information</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Get Simplified Answers</h4>
+                <p>Receive clear explanations in easy-to-understand terms</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h4>Take Action Safely</h4>
+                <p>Use SOS Shield or generate legal documents when needed</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Why Choose Us -->
+    <div class="section">
+        <h2 class="section-title">Why Choose LawAid X Sanvidhaan?</h2>
+        <div class="benefits-grid">
+            <div class="benefit">
+                <div class="benefit-icon"><i class="fas fa-flag" style="color: #f97316;"></i></div>
+                <div>
+                    <h4>India-Focused Legal Knowledge</h4>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Built specifically for Indian Constitution
+                        and legal system</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon"><i class="fas fa-robot" style="color: #3b82f6;"></i></div>
+                <div>
+                    <h4>AI-Powered Legal Assistance</h4>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Get instant answers backed by Google Gemini
+                        AI</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon"><i class="fas fa-globe" style="color: #10b981;"></i></div>
+                <div>
+                    <h4>Simple Language, Easy Access</h4>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">No legal jargon - explanations in plain
+                        language</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon"><i class="fas fa-exclamation-triangle" style="color: #dc2626;"></i></div>
+                <div>
+                    <h4>Emergency SOS Shield</h4>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Quick access to emergency help with
+                        location tracking</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon"><i class="fas fa-users" style="color: #8b5cf6;"></i></div>
+                <div>
+                    <h4>Designed for Citizens, Not Lawyers</h4>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Built for everyday people who need legal
+                        awareness</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon"><i class="fas fa-check-circle" style="color: #22c55e;"></i></div>
+                <div>
+                    <h4>Free & Accessible</h4>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">No registration required, completely free
+                        to use</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: SOS Shield Info -->
+    <div class="section" style="background: rgba(220, 38, 38, 0.1); border-radius: 12px;">
+        <h2 class="section-title"><i class="fas fa-shield-alt"></i> SOS Shield – Help When You Need It Most</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">
+                SOS Shield helps users during legal emergencies by providing quick access to assistance and recording
+                emergency events securely.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt"
+                            style="color: #ef4444;"></i></div>
+                    <h4>Location Tracking</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Share your exact location in real-time</p>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-phone-alt"
+                            style="color: #ef4444;"></i></div>
+                    <h4>Quick Emergency Call</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Instant dial to emergency services (100)</p>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-bell"
+                            style="color: #ef4444;"></i></div>
+                    <h4>Alert System</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Send alerts to designated contacts</p>
+                </div>
+            </div>
+            <a href="/sos-shield"
+                style="display: inline-block; margin-top: 2rem; padding: 1rem 2rem; background: #dc2626; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+                Use SOS Shield →
+            </a>
+        </div>
+    </div>
+
+    <!-- Section 5: Legal Topics -->
+    <div class="section">
+        <h2 class="section-title">Legal Topics We Cover</h2>
+        <div class="topics-grid">
+            <div class="topic"><i class="fas fa-gavel"></i> Fundamental Rights</div>
+            <div class="topic"><i class="fas fa-shopping-cart"></i> Consumer Rights</div>
+            <div class="topic"><i class="fas fa-laptop"></i> Cyber Crime</div>
+            <div class="topic"><i class="fas fa-female"></i> Women & Child Safety</div>
+            <div class="topic"><i class="fas fa-file-signature"></i> FIR & Police Procedures</div>
+            <div class="topic"><i class="fas fa-credit-card"></i> Digital & Online Fraud</div>
+            <div class="topic"><i class="fas fa-lightbulb"></i> Daily Legal Awareness</div>
+            <div class="topic"><i class="fas fa-car"></i> Traffic & Motor Vehicles</div>
+            <div class="topic"><i class="fas fa-briefcase"></i> Employment Rights</div>
+        </div>
+    </div>
+
+    <!-- Section 6: Who Is This For -->
+    <div class="section">
+        <h2 class="section-title">Who Can Use LawAid X Sanvidhaan?</h2>
+        <div class="cards-grid" style="padding: 0;">
+            <div class="card" style="cursor: default;">
+                <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Students</h3>
+                <p>Learn about Indian Constitution and legal system</p>
+            </div>
+            <div class="card" style="cursor: default;">
+                <div class="card-icon"><i class="fas fa-user-friends"></i></div>
+                <h3>Citizens</h3>
+                <p>Know your rights and legal procedures</p>
+            </div>
+            <div class="card" style="cursor: default;">
+                <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
+                <h3>NGOs</h3>
+                <p>Access legal information for community work</p>
+            </div>
+            <div class="card" style="cursor: default;">
+                <div class="card-icon"><i class="fas fa-tractor"></i></div>
+                <h3>Rural Communities</h3>
+                <p>Simplified legal awareness in easy language</p>
+            </div>
+            <div class="card" style="cursor: default;">
+                <div class="card-icon"><i class="fas fa-book-reader"></i></div>
+                <h3>First-Time Legal Learners</h3>
+                <p>Start your legal awareness journey here</p>
+            </div>
+            <div class="card" style="cursor: default;">
+                <div class="card-icon"><i class="fas fa-user-tie"></i></div>
+                <h3>Working Professionals</h3>
+                <p>Quick legal guidance for workplace issues</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About LawAid X Sanvidhaan</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    A web-based AI platform designed to provide legal awareness and assistance to Indian citizens in
+                    simple, accessible language.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="/chat-ui">Ask Legal Doubt</a>
+                <a href="/constitution">Constitution Explainer</a>
+                <a href="/rights-library">Rights Library</a>
+                <a href="/sos-shield">SOS Shield</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    Email: support@lawaidxsanvidhaan.edu<br>
+                    Emergency: 100 (Police)
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><strong>Academic Project Disclaimer:</strong> This is an educational project. For real legal advice,
+                please consult a qualified lawyer.</p>
+            <p style="margin-top: 0.5rem;">© 2025 LawAid X Sanvidhaan. College Project.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            const navOverlay = document.getElementById('navOverlay');
+            mobileNav.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
