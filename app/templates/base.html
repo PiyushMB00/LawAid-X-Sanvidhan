@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LawAid X Sanvidhaan{% endblock %}</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    {% block extra_styles %}
+    {% endblock %}
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="static/logo.png" alt="LawAid X Sanvihaan">
+            </a>
+        </div>
+        <nav id="desktop-nav">
+            <a href="/chat-ui">Ask</a>
+            <a href="/articles">Articles</a>
+            <a href="/documents">Documents</a>
+            <a href="/sos-shield" class="sos-btn">SOS Shield</a>
+        </nav>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-overlay" id="navOverlay" onclick="toggleMobileMenu()"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" onclick="toggleMobileMenu()">&times;</button>
+        <a href="/chat-ui">Ask</a>
+        <a href="/articles">Articles</a>
+        <a href="/documents">Documents</a>
+        <a href="/sos-shield" class="sos-btn">SOS Shield</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About LawAid X Sanvidhaan</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    A web-based AI platform designed to provide legal awareness and assistance to Indian citizens in
+                    simple, accessible language.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="/chat-ui">Ask Legal Doubt</a>
+                <a href="/constitution">Constitution Explainer</a>
+                <a href="/rights-library">Rights Library</a>
+                <a href="/sos-shield">SOS Shield</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    Email: support@lawaidxsanvidhaan.edu<br>
+                    Emergency: 100 (Police)
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><strong>Academic Project Disclaimer:</strong> This is an educational project. For real legal advice,
+                please consult a qualified lawyer.</p>
+            <p style="margin-top: 0.5rem;">© 2025 LawAid X Sanvidhaan. College Project.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            const navOverlay = document.getElementById('navOverlay');
+            mobileNav.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+        }
+    </script>
+
+    {% block extra_scripts %}{% endblock %}
+</body>
+
+</html>

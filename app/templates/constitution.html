@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block title %}Constitution Explainer - LawAid X Sanvidhaan{% endblock %}
+
+{% block extra_styles %}
+{% endblock %}
+
+{% block content %}
+<div class="constitution-container">
+    <div class="header-section">
+        <h1>📖 Constitution Explainer</h1>
+        <p>Learn about the fundamental rights and articles of the Indian Constitution</p>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search articles by number or topic...">
+        <button>Search</button>
+    </div>
+
+    <div class="categories">
+        <div class="category-card">
+            <div class="icon">🔗</div>
+            <h3>Fundamental Rights</h3>
+            <p>Articles 12-35: Basic rights guaranteed to all citizens</p>
+        </div>
+        <div class="category-card">
+            <div class="icon">📜</div>
+            <h3>Directive Principles</h3>
+            <p>Articles 36-51: Guidelines for state policy</p>
+        </div>
+        <div class="category-card">
+            <div class="icon">⚙️</div>
+            <h3>Parliament Structure</h3>
+            <p>Articles 79-123: Organization of Legislature</p>
+        </div>
+        <div class="category-card">
+            <div class="icon">⚖️</div>
+            <h3>Judiciary</h3>
+            <p>Articles 124-147: Court system and powers</p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <h4>💡 Did You Know?</h4>
+        <p>The Indian Constitution is the longest and most detailed constitution in the world, containing 395 articles
+            divided into 22 parts and 12 schedules.</p>
+    </div>
+
+    <div class="articles-section">
+        <h2>Featured Articles</h2>
+        <div class="articles-grid">
+            <div class="article-card">
+                <span class="article-number">Article 14</span>
+                <h3>Equality Before Law</h3>
+                <p>The state shall not deny to any person equality before the law or the equal protection of the laws
+                    within the territory of India.</p>
+                <div class="article-key-points">
+                    <strong>Key Points:</strong>
+                    <p>• Applies to all persons, not just citizens</p>
+                    <p>• Prohibits arbitrary discrimination</p>
+                    <p>• Ensures equal treatment under law</p>
+                </div>
+                <button class="btn-read-more">Read Full Article</button>
+            </div>
+
+            <div class="article-card">
+                <span class="article-number">Article 19</span>
+                <h3>Freedom of Expression</h3>
+                <p>All citizens have the right to freedom of speech and expression, assembly, association, movement, and
+                    profession.</p>
+                <div class="article-key-points">
+                    <strong>Key Points:</strong>
+                    <p>• Six freedoms for all citizens</p>
+                    <p>• Subject to reasonable restrictions</p>
+                    <p>• Foundation of democracy</p>
+                </div>
+                <button class="btn-read-more">Read Full Article</button>
+            </div>
+
+            <div class="article-card">
+                <span class="article-number">Article 21</span>
+                <h3>Right to Life and Liberty</h3>
+                <p>No person shall be deprived of his life or personal liberty except according to the procedure
+                    established by law.</p>
+                <div class="article-key-points">
+                    <strong>Key Points:</strong>
+                    <p>• Broadest interpretation by courts</p>
+                    <p>• Includes right to education, health</p>
+                    <p>• Protection of human dignity</p>
+                </div>
+                <button class="btn-read-more">Read Full Article</button>
+            </div>
+
+            <div class="article-card">
+                <span class="article-number">Article 32</span>
+                <h3>Right to Constitutional Remedies</h3>
+                <p>The right to move the Supreme Court for the enforcement of Fundamental Rights is itself a Fundamental
+                    Right.</p>
+                <div class="article-key-points">
+                    <strong>Key Points:</strong>
+                    <p>• Access to courts for justice</p>
+                    <p>• Supreme Court has special powers</p>
+                    <p>• Protector of Fundamental Rights</p>
+                </div>
+                <button class="btn-read-more">Read Full Article</button>
+            </div>
+
+            <div class="article-card">
+                <span class="article-number">Article 51-A</span>
+                <h3>Fundamental Duties</h3>
+                <p>Citizens have duties like defending the country, promoting harmony, protecting public property, and
+                    developing scientific temper.</p>
+                <div class="article-key-points">
+                    <strong>Key Points:</strong>
+                    <p>• 11 duties listed for citizens</p>
+                    <p>• Balance between rights and duties</p>
+                    <p>• Moral and legal obligations</p>
+                </div>
+                <button class="btn-read-more">Read Full Article</button>
+            </div>
+
+            <div class="article-card">
+                <span class="article-number">Article 226</span>
+                <h3>Writ Jurisdiction of High Courts</h3>
+                <p>High Courts have power to issue writs (Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo
+                    Warranto) for enforcement of rights.</p>
+                <div class="article-key-points">
+                    <strong>Key Points:</strong>
+                    <p>• Tool for judicial review</p>
+                    <p>• Protection against arbitrary action</p>
+                    <p>• Broader scope than Article 32</p>
+                </div>
+                <button class="btn-read-more">Read Full Article</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

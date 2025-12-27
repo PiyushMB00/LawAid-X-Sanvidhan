@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}Legal Document Generator - LawAid X Sanvidhaan{% endblock %}
+
+{% block extra_styles %}
+{% endblock %}
+
+{% block content %}
+<div class="doc-generator-container">
+    <div class="header-section">
+        <h1>📝 Legal Document Generator</h1>
+        <p>Create professional legal documents in minutes</p>
+    </div>
+
+    <div class="doc-types">
+        <div class="doc-card">
+            <div class="icon">⚖️</div>
+            <h3>Complaint Letter</h3>
+            <p>Generate formal complaints to authorities, police, or courts. Perfect for consumer issues, labor
+                disputes, and civil matters.</p>
+            <button class="btn-generate">Generate</button>
+        </div>
+
+        <div class="doc-card">
+            <div class="icon">📜</div>
+            <h3>Legal Notice</h3>
+            <p>Create official notices for demanding payment, stopping harassment, or initiating legal proceedings
+                before court filing.</p>
+            <button class="btn-generate">Generate</button>
+        </div>
+
+        <div class="doc-card">
+            <div class="icon">📋</div>
+            <h3>RTI Request</h3>
+            <p>Draft Right to Information requests to obtain government documents and information from public
+                authorities.</p>
+            <button class="btn-generate">Generate</button>
+        </div>
+    </div>
+
+    <div class="doc-features">
+        <div class="feature">
+            <div class="feature-icon">✅</div>
+            <div>
+                <h4>Pre-drafted Templates</h4>
+                <p>Choose from verified legal templates for different situations</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🎯</div>
+            <div>
+                <h4>Guided Customization</h4>
+                <p>Step-by-step assistant to personalize documents for your case</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">📥</div>
+            <div>
+                <h4>Ready to Download</h4>
+                <p>Export as PDF or Word document for printing and submission</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <div>
+                <h4>Legal Compliance</h4>
+                <p>All templates comply with Indian laws and court requirements</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🔒</div>
+            <div>
+                <h4>Secure & Private</h4>
+                <p>Your documents are encrypted and never stored without permission</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">💬</div>
+            <div>
+                <h4>Expert Support</h4>
+                <p>Get tips and guidance from our legal knowledge base</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="template-section">
+        <h3>Sample Complaint Letter Template</h3>
+        <div class="template-preview">
+            [Your Name]<br>
+            [Your Address]<br>
+            [City, Postal Code]<br>
+            [Date]<br>
+            <br>
+            [Recipient Name]<br>
+            [Authority/Department Name]<br>
+            [Authority Address]<br>
+            <br>
+            <b>Subject: Formal Complaint regarding [Brief Description]</b><br>
+            <br>
+            Dear [Sir/Madam],<br>
+            <br>
+            I am writing to lodge a formal complaint regarding [describe the issue clearly].<br>
+            <br>
+            <b>Details:</b><br>
+            - Date of incident: [DD/MM/YYYY]<br>
+            - Location: [Where it occurred]<br>
+            - Parties involved: [Names and details]<br>
+            <br>
+            <b>Facts:</b><br>
+            [Provide a chronological account of events]<br>
+            <br>
+            <b>Relief Sought:</b><br>
+            [Specify what action you want taken]<br>
+            <br>
+            I request immediate action and look forward to your response within 30 days.<br>
+            <br>
+            Yours faithfully,<br>
+            [Your Signature]<br>
+            [Your Name]
+        </div>
+    </div>
+</div>
+{% endblock %}
