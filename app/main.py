@@ -9,8 +9,9 @@ import uvicorn
 
 app = FastAPI(title="Lawaid X Sanvidhan Backend")
 
-app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app/templates")
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
+templates.env.globals["url_for"] = lambda name, **kwargs: f"/{name}/{kwargs.get('filename', '')}" if name == "static" else "#"
 
 @app.get("/api/version")
 async def get_version():
@@ -49,7 +50,7 @@ app.include_router(sos.router, prefix="/sos", tags=["SOS"])
 
 @app.get("/", response_class=HTMLResponse)
 async def root(request: Request):
-    return FileResponse("app/templates/index.html")
+    return templates.TemplateResponse("index.html", {"request": request})
 
 @app.get("/chat-ui", response_class=HTMLResponse)
 async def chat_ui(request: Request):
@@ -86,8 +87,3 @@ async def documents(request: Request):
 
 if __name__ == "__main__":
     uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)
-
-#     import uvicorn
-
-# if __name__ == "__main__":
-#     uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)
