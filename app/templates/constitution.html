@@ -3,6 +3,17 @@
 {% block title %}Constitution Explainer - LawAid X Sanvidhaan{% endblock %}
 
 {% block extra_styles %}
+<style>
+    .spin {
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -12,11 +23,28 @@
         <div class="subtitle">Learn about the fundamental rights and articles of the Indian Constitution</div>
 
         <div class="search-bar hero-cta">
-            <input type="text" placeholder="Search articles by number or topic...">
-            <button class="cta-primary">
-                <ion-icon name="search-outline"></ion-icon>
-                Search
+            <input type="text" id="search-input"
+                placeholder="Ask a question about the Constitution (e.g. 'What is Article 21?')...">
+            <button id="search-btn" class="cta-primary">
+                <ion-icon name="bulb-outline"></ion-icon>
+                Explain
             </button>
+        </div>
+
+        <!-- Result Container -->
+        <div id="search-result-container" class="search-result-container"
+            style="display: none; margin-top: 2rem; width: 100%; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <div class="card" style="text-align: left; background: rgba(30, 41, 59, 0.9);">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <h3 style="color: var(--gold-color); display: flex; align-items: center; gap: 0.5rem;">
+                        <ion-icon name="sparkles-outline"></ion-icon> AI Explanation
+                    </h3>
+                    <button onclick="document.getElementById('search-result-container').style.display='none'"
+                        style="background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.2rem;">&times;</button>
+                </div>
+                <div id="ai-response-content" style="color: var(--text-color); line-height: 1.8;"></div>
+            </div>
         </div>
     </div>
 
@@ -187,4 +215,55 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchInput = document.getElementById('search-input');
+        const searchBtn = document.getElementById('search-btn');
+        const resultContainer = document.getElementById('search-result-container');
+        const responseContent = document.getElementById('ai-response-content');
+
+        async function performSearch() {
+            const query = searchInput.value.trim();
+            if (!query) return;
+
+            // Show loading state
+            searchBtn.disabled = true;
+            searchBtn.innerHTML = '<ion-icon name="hourglass-outline" class="spin"></ion-icon> Thinking...';
+            resultContainer.style.display = 'none';
+
+            try {
+                const response = await fetch('/api/ask', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: query })
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    alert('Error: ' + data.error);
+                } else {
+                    // Display result
+                    responseContent.innerHTML = data.response.replace(/\n/g, '<br>'); // Simple formatting
+                    resultContainer.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Search error:', error);
+                alert('Something went wrong. Please try again.');
+            } finally {
+                // Reset button
+                searchBtn.disabled = false;
+                searchBtn.innerHTML = '<ion-icon name="bulb-outline"></ion-icon> Explain';
+            }
+        }
+
+        searchBtn.addEventListener('click', performSearch);
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') performSearch();
+        });
+    });
+</script>
 {% endblock %}
