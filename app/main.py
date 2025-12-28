@@ -6,6 +6,13 @@ from starlette.requests import Request
 from app.services.ai_service import get_ai_response, translate_text
 from app.routes import sos
 import uvicorn
+import os
+from dotenv import load_dotenv
+
+# Initialize environment variables at entry point
+load_dotenv(override=True)
+if not os.getenv("GEMINI_API_KEY"):
+    print("WARNING: GEMINI_API_KEY not found in environment variables!")
 
 app = FastAPI(title="Lawaid X Sanvidhan Backend")
 

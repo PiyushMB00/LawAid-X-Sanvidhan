@@ -3,7 +3,12 @@ import os
 import json
 from dotenv import load_dotenv
 
-load_dotenv()
+# Find the root directory (.env location)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+env_path = os.path.join(BASE_DIR, ".env")
+
+# Load environment variable with absolute path and override=True
+load_dotenv(dotenv_path=env_path, override=True)
 
 # Configure Gemini
 api_key = os.getenv("GEMINI_API_KEY")
