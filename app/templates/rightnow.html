@@ -7,110 +7,97 @@
 
 {% block content %}
 <div class="rightnow-container">
-    <div class="header-section">
-        <h1>⚖️ RightNow!</h1>
-        <p>Immediate guidance for common legal situations</p>
+    <div class="header-section hero">
+        <h1><span class="highlight">RightNow!</span></h1>
+        <div class="subtitle">Immediate guidance for common legal situations</div>
     </div>
 
-    <div class="situations-grid">
-        <div class="situation-card">
-            <div class="icon">👮</div>
+    <div class="cards-grid">
+        <div class="card">
+            <div class="card-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
             <h3>Stopped by Police</h3>
             <p>Know your rights when stopped, questioned, or detained by law enforcement authorities.</p>
-            <button class="btn-get-help">Get Guidance →</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">Get Guidance →</button>
         </div>
 
-        <div class="situation-card">
-            <div class="icon">🏠</div>
+        <div class="card">
+            <div class="card-icon"><ion-icon name="home-outline"></ion-icon></div>
             <h3>Tenant Rights</h3>
             <p>Understand your legal protection as a tenant against eviction and illegal demands.</p>
-            <button class="btn-get-help">Get Guidance →</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">Get Guidance →</button>
         </div>
 
-        <div class="situation-card">
-            <div class="icon">💼</div>
+        <div class="card">
+            <div class="card-icon"><ion-icon name="briefcase-outline"></ion-icon></div>
             <h3>Workplace Harassment</h3>
             <p>Learn about sexual harassment, discrimination, and unfair labor practices at work.</p>
-            <button class="btn-get-help">Get Guidance →</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">Get Guidance →</button>
         </div>
 
-        <div class="situation-card">
-            <div class="icon">🚗</div>
+        <div class="card">
+            <div class="card-icon"><ion-icon name="car-outline"></ion-icon></div>
             <h3>Traffic Accident</h3>
             <p>Steps to take after a road accident, insurance claims, and compensation rights.</p>
-            <button class="btn-get-help">Get Guidance →</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">Get Guidance →</button>
         </div>
 
-        <div class="situation-card">
-            <div class="icon">💰</div>
+        <div class="card">
+            <div class="card-icon"><ion-icon name="cash-outline"></ion-icon></div>
             <h3>Consumer Complaint</h3>
             <p>Report defective products and services, claim refunds and compensation.</p>
-            <button class="btn-get-help">Get Guidance →</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">Get Guidance →</button>
         </div>
 
-        <div class="situation-card">
-            <div class="icon">⚡</div>
+        <div class="card">
+            <div class="card-icon"><ion-icon name="flash-outline"></ion-icon></div>
             <h3>Emergency Help</h3>
             <p>Emergency contacts, bail information, and immediate legal assistance resources.</p>
-            <button class="btn-get-help">Get Guidance →</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">Get Guidance →</button>
         </div>
     </div>
 
-    <div class="steps-section">
-        <h3>What To Do When You Need Legal Help</h3>
-        <div class="steps-list">
+    <div class="steps-section" style="margin-top: 4rem;">
+        <h3 class="section-title">What To Do When You Need Legal Help</h3>
+        <div class="section-content steps-grid">
             <div class="step">
                 <div class="step-number">1</div>
-                <div class="step-content">
-                    <h4>Assess Your Situation</h4>
-                    <p>Identify what type of legal issue you're facing - is it criminal, civil, labor, property, or
-                        family law related?</p>
-                </div>
+                <h4>Assess Your Situation</h4>
+                <p>Identify what type of legal issue you're facing - is it criminal, civil, labor, property, or family law related?</p>
             </div>
 
             <div class="step">
                 <div class="step-number">2</div>
-                <div class="step-content">
-                    <h4>Know Your Rights</h4>
-                    <p>Understand what rights you have in this situation. Use our rights library to learn about
-                        applicable laws and constitutional protections.</p>
-                </div>
+                <h4>Know Your Rights</h4>
+                <p>Understand what rights you have in this situation. Use our rights library to learn about applicable laws.</p>
             </div>
 
             <div class="step">
                 <div class="step-number">3</div>
-                <div class="step-content">
-                    <h4>Document Everything</h4>
-                    <p>Collect evidence: dates, times, witnesses, photographs, messages, or any relevant documents
-                        related to your case.</p>
-                </div>
+                <h4>Document Everything</h4>
+                <p>Collect evidence: dates, times, witnesses, photographs, messages, or any relevant documents.</p>
             </div>
 
             <div class="step">
                 <div class="step-number">4</div>
-                <div class="step-content">
-                    <h4>Send Legal Notice</h4>
-                    <p>If applicable, send a formal legal notice to the other party. Use our document generator for
-                        professionally drafted notices.</p>
-                </div>
-            </div>
-
-            <div class="step">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h4>Seek Legal Help</h4>
-                    <p>Contact a lawyer, legal aid service, or ombudsman. Many services are free for low-income
-                        individuals.</p>
-                </div>
+                <h4>Seek Legal Help</h4>
+                <p>Contact a lawyer, legal aid service, or ombudsman. Many services are free for low-income individuals.</p>
             </div>
         </div>
     </div>
 
-    <div class="quick-links">
-        <button class="quick-link-btn">📞 Emergency Contacts</button>
-        <button class="quick-link-btn">⚖️ Free Legal Aid</button>
-        <button class="quick-link-btn">📝 Document Generator</button>
-        <button class="quick-link-btn">📚 Laws Library</button>
+    <div class="hero-cta" style="margin-top: 4rem; padding-bottom: 4rem;">
+        <button class="cta-secondary">
+            <ion-icon name="call-outline"></ion-icon>
+            Emergency Contacts
+        </button>
+        <button class="cta-secondary">
+            <ion-icon name="scale-outline"></ion-icon>
+            Free Legal Aid
+        </button>
+        <button class="cta-secondary">
+            <ion-icon name="document-text-outline"></ion-icon>
+            Document Generator
+        </button>
     </div>
 </div>
 {% endblock %}

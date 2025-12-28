@@ -7,90 +7,102 @@
 
 {% block content %}
 <div class="doc-generator-container">
-    <div class="header-section">
-        <h1>📝 Legal Document Generator</h1>
-        <p>Create professional legal documents in minutes</p>
+    <div class="header-section hero">
+        <h1><span class="highlight">Legal Document</span> Generator</h1>
+        <div class="subtitle">Create professional legal documents in minutes</div>
     </div>
 
-    <div class="doc-types">
-        <div class="doc-card">
-            <div class="icon">⚖️</div>
+    <div class="cards-grid">
+        <div class="card">
+            <div class="card-icon"><ion-icon name="scale-outline"></ion-icon></div>
             <h3>Complaint Letter</h3>
             <p>Generate formal complaints to authorities, police, or courts. Perfect for consumer issues, labor
                 disputes, and civil matters.</p>
-            <button class="btn-generate">Generate</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+                <ion-icon name="create-outline"></ion-icon>
+                Generate
+            </button>
         </div>
 
-        <div class="doc-card">
-            <div class="icon">📜</div>
+        <div class="card">
+            <div class="card-icon"><ion-icon name="document-text-outline"></ion-icon></div>
             <h3>Legal Notice</h3>
             <p>Create official notices for demanding payment, stopping harassment, or initiating legal proceedings
                 before court filing.</p>
-            <button class="btn-generate">Generate</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+                <ion-icon name="create-outline"></ion-icon>
+                Generate
+            </button>
         </div>
 
-        <div class="doc-card">
-            <div class="icon">📋</div>
+        <div class="card">
+            <div class="card-icon"><ion-icon name="reader-outline"></ion-icon></div>
             <h3>RTI Request</h3>
             <p>Draft Right to Information requests to obtain government documents and information from public
                 authorities.</p>
-            <button class="btn-generate">Generate</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+                <ion-icon name="create-outline"></ion-icon>
+                Generate
+            </button>
         </div>
     </div>
 
-    <div class="doc-features">
-        <div class="feature">
-            <div class="feature-icon">✅</div>
+    <div class="doc-features cards-grid" style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 3rem; margin-top: 3rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div class="feature" style="display: flex; gap: 1rem; align-items: start;">
+            <div class="feature-icon" style="font-size: 2rem; color: var(--gold-color);"><ion-icon name="checkmark-circle-outline"></ion-icon></div>
             <div>
-                <h4>Pre-drafted Templates</h4>
-                <p>Choose from verified legal templates for different situations</p>
+                <h4 style="margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif;">Pre-drafted Templates</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Choose from verified legal templates for different situations</p>
             </div>
         </div>
 
-        <div class="feature">
-            <div class="feature-icon">🎯</div>
+        <div class="feature" style="display: flex; gap: 1rem; align-items: start;">
+            <div class="feature-icon" style="font-size: 2rem; color: var(--gold-color);"><ion-icon name="locate-outline"></ion-icon></div>
             <div>
-                <h4>Guided Customization</h4>
-                <p>Step-by-step assistant to personalize documents for your case</p>
+                <h4 style="margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif;">Guided Customization</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Step-by-step assistant to personalize documents for your case</p>
             </div>
         </div>
 
-        <div class="feature">
-            <div class="feature-icon">📥</div>
+        <div class="feature" style="display: flex; gap: 1rem; align-items: start;">
+            <div class="feature-icon" style="font-size: 2rem; color: var(--gold-color);"><ion-icon name="download-outline"></ion-icon></div>
             <div>
-                <h4>Ready to Download</h4>
-                <p>Export as PDF or Word document for printing and submission</p>
+                <h4 style="margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif;">Ready to Download</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Export as PDF or Word document for printing and submission</p>
             </div>
         </div>
 
-        <div class="feature">
-            <div class="feature-icon">⚡</div>
+        <div class="feature" style="display: flex; gap: 1rem; align-items: start;">
+            <div class="feature-icon" style="font-size: 2rem; color: var(--gold-color);"><ion-icon name="flash-outline"></ion-icon></div>
             <div>
-                <h4>Legal Compliance</h4>
-                <p>All templates comply with Indian laws and court requirements</p>
+                <h4 style="margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif;">Legal Compliance</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">All templates comply with Indian laws and court requirements</p>
             </div>
         </div>
 
-        <div class="feature">
-            <div class="feature-icon">🔒</div>
+        <div class="feature" style="display: flex; gap: 1rem; align-items: start;">
+            <div class="feature-icon" style="font-size: 2rem; color: var(--gold-color);"><ion-icon name="lock-closed-outline"></ion-icon></div>
             <div>
-                <h4>Secure & Private</h4>
-                <p>Your documents are encrypted and never stored without permission</p>
+                <h4 style="margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif;">Secure & Private</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Your documents are encrypted and never stored without permission</p>
             </div>
         </div>
 
-        <div class="feature">
-            <div class="feature-icon">💬</div>
+        <div class="feature" style="display: flex; gap: 1rem; align-items: start;">
+            <div class="feature-icon" style="font-size: 2rem; color: var(--gold-color);"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
             <div>
-                <h4>Expert Support</h4>
-                <p>Get tips and guidance from our legal knowledge base</p>
+                <h4 style="margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif;">Expert Support</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Get tips and guidance from our legal knowledge base</p>
             </div>
         </div>
     </div>
 
-    <div class="template-section">
-        <h3>Sample Complaint Letter Template</h3>
-        <div class="template-preview">
+    <div class="section-alternate" style="border-radius: 16px; padding: 2.5rem; margin-top: 4rem; border: 1px solid rgba(59, 130, 246, 0.2);">
+        <h3 style="margin-bottom: 1.5rem; font-family: 'Poppins', sans-serif; display: flex; align-items: center; gap: 0.75rem;">
+            <ion-icon name="eye-outline" style="color: var(--gold-color);"></ion-icon>
+            Sample Complaint Letter Template
+        </h3>
+        <div class="template-preview" style="background: rgba(15, 23, 42, 0.5); border-radius: 12px; padding: 2rem; font-family: 'Courier New', monospace; color: var(--text-secondary); line-height: 1.6; border: 1px solid rgba(255, 255, 255, 0.05);">
             [Your Name]<br>
             [Your Address]<br>
             [City, Postal Code]<br>

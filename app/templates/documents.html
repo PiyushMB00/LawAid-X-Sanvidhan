@@ -33,9 +33,46 @@
 {% endblock %}
 
 {% block content %}
-<div class="page-container">
-    <h1>📄 Documents</h1>
-    <p>Legal documents and resources</p>
-    <p class="coming-soon">Coming Soon...</p>
+<div class="documents-page-wrapper">
+    <div class="header-section hero">
+        <h1><span class="highlight">Legal Resources</span></h1>
+        <div class="subtitle">Downloadable legal documents and verified resources</div>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card" style="opacity: 0.8;">
+            <div class="card-icon"><ion-icon name="document-attach-outline"></ion-icon></div>
+            <h3>Court Forms</h3>
+            <p>Standardized forms for district and high courts for filing various petitions.</p>
+        </div>
+        <div class="card" style="opacity: 0.8;">
+            <div class="card-icon"><ion-icon name="book-outline"></ion-icon></div>
+            <h3>Bare Acts</h3>
+            <p>Original text of various Indian laws and statutes for reference.</p>
+        </div>
+        <div class="card" style="opacity: 0.8;">
+            <div class="card-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+            <h3>Rights Pamphlets</h3>
+            <p>Easy-to-understand pamphlets about your basic legal rights in various languages.</p>
+        </div>
+    </div>
+
+    <div class="section-alternate" style="border-radius: 20px; padding: 4rem 2rem; text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); margin-top: 4rem; margin-bottom: 4rem;">
+        <div class="section-content">
+            <div style="font-size: 4rem; color: var(--gold-color); margin-bottom: 1.5rem;">
+                <ion-icon name="cloud-download-outline"></ion-icon>
+            </div>
+            <h2 style="font-family: 'Poppins', sans-serif; margin-bottom: 1rem;">Resource Library Syncing</h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6;">
+                We are currently indexing thousands of verified legal documents and forms from government portals to provide you with a one-stop resource center.
+            </p>
+            <div class="hero-cta" style="justify-content: center;">
+                <a href="/" class="cta-primary">
+                    <ion-icon name="home-outline"></ion-icon>
+                    Back to Knowledge Base
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

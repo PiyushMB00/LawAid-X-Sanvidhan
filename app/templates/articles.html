@@ -33,9 +33,47 @@
 {% endblock %}
 
 {% block content %}
-<div class="page-container">
-    <h1>📰 Articles</h1>
-    <p>Legal articles and educational content</p>
-    <p class="coming-soon">Coming Soon...</p>
+<div class="articles-page-wrapper">
+    <div class="header-section hero">
+        <h1><span class="highlight">Legal Articles</span></h1>
+        <div class="subtitle">Educational content and simplified legal guides</div>
+    </div>
+
+    <div class="section-alternate" style="border-radius: 20px; padding: 4rem 2rem; text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); margin-bottom: 4rem;">
+        <div class="section-content">
+            <div style="font-size: 4rem; color: var(--gold-color); margin-bottom: 1.5rem;">
+                <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <h2 style="font-family: 'Poppins', sans-serif; margin-bottom: 1rem;">Coming Soon</h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6;">
+                Our team of legal experts is currently crafting simplified guides and articles to help you understand your rights and the legal system with ease.
+            </p>
+            <div class="hero-cta" style="justify-content: center;">
+                <a href="/" class="cta-primary">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    Back to Knowledge Base
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="section-title">Upcoming Topics</h3>
+    <div class="cards-grid">
+        <div class="card" style="opacity: 0.7;">
+            <div class="card-icon"><ion-icon name="business-outline"></ion-icon></div>
+            <h3>Property Law Simplified</h3>
+            <p>A step-by-step guide to property registration and verification in India.</p>
+        </div>
+        <div class="card" style="opacity: 0.7;">
+            <div class="card-icon"><ion-icon name="people-outline"></ion-icon></div>
+            <h3>Know Your Labor Rights</h3>
+            <p>Understanding employee protections, fair wages, and dispute resolution.</p>
+        </div>
+        <div class="card" style="opacity: 0.7;">
+            <div class="card-icon"><ion-icon name="shield-outline"></ion-icon></div>
+            <h3>Cyber Law & You</h3>
+            <p>How to protect your digital identity and report cyber crimes effectively.</p>
+        </div>
+    </div>
 </div>
 {% endblock %}

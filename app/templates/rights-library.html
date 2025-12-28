@@ -33,14 +33,53 @@
 {% endblock %}
 
 {% block content %}
-<div class="page-container">
-    <h1>📚 Rights Library</h1>
-    <p>Browse various categories of legal rights</p>
-    <p class="coming-soon">
-        <a href="https://www.routledge.com/Human-Rights-in-India/Juss/p/book/9781032088761" target="_blank"
-            style="color: var(--accent-color);">
-            https://www.routledge.com/Human-Rights-in-India/Juss/p/book/9781032088761
-        </a>
-    </p>
+<div class="rights-library-wrapper">
+    <div class="header-section hero">
+        <h1><span class="highlight">Rights Library</span></h1>
+        <div class="subtitle">Browse various categories of legal rights and protections</div>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card">
+            <div class="card-icon"><ion-icon name="people-circle-outline"></ion-icon></div>
+            <h3>Civil Rights</h3>
+            <p>Freedoms that protect individuals from government overreach and discrimination.</p>
+            <button class="cta-secondary" style="margin-top: 1rem; width: 100%; justify-content: center;">Explore Library</button>
+        </div>
+
+        <div class="card">
+            <div class="card-icon"><ion-icon name="trending-up-outline"></ion-icon></div>
+            <h3>Economic Rights</h3>
+            <p>Rights to work, fair wages, education, and an adequate standard of living.</p>
+            <button class="cta-secondary" style="margin-top: 1rem; width: 100%; justify-content: center;">Explore Library</button>
+        </div>
+
+        <div class="card">
+            <div class="card-icon"><ion-icon name="heart-outline"></ion-icon></div>
+            <h3>Social Rights</h3>
+            <p>Rights concerning family life, health care, and social security.</p>
+            <button class="cta-secondary" style="margin-top: 1rem; width: 100%; justify-content: center;">Explore Library</button>
+        </div>
+
+        <div class="card">
+            <div class="card-icon"><ion-icon name="leaf-outline"></ion-icon></div>
+            <h3>Environmental Rights</h3>
+            <p>The right to a clean, healthy, and sustainable environment for all.</p>
+            <button class="cta-secondary" style="margin-top: 1rem; width: 100%; justify-content: center;">Explore Library</button>
+        </div>
+    </div>
+
+    <div class="section-alternate" style="border-radius: 20px; padding: 3rem; text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); margin-top: 4rem; margin-bottom: 4rem;">
+        <h2 style="font-family: 'Poppins', sans-serif; margin-bottom: 1.5rem;">Coming Soon: Digital Library</h2>
+        <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto 2rem; line-height: 1.7;">
+            We are integrating a massive database of international and domestic laws, treaties, and simplified case studies to empower every citizen with legal knowledge.
+        </p>
+        <div class="hero-cta" style="justify-content: center;">
+            <a href="/" class="cta-primary">
+                <ion-icon name="home-outline"></ion-icon>
+                Return to Home
+            </a>
+        </div>
+    </div>
 </div>
 {% endblock %}

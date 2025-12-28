@@ -7,49 +7,54 @@
 
 {% block content %}
 <div class="constitution-container">
-    <div class="header-section">
-        <h1>📖 Constitution Explainer</h1>
-        <p>Learn about the fundamental rights and articles of the Indian Constitution</p>
+    <div class="header-section hero">
+        <h1><span class="highlight">Constitution</span> Explainer</h1>
+        <div class="subtitle">Learn about the fundamental rights and articles of the Indian Constitution</div>
+        
+        <div class="search-bar hero-cta">
+            <input type="text" placeholder="Search articles by number or topic...">
+            <button class="cta-primary">
+                <ion-icon name="search-outline"></ion-icon>
+                Search
+            </button>
+        </div>
     </div>
 
-    <div class="search-bar">
-        <input type="text" placeholder="Search articles by number or topic...">
-        <button>Search</button>
-    </div>
-
-    <div class="categories">
-        <div class="category-card">
-            <div class="icon">🔗</div>
+    <div class="cards-grid">
+        <div class="card">
+            <div class="card-icon"><ion-icon name="link-outline"></ion-icon></div>
             <h3>Fundamental Rights</h3>
             <p>Articles 12-35: Basic rights guaranteed to all citizens</p>
         </div>
-        <div class="category-card">
-            <div class="icon">📜</div>
+        <div class="card">
+            <div class="card-icon"><ion-icon name="document-text-outline"></ion-icon></div>
             <h3>Directive Principles</h3>
             <p>Articles 36-51: Guidelines for state policy</p>
         </div>
-        <div class="category-card">
-            <div class="icon">⚙️</div>
+        <div class="card">
+            <div class="card-icon"><ion-icon name="settings-outline"></ion-icon></div>
             <h3>Parliament Structure</h3>
             <p>Articles 79-123: Organization of Legislature</p>
         </div>
-        <div class="category-card">
-            <div class="icon">⚖️</div>
+        <div class="card">
+            <div class="card-icon"><ion-icon name="scale-outline"></ion-icon></div>
             <h3>Judiciary</h3>
             <p>Articles 124-147: Court system and powers</p>
         </div>
     </div>
 
-    <div class="info-box">
-        <h4>💡 Did You Know?</h4>
-        <p>The Indian Constitution is the longest and most detailed constitution in the world, containing 395 articles
-            divided into 22 parts and 12 schedules.</p>
+    <div class="section-alternate" style="border-radius: 16px; padding: 2rem; margin: 3rem 0;">
+        <div class="section-content" style="text-align: center;">
+            <h4 style="color: var(--gold-color); font-size: 1.5rem; margin-bottom: 1rem;"><ion-icon name="bulb-outline"></ion-icon> Did You Know?</h4>
+            <p style="color: var(--text-secondary); line-height: 1.7;">The Indian Constitution is the longest and most detailed constitution in the world, containing 395 articles
+                divided into 22 parts and 12 schedules.</p>
+        </div>
     </div>
 
     <div class="articles-section">
-        <h2>Featured Articles</h2>
-        <div class="articles-grid">
-            <div class="article-card">
+        <h2 class="section-title">Featured Articles</h2>
+        <div class="cards-grid">
+            <div class="card article-card">
                 <span class="article-number">Article 14</span>
                 <h3>Equality Before Law</h3>
                 <p>The state shall not deny to any person equality before the law or the equal protection of the laws
@@ -60,10 +65,10 @@
                     <p>• Prohibits arbitrary discrimination</p>
                     <p>• Ensures equal treatment under law</p>
                 </div>
-                <button class="btn-read-more">Read Full Article</button>
+                <button class="cta-secondary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">Read Full Article</button>
             </div>
 
-            <div class="article-card">
+            <div class="card article-card">
                 <span class="article-number">Article 19</span>
                 <h3>Freedom of Expression</h3>
                 <p>All citizens have the right to freedom of speech and expression, assembly, association, movement, and
@@ -74,12 +79,12 @@
                     <p>• Subject to reasonable restrictions</p>
                     <p>• Foundation of democracy</p>
                 </div>
-                <button class="btn-read-more">Read Full Article</button>
+                <button class="cta-secondary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">Read Full Article</button>
             </div>
 
-            <div class="article-card">
+            <div class="card article-card">
                 <span class="article-number">Article 21</span>
-                <h3>Right to Life and Liberty</h3>
+                <h3>Life and Liberty</h3>
                 <p>No person shall be deprived of his life or personal liberty except according to the procedure
                     established by law.</p>
                 <div class="article-key-points">
@@ -88,12 +93,12 @@
                     <p>• Includes right to education, health</p>
                     <p>• Protection of human dignity</p>
                 </div>
-                <button class="btn-read-more">Read Full Article</button>
+                <button class="cta-secondary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">Read Full Article</button>
             </div>
 
-            <div class="article-card">
+            <div class="card article-card">
                 <span class="article-number">Article 32</span>
-                <h3>Right to Constitutional Remedies</h3>
+                <h3>Constitutional Remedies</h3>
                 <p>The right to move the Supreme Court for the enforcement of Fundamental Rights is itself a Fundamental
                     Right.</p>
                 <div class="article-key-points">
@@ -102,10 +107,10 @@
                     <p>• Supreme Court has special powers</p>
                     <p>• Protector of Fundamental Rights</p>
                 </div>
-                <button class="btn-read-more">Read Full Article</button>
+                <button class="cta-secondary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">Read Full Article</button>
             </div>
 
-            <div class="article-card">
+            <div class="card article-card">
                 <span class="article-number">Article 51-A</span>
                 <h3>Fundamental Duties</h3>
                 <p>Citizens have duties like defending the country, promoting harmony, protecting public property, and
@@ -116,21 +121,20 @@
                     <p>• Balance between rights and duties</p>
                     <p>• Moral and legal obligations</p>
                 </div>
-                <button class="btn-read-more">Read Full Article</button>
+                <button class="cta-secondary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">Read Full Article</button>
             </div>
 
-            <div class="article-card">
+            <div class="card article-card">
                 <span class="article-number">Article 226</span>
-                <h3>Writ Jurisdiction of High Courts</h3>
-                <p>High Courts have power to issue writs (Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo
-                    Warranto) for enforcement of rights.</p>
+                <h3>High Court Jurisdiction</h3>
+                <p>High Courts have power to issue writs (Habeas Corpus, Mandamus, Prohibition, etc.) for enforcement of rights.</p>
                 <div class="article-key-points">
                     <strong>Key Points:</strong>
                     <p>• Tool for judicial review</p>
                     <p>• Protection against arbitrary action</p>
                     <p>• Broader scope than Article 32</p>
                 </div>
-                <button class="btn-read-more">Read Full Article</button>
+                <button class="cta-secondary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">Read Full Article</button>
             </div>
         </div>
     </div>
