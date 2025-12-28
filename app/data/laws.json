@@ -1,305 +1,291 @@
 [
-    {
-        "id": "IPC_378",
-        "title": "Theft (IPC Section 378)",
-        "description": "Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.",
-        "punishment": "IPC Section 379: Imprisonment of up to 3 years, or fine, or both.",
-        "keywords": [
-            "theft",
-            "steal",
-            "stealing",
-            "robbery",
-            "stolen",
-            "moveable property"
-        ]
-    },
-    {
-        "id": "MV_161",
-        "title": "Hit and Run (Motor Vehicles Act Section 161)",
-        "description": "Compensation for death or injury in hit and run cases. The law mandates compensation for victims of hit-and-run motor accidents.",
-        "punishment": "Imprisonment, heavy fines, and seizure of vehicle depending on severity.",
-        "keywords": [
-            "hit and run",
-            "accident",
-            "car crash",
-            "compensation",
-            "vehicle"
-        ]
-    },
-    {
-        "id": "IPC_302",
-        "title": "Punishment for Murder (IPC Section 302)",
-        "description": "Whoever commits murder shall be punished with death, or imprisonment for life, and shall also be liable to fine.",
-        "punishment": "Death or Life Imprisonment + Fine",
-        "keywords": [
-            "murder",
-            "kill",
-            "homicide",
-            "death"
-        ]
-    },
-    {
-        "id": "DK_BASU",
-        "title": "D.K. Basu Guidelines (Arrest Rights)",
-        "description": "Guidelines that police must follow during arrest and detention: 1. Police must identify themselves clearly. 2. Memo of arrest must be prepared. 3. Family/friend must be informed. 4. Right to lawyer during interrogation.",
-        "punishment": "Departmental action and contempt of court for police officers violating these.",
-        "keywords": [
-            "arrest",
-            "police",
-            "custody",
-            "detention",
-            "rights",
-            "lawyer"
-        ]
-    },
-    {
-        "id": "RTE_2009",
-        "title": "Right to Education Act 2009",
-        "description": "Every child between the ages of 6 to 14 years has the right to free and compulsory education.",
-        "punishment": "Schools can be fined or derecognized for non-compliance.",
-        "keywords": [
-            "education",
-            "fee",
-            "school",
-            "child",
-            "study"
-        ]
-    },
-    {
-  "id": "ART_12",
-  "title": "Definition of State (Article 12)",
-  "description": "Defines the term 'State' to include the Government, Parliament, State Legislatures, local authorities, and other bodies under government control for the purpose of enforcing Fundamental Rights.",
-  "punishment": "Any violation of Fundamental Rights by the State can be challenged in court.",
-  "keywords": [
-    "state definition",
-    "government authority",
-    "fundamental rights",
-    "article 12",
-    "public authority"
-  ]
-},
-{
-  "id": "ART_13",
-  "title": "Laws Inconsistent with Fundamental Rights (Article 13)",
-  "description": "Declares that any law inconsistent with or violating Fundamental Rights shall be void to the extent of such inconsistency.",
-  "punishment": "Unconstitutional laws can be struck down by courts.",
-  "keywords": [
-    "unconstitutional law",
-    "fundamental rights violation",
-    "judicial review",
-    "article 13",
-    "void law"
-  ]
-},
-
-{
-  "id": "ART_14",
-  "title": "Equality Before Law (Article 14)",
-  "description": "Ensures equality before the law and equal protection of laws to all persons within the territory of India.",
-  "punishment": "Discriminatory actions can be challenged in High Court or Supreme Court.",
-  "keywords": [
-    "equality",
-    "equal protection",
-    "non discrimination",
-    "article 14",
-    "rule of law"
-  ]
-},
-
-{
-  "id": "ART_15",
-  "title": "Prohibition of Discrimination (Article 15)",
-  "description": "Prohibits discrimination by the State on grounds of religion, race, caste, sex, or place of birth.",
-  "punishment": "Discriminatory practices can be declared unconstitutional.",
-  "keywords": [
-    "discrimination",
-    "caste",
-    "religion",
-    "gender equality",
-    "article 15"
-  ]
-},
-
-{
-  "id": "ART_16",
-  "title": "Equality in Public Employment (Article 16)",
-  "description": "Guarantees equal opportunity for all citizens in matters of employment or appointment to public offices.",
-  "punishment": "Unfair recruitment practices can be challenged in court.",
-  "keywords": [
-    "government jobs",
-    "equal opportunity",
-    "public employment",
-    "reservation",
-    "article 16"
-  ]
-},
-
-{
-  "id": "ART_17",
-  "title": "Abolition of Untouchability (Article 17)",
-  "description": "Abolishes untouchability in all forms and forbids its practice in any manner.",
-  "punishment": "Punishable under the Protection of Civil Rights Act, 1955.",
-  "keywords": [
-    "untouchability",
-    "social justice",
-    "caste discrimination",
-    "article 17",
-    "human dignity"
-  ]
-},
-{
-  "id": "ART_18",
-  "title": "Abolition of Titles (Article 18)",
-  "description": "Prohibits the State from conferring titles except military or academic distinctions.",
-  "punishment": "Illegal titles have no constitutional validity.",
-  "keywords": [
-    "abolition of titles",
-    "equality",
-    "honors",
-    "article 18",
-    "nobility"
-  ]
-},
-
-{
-  "id": "ART_19",
-  "title": "Protection of Certain Freedoms (Article 19)",
-  "description": "Guarantees freedoms of speech, assembly, association, movement, residence, and profession subject to reasonable restrictions.",
-  "punishment": "Unreasonable restrictions can be struck down by courts.",
-  "keywords": [
-    "freedom of speech",
-    "movement",
-    "profession",
-    "association",
-    "article 19"
-  ]
-},
-
-{
-  "id": "ART_20",
-  "title": "Protection in Criminal Convictions (Article 20)",
-  "description": "Protects individuals from retrospective punishment, double jeopardy, and self-incrimination.",
-  "punishment": "Illegal convictions can be quashed by courts.",
-  "keywords": [
-    "double jeopardy",
-    "self incrimination",
-    "criminal protection",
-    "article 20",
-    "fair trial"
-  ]
-},
-
-{
-  "id": "ART_21",
-  "title": "Right to Life and Personal Liberty (Article 21)",
-  "description": "No person shall be deprived of life or personal liberty except according to procedure established by law. It includes dignity, privacy, health, and speedy justice.",
-  "punishment": "Compensation and action against authorities for violations.",
-  "keywords": [
-    "right to life",
-    "personal liberty",
-    "privacy",
-    "human dignity",
-    "article 21"
-  ]
-},
-
-{
-  "id": "ART_21A",
-  "title": "Right to Education (Article 21A)",
-  "description": "Provides free and compulsory education to all children between 6 and 14 years of age.",
-  "punishment": "State authorities and schools can be penalized for non-compliance.",
-  "keywords": [
-    "education",
-    "children rights",
-    "free schooling",
-    "article 21A",
-    "learning"
-  ]
-},
-
-{
-  "id": "ART_22",
-  "title": "Rights of Arrested Persons (Article 22)",
-  "description": "Provides safeguards such as the right to be informed of grounds of arrest and the right to consult a lawyer.",
-  "punishment": "Illegal detention can result in compensation and disciplinary action.",
-  "keywords": [
-    "arrest rights",
-    "custody",
-    "lawyer",
-    "illegal detention",
-    "article 22"
-  ]
-},
-
-{
-  "id": "ART_23",
-  "title": "Prohibition of Human Trafficking and Forced Labour (Article 23)",
-  "description": "Prohibits human trafficking, begar (forced labour), and other similar forms of exploitation.",
-  "punishment": "Punishable under laws such as the Immoral Traffic (Prevention) Act and Bonded Labour System (Abolition) Act.",
-  "keywords": [
-    "human trafficking",
-    "forced labour",
-    "begar",
-    "exploitation",
-    "article 23"
-  ]
-},
-
-{
-  "id": "ART_24",
-  "title": "Prohibition of Child Labour (Article 24)",
-  "description": "Prohibits employment of children below 14 years of age in factories, mines, or hazardous occupations.",
-  "punishment": "Punishable under the Child Labour (Prohibition and Regulation) Act.",
-  "keywords": [
-    "child labour",
-    "children rights",
-    "hazardous work",
-    "article 24",
-    "exploitation"
-  ]
-},
-
-{
-  "id": "ART_25",
-  "title": "Freedom of Religion (Article 25)",
-  "description": "Guarantees freedom of conscience and the right to freely profess, practice, and propagate religion, subject to public order, morality, and health.",
-  "punishment": "Unlawful restrictions can be struck down by courts.",
-  "keywords": [
-    "freedom of religion",
-    "conscience",
-    "religious practice",
-    "article 25",
-    "secularism"
-  ]
-},
-
-{
-  "id": "ART_26",
-  "title": "Freedom to Manage Religious Affairs (Article 26)",
-  "description": "Gives religious denominations the right to manage their own affairs in matters of religion.",
-  "punishment": "State interference beyond constitutional limits can be challenged in court.",
-  "keywords": [
-    "religious denomination",
-    "temple management",
-    "religious affairs",
-    "article 26",
-    "freedom"
-  ]
-},
-
-{
-  "id": "ART_27",
-  "title": "Freedom from Payment of Religious Taxes (Article 27)",
-  "description": "Prohibits the State from compelling any person to pay taxes for the promotion or maintenance of any particular religion.",
-  "punishment": "Illegal taxation can be declared unconstitutional.",
-  "keywords": [
-    "religious tax",
-    "secular state",
-    "tax freedom",
-    "article 27",
-    "religion"
-  ]
-},
+  {
+    "id": "IPC_378",
+    "title": "Theft (IPC Section 378)",
+    "description": "Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.",
+    "punishment": "IPC Section 379: Imprisonment of up to 3 years, or fine, or both.",
+    "keywords": [
+      "theft",
+      "steal",
+      "stealing",
+      "robbery",
+      "stolen",
+      "moveable property"
+    ]
+  },
+  {
+    "id": "MV_161",
+    "title": "Hit and Run (Motor Vehicles Act Section 161)",
+    "description": "Compensation for death or injury in hit and run cases. The law mandates compensation for victims of hit-and-run motor accidents.",
+    "punishment": "Imprisonment, heavy fines, and seizure of vehicle depending on severity.",
+    "keywords": [
+      "hit and run",
+      "accident",
+      "car crash",
+      "compensation",
+      "vehicle"
+    ]
+  },
+  {
+    "id": "IPC_302",
+    "title": "Punishment for Murder (IPC Section 302)",
+    "description": "Whoever commits murder shall be punished with death, or imprisonment for life, and shall also be liable to fine.",
+    "punishment": "Death or Life Imprisonment + Fine",
+    "keywords": [
+      "murder",
+      "kill",
+      "homicide",
+      "death"
+    ]
+  },
+  {
+    "id": "DK_BASU",
+    "title": "D.K. Basu Guidelines (Arrest Rights)",
+    "description": "Guidelines that police must follow during arrest and detention: 1. Police must identify themselves clearly. 2. Memo of arrest must be prepared. 3. Family/friend must be informed. 4. Right to lawyer during interrogation.",
+    "punishment": "Departmental action and contempt of court for police officers violating these.",
+    "keywords": [
+      "arrest",
+      "police",
+      "custody",
+      "detention",
+      "rights",
+      "lawyer"
+    ]
+  },
+  {
+    "id": "RTE_2009",
+    "title": "Right to Education Act 2009",
+    "description": "Every child between the ages of 6 to 14 years has the right to free and compulsory education.",
+    "punishment": "Schools can be fined or derecognized for non-compliance.",
+    "keywords": [
+      "education",
+      "fee",
+      "school",
+      "child",
+      "study"
+    ]
+  },
+  {
+    "id": "ART_12",
+    "title": "Definition of State (Article 12)",
+    "description": "Defines the term 'State' to include the Government, Parliament, State Legislatures, local authorities, and other bodies under government control for the purpose of enforcing Fundamental Rights.",
+    "punishment": "Any violation of Fundamental Rights by the State can be challenged in court.",
+    "keywords": [
+      "state definition",
+      "government authority",
+      "fundamental rights",
+      "article 12",
+      "public authority"
+    ]
+  },
+  {
+    "id": "ART_13",
+    "title": "Laws Inconsistent with Fundamental Rights (Article 13)",
+    "description": "Declares that any law inconsistent with or violating Fundamental Rights shall be void to the extent of such inconsistency.",
+    "punishment": "Unconstitutional laws can be struck down by courts.",
+    "keywords": [
+      "unconstitutional law",
+      "fundamental rights violation",
+      "judicial review",
+      "article 13",
+      "void law"
+    ]
+  },
+  {
+    "id": "ART_14",
+    "title": "Equality Before Law (Article 14)",
+    "description": "Ensures equality before the law and equal protection of laws to all persons within the territory of India.",
+    "punishment": "Discriminatory actions can be challenged in High Court or Supreme Court.",
+    "keywords": [
+      "equality",
+      "equal protection",
+      "non discrimination",
+      "article 14",
+      "rule of law"
+    ]
+  },
+  {
+    "id": "ART_15",
+    "title": "Prohibition of Discrimination (Article 15)",
+    "description": "Prohibits discrimination by the State on grounds of religion, race, caste, sex, or place of birth.",
+    "punishment": "Discriminatory practices can be declared unconstitutional.",
+    "keywords": [
+      "discrimination",
+      "caste",
+      "religion",
+      "gender equality",
+      "article 15"
+    ]
+  },
+  {
+    "id": "ART_16",
+    "title": "Equality in Public Employment (Article 16)",
+    "description": "Guarantees equal opportunity for all citizens in matters of employment or appointment to public offices.",
+    "punishment": "Unfair recruitment practices can be challenged in court.",
+    "keywords": [
+      "government jobs",
+      "equal opportunity",
+      "public employment",
+      "reservation",
+      "article 16"
+    ]
+  },
+  {
+    "id": "ART_17",
+    "title": "Abolition of Untouchability (Article 17)",
+    "description": "Abolishes untouchability in all forms and forbids its practice in any manner.",
+    "punishment": "Punishable under the Protection of Civil Rights Act, 1955.",
+    "keywords": [
+      "untouchability",
+      "social justice",
+      "caste discrimination",
+      "article 17",
+      "human dignity"
+    ]
+  },
+  {
+    "id": "ART_18",
+    "title": "Abolition of Titles (Article 18)",
+    "description": "Prohibits the State from conferring titles except military or academic distinctions.",
+    "punishment": "Illegal titles have no constitutional validity.",
+    "keywords": [
+      "abolition of titles",
+      "equality",
+      "honors",
+      "article 18",
+      "nobility"
+    ]
+  },
+  {
+    "id": "ART_19",
+    "title": "Protection of Certain Freedoms (Article 19)",
+    "description": "Guarantees freedoms of speech, assembly, association, movement, residence, and profession subject to reasonable restrictions.",
+    "punishment": "Unreasonable restrictions can be struck down by courts.",
+    "keywords": [
+      "freedom of speech",
+      "movement",
+      "profession",
+      "association",
+      "article 19"
+    ]
+  },
+  {
+    "id": "ART_20",
+    "title": "Protection in Criminal Convictions (Article 20)",
+    "description": "Protects individuals from retrospective punishment, double jeopardy, and self-incrimination.",
+    "punishment": "Illegal convictions can be quashed by courts.",
+    "keywords": [
+      "double jeopardy",
+      "self incrimination",
+      "criminal protection",
+      "article 20",
+      "fair trial"
+    ]
+  },
+  {
+    "id": "ART_21",
+    "title": "Right to Life and Personal Liberty (Article 21)",
+    "description": "No person shall be deprived of life or personal liberty except according to procedure established by law. It includes dignity, privacy, health, and speedy justice.",
+    "punishment": "Compensation and action against authorities for violations.",
+    "keywords": [
+      "right to life",
+      "personal liberty",
+      "privacy",
+      "human dignity",
+      "article 21"
+    ]
+  },
+  {
+    "id": "ART_21A",
+    "title": "Right to Education (Article 21A)",
+    "description": "Provides free and compulsory education to all children between 6 and 14 years of age.",
+    "punishment": "State authorities and schools can be penalized for non-compliance.",
+    "keywords": [
+      "education",
+      "children rights",
+      "free schooling",
+      "article 21A",
+      "learning"
+    ]
+  },
+  {
+    "id": "ART_22",
+    "title": "Rights of Arrested Persons (Article 22)",
+    "description": "Provides safeguards such as the right to be informed of grounds of arrest and the right to consult a lawyer.",
+    "punishment": "Illegal detention can result in compensation and disciplinary action.",
+    "keywords": [
+      "arrest rights",
+      "custody",
+      "lawyer",
+      "illegal detention",
+      "article 22"
+    ]
+  },
+  {
+    "id": "ART_23",
+    "title": "Prohibition of Human Trafficking and Forced Labour (Article 23)",
+    "description": "Prohibits human trafficking, begar (forced labour), and other similar forms of exploitation.",
+    "punishment": "Punishable under laws such as the Immoral Traffic (Prevention) Act and Bonded Labour System (Abolition) Act.",
+    "keywords": [
+      "human trafficking",
+      "forced labour",
+      "begar",
+      "exploitation",
+      "article 23"
+    ]
+  },
+  {
+    "id": "ART_24",
+    "title": "Prohibition of Child Labour (Article 24)",
+    "description": "Prohibits employment of children below 14 years of age in factories, mines, or hazardous occupations.",
+    "punishment": "Punishable under the Child Labour (Prohibition and Regulation) Act.",
+    "keywords": [
+      "child labour",
+      "children rights",
+      "hazardous work",
+      "article 24",
+      "exploitation"
+    ]
+  },
+  {
+    "id": "ART_25",
+    "title": "Freedom of Religion (Article 25)",
+    "description": "Guarantees freedom of conscience and the right to freely profess, practice, and propagate religion, subject to public order, morality, and health.",
+    "punishment": "Unlawful restrictions can be struck down by courts.",
+    "keywords": [
+      "freedom of religion",
+      "conscience",
+      "religious practice",
+      "article 25",
+      "secularism"
+    ]
+  },
+  {
+    "id": "ART_26",
+    "title": "Freedom to Manage Religious Affairs (Article 26)",
+    "description": "Gives religious denominations the right to manage their own affairs in matters of religion.",
+    "punishment": "State interference beyond constitutional limits can be challenged in court.",
+    "keywords": [
+      "religious denomination",
+      "temple management",
+      "religious affairs",
+      "article 26",
+      "freedom"
+    ]
+  },
+  {
+    "id": "ART_27",
+    "title": "Freedom from Payment of Religious Taxes (Article 27)",
+    "description": "Prohibits the State from compelling any person to pay taxes for the promotion or maintenance of any particular religion.",
+    "punishment": "Illegal taxation can be declared unconstitutional.",
+    "keywords": [
+      "religious tax",
+      "secular state",
+      "tax freedom",
+      "article 27",
+      "religion"
+    ]
+  },
   {
     "id": "ART_28",
     "title": "Freedom from Religious Instruction (Article 28)",
@@ -638,1841 +624,2173 @@
       "diplomacy"
     ]
   },
-
   {
-  "id": "ART_124",
-  "title": "Establishment of Supreme Court (Article 124)",
-  "description": "There shall be a Supreme Court of India consisting of the Chief Justice of India and other judges as Parliament may prescribe.",
-  "punishment": "Judges removable only by impeachment.",
-  "keywords": [
-    "supreme court",
-    "chief justice",
-    "judges",
-    "article 124",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_124",
-  "title": "Establishment of Supreme Court (Article 124)",
-  "description": "There shall be a Supreme Court of India consisting of the Chief Justice of India and other judges as Parliament may prescribe.",
-  "punishment": "Judges removable only by impeachment.",
-  "keywords": [
-    "supreme court",
-    "chief justice",
-    "judges",
-    "article 124",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_124A",
-  "title": "National Judicial Appointments Commission (Article 124A)",
-  "description": "Provided for the establishment of NJAC for appointment of judges (declared unconstitutional).",
-  "punishment": "Struck down by Supreme Court.",
-  "keywords": [
-    "NJAC",
-    "judge appointment",
-    "article 124A",
-    "judiciary",
-    "constitution"
-  ]
-},
-
-{
-  "id": "ART_124C",
-  "title": "Parliamentary Power on NJAC (Article 124C)",
-  "description": "Allowed Parliament to regulate NJAC procedures (no longer valid).",
-  "punishment": "Not applicable.",
-  "keywords": [
-    "NJAC",
-    "parliament power",
-    "article 124C",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_125",
-  "title": "Salaries of Supreme Court Judges (Article 125)",
-  "description": "Judges of the Supreme Court receive salaries and allowances charged on the Consolidated Fund of India.",
-  "punishment": "Cannot be reduced except during financial emergency.",
-  "keywords": [
-    "judge salary",
-    "supreme court",
-    "article 125",
-    "finance",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_126",
-  "title": "Acting Chief Justice (Article 126)",
-  "description": "President may appoint an acting Chief Justice when the office is vacant or CJI is unable to perform duties.",
-  "punishment": "Temporary appointment only.",
-  "keywords": [
-    "acting chief justice",
-    "supreme court",
-    "article 126",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_127",
-  "title": "Ad Hoc Judges (Article 127)",
-  "description": "Chief Justice may appoint High Court judges as ad hoc Supreme Court judges with President’s consent.",
-  "punishment": "Temporary judicial appointment.",
-  "keywords": [
-    "ad hoc judges",
-    "supreme court",
-    "article 127",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_128",
-  "title": "Retired Judges Sitting in Supreme Court (Article 128)",
-  "description": "Retired Supreme Court judges may sit and act as judges with consent.",
-  "punishment": "No permanent status.",
-  "keywords": [
-    "retired judges",
-    "supreme court",
-    "article 128",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_129",
-  "title": "Supreme Court as Court of Record (Article 129)",
-  "description": "Supreme Court has power to punish for contempt of itself.",
-  "punishment": "Contempt proceedings.",
-  "keywords": [
-    "court of record",
-    "contempt",
-    "article 129",
-    "supreme court",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_130",
-  "title": "Seat of Supreme Court (Article 130)",
-  "description": "Supreme Court shall sit in Delhi or such other place as the Chief Justice may appoint.",
-  "punishment": "Administrative decision.",
-  "keywords": [
-    "supreme court seat",
-    "delhi",
-    "article 130",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_131",
-  "title": "Original Jurisdiction of Supreme Court (Article 131)",
-  "description": "Supreme Court decides disputes between Union and States.",
-  "punishment": "Binding judgment.",
-  "keywords": [
-    "original jurisdiction",
-    "centre state dispute",
-    "article 131",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_132",
-  "title": "Appellate Jurisdiction in Constitutional Matters (Article 132)",
-  "description": "Appeals to Supreme Court in constitutional matters from High Courts.",
-  "punishment": "Judgment final.",
-  "keywords": [
-    "appellate jurisdiction",
-    "constitutional appeal",
-    "article 132",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_133",
-  "title": "Civil Appeals to Supreme Court (Article 133)",
-  "description": "Provides appellate jurisdiction in civil cases from High Courts.",
-  "punishment": "Judgment binding.",
-  "keywords": [
-    "civil appeal",
-    "high court",
-    "article 133",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_134",
-  "title": "Criminal Appeals to Supreme Court (Article 134)",
-  "description": "Allows criminal appeals to Supreme Court from High Courts.",
-  "punishment": "Final criminal adjudication.",
-  "keywords": [
-    "criminal appeal",
-    "death sentence",
-    "article 134",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_134A",
-  "title": "Certificate for Appeal to Supreme Court (Article 134A)",
-  "description": "High Court may certify cases fit for appeal to Supreme Court.",
-  "punishment": "Procedural provision.",
-  "keywords": [
-    "appeal certificate",
-    "high court",
-    "article 134A",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_135",
-  "title": "Jurisdiction Under Existing Laws (Article 135)",
-  "description": "Supreme Court has jurisdiction over matters previously under Federal Court.",
-  "punishment": "Continuity of jurisdiction.",
-  "keywords": [
-    "federal court",
-    "existing jurisdiction",
-    "article 135",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_136",
-  "title": "Special Leave Petition (Article 136)",
-  "description": "Supreme Court may grant special leave to appeal against any judgment.",
-  "punishment": "Discretionary power.",
-  "keywords": [
-    "SLP",
-    "special leave",
-    "article 136",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_137",
-  "title": "Review of Supreme Court Judgments (Article 137)",
-  "description": "Supreme Court has power to review its own judgments.",
-  "punishment": "Exceptional remedy.",
-  "keywords": [
-    "review petition",
-    "supreme court",
-    "article 137",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_138",
-  "title": "Enlargement of Supreme Court Jurisdiction (Article 138)",
-  "description": "Parliament may extend Supreme Court’s jurisdiction.",
-  "punishment": "Subject to law.",
-  "keywords": [
-    "jurisdiction expansion",
-    "parliament",
-    "article 138",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_139",
-  "title": "Writ Powers Extension (Article 139)",
-  "description": "Parliament may empower Supreme Court to issue writs beyond Article 32.",
-  "punishment": "Statutory extension.",
-  "keywords": [
-    "writ powers",
-    "article 139",
-    "supreme court",
-    "fundamental rights"
-  ]
-},
-
-{
-  "id": "ART_139A",
-  "title": "Transfer of Cases (Article 139A)",
-  "description": "Supreme Court may transfer cases between High Courts.",
-  "punishment": "Judicial order.",
-  "keywords": [
-    "case transfer",
-    "high court",
-    "article 139A",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_140",
-  "title": "Ancillary Powers of Supreme Court (Article 140)",
-  "description": "Parliament may confer additional powers on Supreme Court.",
-  "punishment": "As per law.",
-  "keywords": [
-    "ancillary powers",
-    "parliament",
-    "article 140",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_141",
-  "title": "Binding Nature of Supreme Court Judgments (Article 141)",
-  "description": "Law declared by Supreme Court is binding on all courts in India.",
-  "punishment": "Mandatory compliance.",
-  "keywords": [
-    "binding precedent",
-    "article 141",
-    "supreme court",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_142",
-  "title": "Power to Do Complete Justice (Article 142)",
-  "description": "Supreme Court may pass any order necessary to do complete justice.",
-  "punishment": "Extraordinary constitutional power.",
-  "keywords": [
-    "complete justice",
-    "article 142",
-    "supreme court",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_143",
-  "title": "Advisory Jurisdiction (Article 143)",
-  "description": "President may seek Supreme Court’s opinion on questions of law.",
-  "punishment": "Opinion advisory, not binding.",
-  "keywords": [
-    "advisory opinion",
-    "president",
-    "article 143",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_144",
-  "title": "Authorities to Aid Supreme Court (Article 144)",
-  "description": "All authorities must act in aid of Supreme Court.",
-  "punishment": "Non-compliance may attract contempt.",
-  "keywords": [
-    "aid supreme court",
-    "authorities",
-    "article 144",
-    "judiciary"
-  ]
-},
-
-{
-  "id": "ART_145",
-  "title": "Rules of Supreme Court (Article 145)",
-  "description": "Supreme Court may frame rules for regulating its practice and procedure.",
-  "punishment": "Rules binding.",
-  "keywords": [
-    "court rules",
-    "procedure",
-    "article 145",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_146",
-  "title": "Officers of Supreme Court (Article 146)",
-  "description": "Appointments and service conditions of Supreme Court staff.",
-  "punishment": "Regulated by law.",
-  "keywords": [
-    "court staff",
-    "appointments",
-    "article 146",
-    "supreme court"
-  ]
-},
-
-{
-  "id": "ART_147",
-  "title": "Interpretation of Judicial Articles (Article 147)",
-  "description": "Defines scope of judicial references in Articles 124–147.",
-  "punishment": "Interpretative provision.",
-  "keywords": [
-    "interpretation",
-    "judicial scope",
-    "article 147",
-    "constitution"
-  ]
-},
-
-{
-  "id": "ART_148",
-  "title": "Comptroller and Auditor-General of India (Article 148)",
-  "description": "There shall be a Comptroller and Auditor-General of India appointed by the President to audit accounts of the Union and States.",
-  "punishment": "Removal only by impeachment like a Supreme Court judge.",
-  "keywords": [
-    "CAG",
-    "comptroller auditor general",
-    "article 148",
-    "financial audit",
-    "constitution"
-  ]
-},
-
-{
-  "id": "ART_149",
-  "title": "Duties and Powers of CAG (Article 149)",
-  "description": "Parliament shall prescribe the duties and powers of the Comptroller and Auditor-General.",
-  "punishment": "Audits enforce financial accountability.",
-  "keywords": [
-    "CAG duties",
-    "audit powers",
-    "article 149",
-    "public finance",
-    "accountability"
-  ]
-},
-
-{
-  "id": "ART_150",
-  "title": "Accounts of Union and States (Article 150)",
-  "description": "The accounts of the Union and States shall be kept in the form prescribed by the President on advice of the CAG.",
-  "punishment": "Ensures standardized accounting.",
-  "keywords": [
-    "government accounts",
-    "union states",
-    "article 150",
-    "public finance",
-    "audit"
-  ]
-},
-
-{
-  "id": "ART_151",
-  "title": "Audit Reports of CAG (Article 151)",
-  "description": "CAG’s audit reports relating to Union and States are submitted to the President or Governor and laid before the Legislature.",
-  "punishment": "Reports form basis for legislative scrutiny.",
-  "keywords": [
-    "audit report",
-    "CAG report",
-    "article 151",
-    "legislature",
-    "financial control"
-  ]
-},
-
-{
-  "id": "ART_152",
-  "title": "Definition (Article 152)",
-  "description": "In this Part, unless the context otherwise requires, the term 'State' does not include the State of Jammu and Kashmir.",
-  "punishment": "Not applicable (interpretation clause).",
-  "keywords": [
-    "state definition",
-    "article 152",
-    "constitutional interpretation",
-    "part vi"
-  ]
-},
-
-{
-  "id": "ART_153",
-  "title": "Governors of States (Article 153)",
-  "description": "There shall be a Governor for each State. One person can be appointed as Governor for two or more States.",
-  "punishment": "Not applicable (constitutional provision).",
-  "keywords": [
-    "governor",
-    "state executive",
-    "article 153",
-    "appointment",
-    "constitution"
-  ]
-},
-
-{
-  "id": "ART_154",
-  "title": "Executive Power of the State (Article 154)",
-  "description": "The executive power of the State shall be vested in the Governor and exercised by him directly or through officers subordinate to him.",
-  "punishment": "Not applicable (distribution of executive authority).",
-  "keywords": [
-    "executive power",
-    "governor",
-    "state administration",
-    "article 154"
-  ]
-},
-
-{
-  "id": "ART_155",
-  "title": "Appointment of Governor (Article 155)",
-  "description": "The Governor of a State shall be appointed by the President by warrant under his hand and seal.",
-  "punishment": "Not applicable (appointment provision).",
-  "keywords": [
-    "appointment of governor",
-    "president",
-    "article 155",
-    "state executive"
-  ]
-},
-
-{
-  "id": "ART_156",
-  "title": "Term of Office of Governor (Article 156)",
-  "description": "The Governor shall hold office during the pleasure of the President and normally for a term of five years.",
-  "punishment": "Removal at President’s pleasure.",
-  "keywords": [
-    "governor tenure",
-    "five years",
-    "article 156",
-    "president pleasure"
-  ]
-},
-
-{
-  "id": "ART_157",
-  "title": "Qualifications for Governor (Article 157)",
-  "description": "A person must be a citizen of India and must have completed 35 years of age to be eligible for appointment as Governor.",
-  "punishment": "Ineligibility if qualifications not met.",
-  "keywords": [
-    "governor qualification",
-    "citizen of india",
-    "article 157",
-    "age requirement"
-  ]
-},
-
-{
-  "id": "ART_158",
-  "title": "Conditions of Governor’s Office (Article 158)",
-  "description": "The Governor shall not be a member of Parliament or State Legislature and shall be entitled to official residence and emoluments.",
-  "punishment": "Office vacated if conditions violated.",
-  "keywords": [
-    "governor office",
-    "emoluments",
-    "article 158",
-    "disqualification"
-  ]
-},
-
-{
-  "id": "ART_159",
-  "title": "Oath or Affirmation by Governor (Article 159)",
-  "description": "Before entering office, the Governor shall take an oath or affirmation before the Chief Justice of the High Court.",
-  "punishment": "Cannot assume office without oath.",
-  "keywords": [
-    "governor oath",
-    "article 159",
-    "high court",
-    "constitution"
-  ]
-},
-
-{
-  "id": "ART_160",
-  "title": "Discharge of Governor’s Functions (Article 160)",
-  "description": "The President may make arrangements for discharge of Governor’s functions in contingencies such as absence or illness.",
-  "punishment": "Not applicable (contingency provision).",
-  "keywords": [
-    "governor functions",
-    "contingency",
-    "article 160",
-    "president power"
-  ]
-},
-
-{
-  "id": "ART_161",
-  "title": "Pardoning Power of Governor (Article 161)",
-  "description": "The Governor has the power to grant pardons, reprieves, respites or remissions of punishment for offences against state laws.",
-  "punishment": "Reduction or cancellation of punishment.",
-  "keywords": [
-    "pardon",
-    "governor power",
-    "article 161",
-    "clemency"
-  ]
-},
-
-{
-  "id": "ART_162",
-  "title": "Extent of Executive Power of the State (Article 162)",
-  "description": "The executive power of a State extends to matters on which the State Legislature has power to make laws.",
-  "punishment": "Not applicable (distribution of powers).",
-  "keywords": [
-    "state executive power",
-    "article 162",
-    "state legislature",
-    "constitution"
-  ]
-},
-
-{
-  "id": "ART_163",
-  "title": "Council of Ministers (Article 163)",
-  "description": "There shall be a Council of Ministers with the Chief Minister at the head to aid and advise the Governor, except in matters where he acts in discretion.",
-  "punishment": "Not applicable (constitutional framework).",
-  "keywords": [
-    "council of ministers",
-    "chief minister",
-    "governor advice",
-    "article 163"
-  ]
-},
-
-{
-  "id": "ART_164",
-  "title": "Appointment and Responsibility of Ministers (Article 164)",
-  "description": "The Chief Minister is appointed by the Governor; other ministers are appointed on the advice of the Chief Minister and are collectively responsible to the Legislative Assembly.",
-  "punishment": "Loss of office on loss of confidence.",
-  "keywords": [
-    "chief minister",
-    "ministers appointment",
-    "collective responsibility",
-    "article 164"
-  ]
-},
-
-{
-  "id": "ART_165",
-  "title": "Advocate-General for the State (Article 165)",
-  "description": "The Governor shall appoint an Advocate-General who is qualified to be a High Court judge to advise the State Government on legal matters.",
-  "punishment": "Removal at Governor’s pleasure.",
-  "keywords": [
-    "advocate general",
-    "state legal advisor",
-    "article 165",
-    "high court qualification"
-  ]
-},
-
-{
-  "id": "ART_166",
-  "title": "Conduct of Business of State Government (Article 166)",
-  "description": "All executive actions of the State Government shall be expressed in the name of the Governor and conducted as per rules framed by him.",
-  "punishment": "Not applicable (procedural provision).",
-  "keywords": [
-    "state government business",
-    "article 166",
-    "governor rules",
-    "executive action"
-  ]
-},
-
-{
-  "id": "ART_167",
-  "title": "Duties of the Chief Minister (Article 167)",
-  "description": "The Chief Minister shall communicate decisions of the Council of Ministers to the Governor and furnish information relating to State administration.",
-  "punishment": "Constitutional accountability.",
-  "keywords": [
-    "chief minister duties",
-    "governor communication",
-    "article 167",
-    "state administration"
-  ]
-},
-
-{
-  "id": "ART_168",
-  "title": "Constitution of State Legislatures (Article 168)",
-  "description": "Every State shall have a Legislature consisting of the Governor and one or two Houses depending on the State.",
-  "punishment": "Not applicable (constitutional structure).",
-  "keywords": [
-    "state legislature",
-    "governor",
-    "legislative assembly",
-    "article 168"
-  ]
-},
-
-{
-  "id": "ART_168",
-  "title": "Constitution of State Legislatures (Article 168)",
-  "description": "Every State shall have a Legislature consisting of the Governor and one or two Houses depending on the State.",
-  "punishment": "Not applicable (constitutional structure).",
-  "keywords": [
-    "state legislature",
-    "governor",
-    "legislative assembly",
-    "article 168"
-  ]
-},
-
-{
-  "id": "ART_170",
-  "title": "Composition of Legislative Assembly (Article 170)",
-  "description": "The Legislative Assembly consists of members chosen by direct election from territorial constituencies in the State.",
-  "punishment": "Not applicable (representation provision).",
-  "keywords": [
-    "legislative assembly",
-    "direct election",
-    "article 170",
-    "state representation"
-  ]
-},
-
-{
-  "id": "ART_171",
-  "title": "Composition of Legislative Council (Article 171)",
-  "description": "The Legislative Council consists of members elected and nominated from various categories such as local bodies, graduates, teachers, and Governor nominees.",
-  "punishment": "Not applicable (composition rule).",
-  "keywords": [
-    "legislative council",
-    "upper house",
-    "article 171",
-    "state legislature"
-  ]
-},
-
-{
-  "id": "ART_172",
-  "title": "Duration of State Legislature (Article 172)",
-  "description": "The Legislative Assembly shall continue for five years unless sooner dissolved; Legislative Council is permanent.",
-  "punishment": "Not applicable (tenure provision).",
-  "keywords": [
-    "assembly tenure",
-    "five years",
-    "article 172",
-    "state legislature"
-  ]
-},
-
-{
-  "id": "ART_173",
-  "title": "Qualifications for State Legislature Membership (Article 173)",
-  "description": "A person must be a citizen of India and meet age and other qualifications prescribed by law to be a member of State Legislature.",
-  "punishment": "Disqualification if criteria not met.",
-  "keywords": [
-    "legislative qualification",
-    "citizenship",
-    "article 173",
-    "state legislature"
-  ]
-},
-
-{
-  "id": "ART_174",
-  "title": "Sessions of State Legislature (Article 174)",
-  "description": "The Governor shall summon, prorogue the State Legislature and may dissolve the Legislative Assembly.",
-  "punishment": "Not applicable (procedural authority).",
-  "keywords": [
-    "legislative session",
-    "governor powers",
-    "article 174",
-    "state assembly"
-  ]
-},
-
-{
-  "id": "ART_175",
-  "title": "Governor’s Address and Messages (Article 175)",
-  "description": "The Governor may address the State Legislature and send messages regarding bills or other matters.",
-  "punishment": "Not applicable (constitutional privilege).",
-  "keywords": [
-    "governor address",
-    "state legislature",
-    "article 175",
-    "messages"
-  ]
-},
-
-{
-  "id": "ART_176",
-  "title": "Special Address by Governor (Article 176)",
-  "description": "The Governor shall address the Legislative Assembly at the commencement of the first session after elections and each year.",
-  "punishment": "Not applicable (ceremonial duty).",
-  "keywords": [
-    "governor special address",
-    "legislative session",
-    "article 176",
-    "state assembly"
-  ]
-},
-
-{
-  "id": "ART_177",
-  "title": "Rights of Ministers and Advocate-General (Article 177)",
-  "description": "Ministers and Advocate-General have the right to speak and take part in proceedings of the State Legislature.",
-  "punishment": "Not applicable (participation right).",
-  "keywords": [
-    "minister rights",
-    "advocate general",
-    "article 177",
-    "state legislature"
-  ]
-},
-
-{
-  "id": "ART_178",
-  "title": "Speaker and Deputy Speaker (Article 178)",
-  "description": "Every Legislative Assembly shall choose a Speaker and a Deputy Speaker from among its members.",
-  "punishment": "Not applicable (constitutional office).",
-  "keywords": ["speaker", "deputy speaker", "article 178", "state assembly"]
-},
-
-{
-  "id": "ART_179",
-  "title": "Vacation and Resignation of Office (Article 179)",
-  "description": "The Speaker or Deputy Speaker may resign, be removed by resolution, or vacate office on ceasing to be a member.",
-  "punishment": "Removal by Assembly resolution.",
-  "keywords": ["speaker removal", "resignation", "article 179", "state legislature"]
-},
-
-{
-  "id": "ART_180",
-  "title": "Performance of Duties of Speaker (Article 180)",
-  "description": "Deputy Speaker or a member appointed by the Governor performs duties when the Speaker’s office is vacant.",
-  "punishment": "Not applicable (procedural provision).",
-  "keywords": ["speaker duties", "deputy speaker", "article 180"]
-},
-
-{
-  "id": "ART_181",
-  "title": "Restriction During Removal Proceedings (Article 181)",
-  "description": "The Speaker or Deputy Speaker shall not preside while a resolution for removal is under consideration.",
-  "punishment": "Not applicable (procedural safeguard).",
-  "keywords": ["speaker removal", "article 181", "legislative procedure"]
-},
-
-{
-  "id": "ART_182",
-  "title": "Chairman and Deputy Chairman (Article 182)",
-  "description": "The Legislative Council shall choose a Chairman and a Deputy Chairman from among its members.",
-  "punishment": "Not applicable (constitutional office).",
-  "keywords": ["chairman", "legislative council", "article 182"]
-},
-
-{
-  "id": "ART_183",
-  "title": "Vacation and Resignation of Office (Article 183)",
-  "description": "The Chairman or Deputy Chairman may resign, be removed, or vacate office upon ceasing to be a member.",
-  "punishment": "Removal by Council resolution.",
-  "keywords": ["chairman removal", "resignation", "article 183"]
-},
-
-{
-  "id": "ART_184",
-  "title": "Performance of Duties of Chairman (Article 184)",
-  "description": "Deputy Chairman or a member appointed by the Governor performs duties when the Chairman’s office is vacant.",
-  "punishment": "Not applicable (procedural provision).",
-  "keywords": ["chairman duties", "article 184", "legislative council"]
-},
-
-{
-  "id": "ART_185",
-  "title": "Restriction During Removal Proceedings (Article 185)",
-  "description": "The Chairman or Deputy Chairman shall not preside while a resolution for removal is under consideration.",
-  "punishment": "Not applicable (procedural safeguard).",
-  "keywords": ["chairman removal", "article 185"]
-},
-
-{
-  "id": "ART_186",
-  "title": "Salaries and Allowances of Presiding Officers (Article 186)",
-  "description": "Salaries and allowances of presiding officers are charged on the Consolidated Fund of the State.",
-  "punishment": "Not applicable (financial provision).",
-  "keywords": ["salaries", "consolidated fund", "article 186"]
-},
-
-{
-  "id": "ART_187",
-  "title": "Secretariat of State Legislature (Article 187)",
-  "description": "Each House of the State Legislature shall have a separate secretarial staff regulated by law.",
-  "punishment": "Not applicable (administrative provision).",
-  "keywords": ["legislature secretariat", "article 187", "state legislature"]
-},
-
-{
-  "id": "ART_188",
-  "title": "Oath or Affirmation by Members (Article 188)",
-  "description": "Every member of the State Legislature shall take an oath or affirmation before taking their seat.",
-  "punishment": "Cannot sit or vote without oath.",
-  "keywords": ["oath", "state legislature", "article 188", "membership"]
-},
-
-{
-  "id": "ART_189",
-  "title": "Voting in the Legislature (Article 189)",
-  "description": "All questions in a House shall be determined by a majority of members present and voting; presiding officer has casting vote.",
-  "punishment": "Not applicable (procedural rule).",
-  "keywords": ["voting", "casting vote", "article 189", "legislature"]
-},
-
-{
-  "id": "ART_190",
-  "title": "Vacation of Seats (Article 190)",
-  "description": "A member shall vacate his seat if disqualified, resigns, or is absent without permission for 60 days.",
-  "punishment": "Loss of membership.",
-  "keywords": ["vacation of seat", "disqualification", "article 190"]
-},
-
-{
-  "id": "ART_191",
-  "title": "Disqualifications for Membership (Article 191)",
-  "description": "A person is disqualified if holding office of profit, unsound mind, insolvent, or disqualified by law.",
-  "punishment": "Disqualification from membership.",
-  "keywords": ["disqualification", "office of profit", "article 191"]
-},
-
-{
-  "id": "ART_192",
-  "title": "Decision on Disqualification (Article 192)",
-  "description": "The Governor decides questions of disqualification after consulting the Election Commission.",
-  "punishment": "Loss of seat if disqualified.",
-  "keywords": ["disqualification decision", "governor", "article 192"]
-},
-
-{
-  "id": "ART_193",
-  "title": "Penalty for Unauthorized Sitting or Voting (Article 193)",
-  "description": "A person sitting or voting without taking oath or when disqualified shall be liable to a fine.",
-  "punishment": "Fine of ₹500 per day.",
-  "keywords": ["penalty", "unauthorized voting", "article 193"]
-},
-
-{
-  "id": "ART_194",
-  "title": "Legislative Privileges (Article 194)",
-  "description": "State Legislature members enjoy freedom of speech and other privileges similar to Parliament.",
-  "punishment": "Protection from legal action for legislative speech.",
-  "keywords": ["legislative privilege", "freedom of speech", "article 194"]
-},
-
-{
-  "id": "ART_195",
-  "title": "Salaries and Allowances of Members (Article 195)",
-  "description": "Members of State Legislature are entitled to salaries and allowances as determined by law.",
-  "punishment": "Not applicable (financial entitlement).",
-  "keywords": ["salaries", "allowances", "article 195"]
-},
-
-{
-  "id": "ART_196",
-  "title": "Introduction and Passing of Bills (Article 196)",
-  "description": "A Bill may originate in either House except Money Bills which originate only in Legislative Assembly.",
-  "punishment": "Not applicable (legislative procedure).",
-  "keywords": ["bills", "money bill", "article 196"]
-},
-
-{
-  "id": "ART_197",
-  "title": "Restriction on Legislative Council (Article 197)",
-  "description": "Legislative Council can delay but not reject Money Bills passed by Legislative Assembly.",
-  "punishment": "Council’s limited authority.",
-  "keywords": ["legislative council", "money bill", "article 197"]
-},
-
-{
-  "id": "ART_198",
-  "title": "Special Procedure for Money Bills (Article 198)",
-  "description": "Money Bills passed by the Legislative Assembly are transmitted to the Legislative Council, which must return them within the prescribed time.",
-  "punishment": "Council cannot block Money Bills.",
-  "keywords": ["money bill", "legislative council", "article 198"]
-},
-
-{
-  "id": "ART_199",
-  "title": "Money Bills Defined (Article 199)",
-  "description": "A Bill is a Money Bill if it contains provisions related to taxation, borrowing, expenditure from the Consolidated Fund of the State.",
-  "punishment": "Special legislative handling.",
-  "keywords": ["money bill definition", "article 199", "state finance"]
-},
-
-{
-  "id": "ART_200",
-  "title": "Assent to Bills by Governor (Article 200)",
-  "description": "When a Bill is presented, the Governor may give assent, withhold assent, return it, or reserve it for President’s consideration.",
-  "punishment": "Bill fails without assent.",
-  "keywords": ["governor assent", "article 200", "state bills"]
-},
-
-{
-  "id": "ART_201",
-  "title": "President’s Assent to Reserved Bills (Article 201)",
-  "description": "When a Bill is reserved, the President may assent or withhold assent or return it to the State Legislature.",
-  "punishment": "Bill lapses if assent denied.",
-  "keywords": ["president assent", "reserved bill", "article 201"]
-},
-
-{
-  "id": "ART_202",
-  "title": "Annual Financial Statement (Article 202)",
-  "description": "The Governor shall lay before the State Legislature the Annual Financial Statement (State Budget).",
-  "punishment": "Not applicable (budgetary requirement).",
-  "keywords": ["state budget", "annual financial statement", "article 202"]
-},
-
-{
-  "id": "ART_203",
-  "title": "Procedure for Estimates (Article 203)",
-  "description": "Estimates of expenditure must be voted by the Legislative Assembly and cannot be voted upon by the Legislative Council.",
-  "punishment": "Assembly control over expenditure.",
-  "keywords": ["estimates", "budget procedure", "article 203"]
-},
-
-{
-  "id": "ART_204",
-  "title": "Appropriation Bills (Article 204)",
-  "description": "No money shall be withdrawn from the Consolidated Fund except under an Appropriation Act.",
-  "punishment": "Unauthorized withdrawal prohibited.",
-  "keywords": ["appropriation bill", "article 204", "state finance"]
-},
-
-{
-  "id": "ART_205",
-  "title": "Supplementary and Excess Grants (Article 205)",
-  "description": "Provision for additional or excess expenditure not included in the Annual Financial Statement.",
-  "punishment": "Legislative approval required.",
-  "keywords": ["supplementary grant", "article 205"]
-},
-
-{
-  "id": "ART_206",
-  "title": "Votes on Account and Credit (Article 206)",
-  "description": "The Legislative Assembly may grant votes on account for urgent expenditure.",
-  "punishment": "Temporary financial authorization.",
-  "keywords": ["vote on account", "article 206"]
-},
-
-{
-  "id": "ART_207",
-  "title": "Special Provisions for Financial Bills (Article 207)",
-  "description": "Financial Bills require the Governor’s recommendation before introduction.",
-  "punishment": "Invalid without recommendation.",
-  "keywords": ["financial bill", "governor recommendation", "article 207"]
-},
-
-{
-  "id": "ART_208",
-  "title": "Rules of Procedure (Article 208)",
-  "description": "Each House of the State Legislature may make rules for regulating its procedure and conduct of business.",
-  "punishment": "Not applicable (internal regulation).",
-  "keywords": ["rules of procedure", "article 208"]
-},
-
-{
-  "id": "ART_209",
-  "title": "Procedure Regulation by Law (Article 209)",
-  "description": "The Legislature may regulate its procedure by law until rules are framed.",
-  "punishment": "Not applicable (transitional provision).",
-  "keywords": ["procedure regulation", "article 209"]
-},
-
-{
-  "id": "ART_210",
-  "title": "Language of State Legislature (Article 210)",
-  "description": "Business in the Legislature shall be conducted in the official language or Hindi or English as authorized.",
-  "punishment": "Not applicable (language provision).",
-  "keywords": ["legislative language", "article 210"]
-},
-
-{
-  "id": "ART_211",
-  "title": "Restriction on Discussion (Article 211)",
-  "description": "No discussion shall take place in the Legislature regarding the conduct of judges of Supreme Court or High Court.",
-  "punishment": "Breach of constitutional restriction.",
-  "keywords": ["judicial independence", "article 211"]
-},
-
-{
-  "id": "ART_212",
-  "title": "Courts and Legislative Proceedings (Article 212)",
-  "description": "Courts shall not inquire into proceedings of the State Legislature for procedural irregularities.",
-  "punishment": "Judicial restraint mandated.",
-  "keywords": ["legislative immunity", "article 212"]
-},
-
-{
-  "id": "ART_213",
-  "title": "Ordinance-making Power of the Governor (Article 213)",
-  "description": "When the State Legislature is not in session and circumstances require immediate action, the Governor may promulgate Ordinances having the same force as an Act of the Legislature.",
-  "punishment": "Ordinance ceases to operate six weeks after reassembly unless approved.",
-  "keywords": [
-    "governor ordinance",
-    "ordinance power",
-    "article 213",
-    "state legislation",
-    "emergency law"
-  ]
-},
-
-{
-  "id": "ART_214",
-  "title": "High Courts for States (Article 214)",
-  "description": "There shall be a High Court for each State of India.",
-  "punishment": "Not applicable (constitutional mandate).",
-  "keywords": ["high court", "state judiciary", "article 214"]
-},
-
-{
-  "id": "ART_215",
-  "title": "High Court as Court of Record (Article 215)",
-  "description": "Every High Court shall be a court of record and shall have power to punish for contempt of itself.",
-  "punishment": "Punishment for contempt of court.",
-  "keywords": ["court of record", "contempt", "article 215"]
-},
-
-{
-  "id": "ART_216",
-  "title": "Constitution of High Courts (Article 216)",
-  "description": "Every High Court shall consist of a Chief Justice and such other Judges as the President may appoint.",
-  "punishment": "Not applicable (judicial structure).",
-  "keywords": ["high court judges", "chief justice", "article 216"]
-},
-
-{
-  "id": "ART_217",
-  "title": "Appointment and Conditions of High Court Judges (Article 217)",
-  "description": "Judges of High Courts are appointed by the President after consultation and hold office till age of 62 years.",
-  "punishment": "Removal by impeachment.",
-  "keywords": ["high court judges", "appointment", "article 217"]
-},
-
-{
-  "id": "ART_218",
-  "title": "Application of SC Judge Provisions to HC Judges (Article 218)",
-  "description": "Provisions relating to removal, salaries, and privileges of Supreme Court judges apply to High Court judges.",
-  "punishment": "Same removal procedure as SC judges.",
-  "keywords": ["high court judges", "removal", "article 218"]
-},
-
-{
-  "id": "ART_219",
-  "title": "Oath or Affirmation by High Court Judges (Article 219)",
-  "description": "Every Judge of a High Court shall take an oath before the Governor of the State.",
-  "punishment": "Cannot assume office without oath.",
-  "keywords": ["judge oath", "high court", "article 219"]
-},
-
-{
-  "id": "ART_220",
-  "title": "Restriction on Practice (Article 220)",
-  "description": "A retired High Court judge shall not plead or act in any court except the Supreme Court and other High Courts.",
-  "punishment": "Professional restriction imposed.",
-  "keywords": ["retired judge", "practice restriction", "article 220"]
-},
-
-{
-  "id": "ART_221",
-  "title": "Salaries and Allowances of High Court Judges (Article 221)",
-  "description": "Judges of High Courts shall receive salaries and pensions as determined by Parliament and charged on Consolidated Fund.",
-  "punishment": "Financial independence ensured.",
-  "keywords": ["judges salary", "high court", "article 221"]
-},
-
-{
-  "id": "ART_222",
-  "title": "Transfer of High Court Judges (Article 222)",
-  "description": "The President may transfer a Judge from one High Court to another after consultation with the Chief Justice of India.",
-  "punishment": "Administrative transfer.",
-  "keywords": ["judge transfer", "article 222", "high court"]
-},
-
-{
-  "id": "ART_223",
-  "title": "Acting Chief Justice (Article 223)",
-  "description": "When the office of Chief Justice is vacant, the President appoints an Acting Chief Justice.",
-  "punishment": "Not applicable (administrative continuity).",
-  "keywords": ["acting chief justice", "article 223"]
-},
-
-{
-  "id": "ART_224",
-  "title": "Additional and Acting Judges (Article 224)",
-  "description": "The President may appoint Additional or Acting Judges for temporary increase in workload or vacancy.",
-  "punishment": "Not applicable (judicial administration).",
-  "keywords": ["additional judges", "article 224"]
-},
-
-{
-  "id": "ART_224",
-  "title": "Additional and Acting Judges (Article 224)",
-  "description": "The President may appoint Additional or Acting Judges for temporary increase in workload or vacancy.",
-  "punishment": "Not applicable (judicial administration).",
-  "keywords": ["additional judges", "article 224"]
-},
-
-{
-  "id": "ART_224A",
-  "title": "Appointment of Retired Judges (Article 224A)",
-  "description": "The Chief Justice of a High Court may request retired judges to sit and act as judges.",
-  "punishment": "Temporary judicial service.",
-  "keywords": ["retired judges", "article 224A"]
-},
-
-{
-  "id": "ART_225",
-  "title": "Jurisdiction of High Courts (Article 225)",
-  "description": "Jurisdiction of existing High Courts remains as before unless altered by law.",
-  "punishment": "Not applicable (jurisdiction continuity).",
-  "keywords": ["high court jurisdiction", "article 225"]
-},
-
-{
-  "id": "ART_226",
-  "title": "Writ Jurisdiction of High Courts (Article 226)",
-  "description": "High Courts may issue writs for enforcement of Fundamental Rights and for any other purpose.",
-  "punishment": "Judicial remedy provision.",
-  "keywords": ["writs", "fundamental rights", "article 226"]
-},
-
-{
-  "id": "ART_227",
-  "title": "Superintendence of High Courts (Article 227)",
-  "description": "Every High Court has superintendence over all courts and tribunals within its jurisdiction.",
-  "punishment": "Judicial oversight authority.",
-  "keywords": ["superintendence", "high court", "article 227"]
-},
-
-{
-  "id": "ART_228",
-  "title": "Transfer of Cases to High Court (Article 228)",
-  "description": "The High Court may withdraw a case involving substantial constitutional questions from a subordinate court.",
-  "punishment": "Judicial transfer authority.",
-  "keywords": ["case transfer", "constitutional question", "article 228"]
-},
-
-{
-  "id": "ART_229",
-  "title": "Officers and Servants of High Courts (Article 229)",
-  "description": "Appointments and service conditions of High Court staff are controlled by the Chief Justice of the High Court.",
-  "punishment": "Administrative autonomy.",
-  "keywords": ["high court staff", "chief justice", "article 229"]
-},
-
-{
-  "id": "ART_230",
-  "title": "Extension of High Court Jurisdiction (Article 230)",
-  "description": "Parliament may extend the jurisdiction of a High Court to Union Territories.",
-  "punishment": "Not applicable (jurisdiction extension).",
-  "keywords": ["high court jurisdiction", "union territory", "article 230"]
-},
-
-{
-  "id": "ART_231",
-  "title": "Common High Court for Two or More States (Article 231)",
-  "description": "Parliament may establish a common High Court for two or more States or Union Territories.",
-  "punishment": "Not applicable (judicial structure).",
-  "keywords": ["common high court", "article 231"]
-},
-
-{
-  "id": "ART_233",
-  "title": "Appointment of District Judges (Article 233)",
-  "description": "Appointments, postings, and promotions of district judges are made by the Governor in consultation with the High Court.",
-  "punishment": "Invalid appointments can be challenged constitutionally.",
-  "keywords": ["district judges", "appointment", "high court", "article 233"]
-},
-
-{
-  "id": "ART_233A",
-  "title": "Validation of District Judge Appointments (Article 233A)",
-  "description": "Validates appointments of district judges made before the commencement of the Constitution (Twentieth Amendment) Act, 1966.",
-  "punishment": "Past appointments deemed valid.",
-  "keywords": ["appointment validation", "district judges", "article 233A"]
-},
-
-{
-  "id": "ART_234",
-  "title": "Recruitment of Judicial Officers (Article 234)",
-  "description": "Appointments of persons other than district judges to the judicial service are made by the Governor in consultation with the High Court and Public Service Commission.",
-  "punishment": "Appointments must follow prescribed consultation.",
-  "keywords": ["judicial officers", "recruitment", "psc", "article 234"]
-},
-
-{
-  "id": "ART_235",
-  "title": "Control of High Court Over Subordinate Courts (Article 235)",
-  "description": "The High Court has control over district courts and courts subordinate thereto, including disciplinary matters.",
-  "punishment": "Ensures judicial independence.",
-  "keywords": ["subordinate courts", "high court control", "article 235"]
-},
-
-{
-  "id": "ART_236",
-  "title": "Interpretation of Subordinate Courts Provisions (Article 236)",
-  "description": "Defines terms such as 'district judge' and 'judicial service' for this Chapter.",
-  "punishment": "Not applicable (definitions).",
-  "keywords": ["definitions", "judicial service", "article 236"]
-},
-
-{
-  "id": "ART_237",
-  "title": "Application of Provisions to Magistrates (Article 237)",
-  "description": "The Governor may apply provisions of this Chapter to magistrates as deemed appropriate.",
-  "punishment": "Application subject to state notification.",
-  "keywords": ["magistrates", "judicial service", "article 237"]
-},
-
-{
-  "id": "ART_238",
-  "title": "Part B States (Article 238) – Repealed",
-  "description": "This Article relating to Part B States was repealed by the Constitution (Seventh Amendment) Act, 1956.",
-  "punishment": "Not applicable (repealed provision).",
-  "keywords": ["repealed article", "part b states", "article 238"]
-},
-
-{
-  "id": "ART_239",
-  "title": "Administration of Union Territories (Article 239)",
-  "description": "Union Territories are administered by the President through an Administrator appointed by him.",
-  "punishment": "Administrative authority of the Union.",
-  "keywords": ["union territories", "administrator", "article 239"]
-},
-
-{
-  "id": "ART_239A",
-  "title": "Legislature or Council of Ministers for Certain Union Territories (Article 239A)",
-  "description": "Parliament may create legislatures or councils of ministers for certain Union Territories.",
-  "punishment": "Governed by Parliamentary law.",
-  "keywords": ["ut legislature", "council of ministers", "article 239A"]
-},
-
-{
-  "id": "ART_239AA",
-  "title": "Special Status of Delhi (Article 239AA)",
-  "description": "Provides for a Legislative Assembly and Council of Ministers for the National Capital Territory of Delhi.",
-  "punishment": "Governance subject to constitutional limitations.",
-  "keywords": ["delhi special status", "nct delhi", "article 239AA"]
-},
-
-{
-  "id": "ART_239AB",
-  "title": "President’s Rule in Union Territories (Article 239AB)",
-  "description": "Allows the President to suspend operation of Article 239AA in case of constitutional failure in Delhi.",
-  "punishment": "Central administration imposed.",
-  "keywords": ["presidents rule", "delhi", "article 239AB"]
-},
-
-{
-  "id": "ART_239B",
-  "title": "Ordinance Powers in Union Territories (Article 239B)",
-  "description": "Administrator may promulgate ordinances when the legislature is not in session.",
-  "punishment": "Ordinance lapses if not approved.",
-  "keywords": ["ordinance", "administrator powers", "article 239B"]
-},
-
-{
-  "id": "ART_240",
-  "title": "President’s Regulation-making Power (Article 240)",
-  "description": "President may make regulations for peace, progress, and good governance of certain Union Territories.",
-  "punishment": "Regulations have force of law.",
-  "keywords": ["presidential regulations", "union territories", "article 240"]
-},
-
-{
-  "id": "ART_241",
-  "title": "High Courts for Union Territories (Article 241)",
-  "description": "Parliament may establish High Courts or extend jurisdiction of High Courts to Union Territories.",
-  "punishment": "Judicial authority extended by law.",
-  "keywords": ["high courts", "union territories", "article 241"]
-},
-
-{
-  "id": "ART_242",
-  "title": "Coorg (Article 242) – Repealed",
-  "description": "This Article relating to the State of Coorg was repealed by the Constitution (Seventh Amendment) Act, 1956.",
-  "punishment": "Not applicable (repealed provision).",
-  "keywords": ["repealed article", "coorg", "article 242"]
-},
-
-{
-  "id": "ART_243",
-  "title": "Definitions (Article 243)",
-  "description": "Defines key terms such as Panchayat, Gram Sabha, village, district, and population for Part IX.",
-  "punishment": "Not applicable (definitions).",
-  "keywords": ["definitions", "panchayat", "gram sabha", "article 243"]
-},
-
-{
-  "id": "ART_243A",
-  "title": "Gram Sabha (Article 243A)",
-  "description": "Gram Sabha consists of all registered voters in a village and exercises powers as provided by State law.",
-  "punishment": "Not applicable (democratic body).",
-  "keywords": ["gram sabha", "village democracy", "article 243A"]
-},
-
-{
-  "id": "ART_243B",
-  "title": "Constitution of Panchayats (Article 243B)",
-  "description": "Provides for Panchayats at village, intermediate, and district levels in every State.",
-  "punishment": "Mandatory institutional setup.",
-  "keywords": ["panchayat levels", "local governance", "article 243B"]
-},
-
-{
-  "id": "ART_243C",
-  "title": "Composition of Panchayats (Article 243C)",
-  "description": "Members of Panchayats are elected directly; Chairpersons elected as per State law.",
-  "punishment": "Governed by State legislation.",
-  "keywords": ["panchayat composition", "elections", "article 243C"]
-},
-
-{
-  "id": "ART_243D",
-  "title": "Reservation in Panchayats (Article 243D)",
-  "description": "Reserves seats for SCs, STs, and women (not less than one-third) in Panchayats.",
-  "punishment": "Constitutional mandate for reservation.",
-  "keywords": ["reservation", "women", "SC ST", "article 243D"]
-},
-
-{
-  "id": "ART_243E",
-  "title": "Duration of Panchayats (Article 243E)",
-  "description": "Every Panchayat shall continue for five years unless dissolved earlier.",
-  "punishment": "Mandatory elections within time limit.",
-  "keywords": ["five year term", "panchayat duration", "article 243E"]
-},
-
-{
-  "id": "ART_243F",
-  "title": "Disqualification of Members (Article 243F)",
-  "description": "Provides grounds for disqualification of Panchayat members under State law.",
-  "punishment": "Loss of membership upon disqualification.",
-  "keywords": ["disqualification", "panchayat members", "article 243F"]
-},
-
-{
-  "id": "ART_243G",
-  "title": "Powers of Panchayats (Article 243G)",
-  "description": "States may endow Panchayats with powers to function as institutions of self-government.",
-  "punishment": "Administrative empowerment.",
-  "keywords": ["self government", "panchayat powers", "article 243G"]
-},
-
-{
-  "id": "ART_243H",
-  "title": "Financial Powers of Panchayats (Article 243H)",
-  "description": "Panchayats may levy, collect, and appropriate taxes, duties, tolls, and fees.",
-  "punishment": "Subject to State law.",
-  "keywords": ["taxation", "panchayat finance", "article 243H"]
-},
-
-{
-  "id": "ART_243I",
-  "title": "State Finance Commission (Article 243I)",
-  "description": "Governor constitutes a Finance Commission every five years to review Panchayat finances.",
-  "punishment": "Mandatory constitutional review.",
-  "keywords": ["finance commission", "panchayat funds", "article 243I"]
-},
-
-{
-  "id": "ART_243J",
-  "title": "Audit of Panchayat Accounts (Article 243J)",
-  "description": "State Legislature may provide for audit of Panchayat accounts.",
-  "punishment": "Financial accountability.",
-  "keywords": ["audit", "accounts", "article 243J"]
-},
-
-{
-  "id": "ART_243K",
-  "title": "Panchayat Elections (Article 243K)",
-  "description": "Elections are conducted under the supervision of the State Election Commission.",
-  "punishment": "Independent electoral authority.",
-  "keywords": ["state election commission", "panchayat elections", "article 243K"]
-},
-
-{
-  "id": "ART_243L",
-  "title": "Application to Union Territories (Article 243L)",
-  "description": "Provisions of Part IX apply to Union Territories with modifications.",
-  "punishment": "As prescribed by Parliament.",
-  "keywords": ["union territories", "panchayats", "article 243L"]
-},
-
-{
-  "id": "ART_243M",
-  "title": "Exemptions from Part IX (Article 243M)",
-  "description": "Certain areas like Scheduled Areas and tribal regions are exempted.",
-  "punishment": "Constitutional exemption.",
-  "keywords": ["scheduled areas", "tribal areas", "article 243M"]
-},
-
-{
-  "id": "ART_243N",
-  "title": "Continuance of Existing Laws (Article 243N)",
-  "description": "Existing Panchayat laws continue until amended or repealed.",
-  "punishment": "Transitional provision.",
-  "keywords": ["existing laws", "transition", "article 243N"]
-},
-
-{
-  "id": "ART_243O",
-  "title": "Bar on Court Interference (Article 243O)",
-  "description": "Courts cannot interfere in Panchayat electoral matters except through election petitions.",
-  "punishment": "Judicial restriction.",
-  "keywords": ["court bar", "election disputes", "article 243O"]
-},
-
-{
-  "id": "ART_243P",
-  "title": "Definitions (Article 243P)",
-  "description": "Defines terms such as Municipality, Municipal area, Nagar Panchayat, Municipal Council, and Municipal Corporation.",
-  "punishment": "Not applicable (definitions).",
-  "keywords": ["municipality", "definitions", "article 243P"]
-},
-
-{
-  "id": "ART_243Q",
-  "title": "Constitution of Municipalities (Article 243Q)",
-  "description": "Municipalities are constituted in urban areas based on population and development level.",
-  "punishment": "Mandatory urban local bodies.",
-  "keywords": ["municipality formation", "urban governance", "article 243Q"]
-},
-
-{
-  "id": "ART_243R",
-  "title": "Composition of Municipalities (Article 243R)",
-  "description": "Members are directly elected; State Legislature may include nominated members without voting rights.",
-  "punishment": "Governed by State law.",
-  "keywords": ["municipal members", "election", "article 243R"]
-},
-
-{
-  "id": "ART_243S",
-  "title": "Wards Committees (Article 243S)",
-  "description": "Wards Committees are constituted in municipalities with population above a specified limit.",
-  "punishment": "Decentralized urban governance.",
-  "keywords": ["wards committee", "municipality", "article 243S"]
-},
-
-{
-  "id": "ART_243T",
-  "title": "Reservation in Municipalities (Article 243T)",
-  "description": "Provides reservation for SCs, STs, and women (not less than one-third) in Municipal bodies.",
-  "punishment": "Constitutional reservation mandate.",
-  "keywords": ["reservation", "municipal seats", "article 243T"]
-},
-
-{
-  "id": "ART_243U",
-  "title": "Duration of Municipalities (Article 243U)",
-  "description": "Municipalities have a term of five years unless dissolved earlier.",
-  "punishment": "Mandatory election cycle.",
-  "keywords": ["five year term", "municipality duration", "article 243U"]
-},
-
-{
-  "id": "ART_243V",
-  "title": "Disqualification of Members (Article 243V)",
-  "description": "Grounds for disqualification of municipal members are prescribed by State law.",
-  "punishment": "Loss of office upon disqualification.",
-  "keywords": ["disqualification", "municipal members", "article 243V"]
-},
-
-{
-  "id": "ART_243W",
-  "title": "Powers of Municipalities (Article 243W)",
-  "description": "States may endow Municipalities with powers to function as institutions of self-government.",
-  "punishment": "Administrative empowerment.",
-  "keywords": ["urban self government", "municipal powers", "article 243W"]
-},
-
-{
-  "id": "ART_243X",
-  "title": "Financial Powers of Municipalities (Article 243X)",
-  "description": "Municipalities may levy and collect taxes, duties, tolls, and fees.",
-  "punishment": "Subject to State legislation.",
-  "keywords": ["municipal taxation", "finance", "article 243X"]
-},
-
-{
-  "id": "ART_243Y",
-  "title": "Finance Commission for Municipalities (Article 243Y)",
-  "description": "State Finance Commission reviews financial position of Municipalities every five years.",
-  "punishment": "Mandatory fiscal review.",
-  "keywords": ["finance commission", "municipal funds", "article 243Y"]
-},
-
-{
-  "id": "ART_243Z",
-  "title": "Audit of Municipal Accounts (Article 243Z)",
-  "description": "State Legislature may provide for audit of Municipal accounts.",
-  "punishment": "Financial accountability.",
-  "keywords": ["audit", "municipal accounts", "article 243Z"]
-},
-
-{
-  "id": "ART_243ZA",
-  "title": "Municipal Elections (Article 243ZA)",
-  "description": "Municipal elections are conducted by the State Election Commission.",
-  "punishment": "Independent electoral process.",
-  "keywords": ["municipal elections", "state election commission", "article 243ZA"]
-},
-
-{
-  "id": "ART_243ZB",
-  "title": "Application to Union Territories (Article 243ZB)",
-  "description": "Provisions of Part IXA apply to Union Territories with modifications.",
-  "punishment": "As provided by Parliament.",
-  "keywords": ["union territories", "municipalities", "article 243ZB"]
-},
-
-{
-  "id": "ART_243ZC",
-  "title": "Exemptions from Part IXA (Article 243ZC)",
-  "description": "Certain areas like Scheduled Areas and tribal regions are exempted.",
-  "punishment": "Constitutional exemption.",
-  "keywords": ["scheduled areas", "exemptions", "article 243ZC"]
-},
-
-{
-  "id": "ART_243ZD",
-  "title": "District Planning Committee (Article 243ZD)",
-  "description": "District Planning Committees consolidate plans prepared by Panchayats and Municipalities.",
-  "punishment": "Planning coordination mandate.",
-  "keywords": ["district planning", "local development", "article 243ZD"]
-},
-
-{
-  "id": "ART_243ZE",
-  "title": "Metropolitan Planning Committee (Article 243ZE)",
-  "description": "Metropolitan Planning Committees prepare development plans for metropolitan areas.",
-  "punishment": "Urban planning authority.",
-  "keywords": ["metropolitan planning", "urban development", "article 243ZE"]
-},
-
-{
-  "id": "ART_243ZF",
-  "title": "Continuance of Existing Laws (Article 243ZF)",
-  "description": "Existing municipal laws continue until amended or repealed.",
-  "punishment": "Transitional provision.",
-  "keywords": ["existing laws", "municipal transition", "article 243ZF"]
-},
-
-{
-  "id": "ART_243ZG",
-  "title": "Bar on Court Interference (Article 243ZG)",
-  "description": "Courts cannot interfere in municipal election matters except through election petitions.",
-  "punishment": "Judicial restriction.",
-  "keywords": ["court bar", "municipal elections", "article 243ZG"]
-},
-
-{
-  "id": "ART_243ZH",
-  "title": "Definitions (Article 243ZH)",
-  "description": "Defines terms such as co-operative society, board, office bearer, and member for Part IXB.",
-  "punishment": "Not applicable (definitions).",
-  "keywords": ["cooperative society", "definitions", "article 243ZH"]
-},
-
-{
-  "id": "ART_243ZI",
-  "title": "Incorporation of Co-operative Societies (Article 243ZI)",
-  "description": "State Legislature may make laws for incorporation, regulation, and winding up of co-operative societies.",
-  "punishment": "Regulated by State law.",
-  "keywords": ["cooperative incorporation", "state law", "article 243ZI"]
-},
-
-{
-  "id": "ART_243ZJ",
-  "title": "Board Members and Tenure (Article 243ZJ)",
-  "description": "Fixes maximum number of directors and a five-year term for the board of co-operative societies.",
-  "punishment": "Mandatory board structure.",
-  "keywords": ["cooperative board", "five year term", "article 243ZJ"]
-},
-
-{
-  "id": "ART_243ZK",
-  "title": "Election of Co-operative Board (Article 243ZK)",
-  "description": "Elections to the board shall be conducted before expiry of the term.",
-  "punishment": "Compulsory timely elections.",
-  "keywords": ["cooperative elections", "board election", "article 243ZK"]
-},
-
-{
-  "id": "ART_243ZL",
-  "title": "Supersession of Co-operative Board (Article 243ZL)",
-  "description": "Board may be superseded for a limited period under specified conditions.",
-  "punishment": "Temporary loss of board powers.",
-  "keywords": ["supersession", "cooperative board", "article 243ZL"]
-},
-
-{
-  "id": "ART_243ZM",
-  "title": "Audit of Co-operative Societies (Article 243ZM)",
-  "description": "Accounts of co-operative societies shall be audited by qualified auditors.",
-  "punishment": "Financial accountability.",
-  "keywords": ["audit", "cooperative accounts", "article 243ZM"]
-},
-
-{
-  "id": "ART_243ZN",
-  "title": "General Body Meetings (Article 243ZN)",
-  "description": "Annual General Body Meeting must be convened within a prescribed period.",
-  "punishment": "Mandatory compliance.",
-  "keywords": ["general body meeting", "cooperative society", "article 243ZN"]
-},
-
-{
-  "id": "ART_243ZO",
-  "title": "Right to Information (Article 243ZO)",
-  "description": "Members have access to information relating to the functioning of co-operative societies.",
-  "punishment": "Transparency obligation.",
-  "keywords": ["right to information", "cooperative members", "article 243ZO"]
-},
-
-{
-  "id": "ART_243ZP",
-  "title": "Submission of Returns (Article 243ZP)",
-  "description": "Co-operative societies must submit annual returns to authorities.",
-  "punishment": "Statutory reporting requirement.",
-  "keywords": ["returns", "cooperative reporting", "article 243ZP"]
-},
-
-{
-  "id": "ART_243ZQ",
-  "title": "Offences in Co-operative Societies (Article 243ZQ)",
-  "description": "State law may specify offences and penalties for co-operative societies.",
-  "punishment": "Penalties as prescribed by law.",
-  "keywords": ["offences", "penalties", "article 243ZQ"]
-},
-
-{
-  "id": "ART_243ZR",
-  "title": "Multi-State Co-operative Societies (Article 243ZR)",
-  "description": "Provisions apply to multi-state co-operative societies subject to Central law.",
-  "punishment": "Governed by Central legislation.",
-  "keywords": ["multi state cooperative", "central law", "article 243ZR"]
-},
-
-{
-  "id": "ART_243ZS",
-  "title": "Application to Union Territories (Article 243ZS)",
-  "description": "Provisions of Part IXB apply to Union Territories with modifications.",
-  "punishment": "As prescribed by Parliament.",
-  "keywords": ["union territories", "cooperative societies", "article 243ZS"]
-},
-
-{
-  "id": "ART_243ZT",
-  "title": "Continuance of Existing Laws (Article 243ZT)",
-  "description": "Existing co-operative laws continue until amended or repealed.",
-  "punishment": "Transitional provision.",
-  "keywords": ["existing laws", "cooperative transition", "article 243ZT"]
-},
-
-{
-  "id": "ART_244",
-  "title": "Administration of Scheduled and Tribal Areas (Article 244)",
-  "description": "Provides that Scheduled Areas and Tribal Areas shall be administered in accordance with the Fifth and Sixth Schedules of the Constitution.",
-  "punishment": "Special constitutional governance framework.",
-  "keywords": ["scheduled areas", "tribal areas", "fifth schedule", "sixth schedule", "article 244"]
-},
-
-{
-  "id": "ART_244A",
-  "title": "Autonomous State in Assam (Article 244A)",
-  "description": "Parliament may form an autonomous State within Assam comprising certain tribal areas and provide for a legislature or council of ministers.",
-  "punishment": "Special legislative arrangement.",
-  "keywords": ["assam autonomous state", "tribal areas", "article 244A"]
-},
-
-{
-  "id": "ART_245",
-  "title": "Extent of Laws (Article 245)",
-  "description": "Parliament may make laws for the whole or any part of India; State Legislatures may make laws for their respective States.",
-  "punishment": "Legislative competence defined.",
-  "keywords": ["parliament laws", "state laws", "article 245"]
-},
-
-{
-  "id": "ART_246",
-  "title": "Distribution of Legislative Powers (Article 246)",
-  "description": "Divides legislative subjects into Union List, State List, and Concurrent List under the Seventh Schedule.",
-  "punishment": "Constitutional division of powers.",
-  "keywords": ["union list", "state list", "concurrent list", "article 246"]
-},
-
-{
-  "id": "ART_246A",
-  "title": "Special Provision for Goods and Services Tax (Article 246A)",
-  "description": "Parliament and State Legislatures have concurrent powers to make laws regarding GST.",
-  "punishment": "Fiscal authority framework.",
-  "keywords": ["gst", "taxation", "article 246A"]
-},
-
-{
-  "id": "ART_247",
-  "title": "Power to Establish Additional Courts (Article 247)",
-  "description": "Parliament may establish courts for better administration of laws made by it.",
-  "punishment": "Judicial expansion authority.",
-  "keywords": ["additional courts", "parliament powers", "article 247"]
-},
-
-{
-  "id": "ART_248",
-  "title": "Residuary Powers (Article 248)",
-  "description": "Parliament has exclusive power to legislate on matters not enumerated in any list.",
-  "punishment": "Union supremacy.",
-  "keywords": ["residuary powers", "parliament", "article 248"]
-},
-
-{
-  "id": "ART_249",
-  "title": "Parliament’s Power in National Interest (Article 249)",
-  "description": "Parliament may legislate on State List matters if Rajya Sabha passes a resolution in national interest.",
-  "punishment": "Temporary Union law supremacy.",
-  "keywords": ["national interest", "rajya sabha", "article 249"]
-},
-
-{
-  "id": "ART_250",
-  "title": "Parliament’s Power During Emergency (Article 250)",
-  "description": "Parliament may legislate on State List matters during a national emergency.",
-  "punishment": "Emergency legislative authority.",
-  "keywords": ["emergency powers", "state list", "article 250"]
-},
-
-{
-  "id": "ART_251",
-  "title": "Union Law Prevails in Case of Conflict (Article 251)",
-  "description": "Union law prevails over State law on matters under Articles 249 and 250.",
-  "punishment": "Union law supremacy.",
-  "keywords": ["union supremacy", "conflict of laws", "article 251"]
-},
-
-{
-  "id": "ART_252",
-  "title": "Parliament’s Power with State Consent (Article 252)",
-  "description": "Parliament may legislate for two or more States with their consent on State List matters.",
-  "punishment": "Consent-based legislation.",
-  "keywords": ["state consent", "parliament law", "article 252"]
-},
-
-{
-  "id": "ART_253",
-  "title": "Legislation for International Treaties (Article 253)",
-  "description": "Parliament may make laws to implement international treaties and agreements.",
-  "punishment": "International obligation authority.",
-  "keywords": ["international treaties", "parliament power", "article 253"]
-},
-{
-  "id": "ART_254",
-  "title": "Repugnancy Between Union and State Laws (Article 254)",
-  "description": "Union law prevails over State law in case of inconsistency in Concurrent List matters.",
-  "punishment": "Union law supremacy unless President assents.",
-  "keywords": ["repugnancy", "concurrent list", "article 254"]
-},
-{
-  "id": "ART_255",
-  "title": "Procedural Requirements for Certain Bills (Article 255)",
-  "description": "Failure to comply with recommendation requirements does not invalidate an Act.",
-  "punishment": "Procedural safeguard.",
-  "keywords": ["legislative procedure", "recommendation", "article 255"]
-}
-] 
+    "id": "ART_124",
+    "title": "Establishment of Supreme Court (Article 124)",
+    "description": "There shall be a Supreme Court of India consisting of the Chief Justice of India and other judges as Parliament may prescribe.",
+    "punishment": "Judges removable only by impeachment.",
+    "keywords": [
+      "supreme court",
+      "chief justice",
+      "judges",
+      "article 124",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_124",
+    "title": "Establishment of Supreme Court (Article 124)",
+    "description": "There shall be a Supreme Court of India consisting of the Chief Justice of India and other judges as Parliament may prescribe.",
+    "punishment": "Judges removable only by impeachment.",
+    "keywords": [
+      "supreme court",
+      "chief justice",
+      "judges",
+      "article 124",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_124A",
+    "title": "National Judicial Appointments Commission (Article 124A)",
+    "description": "Provided for the establishment of NJAC for appointment of judges (declared unconstitutional).",
+    "punishment": "Struck down by Supreme Court.",
+    "keywords": [
+      "NJAC",
+      "judge appointment",
+      "article 124A",
+      "judiciary",
+      "constitution"
+    ]
+  },
+  {
+    "id": "ART_124C",
+    "title": "Parliamentary Power on NJAC (Article 124C)",
+    "description": "Allowed Parliament to regulate NJAC procedures (no longer valid).",
+    "punishment": "Not applicable.",
+    "keywords": [
+      "NJAC",
+      "parliament power",
+      "article 124C",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_125",
+    "title": "Salaries of Supreme Court Judges (Article 125)",
+    "description": "Judges of the Supreme Court receive salaries and allowances charged on the Consolidated Fund of India.",
+    "punishment": "Cannot be reduced except during financial emergency.",
+    "keywords": [
+      "judge salary",
+      "supreme court",
+      "article 125",
+      "finance",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_126",
+    "title": "Acting Chief Justice (Article 126)",
+    "description": "President may appoint an acting Chief Justice when the office is vacant or CJI is unable to perform duties.",
+    "punishment": "Temporary appointment only.",
+    "keywords": [
+      "acting chief justice",
+      "supreme court",
+      "article 126",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_127",
+    "title": "Ad Hoc Judges (Article 127)",
+    "description": "Chief Justice may appoint High Court judges as ad hoc Supreme Court judges with President’s consent.",
+    "punishment": "Temporary judicial appointment.",
+    "keywords": [
+      "ad hoc judges",
+      "supreme court",
+      "article 127",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_128",
+    "title": "Retired Judges Sitting in Supreme Court (Article 128)",
+    "description": "Retired Supreme Court judges may sit and act as judges with consent.",
+    "punishment": "No permanent status.",
+    "keywords": [
+      "retired judges",
+      "supreme court",
+      "article 128",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_129",
+    "title": "Supreme Court as Court of Record (Article 129)",
+    "description": "Supreme Court has power to punish for contempt of itself.",
+    "punishment": "Contempt proceedings.",
+    "keywords": [
+      "court of record",
+      "contempt",
+      "article 129",
+      "supreme court",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_130",
+    "title": "Seat of Supreme Court (Article 130)",
+    "description": "Supreme Court shall sit in Delhi or such other place as the Chief Justice may appoint.",
+    "punishment": "Administrative decision.",
+    "keywords": [
+      "supreme court seat",
+      "delhi",
+      "article 130",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_131",
+    "title": "Original Jurisdiction of Supreme Court (Article 131)",
+    "description": "Supreme Court decides disputes between Union and States.",
+    "punishment": "Binding judgment.",
+    "keywords": [
+      "original jurisdiction",
+      "centre state dispute",
+      "article 131",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_132",
+    "title": "Appellate Jurisdiction in Constitutional Matters (Article 132)",
+    "description": "Appeals to Supreme Court in constitutional matters from High Courts.",
+    "punishment": "Judgment final.",
+    "keywords": [
+      "appellate jurisdiction",
+      "constitutional appeal",
+      "article 132",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_133",
+    "title": "Civil Appeals to Supreme Court (Article 133)",
+    "description": "Provides appellate jurisdiction in civil cases from High Courts.",
+    "punishment": "Judgment binding.",
+    "keywords": [
+      "civil appeal",
+      "high court",
+      "article 133",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_134",
+    "title": "Criminal Appeals to Supreme Court (Article 134)",
+    "description": "Allows criminal appeals to Supreme Court from High Courts.",
+    "punishment": "Final criminal adjudication.",
+    "keywords": [
+      "criminal appeal",
+      "death sentence",
+      "article 134",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_134A",
+    "title": "Certificate for Appeal to Supreme Court (Article 134A)",
+    "description": "High Court may certify cases fit for appeal to Supreme Court.",
+    "punishment": "Procedural provision.",
+    "keywords": [
+      "appeal certificate",
+      "high court",
+      "article 134A",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_135",
+    "title": "Jurisdiction Under Existing Laws (Article 135)",
+    "description": "Supreme Court has jurisdiction over matters previously under Federal Court.",
+    "punishment": "Continuity of jurisdiction.",
+    "keywords": [
+      "federal court",
+      "existing jurisdiction",
+      "article 135",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_136",
+    "title": "Special Leave Petition (Article 136)",
+    "description": "Supreme Court may grant special leave to appeal against any judgment.",
+    "punishment": "Discretionary power.",
+    "keywords": [
+      "SLP",
+      "special leave",
+      "article 136",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_137",
+    "title": "Review of Supreme Court Judgments (Article 137)",
+    "description": "Supreme Court has power to review its own judgments.",
+    "punishment": "Exceptional remedy.",
+    "keywords": [
+      "review petition",
+      "supreme court",
+      "article 137",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_138",
+    "title": "Enlargement of Supreme Court Jurisdiction (Article 138)",
+    "description": "Parliament may extend Supreme Court’s jurisdiction.",
+    "punishment": "Subject to law.",
+    "keywords": [
+      "jurisdiction expansion",
+      "parliament",
+      "article 138",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_139",
+    "title": "Writ Powers Extension (Article 139)",
+    "description": "Parliament may empower Supreme Court to issue writs beyond Article 32.",
+    "punishment": "Statutory extension.",
+    "keywords": [
+      "writ powers",
+      "article 139",
+      "supreme court",
+      "fundamental rights"
+    ]
+  },
+  {
+    "id": "ART_139A",
+    "title": "Transfer of Cases (Article 139A)",
+    "description": "Supreme Court may transfer cases between High Courts.",
+    "punishment": "Judicial order.",
+    "keywords": [
+      "case transfer",
+      "high court",
+      "article 139A",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_140",
+    "title": "Ancillary Powers of Supreme Court (Article 140)",
+    "description": "Parliament may confer additional powers on Supreme Court.",
+    "punishment": "As per law.",
+    "keywords": [
+      "ancillary powers",
+      "parliament",
+      "article 140",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_141",
+    "title": "Binding Nature of Supreme Court Judgments (Article 141)",
+    "description": "Law declared by Supreme Court is binding on all courts in India.",
+    "punishment": "Mandatory compliance.",
+    "keywords": [
+      "binding precedent",
+      "article 141",
+      "supreme court",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_142",
+    "title": "Power to Do Complete Justice (Article 142)",
+    "description": "Supreme Court may pass any order necessary to do complete justice.",
+    "punishment": "Extraordinary constitutional power.",
+    "keywords": [
+      "complete justice",
+      "article 142",
+      "supreme court",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_143",
+    "title": "Advisory Jurisdiction (Article 143)",
+    "description": "President may seek Supreme Court’s opinion on questions of law.",
+    "punishment": "Opinion advisory, not binding.",
+    "keywords": [
+      "advisory opinion",
+      "president",
+      "article 143",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_144",
+    "title": "Authorities to Aid Supreme Court (Article 144)",
+    "description": "All authorities must act in aid of Supreme Court.",
+    "punishment": "Non-compliance may attract contempt.",
+    "keywords": [
+      "aid supreme court",
+      "authorities",
+      "article 144",
+      "judiciary"
+    ]
+  },
+  {
+    "id": "ART_145",
+    "title": "Rules of Supreme Court (Article 145)",
+    "description": "Supreme Court may frame rules for regulating its practice and procedure.",
+    "punishment": "Rules binding.",
+    "keywords": [
+      "court rules",
+      "procedure",
+      "article 145",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_146",
+    "title": "Officers of Supreme Court (Article 146)",
+    "description": "Appointments and service conditions of Supreme Court staff.",
+    "punishment": "Regulated by law.",
+    "keywords": [
+      "court staff",
+      "appointments",
+      "article 146",
+      "supreme court"
+    ]
+  },
+  {
+    "id": "ART_147",
+    "title": "Interpretation of Judicial Articles (Article 147)",
+    "description": "Defines scope of judicial references in Articles 124–147.",
+    "punishment": "Interpretative provision.",
+    "keywords": [
+      "interpretation",
+      "judicial scope",
+      "article 147",
+      "constitution"
+    ]
+  },
+  {
+    "id": "ART_148",
+    "title": "Comptroller and Auditor-General of India (Article 148)",
+    "description": "There shall be a Comptroller and Auditor-General of India appointed by the President to audit accounts of the Union and States.",
+    "punishment": "Removal only by impeachment like a Supreme Court judge.",
+    "keywords": [
+      "CAG",
+      "comptroller auditor general",
+      "article 148",
+      "financial audit",
+      "constitution"
+    ]
+  },
+  {
+    "id": "ART_149",
+    "title": "Duties and Powers of CAG (Article 149)",
+    "description": "Parliament shall prescribe the duties and powers of the Comptroller and Auditor-General.",
+    "punishment": "Audits enforce financial accountability.",
+    "keywords": [
+      "CAG duties",
+      "audit powers",
+      "article 149",
+      "public finance",
+      "accountability"
+    ]
+  },
+  {
+    "id": "ART_150",
+    "title": "Accounts of Union and States (Article 150)",
+    "description": "The accounts of the Union and States shall be kept in the form prescribed by the President on advice of the CAG.",
+    "punishment": "Ensures standardized accounting.",
+    "keywords": [
+      "government accounts",
+      "union states",
+      "article 150",
+      "public finance",
+      "audit"
+    ]
+  },
+  {
+    "id": "ART_151",
+    "title": "Audit Reports of CAG (Article 151)",
+    "description": "CAG’s audit reports relating to Union and States are submitted to the President or Governor and laid before the Legislature.",
+    "punishment": "Reports form basis for legislative scrutiny.",
+    "keywords": [
+      "audit report",
+      "CAG report",
+      "article 151",
+      "legislature",
+      "financial control"
+    ]
+  },
+  {
+    "id": "ART_152",
+    "title": "Definition (Article 152)",
+    "description": "In this Part, unless the context otherwise requires, the term 'State' does not include the State of Jammu and Kashmir.",
+    "punishment": "Not applicable (interpretation clause).",
+    "keywords": [
+      "state definition",
+      "article 152",
+      "constitutional interpretation",
+      "part vi"
+    ]
+  },
+  {
+    "id": "ART_153",
+    "title": "Governors of States (Article 153)",
+    "description": "There shall be a Governor for each State. One person can be appointed as Governor for two or more States.",
+    "punishment": "Not applicable (constitutional provision).",
+    "keywords": [
+      "governor",
+      "state executive",
+      "article 153",
+      "appointment",
+      "constitution"
+    ]
+  },
+  {
+    "id": "ART_154",
+    "title": "Executive Power of the State (Article 154)",
+    "description": "The executive power of the State shall be vested in the Governor and exercised by him directly or through officers subordinate to him.",
+    "punishment": "Not applicable (distribution of executive authority).",
+    "keywords": [
+      "executive power",
+      "governor",
+      "state administration",
+      "article 154"
+    ]
+  },
+  {
+    "id": "ART_155",
+    "title": "Appointment of Governor (Article 155)",
+    "description": "The Governor of a State shall be appointed by the President by warrant under his hand and seal.",
+    "punishment": "Not applicable (appointment provision).",
+    "keywords": [
+      "appointment of governor",
+      "president",
+      "article 155",
+      "state executive"
+    ]
+  },
+  {
+    "id": "ART_156",
+    "title": "Term of Office of Governor (Article 156)",
+    "description": "The Governor shall hold office during the pleasure of the President and normally for a term of five years.",
+    "punishment": "Removal at President’s pleasure.",
+    "keywords": [
+      "governor tenure",
+      "five years",
+      "article 156",
+      "president pleasure"
+    ]
+  },
+  {
+    "id": "ART_157",
+    "title": "Qualifications for Governor (Article 157)",
+    "description": "A person must be a citizen of India and must have completed 35 years of age to be eligible for appointment as Governor.",
+    "punishment": "Ineligibility if qualifications not met.",
+    "keywords": [
+      "governor qualification",
+      "citizen of india",
+      "article 157",
+      "age requirement"
+    ]
+  },
+  {
+    "id": "ART_158",
+    "title": "Conditions of Governor’s Office (Article 158)",
+    "description": "The Governor shall not be a member of Parliament or State Legislature and shall be entitled to official residence and emoluments.",
+    "punishment": "Office vacated if conditions violated.",
+    "keywords": [
+      "governor office",
+      "emoluments",
+      "article 158",
+      "disqualification"
+    ]
+  },
+  {
+    "id": "ART_159",
+    "title": "Oath or Affirmation by Governor (Article 159)",
+    "description": "Before entering office, the Governor shall take an oath or affirmation before the Chief Justice of the High Court.",
+    "punishment": "Cannot assume office without oath.",
+    "keywords": [
+      "governor oath",
+      "article 159",
+      "high court",
+      "constitution"
+    ]
+  },
+  {
+    "id": "ART_160",
+    "title": "Discharge of Governor’s Functions (Article 160)",
+    "description": "The President may make arrangements for discharge of Governor’s functions in contingencies such as absence or illness.",
+    "punishment": "Not applicable (contingency provision).",
+    "keywords": [
+      "governor functions",
+      "contingency",
+      "article 160",
+      "president power"
+    ]
+  },
+  {
+    "id": "ART_161",
+    "title": "Pardoning Power of Governor (Article 161)",
+    "description": "The Governor has the power to grant pardons, reprieves, respites or remissions of punishment for offences against state laws.",
+    "punishment": "Reduction or cancellation of punishment.",
+    "keywords": [
+      "pardon",
+      "governor power",
+      "article 161",
+      "clemency"
+    ]
+  },
+  {
+    "id": "ART_162",
+    "title": "Extent of Executive Power of the State (Article 162)",
+    "description": "The executive power of a State extends to matters on which the State Legislature has power to make laws.",
+    "punishment": "Not applicable (distribution of powers).",
+    "keywords": [
+      "state executive power",
+      "article 162",
+      "state legislature",
+      "constitution"
+    ]
+  },
+  {
+    "id": "ART_163",
+    "title": "Council of Ministers (Article 163)",
+    "description": "There shall be a Council of Ministers with the Chief Minister at the head to aid and advise the Governor, except in matters where he acts in discretion.",
+    "punishment": "Not applicable (constitutional framework).",
+    "keywords": [
+      "council of ministers",
+      "chief minister",
+      "governor advice",
+      "article 163"
+    ]
+  },
+  {
+    "id": "ART_164",
+    "title": "Appointment and Responsibility of Ministers (Article 164)",
+    "description": "The Chief Minister is appointed by the Governor; other ministers are appointed on the advice of the Chief Minister and are collectively responsible to the Legislative Assembly.",
+    "punishment": "Loss of office on loss of confidence.",
+    "keywords": [
+      "chief minister",
+      "ministers appointment",
+      "collective responsibility",
+      "article 164"
+    ]
+  },
+  {
+    "id": "ART_165",
+    "title": "Advocate-General for the State (Article 165)",
+    "description": "The Governor shall appoint an Advocate-General who is qualified to be a High Court judge to advise the State Government on legal matters.",
+    "punishment": "Removal at Governor’s pleasure.",
+    "keywords": [
+      "advocate general",
+      "state legal advisor",
+      "article 165",
+      "high court qualification"
+    ]
+  },
+  {
+    "id": "ART_166",
+    "title": "Conduct of Business of State Government (Article 166)",
+    "description": "All executive actions of the State Government shall be expressed in the name of the Governor and conducted as per rules framed by him.",
+    "punishment": "Not applicable (procedural provision).",
+    "keywords": [
+      "state government business",
+      "article 166",
+      "governor rules",
+      "executive action"
+    ]
+  },
+  {
+    "id": "ART_167",
+    "title": "Duties of the Chief Minister (Article 167)",
+    "description": "The Chief Minister shall communicate decisions of the Council of Ministers to the Governor and furnish information relating to State administration.",
+    "punishment": "Constitutional accountability.",
+    "keywords": [
+      "chief minister duties",
+      "governor communication",
+      "article 167",
+      "state administration"
+    ]
+  },
+  {
+    "id": "ART_168",
+    "title": "Constitution of State Legislatures (Article 168)",
+    "description": "Every State shall have a Legislature consisting of the Governor and one or two Houses depending on the State.",
+    "punishment": "Not applicable (constitutional structure).",
+    "keywords": [
+      "state legislature",
+      "governor",
+      "legislative assembly",
+      "article 168"
+    ]
+  },
+  {
+    "id": "ART_168",
+    "title": "Constitution of State Legislatures (Article 168)",
+    "description": "Every State shall have a Legislature consisting of the Governor and one or two Houses depending on the State.",
+    "punishment": "Not applicable (constitutional structure).",
+    "keywords": [
+      "state legislature",
+      "governor",
+      "legislative assembly",
+      "article 168"
+    ]
+  },
+  {
+    "id": "ART_170",
+    "title": "Composition of Legislative Assembly (Article 170)",
+    "description": "The Legislative Assembly consists of members chosen by direct election from territorial constituencies in the State.",
+    "punishment": "Not applicable (representation provision).",
+    "keywords": [
+      "legislative assembly",
+      "direct election",
+      "article 170",
+      "state representation"
+    ]
+  },
+  {
+    "id": "ART_171",
+    "title": "Composition of Legislative Council (Article 171)",
+    "description": "The Legislative Council consists of members elected and nominated from various categories such as local bodies, graduates, teachers, and Governor nominees.",
+    "punishment": "Not applicable (composition rule).",
+    "keywords": [
+      "legislative council",
+      "upper house",
+      "article 171",
+      "state legislature"
+    ]
+  },
+  {
+    "id": "ART_172",
+    "title": "Duration of State Legislature (Article 172)",
+    "description": "The Legislative Assembly shall continue for five years unless sooner dissolved; Legislative Council is permanent.",
+    "punishment": "Not applicable (tenure provision).",
+    "keywords": [
+      "assembly tenure",
+      "five years",
+      "article 172",
+      "state legislature"
+    ]
+  },
+  {
+    "id": "ART_173",
+    "title": "Qualifications for State Legislature Membership (Article 173)",
+    "description": "A person must be a citizen of India and meet age and other qualifications prescribed by law to be a member of State Legislature.",
+    "punishment": "Disqualification if criteria not met.",
+    "keywords": [
+      "legislative qualification",
+      "citizenship",
+      "article 173",
+      "state legislature"
+    ]
+  },
+  {
+    "id": "ART_174",
+    "title": "Sessions of State Legislature (Article 174)",
+    "description": "The Governor shall summon, prorogue the State Legislature and may dissolve the Legislative Assembly.",
+    "punishment": "Not applicable (procedural authority).",
+    "keywords": [
+      "legislative session",
+      "governor powers",
+      "article 174",
+      "state assembly"
+    ]
+  },
+  {
+    "id": "ART_175",
+    "title": "Governor’s Address and Messages (Article 175)",
+    "description": "The Governor may address the State Legislature and send messages regarding bills or other matters.",
+    "punishment": "Not applicable (constitutional privilege).",
+    "keywords": [
+      "governor address",
+      "state legislature",
+      "article 175",
+      "messages"
+    ]
+  },
+  {
+    "id": "ART_176",
+    "title": "Special Address by Governor (Article 176)",
+    "description": "The Governor shall address the Legislative Assembly at the commencement of the first session after elections and each year.",
+    "punishment": "Not applicable (ceremonial duty).",
+    "keywords": [
+      "governor special address",
+      "legislative session",
+      "article 176",
+      "state assembly"
+    ]
+  },
+  {
+    "id": "ART_177",
+    "title": "Rights of Ministers and Advocate-General (Article 177)",
+    "description": "Ministers and Advocate-General have the right to speak and take part in proceedings of the State Legislature.",
+    "punishment": "Not applicable (participation right).",
+    "keywords": [
+      "minister rights",
+      "advocate general",
+      "article 177",
+      "state legislature"
+    ]
+  },
+  {
+    "id": "ART_178",
+    "title": "Speaker and Deputy Speaker (Article 178)",
+    "description": "Every Legislative Assembly shall choose a Speaker and a Deputy Speaker from among its members.",
+    "punishment": "Not applicable (constitutional office).",
+    "keywords": [
+      "speaker",
+      "deputy speaker",
+      "article 178",
+      "state assembly"
+    ]
+  },
+  {
+    "id": "ART_179",
+    "title": "Vacation and Resignation of Office (Article 179)",
+    "description": "The Speaker or Deputy Speaker may resign, be removed by resolution, or vacate office on ceasing to be a member.",
+    "punishment": "Removal by Assembly resolution.",
+    "keywords": [
+      "speaker removal",
+      "resignation",
+      "article 179",
+      "state legislature"
+    ]
+  },
+  {
+    "id": "ART_180",
+    "title": "Performance of Duties of Speaker (Article 180)",
+    "description": "Deputy Speaker or a member appointed by the Governor performs duties when the Speaker’s office is vacant.",
+    "punishment": "Not applicable (procedural provision).",
+    "keywords": [
+      "speaker duties",
+      "deputy speaker",
+      "article 180"
+    ]
+  },
+  {
+    "id": "ART_181",
+    "title": "Restriction During Removal Proceedings (Article 181)",
+    "description": "The Speaker or Deputy Speaker shall not preside while a resolution for removal is under consideration.",
+    "punishment": "Not applicable (procedural safeguard).",
+    "keywords": [
+      "speaker removal",
+      "article 181",
+      "legislative procedure"
+    ]
+  },
+  {
+    "id": "ART_182",
+    "title": "Chairman and Deputy Chairman (Article 182)",
+    "description": "The Legislative Council shall choose a Chairman and a Deputy Chairman from among its members.",
+    "punishment": "Not applicable (constitutional office).",
+    "keywords": [
+      "chairman",
+      "legislative council",
+      "article 182"
+    ]
+  },
+  {
+    "id": "ART_183",
+    "title": "Vacation and Resignation of Office (Article 183)",
+    "description": "The Chairman or Deputy Chairman may resign, be removed, or vacate office upon ceasing to be a member.",
+    "punishment": "Removal by Council resolution.",
+    "keywords": [
+      "chairman removal",
+      "resignation",
+      "article 183"
+    ]
+  },
+  {
+    "id": "ART_184",
+    "title": "Performance of Duties of Chairman (Article 184)",
+    "description": "Deputy Chairman or a member appointed by the Governor performs duties when the Chairman’s office is vacant.",
+    "punishment": "Not applicable (procedural provision).",
+    "keywords": [
+      "chairman duties",
+      "article 184",
+      "legislative council"
+    ]
+  },
+  {
+    "id": "ART_185",
+    "title": "Restriction During Removal Proceedings (Article 185)",
+    "description": "The Chairman or Deputy Chairman shall not preside while a resolution for removal is under consideration.",
+    "punishment": "Not applicable (procedural safeguard).",
+    "keywords": [
+      "chairman removal",
+      "article 185"
+    ]
+  },
+  {
+    "id": "ART_186",
+    "title": "Salaries and Allowances of Presiding Officers (Article 186)",
+    "description": "Salaries and allowances of presiding officers are charged on the Consolidated Fund of the State.",
+    "punishment": "Not applicable (financial provision).",
+    "keywords": [
+      "salaries",
+      "consolidated fund",
+      "article 186"
+    ]
+  },
+  {
+    "id": "ART_187",
+    "title": "Secretariat of State Legislature (Article 187)",
+    "description": "Each House of the State Legislature shall have a separate secretarial staff regulated by law.",
+    "punishment": "Not applicable (administrative provision).",
+    "keywords": [
+      "legislature secretariat",
+      "article 187",
+      "state legislature"
+    ]
+  },
+  {
+    "id": "ART_188",
+    "title": "Oath or Affirmation by Members (Article 188)",
+    "description": "Every member of the State Legislature shall take an oath or affirmation before taking their seat.",
+    "punishment": "Cannot sit or vote without oath.",
+    "keywords": [
+      "oath",
+      "state legislature",
+      "article 188",
+      "membership"
+    ]
+  },
+  {
+    "id": "ART_189",
+    "title": "Voting in the Legislature (Article 189)",
+    "description": "All questions in a House shall be determined by a majority of members present and voting; presiding officer has casting vote.",
+    "punishment": "Not applicable (procedural rule).",
+    "keywords": [
+      "voting",
+      "casting vote",
+      "article 189",
+      "legislature"
+    ]
+  },
+  {
+    "id": "ART_190",
+    "title": "Vacation of Seats (Article 190)",
+    "description": "A member shall vacate his seat if disqualified, resigns, or is absent without permission for 60 days.",
+    "punishment": "Loss of membership.",
+    "keywords": [
+      "vacation of seat",
+      "disqualification",
+      "article 190"
+    ]
+  },
+  {
+    "id": "ART_191",
+    "title": "Disqualifications for Membership (Article 191)",
+    "description": "A person is disqualified if holding office of profit, unsound mind, insolvent, or disqualified by law.",
+    "punishment": "Disqualification from membership.",
+    "keywords": [
+      "disqualification",
+      "office of profit",
+      "article 191"
+    ]
+  },
+  {
+    "id": "ART_192",
+    "title": "Decision on Disqualification (Article 192)",
+    "description": "The Governor decides questions of disqualification after consulting the Election Commission.",
+    "punishment": "Loss of seat if disqualified.",
+    "keywords": [
+      "disqualification decision",
+      "governor",
+      "article 192"
+    ]
+  },
+  {
+    "id": "ART_193",
+    "title": "Penalty for Unauthorized Sitting or Voting (Article 193)",
+    "description": "A person sitting or voting without taking oath or when disqualified shall be liable to a fine.",
+    "punishment": "Fine of ₹500 per day.",
+    "keywords": [
+      "penalty",
+      "unauthorized voting",
+      "article 193"
+    ]
+  },
+  {
+    "id": "ART_194",
+    "title": "Legislative Privileges (Article 194)",
+    "description": "State Legislature members enjoy freedom of speech and other privileges similar to Parliament.",
+    "punishment": "Protection from legal action for legislative speech.",
+    "keywords": [
+      "legislative privilege",
+      "freedom of speech",
+      "article 194"
+    ]
+  },
+  {
+    "id": "ART_195",
+    "title": "Salaries and Allowances of Members (Article 195)",
+    "description": "Members of State Legislature are entitled to salaries and allowances as determined by law.",
+    "punishment": "Not applicable (financial entitlement).",
+    "keywords": [
+      "salaries",
+      "allowances",
+      "article 195"
+    ]
+  },
+  {
+    "id": "ART_196",
+    "title": "Introduction and Passing of Bills (Article 196)",
+    "description": "A Bill may originate in either House except Money Bills which originate only in Legislative Assembly.",
+    "punishment": "Not applicable (legislative procedure).",
+    "keywords": [
+      "bills",
+      "money bill",
+      "article 196"
+    ]
+  },
+  {
+    "id": "ART_197",
+    "title": "Restriction on Legislative Council (Article 197)",
+    "description": "Legislative Council can delay but not reject Money Bills passed by Legislative Assembly.",
+    "punishment": "Council’s limited authority.",
+    "keywords": [
+      "legislative council",
+      "money bill",
+      "article 197"
+    ]
+  },
+  {
+    "id": "ART_198",
+    "title": "Special Procedure for Money Bills (Article 198)",
+    "description": "Money Bills passed by the Legislative Assembly are transmitted to the Legislative Council, which must return them within the prescribed time.",
+    "punishment": "Council cannot block Money Bills.",
+    "keywords": [
+      "money bill",
+      "legislative council",
+      "article 198"
+    ]
+  },
+  {
+    "id": "ART_199",
+    "title": "Money Bills Defined (Article 199)",
+    "description": "A Bill is a Money Bill if it contains provisions related to taxation, borrowing, expenditure from the Consolidated Fund of the State.",
+    "punishment": "Special legislative handling.",
+    "keywords": [
+      "money bill definition",
+      "article 199",
+      "state finance"
+    ]
+  },
+  {
+    "id": "ART_200",
+    "title": "Assent to Bills by Governor (Article 200)",
+    "description": "When a Bill is presented, the Governor may give assent, withhold assent, return it, or reserve it for President’s consideration.",
+    "punishment": "Bill fails without assent.",
+    "keywords": [
+      "governor assent",
+      "article 200",
+      "state bills"
+    ]
+  },
+  {
+    "id": "ART_201",
+    "title": "President’s Assent to Reserved Bills (Article 201)",
+    "description": "When a Bill is reserved, the President may assent or withhold assent or return it to the State Legislature.",
+    "punishment": "Bill lapses if assent denied.",
+    "keywords": [
+      "president assent",
+      "reserved bill",
+      "article 201"
+    ]
+  },
+  {
+    "id": "ART_202",
+    "title": "Annual Financial Statement (Article 202)",
+    "description": "The Governor shall lay before the State Legislature the Annual Financial Statement (State Budget).",
+    "punishment": "Not applicable (budgetary requirement).",
+    "keywords": [
+      "state budget",
+      "annual financial statement",
+      "article 202"
+    ]
+  },
+  {
+    "id": "ART_203",
+    "title": "Procedure for Estimates (Article 203)",
+    "description": "Estimates of expenditure must be voted by the Legislative Assembly and cannot be voted upon by the Legislative Council.",
+    "punishment": "Assembly control over expenditure.",
+    "keywords": [
+      "estimates",
+      "budget procedure",
+      "article 203"
+    ]
+  },
+  {
+    "id": "ART_204",
+    "title": "Appropriation Bills (Article 204)",
+    "description": "No money shall be withdrawn from the Consolidated Fund except under an Appropriation Act.",
+    "punishment": "Unauthorized withdrawal prohibited.",
+    "keywords": [
+      "appropriation bill",
+      "article 204",
+      "state finance"
+    ]
+  },
+  {
+    "id": "ART_205",
+    "title": "Supplementary and Excess Grants (Article 205)",
+    "description": "Provision for additional or excess expenditure not included in the Annual Financial Statement.",
+    "punishment": "Legislative approval required.",
+    "keywords": [
+      "supplementary grant",
+      "article 205"
+    ]
+  },
+  {
+    "id": "ART_206",
+    "title": "Votes on Account and Credit (Article 206)",
+    "description": "The Legislative Assembly may grant votes on account for urgent expenditure.",
+    "punishment": "Temporary financial authorization.",
+    "keywords": [
+      "vote on account",
+      "article 206"
+    ]
+  },
+  {
+    "id": "ART_207",
+    "title": "Special Provisions for Financial Bills (Article 207)",
+    "description": "Financial Bills require the Governor’s recommendation before introduction.",
+    "punishment": "Invalid without recommendation.",
+    "keywords": [
+      "financial bill",
+      "governor recommendation",
+      "article 207"
+    ]
+  },
+  {
+    "id": "ART_208",
+    "title": "Rules of Procedure (Article 208)",
+    "description": "Each House of the State Legislature may make rules for regulating its procedure and conduct of business.",
+    "punishment": "Not applicable (internal regulation).",
+    "keywords": [
+      "rules of procedure",
+      "article 208"
+    ]
+  },
+  {
+    "id": "ART_209",
+    "title": "Procedure Regulation by Law (Article 209)",
+    "description": "The Legislature may regulate its procedure by law until rules are framed.",
+    "punishment": "Not applicable (transitional provision).",
+    "keywords": [
+      "procedure regulation",
+      "article 209"
+    ]
+  },
+  {
+    "id": "ART_210",
+    "title": "Language of State Legislature (Article 210)",
+    "description": "Business in the Legislature shall be conducted in the official language or Hindi or English as authorized.",
+    "punishment": "Not applicable (language provision).",
+    "keywords": [
+      "legislative language",
+      "article 210"
+    ]
+  },
+  {
+    "id": "ART_211",
+    "title": "Restriction on Discussion (Article 211)",
+    "description": "No discussion shall take place in the Legislature regarding the conduct of judges of Supreme Court or High Court.",
+    "punishment": "Breach of constitutional restriction.",
+    "keywords": [
+      "judicial independence",
+      "article 211"
+    ]
+  },
+  {
+    "id": "ART_212",
+    "title": "Courts and Legislative Proceedings (Article 212)",
+    "description": "Courts shall not inquire into proceedings of the State Legislature for procedural irregularities.",
+    "punishment": "Judicial restraint mandated.",
+    "keywords": [
+      "legislative immunity",
+      "article 212"
+    ]
+  },
+  {
+    "id": "ART_213",
+    "title": "Ordinance-making Power of the Governor (Article 213)",
+    "description": "When the State Legislature is not in session and circumstances require immediate action, the Governor may promulgate Ordinances having the same force as an Act of the Legislature.",
+    "punishment": "Ordinance ceases to operate six weeks after reassembly unless approved.",
+    "keywords": [
+      "governor ordinance",
+      "ordinance power",
+      "article 213",
+      "state legislation",
+      "emergency law"
+    ]
+  },
+  {
+    "id": "ART_214",
+    "title": "High Courts for States (Article 214)",
+    "description": "There shall be a High Court for each State of India.",
+    "punishment": "Not applicable (constitutional mandate).",
+    "keywords": [
+      "high court",
+      "state judiciary",
+      "article 214"
+    ]
+  },
+  {
+    "id": "ART_215",
+    "title": "High Court as Court of Record (Article 215)",
+    "description": "Every High Court shall be a court of record and shall have power to punish for contempt of itself.",
+    "punishment": "Punishment for contempt of court.",
+    "keywords": [
+      "court of record",
+      "contempt",
+      "article 215"
+    ]
+  },
+  {
+    "id": "ART_216",
+    "title": "Constitution of High Courts (Article 216)",
+    "description": "Every High Court shall consist of a Chief Justice and such other Judges as the President may appoint.",
+    "punishment": "Not applicable (judicial structure).",
+    "keywords": [
+      "high court judges",
+      "chief justice",
+      "article 216"
+    ]
+  },
+  {
+    "id": "ART_217",
+    "title": "Appointment and Conditions of High Court Judges (Article 217)",
+    "description": "Judges of High Courts are appointed by the President after consultation and hold office till age of 62 years.",
+    "punishment": "Removal by impeachment.",
+    "keywords": [
+      "high court judges",
+      "appointment",
+      "article 217"
+    ]
+  },
+  {
+    "id": "ART_218",
+    "title": "Application of SC Judge Provisions to HC Judges (Article 218)",
+    "description": "Provisions relating to removal, salaries, and privileges of Supreme Court judges apply to High Court judges.",
+    "punishment": "Same removal procedure as SC judges.",
+    "keywords": [
+      "high court judges",
+      "removal",
+      "article 218"
+    ]
+  },
+  {
+    "id": "ART_219",
+    "title": "Oath or Affirmation by High Court Judges (Article 219)",
+    "description": "Every Judge of a High Court shall take an oath before the Governor of the State.",
+    "punishment": "Cannot assume office without oath.",
+    "keywords": [
+      "judge oath",
+      "high court",
+      "article 219"
+    ]
+  },
+  {
+    "id": "ART_220",
+    "title": "Restriction on Practice (Article 220)",
+    "description": "A retired High Court judge shall not plead or act in any court except the Supreme Court and other High Courts.",
+    "punishment": "Professional restriction imposed.",
+    "keywords": [
+      "retired judge",
+      "practice restriction",
+      "article 220"
+    ]
+  },
+  {
+    "id": "ART_221",
+    "title": "Salaries and Allowances of High Court Judges (Article 221)",
+    "description": "Judges of High Courts shall receive salaries and pensions as determined by Parliament and charged on Consolidated Fund.",
+    "punishment": "Financial independence ensured.",
+    "keywords": [
+      "judges salary",
+      "high court",
+      "article 221"
+    ]
+  },
+  {
+    "id": "ART_222",
+    "title": "Transfer of High Court Judges (Article 222)",
+    "description": "The President may transfer a Judge from one High Court to another after consultation with the Chief Justice of India.",
+    "punishment": "Administrative transfer.",
+    "keywords": [
+      "judge transfer",
+      "article 222",
+      "high court"
+    ]
+  },
+  {
+    "id": "ART_223",
+    "title": "Acting Chief Justice (Article 223)",
+    "description": "When the office of Chief Justice is vacant, the President appoints an Acting Chief Justice.",
+    "punishment": "Not applicable (administrative continuity).",
+    "keywords": [
+      "acting chief justice",
+      "article 223"
+    ]
+  },
+  {
+    "id": "ART_224",
+    "title": "Additional and Acting Judges (Article 224)",
+    "description": "The President may appoint Additional or Acting Judges for temporary increase in workload or vacancy.",
+    "punishment": "Not applicable (judicial administration).",
+    "keywords": [
+      "additional judges",
+      "article 224"
+    ]
+  },
+  {
+    "id": "ART_224",
+    "title": "Additional and Acting Judges (Article 224)",
+    "description": "The President may appoint Additional or Acting Judges for temporary increase in workload or vacancy.",
+    "punishment": "Not applicable (judicial administration).",
+    "keywords": [
+      "additional judges",
+      "article 224"
+    ]
+  },
+  {
+    "id": "ART_224A",
+    "title": "Appointment of Retired Judges (Article 224A)",
+    "description": "The Chief Justice of a High Court may request retired judges to sit and act as judges.",
+    "punishment": "Temporary judicial service.",
+    "keywords": [
+      "retired judges",
+      "article 224A"
+    ]
+  },
+  {
+    "id": "ART_225",
+    "title": "Jurisdiction of High Courts (Article 225)",
+    "description": "Jurisdiction of existing High Courts remains as before unless altered by law.",
+    "punishment": "Not applicable (jurisdiction continuity).",
+    "keywords": [
+      "high court jurisdiction",
+      "article 225"
+    ]
+  },
+  {
+    "id": "ART_226",
+    "title": "Writ Jurisdiction of High Courts (Article 226)",
+    "description": "High Courts may issue writs for enforcement of Fundamental Rights and for any other purpose.",
+    "punishment": "Judicial remedy provision.",
+    "keywords": [
+      "writs",
+      "fundamental rights",
+      "article 226"
+    ]
+  },
+  {
+    "id": "ART_227",
+    "title": "Superintendence of High Courts (Article 227)",
+    "description": "Every High Court has superintendence over all courts and tribunals within its jurisdiction.",
+    "punishment": "Judicial oversight authority.",
+    "keywords": [
+      "superintendence",
+      "high court",
+      "article 227"
+    ]
+  },
+  {
+    "id": "ART_228",
+    "title": "Transfer of Cases to High Court (Article 228)",
+    "description": "The High Court may withdraw a case involving substantial constitutional questions from a subordinate court.",
+    "punishment": "Judicial transfer authority.",
+    "keywords": [
+      "case transfer",
+      "constitutional question",
+      "article 228"
+    ]
+  },
+  {
+    "id": "ART_229",
+    "title": "Officers and Servants of High Courts (Article 229)",
+    "description": "Appointments and service conditions of High Court staff are controlled by the Chief Justice of the High Court.",
+    "punishment": "Administrative autonomy.",
+    "keywords": [
+      "high court staff",
+      "chief justice",
+      "article 229"
+    ]
+  },
+  {
+    "id": "ART_230",
+    "title": "Extension of High Court Jurisdiction (Article 230)",
+    "description": "Parliament may extend the jurisdiction of a High Court to Union Territories.",
+    "punishment": "Not applicable (jurisdiction extension).",
+    "keywords": [
+      "high court jurisdiction",
+      "union territory",
+      "article 230"
+    ]
+  },
+  {
+    "id": "ART_231",
+    "title": "Common High Court for Two or More States (Article 231)",
+    "description": "Parliament may establish a common High Court for two or more States or Union Territories.",
+    "punishment": "Not applicable (judicial structure).",
+    "keywords": [
+      "common high court",
+      "article 231"
+    ]
+  },
+  {
+    "id": "ART_233",
+    "title": "Appointment of District Judges (Article 233)",
+    "description": "Appointments, postings, and promotions of district judges are made by the Governor in consultation with the High Court.",
+    "punishment": "Invalid appointments can be challenged constitutionally.",
+    "keywords": [
+      "district judges",
+      "appointment",
+      "high court",
+      "article 233"
+    ]
+  },
+  {
+    "id": "ART_233A",
+    "title": "Validation of District Judge Appointments (Article 233A)",
+    "description": "Validates appointments of district judges made before the commencement of the Constitution (Twentieth Amendment) Act, 1966.",
+    "punishment": "Past appointments deemed valid.",
+    "keywords": [
+      "appointment validation",
+      "district judges",
+      "article 233A"
+    ]
+  },
+  {
+    "id": "ART_234",
+    "title": "Recruitment of Judicial Officers (Article 234)",
+    "description": "Appointments of persons other than district judges to the judicial service are made by the Governor in consultation with the High Court and Public Service Commission.",
+    "punishment": "Appointments must follow prescribed consultation.",
+    "keywords": [
+      "judicial officers",
+      "recruitment",
+      "psc",
+      "article 234"
+    ]
+  },
+  {
+    "id": "ART_235",
+    "title": "Control of High Court Over Subordinate Courts (Article 235)",
+    "description": "The High Court has control over district courts and courts subordinate thereto, including disciplinary matters.",
+    "punishment": "Ensures judicial independence.",
+    "keywords": [
+      "subordinate courts",
+      "high court control",
+      "article 235"
+    ]
+  },
+  {
+    "id": "ART_236",
+    "title": "Interpretation of Subordinate Courts Provisions (Article 236)",
+    "description": "Defines terms such as 'district judge' and 'judicial service' for this Chapter.",
+    "punishment": "Not applicable (definitions).",
+    "keywords": [
+      "definitions",
+      "judicial service",
+      "article 236"
+    ]
+  },
+  {
+    "id": "ART_237",
+    "title": "Application of Provisions to Magistrates (Article 237)",
+    "description": "The Governor may apply provisions of this Chapter to magistrates as deemed appropriate.",
+    "punishment": "Application subject to state notification.",
+    "keywords": [
+      "magistrates",
+      "judicial service",
+      "article 237"
+    ]
+  },
+  {
+    "id": "ART_238",
+    "title": "Part B States (Article 238) – Repealed",
+    "description": "This Article relating to Part B States was repealed by the Constitution (Seventh Amendment) Act, 1956.",
+    "punishment": "Not applicable (repealed provision).",
+    "keywords": [
+      "repealed article",
+      "part b states",
+      "article 238"
+    ]
+  },
+  {
+    "id": "ART_239",
+    "title": "Administration of Union Territories (Article 239)",
+    "description": "Union Territories are administered by the President through an Administrator appointed by him.",
+    "punishment": "Administrative authority of the Union.",
+    "keywords": [
+      "union territories",
+      "administrator",
+      "article 239"
+    ]
+  },
+  {
+    "id": "ART_239A",
+    "title": "Legislature or Council of Ministers for Certain Union Territories (Article 239A)",
+    "description": "Parliament may create legislatures or councils of ministers for certain Union Territories.",
+    "punishment": "Governed by Parliamentary law.",
+    "keywords": [
+      "ut legislature",
+      "council of ministers",
+      "article 239A"
+    ]
+  },
+  {
+    "id": "ART_239AA",
+    "title": "Special Status of Delhi (Article 239AA)",
+    "description": "Provides for a Legislative Assembly and Council of Ministers for the National Capital Territory of Delhi.",
+    "punishment": "Governance subject to constitutional limitations.",
+    "keywords": [
+      "delhi special status",
+      "nct delhi",
+      "article 239AA"
+    ]
+  },
+  {
+    "id": "ART_239AB",
+    "title": "President’s Rule in Union Territories (Article 239AB)",
+    "description": "Allows the President to suspend operation of Article 239AA in case of constitutional failure in Delhi.",
+    "punishment": "Central administration imposed.",
+    "keywords": [
+      "presidents rule",
+      "delhi",
+      "article 239AB"
+    ]
+  },
+  {
+    "id": "ART_239B",
+    "title": "Ordinance Powers in Union Territories (Article 239B)",
+    "description": "Administrator may promulgate ordinances when the legislature is not in session.",
+    "punishment": "Ordinance lapses if not approved.",
+    "keywords": [
+      "ordinance",
+      "administrator powers",
+      "article 239B"
+    ]
+  },
+  {
+    "id": "ART_240",
+    "title": "President’s Regulation-making Power (Article 240)",
+    "description": "President may make regulations for peace, progress, and good governance of certain Union Territories.",
+    "punishment": "Regulations have force of law.",
+    "keywords": [
+      "presidential regulations",
+      "union territories",
+      "article 240"
+    ]
+  },
+  {
+    "id": "ART_241",
+    "title": "High Courts for Union Territories (Article 241)",
+    "description": "Parliament may establish High Courts or extend jurisdiction of High Courts to Union Territories.",
+    "punishment": "Judicial authority extended by law.",
+    "keywords": [
+      "high courts",
+      "union territories",
+      "article 241"
+    ]
+  },
+  {
+    "id": "ART_242",
+    "title": "Coorg (Article 242) – Repealed",
+    "description": "This Article relating to the State of Coorg was repealed by the Constitution (Seventh Amendment) Act, 1956.",
+    "punishment": "Not applicable (repealed provision).",
+    "keywords": [
+      "repealed article",
+      "coorg",
+      "article 242"
+    ]
+  },
+  {
+    "id": "ART_243",
+    "title": "Definitions (Article 243)",
+    "description": "Defines key terms such as Panchayat, Gram Sabha, village, district, and population for Part IX.",
+    "punishment": "Not applicable (definitions).",
+    "keywords": [
+      "definitions",
+      "panchayat",
+      "gram sabha",
+      "article 243"
+    ]
+  },
+  {
+    "id": "ART_243A",
+    "title": "Gram Sabha (Article 243A)",
+    "description": "Gram Sabha consists of all registered voters in a village and exercises powers as provided by State law.",
+    "punishment": "Not applicable (democratic body).",
+    "keywords": [
+      "gram sabha",
+      "village democracy",
+      "article 243A"
+    ]
+  },
+  {
+    "id": "ART_243B",
+    "title": "Constitution of Panchayats (Article 243B)",
+    "description": "Provides for Panchayats at village, intermediate, and district levels in every State.",
+    "punishment": "Mandatory institutional setup.",
+    "keywords": [
+      "panchayat levels",
+      "local governance",
+      "article 243B"
+    ]
+  },
+  {
+    "id": "ART_243C",
+    "title": "Composition of Panchayats (Article 243C)",
+    "description": "Members of Panchayats are elected directly; Chairpersons elected as per State law.",
+    "punishment": "Governed by State legislation.",
+    "keywords": [
+      "panchayat composition",
+      "elections",
+      "article 243C"
+    ]
+  },
+  {
+    "id": "ART_243D",
+    "title": "Reservation in Panchayats (Article 243D)",
+    "description": "Reserves seats for SCs, STs, and women (not less than one-third) in Panchayats.",
+    "punishment": "Constitutional mandate for reservation.",
+    "keywords": [
+      "reservation",
+      "women",
+      "SC ST",
+      "article 243D"
+    ]
+  },
+  {
+    "id": "ART_243E",
+    "title": "Duration of Panchayats (Article 243E)",
+    "description": "Every Panchayat shall continue for five years unless dissolved earlier.",
+    "punishment": "Mandatory elections within time limit.",
+    "keywords": [
+      "five year term",
+      "panchayat duration",
+      "article 243E"
+    ]
+  },
+  {
+    "id": "ART_243F",
+    "title": "Disqualification of Members (Article 243F)",
+    "description": "Provides grounds for disqualification of Panchayat members under State law.",
+    "punishment": "Loss of membership upon disqualification.",
+    "keywords": [
+      "disqualification",
+      "panchayat members",
+      "article 243F"
+    ]
+  },
+  {
+    "id": "ART_243G",
+    "title": "Powers of Panchayats (Article 243G)",
+    "description": "States may endow Panchayats with powers to function as institutions of self-government.",
+    "punishment": "Administrative empowerment.",
+    "keywords": [
+      "self government",
+      "panchayat powers",
+      "article 243G"
+    ]
+  },
+  {
+    "id": "ART_243H",
+    "title": "Financial Powers of Panchayats (Article 243H)",
+    "description": "Panchayats may levy, collect, and appropriate taxes, duties, tolls, and fees.",
+    "punishment": "Subject to State law.",
+    "keywords": [
+      "taxation",
+      "panchayat finance",
+      "article 243H"
+    ]
+  },
+  {
+    "id": "ART_243I",
+    "title": "State Finance Commission (Article 243I)",
+    "description": "Governor constitutes a Finance Commission every five years to review Panchayat finances.",
+    "punishment": "Mandatory constitutional review.",
+    "keywords": [
+      "finance commission",
+      "panchayat funds",
+      "article 243I"
+    ]
+  },
+  {
+    "id": "ART_243J",
+    "title": "Audit of Panchayat Accounts (Article 243J)",
+    "description": "State Legislature may provide for audit of Panchayat accounts.",
+    "punishment": "Financial accountability.",
+    "keywords": [
+      "audit",
+      "accounts",
+      "article 243J"
+    ]
+  },
+  {
+    "id": "ART_243K",
+    "title": "Panchayat Elections (Article 243K)",
+    "description": "Elections are conducted under the supervision of the State Election Commission.",
+    "punishment": "Independent electoral authority.",
+    "keywords": [
+      "state election commission",
+      "panchayat elections",
+      "article 243K"
+    ]
+  },
+  {
+    "id": "ART_243L",
+    "title": "Application to Union Territories (Article 243L)",
+    "description": "Provisions of Part IX apply to Union Territories with modifications.",
+    "punishment": "As prescribed by Parliament.",
+    "keywords": [
+      "union territories",
+      "panchayats",
+      "article 243L"
+    ]
+  },
+  {
+    "id": "ART_243M",
+    "title": "Exemptions from Part IX (Article 243M)",
+    "description": "Certain areas like Scheduled Areas and tribal regions are exempted.",
+    "punishment": "Constitutional exemption.",
+    "keywords": [
+      "scheduled areas",
+      "tribal areas",
+      "article 243M"
+    ]
+  },
+  {
+    "id": "ART_243N",
+    "title": "Continuance of Existing Laws (Article 243N)",
+    "description": "Existing Panchayat laws continue until amended or repealed.",
+    "punishment": "Transitional provision.",
+    "keywords": [
+      "existing laws",
+      "transition",
+      "article 243N"
+    ]
+  },
+  {
+    "id": "ART_243O",
+    "title": "Bar on Court Interference (Article 243O)",
+    "description": "Courts cannot interfere in Panchayat electoral matters except through election petitions.",
+    "punishment": "Judicial restriction.",
+    "keywords": [
+      "court bar",
+      "election disputes",
+      "article 243O"
+    ]
+  },
+  {
+    "id": "ART_243P",
+    "title": "Definitions (Article 243P)",
+    "description": "Defines terms such as Municipality, Municipal area, Nagar Panchayat, Municipal Council, and Municipal Corporation.",
+    "punishment": "Not applicable (definitions).",
+    "keywords": [
+      "municipality",
+      "definitions",
+      "article 243P"
+    ]
+  },
+  {
+    "id": "ART_243Q",
+    "title": "Constitution of Municipalities (Article 243Q)",
+    "description": "Municipalities are constituted in urban areas based on population and development level.",
+    "punishment": "Mandatory urban local bodies.",
+    "keywords": [
+      "municipality formation",
+      "urban governance",
+      "article 243Q"
+    ]
+  },
+  {
+    "id": "ART_243R",
+    "title": "Composition of Municipalities (Article 243R)",
+    "description": "Members are directly elected; State Legislature may include nominated members without voting rights.",
+    "punishment": "Governed by State law.",
+    "keywords": [
+      "municipal members",
+      "election",
+      "article 243R"
+    ]
+  },
+  {
+    "id": "ART_243S",
+    "title": "Wards Committees (Article 243S)",
+    "description": "Wards Committees are constituted in municipalities with population above a specified limit.",
+    "punishment": "Decentralized urban governance.",
+    "keywords": [
+      "wards committee",
+      "municipality",
+      "article 243S"
+    ]
+  },
+  {
+    "id": "ART_243T",
+    "title": "Reservation in Municipalities (Article 243T)",
+    "description": "Provides reservation for SCs, STs, and women (not less than one-third) in Municipal bodies.",
+    "punishment": "Constitutional reservation mandate.",
+    "keywords": [
+      "reservation",
+      "municipal seats",
+      "article 243T"
+    ]
+  },
+  {
+    "id": "ART_243U",
+    "title": "Duration of Municipalities (Article 243U)",
+    "description": "Municipalities have a term of five years unless dissolved earlier.",
+    "punishment": "Mandatory election cycle.",
+    "keywords": [
+      "five year term",
+      "municipality duration",
+      "article 243U"
+    ]
+  },
+  {
+    "id": "ART_243V",
+    "title": "Disqualification of Members (Article 243V)",
+    "description": "Grounds for disqualification of municipal members are prescribed by State law.",
+    "punishment": "Loss of office upon disqualification.",
+    "keywords": [
+      "disqualification",
+      "municipal members",
+      "article 243V"
+    ]
+  },
+  {
+    "id": "ART_243W",
+    "title": "Powers of Municipalities (Article 243W)",
+    "description": "States may endow Municipalities with powers to function as institutions of self-government.",
+    "punishment": "Administrative empowerment.",
+    "keywords": [
+      "urban self government",
+      "municipal powers",
+      "article 243W"
+    ]
+  },
+  {
+    "id": "ART_243X",
+    "title": "Financial Powers of Municipalities (Article 243X)",
+    "description": "Municipalities may levy and collect taxes, duties, tolls, and fees.",
+    "punishment": "Subject to State legislation.",
+    "keywords": [
+      "municipal taxation",
+      "finance",
+      "article 243X"
+    ]
+  },
+  {
+    "id": "ART_243Y",
+    "title": "Finance Commission for Municipalities (Article 243Y)",
+    "description": "State Finance Commission reviews financial position of Municipalities every five years.",
+    "punishment": "Mandatory fiscal review.",
+    "keywords": [
+      "finance commission",
+      "municipal funds",
+      "article 243Y"
+    ]
+  },
+  {
+    "id": "ART_243Z",
+    "title": "Audit of Municipal Accounts (Article 243Z)",
+    "description": "State Legislature may provide for audit of Municipal accounts.",
+    "punishment": "Financial accountability.",
+    "keywords": [
+      "audit",
+      "municipal accounts",
+      "article 243Z"
+    ]
+  },
+  {
+    "id": "ART_243ZA",
+    "title": "Municipal Elections (Article 243ZA)",
+    "description": "Municipal elections are conducted by the State Election Commission.",
+    "punishment": "Independent electoral process.",
+    "keywords": [
+      "municipal elections",
+      "state election commission",
+      "article 243ZA"
+    ]
+  },
+  {
+    "id": "ART_243ZB",
+    "title": "Application to Union Territories (Article 243ZB)",
+    "description": "Provisions of Part IXA apply to Union Territories with modifications.",
+    "punishment": "As provided by Parliament.",
+    "keywords": [
+      "union territories",
+      "municipalities",
+      "article 243ZB"
+    ]
+  },
+  {
+    "id": "ART_243ZC",
+    "title": "Exemptions from Part IXA (Article 243ZC)",
+    "description": "Certain areas like Scheduled Areas and tribal regions are exempted.",
+    "punishment": "Constitutional exemption.",
+    "keywords": [
+      "scheduled areas",
+      "exemptions",
+      "article 243ZC"
+    ]
+  },
+  {
+    "id": "ART_243ZD",
+    "title": "District Planning Committee (Article 243ZD)",
+    "description": "District Planning Committees consolidate plans prepared by Panchayats and Municipalities.",
+    "punishment": "Planning coordination mandate.",
+    "keywords": [
+      "district planning",
+      "local development",
+      "article 243ZD"
+    ]
+  },
+  {
+    "id": "ART_243ZE",
+    "title": "Metropolitan Planning Committee (Article 243ZE)",
+    "description": "Metropolitan Planning Committees prepare development plans for metropolitan areas.",
+    "punishment": "Urban planning authority.",
+    "keywords": [
+      "metropolitan planning",
+      "urban development",
+      "article 243ZE"
+    ]
+  },
+  {
+    "id": "ART_243ZF",
+    "title": "Continuance of Existing Laws (Article 243ZF)",
+    "description": "Existing municipal laws continue until amended or repealed.",
+    "punishment": "Transitional provision.",
+    "keywords": [
+      "existing laws",
+      "municipal transition",
+      "article 243ZF"
+    ]
+  },
+  {
+    "id": "ART_243ZG",
+    "title": "Bar on Court Interference (Article 243ZG)",
+    "description": "Courts cannot interfere in municipal election matters except through election petitions.",
+    "punishment": "Judicial restriction.",
+    "keywords": [
+      "court bar",
+      "municipal elections",
+      "article 243ZG"
+    ]
+  },
+  {
+    "id": "ART_243ZH",
+    "title": "Definitions (Article 243ZH)",
+    "description": "Defines terms such as co-operative society, board, office bearer, and member for Part IXB.",
+    "punishment": "Not applicable (definitions).",
+    "keywords": [
+      "cooperative society",
+      "definitions",
+      "article 243ZH"
+    ]
+  },
+  {
+    "id": "ART_243ZI",
+    "title": "Incorporation of Co-operative Societies (Article 243ZI)",
+    "description": "State Legislature may make laws for incorporation, regulation, and winding up of co-operative societies.",
+    "punishment": "Regulated by State law.",
+    "keywords": [
+      "cooperative incorporation",
+      "state law",
+      "article 243ZI"
+    ]
+  },
+  {
+    "id": "ART_243ZJ",
+    "title": "Board Members and Tenure (Article 243ZJ)",
+    "description": "Fixes maximum number of directors and a five-year term for the board of co-operative societies.",
+    "punishment": "Mandatory board structure.",
+    "keywords": [
+      "cooperative board",
+      "five year term",
+      "article 243ZJ"
+    ]
+  },
+  {
+    "id": "ART_243ZK",
+    "title": "Election of Co-operative Board (Article 243ZK)",
+    "description": "Elections to the board shall be conducted before expiry of the term.",
+    "punishment": "Compulsory timely elections.",
+    "keywords": [
+      "cooperative elections",
+      "board election",
+      "article 243ZK"
+    ]
+  },
+  {
+    "id": "ART_243ZL",
+    "title": "Supersession of Co-operative Board (Article 243ZL)",
+    "description": "Board may be superseded for a limited period under specified conditions.",
+    "punishment": "Temporary loss of board powers.",
+    "keywords": [
+      "supersession",
+      "cooperative board",
+      "article 243ZL"
+    ]
+  },
+  {
+    "id": "ART_243ZM",
+    "title": "Audit of Co-operative Societies (Article 243ZM)",
+    "description": "Accounts of co-operative societies shall be audited by qualified auditors.",
+    "punishment": "Financial accountability.",
+    "keywords": [
+      "audit",
+      "cooperative accounts",
+      "article 243ZM"
+    ]
+  },
+  {
+    "id": "ART_243ZN",
+    "title": "General Body Meetings (Article 243ZN)",
+    "description": "Annual General Body Meeting must be convened within a prescribed period.",
+    "punishment": "Mandatory compliance.",
+    "keywords": [
+      "general body meeting",
+      "cooperative society",
+      "article 243ZN"
+    ]
+  },
+  {
+    "id": "ART_243ZO",
+    "title": "Right to Information (Article 243ZO)",
+    "description": "Members have access to information relating to the functioning of co-operative societies.",
+    "punishment": "Transparency obligation.",
+    "keywords": [
+      "right to information",
+      "cooperative members",
+      "article 243ZO"
+    ]
+  },
+  {
+    "id": "ART_243ZP",
+    "title": "Submission of Returns (Article 243ZP)",
+    "description": "Co-operative societies must submit annual returns to authorities.",
+    "punishment": "Statutory reporting requirement.",
+    "keywords": [
+      "returns",
+      "cooperative reporting",
+      "article 243ZP"
+    ]
+  },
+  {
+    "id": "ART_243ZQ",
+    "title": "Offences in Co-operative Societies (Article 243ZQ)",
+    "description": "State law may specify offences and penalties for co-operative societies.",
+    "punishment": "Penalties as prescribed by law.",
+    "keywords": [
+      "offences",
+      "penalties",
+      "article 243ZQ"
+    ]
+  },
+  {
+    "id": "ART_243ZR",
+    "title": "Multi-State Co-operative Societies (Article 243ZR)",
+    "description": "Provisions apply to multi-state co-operative societies subject to Central law.",
+    "punishment": "Governed by Central legislation.",
+    "keywords": [
+      "multi state cooperative",
+      "central law",
+      "article 243ZR"
+    ]
+  },
+  {
+    "id": "ART_243ZS",
+    "title": "Application to Union Territories (Article 243ZS)",
+    "description": "Provisions of Part IXB apply to Union Territories with modifications.",
+    "punishment": "As prescribed by Parliament.",
+    "keywords": [
+      "union territories",
+      "cooperative societies",
+      "article 243ZS"
+    ]
+  },
+  {
+    "id": "ART_243ZT",
+    "title": "Continuance of Existing Laws (Article 243ZT)",
+    "description": "Existing co-operative laws continue until amended or repealed.",
+    "punishment": "Transitional provision.",
+    "keywords": [
+      "existing laws",
+      "cooperative transition",
+      "article 243ZT"
+    ]
+  },
+  {
+    "id": "ART_244",
+    "title": "Administration of Scheduled and Tribal Areas (Article 244)",
+    "description": "Provides that Scheduled Areas and Tribal Areas shall be administered in accordance with the Fifth and Sixth Schedules of the Constitution.",
+    "punishment": "Special constitutional governance framework.",
+    "keywords": [
+      "scheduled areas",
+      "tribal areas",
+      "fifth schedule",
+      "sixth schedule",
+      "article 244"
+    ]
+  },
+  {
+    "id": "ART_244A",
+    "title": "Autonomous State in Assam (Article 244A)",
+    "description": "Parliament may form an autonomous State within Assam comprising certain tribal areas and provide for a legislature or council of ministers.",
+    "punishment": "Special legislative arrangement.",
+    "keywords": [
+      "assam autonomous state",
+      "tribal areas",
+      "article 244A"
+    ]
+  },
+  {
+    "id": "ART_245",
+    "title": "Extent of Laws (Article 245)",
+    "description": "Parliament may make laws for the whole or any part of India; State Legislatures may make laws for their respective States.",
+    "punishment": "Legislative competence defined.",
+    "keywords": [
+      "parliament laws",
+      "state laws",
+      "article 245"
+    ]
+  },
+  {
+    "id": "ART_246",
+    "title": "Distribution of Legislative Powers (Article 246)",
+    "description": "Divides legislative subjects into Union List, State List, and Concurrent List under the Seventh Schedule.",
+    "punishment": "Constitutional division of powers.",
+    "keywords": [
+      "union list",
+      "state list",
+      "concurrent list",
+      "article 246"
+    ]
+  },
+  {
+    "id": "ART_246A",
+    "title": "Special Provision for Goods and Services Tax (Article 246A)",
+    "description": "Parliament and State Legislatures have concurrent powers to make laws regarding GST.",
+    "punishment": "Fiscal authority framework.",
+    "keywords": [
+      "gst",
+      "taxation",
+      "article 246A"
+    ]
+  },
+  {
+    "id": "ART_247",
+    "title": "Power to Establish Additional Courts (Article 247)",
+    "description": "Parliament may establish courts for better administration of laws made by it.",
+    "punishment": "Judicial expansion authority.",
+    "keywords": [
+      "additional courts",
+      "parliament powers",
+      "article 247"
+    ]
+  },
+  {
+    "id": "ART_248",
+    "title": "Residuary Powers (Article 248)",
+    "description": "Parliament has exclusive power to legislate on matters not enumerated in any list.",
+    "punishment": "Union supremacy.",
+    "keywords": [
+      "residuary powers",
+      "parliament",
+      "article 248"
+    ]
+  },
+  {
+    "id": "ART_249",
+    "title": "Parliament’s Power in National Interest (Article 249)",
+    "description": "Parliament may legislate on State List matters if Rajya Sabha passes a resolution in national interest.",
+    "punishment": "Temporary Union law supremacy.",
+    "keywords": [
+      "national interest",
+      "rajya sabha",
+      "article 249"
+    ]
+  },
+  {
+    "id": "ART_250",
+    "title": "Parliament’s Power During Emergency (Article 250)",
+    "description": "Parliament may legislate on State List matters during a national emergency.",
+    "punishment": "Emergency legislative authority.",
+    "keywords": [
+      "emergency powers",
+      "state list",
+      "article 250"
+    ]
+  },
+  {
+    "id": "ART_251",
+    "title": "Union Law Prevails in Case of Conflict (Article 251)",
+    "description": "Union law prevails over State law on matters under Articles 249 and 250.",
+    "punishment": "Union law supremacy.",
+    "keywords": [
+      "union supremacy",
+      "conflict of laws",
+      "article 251"
+    ]
+  },
+  {
+    "id": "ART_252",
+    "title": "Parliament’s Power with State Consent (Article 252)",
+    "description": "Parliament may legislate for two or more States with their consent on State List matters.",
+    "punishment": "Consent-based legislation.",
+    "keywords": [
+      "state consent",
+      "parliament law",
+      "article 252"
+    ]
+  },
+  {
+    "id": "ART_253",
+    "title": "Legislation for International Treaties (Article 253)",
+    "description": "Parliament may make laws to implement international treaties and agreements.",
+    "punishment": "International obligation authority.",
+    "keywords": [
+      "international treaties",
+      "parliament power",
+      "article 253"
+    ]
+  },
+  {
+    "id": "ART_254",
+    "title": "Repugnancy Between Union and State Laws (Article 254)",
+    "description": "Union law prevails over State law in case of inconsistency in Concurrent List matters.",
+    "punishment": "Union law supremacy unless President assents.",
+    "keywords": [
+      "repugnancy",
+      "concurrent list",
+      "article 254"
+    ]
+  },
+  {
+    "id": "ART_255",
+    "title": "Procedural Requirements for Certain Bills (Article 255)",
+    "description": "Failure to comply with recommendation requirements does not invalidate an Act.",
+    "punishment": "Procedural safeguard.",
+    "keywords": [
+      "legislative procedure",
+      "recommendation",
+      "article 255"
+    ]
+  }
+]
