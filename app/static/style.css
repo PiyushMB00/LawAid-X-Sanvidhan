@@ -4,27 +4,27 @@
   --bg-lighter: #1e293b;
   --bg-alternate: #0b1120;
   --bg-tertiary: #334155;
-  
+
   /* Accent Colors */
   --primary-blue: #1e40af;
   --primary-blue-light: #3b82f6;
   --primary-blue-dark: #1e3a8a;
   --accent-color: #3b82f6;
-  
+
   /* Gold Accents */
   --gold-color: #d4af37;
   --gold-light: #f59e0b;
-  
+
   /* Text Colors */
   --text-color: #ffffff;
   --text-muted: #94a3b8;
   --text-secondary: #cbd5e1;
-  
+
   /* Surface Colors */
   --surface-white: #ffffff;
   --surface-light: #f8fafc;
   --surface-card: #ffffff;
-  
+
   /* Compatibility */
   --primary-color: #3b82f6;
   --primary-dark: #2563eb;
@@ -55,7 +55,12 @@ body {
 }
 
 /* Premium Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -288,7 +293,8 @@ nav a:hover::after {
   margin-top: 2.5rem;
 }
 
-.cta-primary, .cta-secondary {
+.cta-primary,
+.cta-secondary {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
@@ -327,7 +333,8 @@ nav a:hover::after {
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
 }
 
-.cta-primary ion-icon, .cta-secondary ion-icon {
+.cta-primary ion-icon,
+.cta-secondary ion-icon {
   font-size: 1.3rem;
 }
 
@@ -369,18 +376,47 @@ nav a:hover::after {
 }
 
 /* Global Grid System */
-.grid-1 { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
-.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
 
 @media (max-width: 1024px) {
-  .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+
+  .grid-4,
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Premium Cards Grid */
@@ -403,7 +439,7 @@ nav a:hover::after {
   text-decoration: none;
   display: block;
   border: 1px solid rgba(59, 130, 246, 0.2);
-  box-shadow: 
+  box-shadow:
     0 4px 6px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.15);
   position: relative;
@@ -429,7 +465,7 @@ nav a:hover::after {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 
+  box-shadow:
     0 12px 24px rgba(59, 130, 246, 0.25),
     0 20px 40px rgba(0, 0, 0, 0.25);
   border-color: rgba(59, 130, 246, 0.5);
@@ -737,7 +773,7 @@ footer {
     gap: 1.5rem;
     padding: 0 1.5rem 2rem;
   }
-  
+
   .card {
     padding: 2rem 1.5rem;
   }
@@ -856,12 +892,10 @@ footer {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
   transition: left 0.5s ease;
 }
 
@@ -895,11 +929,9 @@ footer {
 }
 
 .info-box {
-  background: linear-gradient(
-    135deg,
-    rgba(59, 130, 246, 0.15),
-    rgba(79, 70, 229, 0.15)
-  );
+  background: linear-gradient(135deg,
+      rgba(59, 130, 246, 0.15),
+      rgba(79, 70, 229, 0.15));
   border-left: 5px solid #3b82f6;
   border-radius: 12px;
   padding: 2rem;
@@ -1011,7 +1043,7 @@ footer {
   line-height: 1.4;
 }
 
-.article-card > p {
+.article-card>p {
   color: var(--text-muted);
   font-size: 0.98rem;
   line-height: 1.7;
@@ -1116,6 +1148,7 @@ footer {
     padding: 1.5rem;
   }
 }
+
 .document-generator-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -1253,6 +1286,7 @@ footer {
   background: var(--primary-dark);
   transform: scale(1.02);
 }
+
 .rightnow-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1392,11 +1426,9 @@ footer {
 }
 
 .quick-link-btn {
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--primary-dark)
-  );
+  background: linear-gradient(135deg,
+      var(--primary-color),
+      var(--primary-dark));
   color: white;
   padding: 1rem;
   border-radius: 8px;
