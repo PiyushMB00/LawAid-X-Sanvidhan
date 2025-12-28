@@ -79,9 +79,11 @@ header {
   -webkit-backdrop-filter: blur(12px);
 }
 
-.logo {
+.logo a {
   display: flex;
   align-items: center;
+  gap: 1rem;
+  text-decoration: none;
 }
 
 .logo img {
@@ -90,12 +92,23 @@ header {
   border-radius: 8px;
   padding: 4px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  filter: drop-shadow(0 2px 8px rgba(212, 175, 55, 0.2));
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #ffffff, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
 .logo img:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 4px 12px rgba(212, 175, 55, 0.3));
 }
 
 nav {

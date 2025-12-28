@@ -14,11 +14,21 @@ load_dotenv(override=True)
 if not os.getenv("GEMINI_API_KEY"):
     print("WARNING: GEMINI_API_KEY not found in environment variables!")
 
+# Helper for cache busting and safe routing
+def get_url_for(name, **kwargs):
+    if name == "static":
+        filename = kwargs.get("filename", "")
+        return f"/static/{filename}?v=1.5"
+    # Fallback for non-static routes if needed, though usually FastAPI's own url_for should be used
+    return "#"
+
 app = FastAPI(title="Lawaid X Sanvidhan Backend")
 
 templates = Jinja2Templates(directory="app/templates")
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
-templates.env.globals["url_for"] = lambda name, **kwargs: f"/{name}/{kwargs.get('filename', '')}?v=1.4" if name == "static" else "#"
+
+# Safer template global for site-wide static versioning
+templates.env.globals["url_for"] = get_url_for
 
 @app.get("/api/version")
 async def get_version():
