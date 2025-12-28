@@ -11,7 +11,7 @@ app = FastAPI(title="Lawaid X Sanvidhan Backend")
 
 templates = Jinja2Templates(directory="app/templates")
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
-templates.env.globals["url_for"] = lambda name, **kwargs: f"/{name}/{kwargs.get('filename', '')}?v=1.3" if name == "static" else "#"
+templates.env.globals["url_for"] = lambda name, **kwargs: f"/{name}/{kwargs.get('filename', '')}?v=1.4" if name == "static" else "#"
 
 @app.get("/api/version")
 async def get_version():
