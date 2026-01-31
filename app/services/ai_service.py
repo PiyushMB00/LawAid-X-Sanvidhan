@@ -33,7 +33,7 @@ def search_laws(query: str):
     for law in LAWS_DB:
         # Simple keyword match in database
         if any(k in query for k in law.get("keywords", [])) or \
-           law["title"].lower() in query:
+           law.get("title", "").lower() in query:
             results.append(law)
     return results
 
@@ -44,7 +44,7 @@ def get_ai_response(question: str):
     if relevant_laws:
         context_text = "\n\nRelevant Legal Context found in database:\n"
         for law in relevant_laws:
-            context_text += f"- {law['title']}: {law['description']} (Punishment: {law['punishment']})\n"
+            context_text += f"- {law.get('title', 'Unknown')}: {law.get('description', 'N/A')} (Punishment: {law.get('punishment', 'N/A')})\n"
     
     prompt = f"""
     You are a legal awareness assistant for India.
