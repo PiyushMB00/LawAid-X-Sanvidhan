@@ -1,4 +1,5 @@
 [
+
   {
     "id": "IPC_378",
     "title": "Theft (IPC Section 378)",
@@ -286,6 +287,391 @@
       "religion"
     ]
   },
+
+    {
+        "id": "IPC_378",
+        "title": "Theft (IPC Section 378)",
+        "description": "Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.",
+        "punishment": "IPC Section 379: Imprisonment of up to 3 years, or fine, or both.",
+        "keywords": [
+            "theft",
+            "steal",
+            "stealing",
+            "robbery",
+            "stolen",
+            "moveable property"
+        ]
+    },
+    {
+        "id": "MV_161",
+        "title": "Hit and Run (Motor Vehicles Act Section 161)",
+        "description": "Compensation for death or injury in hit and run cases. The law mandates compensation for victims of hit-and-run motor accidents.",
+        "punishment": "Imprisonment, heavy fines, and seizure of vehicle depending on severity.",
+        "keywords": [
+            "hit and run",
+            "accident",
+            "car crash",
+            "compensation",
+            "vehicle"
+        ]
+    },
+    {
+        "id": "IPC_302",
+        "title": "Punishment for Murder (IPC Section 302)",
+        "description": "Whoever commits murder shall be punished with death, or imprisonment for life, and shall also be liable to fine.",
+        "punishment": "Death or Life Imprisonment + Fine",
+        "keywords": [
+            "murder",
+            "kill",
+            "homicide",
+            "death"
+        ]
+    },
+    {
+        "id": "DK_BASU",
+        "title": "D.K. Basu Guidelines (Arrest Rights)",
+        "description": "Guidelines that police must follow during arrest and detention: 1. Police must identify themselves clearly. 2. Memo of arrest must be prepared. 3. Family/friend must be informed. 4. Right to lawyer during interrogation.",
+        "punishment": "Departmental action and contempt of court for police officers violating these.",
+        "keywords": [
+            "arrest",
+            "police",
+            "custody",
+            "detention",
+            "rights",
+            "lawyer"
+        ]
+    },
+    {
+        "id": "RTE_2009",
+        "title": "Right to Education Act 2009",
+        "description": "Every child between the ages of 6 to 14 years has the right to free and compulsory education.",
+        "punishment": "Schools can be fined or derecognized for non-compliance.",
+        "keywords": [
+            "education",
+            "fee",
+            "school",
+            "child",
+            "study"
+        ]
+    },
+
+  {
+    "id": "PART_1_ARTICLE_1",
+    "title": "Article 1 – Name and Territory of the Union",
+    "description": "Declares India as a 'Union of States' and defines its territorial composition including states, union territories, and acquired territories.",
+    "impact": "Establishes India’s political identity and territorial structure.",
+    "keywords": ["union of states", "territory", "india structure", "federal system"]
+  },
+  {
+    "id": "PART_1_ARTICLE_2",
+    "title": "Article 2 – Admission or Establishment of New States",
+    "description": "Empowers Parliament to admit new states into the Union or establish new states.",
+    "impact": "Provides flexibility for expansion or reorganization of India’s territory.",
+    "keywords": ["new states", "parliament power", "territorial expansion"]
+  },
+  {
+    "id": "PART_1_ARTICLE_3",
+    "title": "Article 3 – Formation of New States and Alteration of Areas",
+    "description": "Allows Parliament to form new states or alter boundaries, areas, or names of existing states.",
+    "impact": "Enabled major state reorganizations and boundary changes.",
+    "keywords": ["state reorganization", "boundary change", "state formation"]
+  },
+  {
+    "id": "PART_1_ARTICLE_4",
+    "title": "Article 4 – Laws under Articles 2 and 3",
+    "description": "Provides that laws made under Articles 2 and 3 may include supplemental provisions and are not considered constitutional amendments.",
+    "impact": "Simplifies legal procedures for state reorganization.",
+    "keywords": ["supplemental law", "state reorganization", "parliament authority"]
+  },
+
+
+  {
+    "id": "PART_2_ARTICLE_5",
+    "title": "Article 5 – Citizenship at the commencement of the Constitution",
+    "description": "Defines who became citizens of India on 26 January 1950 based on domicile, birth, descent, or residence.",
+    "impact": "Established initial citizenship framework at the time of independence.",
+    "keywords": ["citizenship", "commencement", "domicile", "birth", "residence"]
+  },
+  {
+    "id": "PART_2_ARTICLE_6",
+    "title": "Article 6 – Citizenship of persons migrated from Pakistan to India",
+    "description": "Provides citizenship rights to migrants from Pakistan before and after 19 July 1948 with specific conditions and registration.",
+    "impact": "Protected rights of refugees and migrants after partition.",
+    "keywords": ["migration", "Pakistan", "registration", "partition", "citizenship"]
+  },
+  {
+    "id": "PART_2_ARTICLE_7",
+    "title": "Article 7 – Citizenship of persons migrated to Pakistan",
+    "description": "Denied citizenship to those who migrated to Pakistan after partition unless they returned with a resettlement permit.",
+    "impact": "Clarified citizenship status of partition migrants.",
+    "keywords": ["migration", "Pakistan", "resettlement permit", "citizenship rules"]
+  },
+  {
+    "id": "PART_2_ARTICLE_8",
+    "title": "Article 8 – Citizenship of persons of Indian origin residing outside India",
+    "description": "Allows persons of Indian origin living abroad to register as Indian citizens through diplomatic representatives.",
+    "impact": "Maintained legal connection with Indian diaspora.",
+    "keywords": ["Indian origin", "diaspora", "foreign residence", "registration"]
+  },
+  {
+    "id": "PART_2_ARTICLE_9",
+    "title": "Article 9 – Voluntary acquisition of foreign citizenship",
+    "description": "States that any person voluntarily acquiring foreign citizenship will lose Indian citizenship.",
+    "impact": "Prohibited dual citizenship under the Constitution.",
+    "keywords": ["foreign citizenship", "dual citizenship", "nationality"]
+  },
+  {
+    "id": "PART_2_ARTICLE_10",
+    "title": "Article 10 – Continuance of citizenship",
+    "description": "Ensures continued citizenship rights subject to laws made by Parliament.",
+    "impact": "Provided stability to citizenship status.",
+    "keywords": ["continuance", "citizenship rights", "parliamentary law"]
+  },
+  {
+    "id": "PART_2_ARTICLE_11",
+    "title": "Article 11 – Parliament’s power to regulate citizenship",
+    "description": "Empowers Parliament to make laws regarding acquisition and termination of citizenship.",
+    "impact": "Led to enactment of the Citizenship Act, 1955.",
+    "keywords": ["parliament power", "citizenship act", "regulation"]
+  },
+
+    {
+  "id": "ART_12",
+  "title": "Definition of State (Article 12)",
+  "description": "Defines the term 'State' to include the Government, Parliament, State Legislatures, local authorities, and other bodies under government control for the purpose of enforcing Fundamental Rights.",
+  "punishment": "Any violation of Fundamental Rights by the State can be challenged in court.",
+  "keywords": [
+    "state definition",
+    "government authority",
+    "fundamental rights",
+    "article 12",
+    "public authority"
+  ]
+},
+
+{
+  "id": "ART_13",
+  "title": "Laws Inconsistent with Fundamental Rights (Article 13)",
+  "description": "Declares that any law inconsistent with or violating Fundamental Rights shall be void to the extent of such inconsistency.",
+  "punishment": "Unconstitutional laws can be struck down by courts.",
+  "keywords": [
+    "unconstitutional law",
+    "fundamental rights violation",
+    "judicial review",
+    "article 13",
+    "void law"
+  ]
+},
+
+{
+  "id": "ART_14",
+  "title": "Equality Before Law (Article 14)",
+  "description": "Ensures equality before the law and equal protection of laws to all persons within the territory of India.",
+  "punishment": "Discriminatory actions can be challenged in High Court or Supreme Court.",
+  "keywords": [
+    "equality",
+    "equal protection",
+    "non discrimination",
+    "article 14",
+    "rule of law"
+  ]
+},
+
+{
+  "id": "ART_15",
+  "title": "Prohibition of Discrimination (Article 15)",
+  "description": "Prohibits discrimination by the State on grounds of religion, race, caste, sex, or place of birth.",
+  "punishment": "Discriminatory practices can be declared unconstitutional.",
+  "keywords": [
+    "discrimination",
+    "caste",
+    "religion",
+    "gender equality",
+    "article 15"
+  ]
+},
+
+{
+  "id": "ART_16",
+  "title": "Equality in Public Employment (Article 16)",
+  "description": "Guarantees equal opportunity for all citizens in matters of employment or appointment to public offices.",
+  "punishment": "Unfair recruitment practices can be challenged in court.",
+  "keywords": [
+    "government jobs",
+    "equal opportunity",
+    "public employment",
+    "reservation",
+    "article 16"
+  ]
+},
+
+{
+  "id": "ART_17",
+  "title": "Abolition of Untouchability (Article 17)",
+  "description": "Abolishes untouchability in all forms and forbids its practice in any manner.",
+  "punishment": "Punishable under the Protection of Civil Rights Act, 1955.",
+  "keywords": [
+    "untouchability",
+    "social justice",
+    "caste discrimination",
+    "article 17",
+    "human dignity"
+  ]
+},
+{
+  "id": "ART_18",
+  "title": "Abolition of Titles (Article 18)",
+  "description": "Prohibits the State from conferring titles except military or academic distinctions.",
+  "punishment": "Illegal titles have no constitutional validity.",
+  "keywords": [
+    "abolition of titles",
+    "equality",
+    "honors",
+    "article 18",
+    "nobility"
+  ]
+},
+
+{
+  "id": "ART_19",
+  "title": "Protection of Certain Freedoms (Article 19)",
+  "description": "Guarantees freedoms of speech, assembly, association, movement, residence, and profession subject to reasonable restrictions.",
+  "punishment": "Unreasonable restrictions can be struck down by courts.",
+  "keywords": [
+    "freedom of speech",
+    "movement",
+    "profession",
+    "association",
+    "article 19"
+  ]
+},
+
+{
+  "id": "ART_20",
+  "title": "Protection in Criminal Convictions (Article 20)",
+  "description": "Protects individuals from retrospective punishment, double jeopardy, and self-incrimination.",
+  "punishment": "Illegal convictions can be quashed by courts.",
+  "keywords": [
+    "double jeopardy",
+    "self incrimination",
+    "criminal protection",
+    "article 20",
+    "fair trial"
+  ]
+},
+
+{
+  "id": "ART_21",
+  "title": "Right to Life and Personal Liberty (Article 21)",
+  "description": "No person shall be deprived of life or personal liberty except according to procedure established by law. It includes dignity, privacy, health, and speedy justice.",
+  "punishment": "Compensation and action against authorities for violations.",
+  "keywords": [
+    "right to life",
+    "personal liberty",
+    "privacy",
+    "human dignity",
+    "article 21"
+  ]
+},
+
+{
+  "id": "ART_21A",
+  "title": "Right to Education (Article 21A)",
+  "description": "Provides free and compulsory education to all children between 6 and 14 years of age.",
+  "punishment": "State authorities and schools can be penalized for non-compliance.",
+  "keywords": [
+    "education",
+    "children rights",
+    "free schooling",
+    "article 21A",
+    "learning"
+  ]
+},
+
+{
+  "id": "ART_22",
+  "title": "Rights of Arrested Persons (Article 22)",
+  "description": "Provides safeguards such as the right to be informed of grounds of arrest and the right to consult a lawyer.",
+  "punishment": "Illegal detention can result in compensation and disciplinary action.",
+  "keywords": [
+    "arrest rights",
+    "custody",
+    "lawyer",
+    "illegal detention",
+    "article 22"
+  ]
+},
+
+{
+  "id": "ART_23",
+  "title": "Prohibition of Human Trafficking and Forced Labour (Article 23)",
+  "description": "Prohibits human trafficking, begar (forced labour), and other similar forms of exploitation.",
+  "punishment": "Punishable under laws such as the Immoral Traffic (Prevention) Act and Bonded Labour System (Abolition) Act.",
+  "keywords": [
+    "human trafficking",
+    "forced labour",
+    "begar",
+    "exploitation",
+    "article 23"
+  ]
+},
+
+{
+  "id": "ART_24",
+  "title": "Prohibition of Child Labour (Article 24)",
+  "description": "Prohibits employment of children below 14 years of age in factories, mines, or hazardous occupations.",
+  "punishment": "Punishable under the Child Labour (Prohibition and Regulation) Act.",
+  "keywords": [
+    "child labour",
+    "children rights",
+    "hazardous work",
+    "article 24",
+    "exploitation"
+  ]
+},
+
+{
+  "id": "ART_25",
+  "title": "Freedom of Religion (Article 25)",
+  "description": "Guarantees freedom of conscience and the right to freely profess, practice, and propagate religion, subject to public order, morality, and health.",
+  "punishment": "Unlawful restrictions can be struck down by courts.",
+  "keywords": [
+    "freedom of religion",
+    "conscience",
+    "religious practice",
+    "article 25",
+    "secularism"
+  ]
+},
+
+{
+  "id": "ART_26",
+  "title": "Freedom to Manage Religious Affairs (Article 26)",
+  "description": "Gives religious denominations the right to manage their own affairs in matters of religion.",
+  "punishment": "State interference beyond constitutional limits can be challenged in court.",
+  "keywords": [
+    "religious denomination",
+    "temple management",
+    "religious affairs",
+    "article 26",
+    "freedom"
+  ]
+},
+
+{
+  "id": "ART_27",
+  "title": "Freedom from Payment of Religious Taxes (Article 27)",
+  "description": "Prohibits the State from compelling any person to pay taxes for the promotion or maintenance of any particular religion.",
+  "punishment": "Illegal taxation can be declared unconstitutional.",
+  "keywords": [
+    "religious tax",
+    "secular state",
+    "tax freedom",
+    "article 27",
+    "religion"
+  ]
+},
+
   {
     "id": "ART_28",
     "title": "Freedom from Religious Instruction (Article 28)",
@@ -4106,6 +4492,2623 @@
       "governor immunity"
     ]
   },
+ 
+
+{
+  "id": "ART_124",
+  "title": "Establishment of Supreme Court (Article 124)",
+  "description": "There shall be a Supreme Court of India consisting of the Chief Justice of India and other judges as Parliament may prescribe.",
+  "punishment": "Judges removable only by impeachment.",
+  "keywords": [
+    "supreme court",
+    "chief justice",
+    "judges",
+    "article 124",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_124A",
+  "title": "National Judicial Appointments Commission (Article 124A)",
+  "description": "Provided for the establishment of NJAC for appointment of judges (declared unconstitutional).",
+  "punishment": "Struck down by Supreme Court.",
+  "keywords": [
+    "NJAC",
+    "judge appointment",
+    "article 124A",
+    "judiciary",
+    "constitution"
+  ]
+},
+
+{
+  "id": "ART_124C",
+  "title": "Parliamentary Power on NJAC (Article 124C)",
+  "description": "Allowed Parliament to regulate NJAC procedures (no longer valid).",
+  "punishment": "Not applicable.",
+  "keywords": [
+    "NJAC",
+    "parliament power",
+    "article 124C",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_125",
+  "title": "Salaries of Supreme Court Judges (Article 125)",
+  "description": "Judges of the Supreme Court receive salaries and allowances charged on the Consolidated Fund of India.",
+  "punishment": "Cannot be reduced except during financial emergency.",
+  "keywords": [
+    "judge salary",
+    "supreme court",
+    "article 125",
+    "finance",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_126",
+  "title": "Acting Chief Justice (Article 126)",
+  "description": "President may appoint an acting Chief Justice when the office is vacant or CJI is unable to perform duties.",
+  "punishment": "Temporary appointment only.",
+  "keywords": [
+    "acting chief justice",
+    "supreme court",
+    "article 126",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_127",
+  "title": "Ad Hoc Judges (Article 127)",
+  "description": "Chief Justice may appoint High Court judges as ad hoc Supreme Court judges with President’s consent.",
+  "punishment": "Temporary judicial appointment.",
+  "keywords": [
+    "ad hoc judges",
+    "supreme court",
+    "article 127",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_128",
+  "title": "Retired Judges Sitting in Supreme Court (Article 128)",
+  "description": "Retired Supreme Court judges may sit and act as judges with consent.",
+  "punishment": "No permanent status.",
+  "keywords": [
+    "retired judges",
+    "supreme court",
+    "article 128",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_129",
+  "title": "Supreme Court as Court of Record (Article 129)",
+  "description": "Supreme Court has power to punish for contempt of itself.",
+  "punishment": "Contempt proceedings.",
+  "keywords": [
+    "court of record",
+    "contempt",
+    "article 129",
+    "supreme court",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_130",
+  "title": "Seat of Supreme Court (Article 130)",
+  "description": "Supreme Court shall sit in Delhi or such other place as the Chief Justice may appoint.",
+  "punishment": "Administrative decision.",
+  "keywords": [
+    "supreme court seat",
+    "delhi",
+    "article 130",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_131",
+  "title": "Original Jurisdiction of Supreme Court (Article 131)",
+  "description": "Supreme Court decides disputes between Union and States.",
+  "punishment": "Binding judgment.",
+  "keywords": [
+    "original jurisdiction",
+    "centre state dispute",
+    "article 131",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_132",
+  "title": "Appellate Jurisdiction in Constitutional Matters (Article 132)",
+  "description": "Appeals to Supreme Court in constitutional matters from High Courts.",
+  "punishment": "Judgment final.",
+  "keywords": [
+    "appellate jurisdiction",
+    "constitutional appeal",
+    "article 132",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_133",
+  "title": "Civil Appeals to Supreme Court (Article 133)",
+  "description": "Provides appellate jurisdiction in civil cases from High Courts.",
+  "punishment": "Judgment binding.",
+  "keywords": [
+    "civil appeal",
+    "high court",
+    "article 133",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_134",
+  "title": "Criminal Appeals to Supreme Court (Article 134)",
+  "description": "Allows criminal appeals to Supreme Court from High Courts.",
+  "punishment": "Final criminal adjudication.",
+  "keywords": [
+    "criminal appeal",
+    "death sentence",
+    "article 134",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_134A",
+  "title": "Certificate for Appeal to Supreme Court (Article 134A)",
+  "description": "High Court may certify cases fit for appeal to Supreme Court.",
+  "punishment": "Procedural provision.",
+  "keywords": [
+    "appeal certificate",
+    "high court",
+    "article 134A",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_135",
+  "title": "Jurisdiction Under Existing Laws (Article 135)",
+  "description": "Supreme Court has jurisdiction over matters previously under Federal Court.",
+  "punishment": "Continuity of jurisdiction.",
+  "keywords": [
+    "federal court",
+    "existing jurisdiction",
+    "article 135",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_136",
+  "title": "Special Leave Petition (Article 136)",
+  "description": "Supreme Court may grant special leave to appeal against any judgment.",
+  "punishment": "Discretionary power.",
+  "keywords": [
+    "SLP",
+    "special leave",
+    "article 136",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_137",
+  "title": "Review of Supreme Court Judgments (Article 137)",
+  "description": "Supreme Court has power to review its own judgments.",
+  "punishment": "Exceptional remedy.",
+  "keywords": [
+    "review petition",
+    "supreme court",
+    "article 137",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_138",
+  "title": "Enlargement of Supreme Court Jurisdiction (Article 138)",
+  "description": "Parliament may extend Supreme Court’s jurisdiction.",
+  "punishment": "Subject to law.",
+  "keywords": [
+    "jurisdiction expansion",
+    "parliament",
+    "article 138",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_139",
+  "title": "Writ Powers Extension (Article 139)",
+  "description": "Parliament may empower Supreme Court to issue writs beyond Article 32.",
+  "punishment": "Statutory extension.",
+  "keywords": [
+    "writ powers",
+    "article 139",
+    "supreme court",
+    "fundamental rights"
+  ]
+},
+
+{
+  "id": "ART_139A",
+  "title": "Transfer of Cases (Article 139A)",
+  "description": "Supreme Court may transfer cases between High Courts.",
+  "punishment": "Judicial order.",
+  "keywords": [
+    "case transfer",
+    "high court",
+    "article 139A",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_140",
+  "title": "Ancillary Powers of Supreme Court (Article 140)",
+  "description": "Parliament may confer additional powers on Supreme Court.",
+  "punishment": "As per law.",
+  "keywords": [
+    "ancillary powers",
+    "parliament",
+    "article 140",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_141",
+  "title": "Binding Nature of Supreme Court Judgments (Article 141)",
+  "description": "Law declared by Supreme Court is binding on all courts in India.",
+  "punishment": "Mandatory compliance.",
+  "keywords": [
+    "binding precedent",
+    "article 141",
+    "supreme court",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_142",
+  "title": "Power to Do Complete Justice (Article 142)",
+  "description": "Supreme Court may pass any order necessary to do complete justice.",
+  "punishment": "Extraordinary constitutional power.",
+  "keywords": [
+    "complete justice",
+    "article 142",
+    "supreme court",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_143",
+  "title": "Advisory Jurisdiction (Article 143)",
+  "description": "President may seek Supreme Court’s opinion on questions of law.",
+  "punishment": "Opinion advisory, not binding.",
+  "keywords": [
+    "advisory opinion",
+    "president",
+    "article 143",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_144",
+  "title": "Authorities to Aid Supreme Court (Article 144)",
+  "description": "All authorities must act in aid of Supreme Court.",
+  "punishment": "Non-compliance may attract contempt.",
+  "keywords": [
+    "aid supreme court",
+    "authorities",
+    "article 144",
+    "judiciary"
+  ]
+},
+
+{
+  "id": "ART_145",
+  "title": "Rules of Supreme Court (Article 145)",
+  "description": "Supreme Court may frame rules for regulating its practice and procedure.",
+  "punishment": "Rules binding.",
+  "keywords": [
+    "court rules",
+    "procedure",
+    "article 145",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_146",
+  "title": "Officers of Supreme Court (Article 146)",
+  "description": "Appointments and service conditions of Supreme Court staff.",
+  "punishment": "Regulated by law.",
+  "keywords": [
+    "court staff",
+    "appointments",
+    "article 146",
+    "supreme court"
+  ]
+},
+
+{
+  "id": "ART_147",
+  "title": "Interpretation of Judicial Articles (Article 147)",
+  "description": "Defines scope of judicial references in Articles 124–147.",
+  "punishment": "Interpretative provision.",
+  "keywords": [
+    "interpretation",
+    "judicial scope",
+    "article 147",
+    "constitution"
+  ]
+},
+
+{
+  "id": "ART_148",
+  "title": "Comptroller and Auditor-General of India (Article 148)",
+  "description": "There shall be a Comptroller and Auditor-General of India appointed by the President to audit accounts of the Union and States.",
+  "punishment": "Removal only by impeachment like a Supreme Court judge.",
+  "keywords": [
+    "CAG",
+    "comptroller auditor general",
+    "article 148",
+    "financial audit",
+    "constitution"
+  ]
+},
+
+{
+  "id": "ART_149",
+  "title": "Duties and Powers of CAG (Article 149)",
+  "description": "Parliament shall prescribe the duties and powers of the Comptroller and Auditor-General.",
+  "punishment": "Audits enforce financial accountability.",
+  "keywords": [
+    "CAG duties",
+    "audit powers",
+    "article 149",
+    "public finance",
+    "accountability"
+  ]
+},
+
+{
+  "id": "ART_150",
+  "title": "Accounts of Union and States (Article 150)",
+  "description": "The accounts of the Union and States shall be kept in the form prescribed by the President on advice of the CAG.",
+  "punishment": "Ensures standardized accounting.",
+  "keywords": [
+    "government accounts",
+    "union states",
+    "article 150",
+    "public finance",
+    "audit"
+  ]
+},
+
+{
+  "id": "ART_151",
+  "title": "Audit Reports of CAG (Article 151)",
+  "description": "CAG’s audit reports relating to Union and States are submitted to the President or Governor and laid before the Legislature.",
+  "punishment": "Reports form basis for legislative scrutiny.",
+  "keywords": [
+    "audit report",
+    "CAG report",
+    "article 151",
+    "legislature",
+    "financial control"
+  ]
+},
+
+{
+  "id": "ART_152",
+  "title": "Definition (Article 152)",
+  "description": "In this Part, unless the context otherwise requires, the term 'State' does not include the State of Jammu and Kashmir.",
+  "punishment": "Not applicable (interpretation clause).",
+  "keywords": [
+    "state definition",
+    "article 152",
+    "constitutional interpretation",
+    "part vi"
+  ]
+},
+
+{
+  "id": "ART_153",
+  "title": "Governors of States (Article 153)",
+  "description": "There shall be a Governor for each State. One person can be appointed as Governor for two or more States.",
+  "punishment": "Not applicable (constitutional provision).",
+  "keywords": [
+    "governor",
+    "state executive",
+    "article 153",
+    "appointment",
+    "constitution"
+  ]
+},
+
+{
+  "id": "ART_154",
+  "title": "Executive Power of the State (Article 154)",
+  "description": "The executive power of the State shall be vested in the Governor and exercised by him directly or through officers subordinate to him.",
+  "punishment": "Not applicable (distribution of executive authority).",
+  "keywords": [
+    "executive power",
+    "governor",
+    "state administration",
+    "article 154"
+  ]
+},
+
+{
+  "id": "ART_155",
+  "title": "Appointment of Governor (Article 155)",
+  "description": "The Governor of a State shall be appointed by the President by warrant under his hand and seal.",
+  "punishment": "Not applicable (appointment provision).",
+  "keywords": [
+    "appointment of governor",
+    "president",
+    "article 155",
+    "state executive"
+  ]
+},
+
+{
+  "id": "ART_156",
+  "title": "Term of Office of Governor (Article 156)",
+  "description": "The Governor shall hold office during the pleasure of the President and normally for a term of five years.",
+  "punishment": "Removal at President’s pleasure.",
+  "keywords": [
+    "governor tenure",
+    "five years",
+    "article 156",
+    "president pleasure"
+  ]
+},
+
+{
+  "id": "ART_157",
+  "title": "Qualifications for Governor (Article 157)",
+  "description": "A person must be a citizen of India and must have completed 35 years of age to be eligible for appointment as Governor.",
+  "punishment": "Ineligibility if qualifications not met.",
+  "keywords": [
+    "governor qualification",
+    "citizen of india",
+    "article 157",
+    "age requirement"
+  ]
+},
+
+{
+  "id": "ART_158",
+  "title": "Conditions of Governor’s Office (Article 158)",
+  "description": "The Governor shall not be a member of Parliament or State Legislature and shall be entitled to official residence and emoluments.",
+  "punishment": "Office vacated if conditions violated.",
+  "keywords": [
+    "governor office",
+    "emoluments",
+    "article 158",
+    "disqualification"
+  ]
+},
+
+{
+  "id": "ART_159",
+  "title": "Oath or Affirmation by Governor (Article 159)",
+  "description": "Before entering office, the Governor shall take an oath or affirmation before the Chief Justice of the High Court.",
+  "punishment": "Cannot assume office without oath.",
+  "keywords": [
+    "governor oath",
+    "article 159",
+    "high court",
+    "constitution"
+  ]
+},
+
+{
+  "id": "ART_160",
+  "title": "Discharge of Governor’s Functions (Article 160)",
+  "description": "The President may make arrangements for discharge of Governor’s functions in contingencies such as absence or illness.",
+  "punishment": "Not applicable (contingency provision).",
+  "keywords": [
+    "governor functions",
+    "contingency",
+    "article 160",
+    "president power"
+  ]
+},
+
+{
+  "id": "ART_161",
+  "title": "Pardoning Power of Governor (Article 161)",
+  "description": "The Governor has the power to grant pardons, reprieves, respites or remissions of punishment for offences against state laws.",
+  "punishment": "Reduction or cancellation of punishment.",
+  "keywords": [
+    "pardon",
+    "governor power",
+    "article 161",
+    "clemency"
+  ]
+},
+
+{
+  "id": "ART_162",
+  "title": "Extent of Executive Power of the State (Article 162)",
+  "description": "The executive power of a State extends to matters on which the State Legislature has power to make laws.",
+  "punishment": "Not applicable (distribution of powers).",
+  "keywords": [
+    "state executive power",
+    "article 162",
+    "state legislature",
+    "constitution"
+  ]
+},
+
+{
+  "id": "ART_163",
+  "title": "Council of Ministers (Article 163)",
+  "description": "There shall be a Council of Ministers with the Chief Minister at the head to aid and advise the Governor, except in matters where he acts in discretion.",
+  "punishment": "Not applicable (constitutional framework).",
+  "keywords": [
+    "council of ministers",
+    "chief minister",
+    "governor advice",
+    "article 163"
+  ]
+},
+
+{
+  "id": "ART_164",
+  "title": "Appointment and Responsibility of Ministers (Article 164)",
+  "description": "The Chief Minister is appointed by the Governor; other ministers are appointed on the advice of the Chief Minister and are collectively responsible to the Legislative Assembly.",
+  "punishment": "Loss of office on loss of confidence.",
+  "keywords": [
+    "chief minister",
+    "ministers appointment",
+    "collective responsibility",
+    "article 164"
+  ]
+},
+
+{
+  "id": "ART_165",
+  "title": "Advocate-General for the State (Article 165)",
+  "description": "The Governor shall appoint an Advocate-General who is qualified to be a High Court judge to advise the State Government on legal matters.",
+  "punishment": "Removal at Governor’s pleasure.",
+  "keywords": [
+    "advocate general",
+    "state legal advisor",
+    "article 165",
+    "high court qualification"
+  ]
+},
+
+{
+  "id": "ART_166",
+  "title": "Conduct of Business of State Government (Article 166)",
+  "description": "All executive actions of the State Government shall be expressed in the name of the Governor and conducted as per rules framed by him.",
+  "punishment": "Not applicable (procedural provision).",
+  "keywords": [
+    "state government business",
+    "article 166",
+    "governor rules",
+    "executive action"
+  ]
+},
+
+{
+  "id": "ART_167",
+  "title": "Duties of the Chief Minister (Article 167)",
+  "description": "The Chief Minister shall communicate decisions of the Council of Ministers to the Governor and furnish information relating to State administration.",
+  "punishment": "Constitutional accountability.",
+  "keywords": [
+    "chief minister duties",
+    "governor communication",
+    "article 167",
+    "state administration"
+  ]
+},
+
+{
+  "id": "ART_168",
+  "title": "Constitution of State Legislatures (Article 168)",
+  "description": "Every State shall have a Legislature consisting of the Governor and one or two Houses depending on the State.",
+  "punishment": "Not applicable (constitutional structure).",
+  "keywords": [
+    "state legislature",
+    "governor",
+    "legislative assembly",
+    "article 168"
+  ]
+},
+
+{
+  "id": "ART_168",
+  "title": "Constitution of State Legislatures (Article 168)",
+  "description": "Every State shall have a Legislature consisting of the Governor and one or two Houses depending on the State.",
+  "punishment": "Not applicable (constitutional structure).",
+  "keywords": [
+    "state legislature",
+    "governor",
+    "legislative assembly",
+    "article 168"
+  ]
+},
+
+{
+  "id": "ART_170",
+  "title": "Composition of Legislative Assembly (Article 170)",
+  "description": "The Legislative Assembly consists of members chosen by direct election from territorial constituencies in the State.",
+  "punishment": "Not applicable (representation provision).",
+  "keywords": [
+    "legislative assembly",
+    "direct election",
+    "article 170",
+    "state representation"
+  ]
+},
+
+{
+  "id": "ART_171",
+  "title": "Composition of Legislative Council (Article 171)",
+  "description": "The Legislative Council consists of members elected and nominated from various categories such as local bodies, graduates, teachers, and Governor nominees.",
+  "punishment": "Not applicable (composition rule).",
+  "keywords": [
+    "legislative council",
+    "upper house",
+    "article 171",
+    "state legislature"
+  ]
+},
+
+{
+  "id": "ART_172",
+  "title": "Duration of State Legislature (Article 172)",
+  "description": "The Legislative Assembly shall continue for five years unless sooner dissolved; Legislative Council is permanent.",
+  "punishment": "Not applicable (tenure provision).",
+  "keywords": [
+    "assembly tenure",
+    "five years",
+    "article 172",
+    "state legislature"
+  ]
+},
+
+{
+  "id": "ART_173",
+  "title": "Qualifications for State Legislature Membership (Article 173)",
+  "description": "A person must be a citizen of India and meet age and other qualifications prescribed by law to be a member of State Legislature.",
+  "punishment": "Disqualification if criteria not met.",
+  "keywords": [
+    "legislative qualification",
+    "citizenship",
+    "article 173",
+    "state legislature"
+  ]
+},
+
+{
+  "id": "ART_174",
+  "title": "Sessions of State Legislature (Article 174)",
+  "description": "The Governor shall summon, prorogue the State Legislature and may dissolve the Legislative Assembly.",
+  "punishment": "Not applicable (procedural authority).",
+  "keywords": [
+    "legislative session",
+    "governor powers",
+    "article 174",
+    "state assembly"
+  ]
+},
+
+{
+  "id": "ART_175",
+  "title": "Governor’s Address and Messages (Article 175)",
+  "description": "The Governor may address the State Legislature and send messages regarding bills or other matters.",
+  "punishment": "Not applicable (constitutional privilege).",
+  "keywords": [
+    "governor address",
+    "state legislature",
+    "article 175",
+    "messages"
+  ]
+},
+
+{
+  "id": "ART_176",
+  "title": "Special Address by Governor (Article 176)",
+  "description": "The Governor shall address the Legislative Assembly at the commencement of the first session after elections and each year.",
+  "punishment": "Not applicable (ceremonial duty).",
+  "keywords": [
+    "governor special address",
+    "legislative session",
+    "article 176",
+    "state assembly"
+  ]
+},
+
+{
+  "id": "ART_177",
+  "title": "Rights of Ministers and Advocate-General (Article 177)",
+  "description": "Ministers and Advocate-General have the right to speak and take part in proceedings of the State Legislature.",
+  "punishment": "Not applicable (participation right).",
+  "keywords": [
+    "minister rights",
+    "advocate general",
+    "article 177",
+    "state legislature"
+  ]
+},
+
+{
+  "id": "ART_178",
+  "title": "Speaker and Deputy Speaker (Article 178)",
+  "description": "Every Legislative Assembly shall choose a Speaker and a Deputy Speaker from among its members.",
+  "punishment": "Not applicable (constitutional office).",
+  "keywords": ["speaker", "deputy speaker", "article 178", "state assembly"]
+},
+
+{
+  "id": "ART_179",
+  "title": "Vacation and Resignation of Office (Article 179)",
+  "description": "The Speaker or Deputy Speaker may resign, be removed by resolution, or vacate office on ceasing to be a member.",
+  "punishment": "Removal by Assembly resolution.",
+  "keywords": ["speaker removal", "resignation", "article 179", "state legislature"]
+},
+
+{
+  "id": "ART_180",
+  "title": "Performance of Duties of Speaker (Article 180)",
+  "description": "Deputy Speaker or a member appointed by the Governor performs duties when the Speaker’s office is vacant.",
+  "punishment": "Not applicable (procedural provision).",
+  "keywords": ["speaker duties", "deputy speaker", "article 180"]
+},
+
+{
+  "id": "ART_181",
+  "title": "Restriction During Removal Proceedings (Article 181)",
+  "description": "The Speaker or Deputy Speaker shall not preside while a resolution for removal is under consideration.",
+  "punishment": "Not applicable (procedural safeguard).",
+  "keywords": ["speaker removal", "article 181", "legislative procedure"]
+},
+
+{
+  "id": "ART_182",
+  "title": "Chairman and Deputy Chairman (Article 182)",
+  "description": "The Legislative Council shall choose a Chairman and a Deputy Chairman from among its members.",
+  "punishment": "Not applicable (constitutional office).",
+  "keywords": ["chairman", "legislative council", "article 182"]
+},
+
+{
+  "id": "ART_183",
+  "title": "Vacation and Resignation of Office (Article 183)",
+  "description": "The Chairman or Deputy Chairman may resign, be removed, or vacate office upon ceasing to be a member.",
+  "punishment": "Removal by Council resolution.",
+  "keywords": ["chairman removal", "resignation", "article 183"]
+},
+
+{
+  "id": "ART_184",
+  "title": "Performance of Duties of Chairman (Article 184)",
+  "description": "Deputy Chairman or a member appointed by the Governor performs duties when the Chairman’s office is vacant.",
+  "punishment": "Not applicable (procedural provision).",
+  "keywords": ["chairman duties", "article 184", "legislative council"]
+},
+
+{
+  "id": "ART_185",
+  "title": "Restriction During Removal Proceedings (Article 185)",
+  "description": "The Chairman or Deputy Chairman shall not preside while a resolution for removal is under consideration.",
+  "punishment": "Not applicable (procedural safeguard).",
+  "keywords": ["chairman removal", "article 185"]
+},
+
+{
+  "id": "ART_186",
+  "title": "Salaries and Allowances of Presiding Officers (Article 186)",
+  "description": "Salaries and allowances of presiding officers are charged on the Consolidated Fund of the State.",
+  "punishment": "Not applicable (financial provision).",
+  "keywords": ["salaries", "consolidated fund", "article 186"]
+},
+
+{
+  "id": "ART_187",
+  "title": "Secretariat of State Legislature (Article 187)",
+  "description": "Each House of the State Legislature shall have a separate secretarial staff regulated by law.",
+  "punishment": "Not applicable (administrative provision).",
+  "keywords": ["legislature secretariat", "article 187", "state legislature"]
+},
+
+{
+  "id": "ART_188",
+  "title": "Oath or Affirmation by Members (Article 188)",
+  "description": "Every member of the State Legislature shall take an oath or affirmation before taking their seat.",
+  "punishment": "Cannot sit or vote without oath.",
+  "keywords": ["oath", "state legislature", "article 188", "membership"]
+},
+
+{
+  "id": "ART_189",
+  "title": "Voting in the Legislature (Article 189)",
+  "description": "All questions in a House shall be determined by a majority of members present and voting; presiding officer has casting vote.",
+  "punishment": "Not applicable (procedural rule).",
+  "keywords": ["voting", "casting vote", "article 189", "legislature"]
+},
+
+{
+  "id": "ART_190",
+  "title": "Vacation of Seats (Article 190)",
+  "description": "A member shall vacate his seat if disqualified, resigns, or is absent without permission for 60 days.",
+  "punishment": "Loss of membership.",
+  "keywords": ["vacation of seat", "disqualification", "article 190"]
+},
+
+{
+  "id": "ART_191",
+  "title": "Disqualifications for Membership (Article 191)",
+  "description": "A person is disqualified if holding office of profit, unsound mind, insolvent, or disqualified by law.",
+  "punishment": "Disqualification from membership.",
+  "keywords": ["disqualification", "office of profit", "article 191"]
+},
+
+{
+  "id": "ART_192",
+  "title": "Decision on Disqualification (Article 192)",
+  "description": "The Governor decides questions of disqualification after consulting the Election Commission.",
+  "punishment": "Loss of seat if disqualified.",
+  "keywords": ["disqualification decision", "governor", "article 192"]
+},
+
+{
+  "id": "ART_193",
+  "title": "Penalty for Unauthorized Sitting or Voting (Article 193)",
+  "description": "A person sitting or voting without taking oath or when disqualified shall be liable to a fine.",
+  "punishment": "Fine of ₹500 per day.",
+  "keywords": ["penalty", "unauthorized voting", "article 193"]
+},
+
+{
+  "id": "ART_194",
+  "title": "Legislative Privileges (Article 194)",
+  "description": "State Legislature members enjoy freedom of speech and other privileges similar to Parliament.",
+  "punishment": "Protection from legal action for legislative speech.",
+  "keywords": ["legislative privilege", "freedom of speech", "article 194"]
+},
+
+{
+  "id": "ART_195",
+  "title": "Salaries and Allowances of Members (Article 195)",
+  "description": "Members of State Legislature are entitled to salaries and allowances as determined by law.",
+  "punishment": "Not applicable (financial entitlement).",
+  "keywords": ["salaries", "allowances", "article 195"]
+},
+
+{
+  "id": "ART_196",
+  "title": "Introduction and Passing of Bills (Article 196)",
+  "description": "A Bill may originate in either House except Money Bills which originate only in Legislative Assembly.",
+  "punishment": "Not applicable (legislative procedure).",
+  "keywords": ["bills", "money bill", "article 196"]
+},
+
+{
+  "id": "ART_197",
+  "title": "Restriction on Legislative Council (Article 197)",
+  "description": "Legislative Council can delay but not reject Money Bills passed by Legislative Assembly.",
+  "punishment": "Council’s limited authority.",
+  "keywords": ["legislative council", "money bill", "article 197"]
+},
+
+{
+  "id": "ART_198",
+  "title": "Special Procedure for Money Bills (Article 198)",
+  "description": "Money Bills passed by the Legislative Assembly are transmitted to the Legislative Council, which must return them within the prescribed time.",
+  "punishment": "Council cannot block Money Bills.",
+  "keywords": ["money bill", "legislative council", "article 198"]
+},
+
+{
+  "id": "ART_199",
+  "title": "Money Bills Defined (Article 199)",
+  "description": "A Bill is a Money Bill if it contains provisions related to taxation, borrowing, expenditure from the Consolidated Fund of the State.",
+  "punishment": "Special legislative handling.",
+  "keywords": ["money bill definition", "article 199", "state finance"]
+},
+
+{
+  "id": "ART_200",
+  "title": "Assent to Bills by Governor (Article 200)",
+  "description": "When a Bill is presented, the Governor may give assent, withhold assent, return it, or reserve it for President’s consideration.",
+  "punishment": "Bill fails without assent.",
+  "keywords": ["governor assent", "article 200", "state bills"]
+},
+
+{
+  "id": "ART_201",
+  "title": "President’s Assent to Reserved Bills (Article 201)",
+  "description": "When a Bill is reserved, the President may assent or withhold assent or return it to the State Legislature.",
+  "punishment": "Bill lapses if assent denied.",
+  "keywords": ["president assent", "reserved bill", "article 201"]
+},
+
+{
+  "id": "ART_202",
+  "title": "Annual Financial Statement (Article 202)",
+  "description": "The Governor shall lay before the State Legislature the Annual Financial Statement (State Budget).",
+  "punishment": "Not applicable (budgetary requirement).",
+  "keywords": ["state budget", "annual financial statement", "article 202"]
+},
+
+{
+  "id": "ART_203",
+  "title": "Procedure for Estimates (Article 203)",
+  "description": "Estimates of expenditure must be voted by the Legislative Assembly and cannot be voted upon by the Legislative Council.",
+  "punishment": "Assembly control over expenditure.",
+  "keywords": ["estimates", "budget procedure", "article 203"]
+},
+
+{
+  "id": "ART_204",
+  "title": "Appropriation Bills (Article 204)",
+  "description": "No money shall be withdrawn from the Consolidated Fund except under an Appropriation Act.",
+  "punishment": "Unauthorized withdrawal prohibited.",
+  "keywords": ["appropriation bill", "article 204", "state finance"]
+},
+
+{
+  "id": "ART_205",
+  "title": "Supplementary and Excess Grants (Article 205)",
+  "description": "Provision for additional or excess expenditure not included in the Annual Financial Statement.",
+  "punishment": "Legislative approval required.",
+  "keywords": ["supplementary grant", "article 205"]
+},
+
+{
+  "id": "ART_206",
+  "title": "Votes on Account and Credit (Article 206)",
+  "description": "The Legislative Assembly may grant votes on account for urgent expenditure.",
+  "punishment": "Temporary financial authorization.",
+  "keywords": ["vote on account", "article 206"]
+},
+
+{
+  "id": "ART_207",
+  "title": "Special Provisions for Financial Bills (Article 207)",
+  "description": "Financial Bills require the Governor’s recommendation before introduction.",
+  "punishment": "Invalid without recommendation.",
+  "keywords": ["financial bill", "governor recommendation", "article 207"]
+},
+
+{
+  "id": "ART_208",
+  "title": "Rules of Procedure (Article 208)",
+  "description": "Each House of the State Legislature may make rules for regulating its procedure and conduct of business.",
+  "punishment": "Not applicable (internal regulation).",
+  "keywords": ["rules of procedure", "article 208"]
+},
+
+{
+  "id": "ART_209",
+  "title": "Procedure Regulation by Law (Article 209)",
+  "description": "The Legislature may regulate its procedure by law until rules are framed.",
+  "punishment": "Not applicable (transitional provision).",
+  "keywords": ["procedure regulation", "article 209"]
+},
+
+{
+  "id": "ART_210",
+  "title": "Language of State Legislature (Article 210)",
+  "description": "Business in the Legislature shall be conducted in the official language or Hindi or English as authorized.",
+  "punishment": "Not applicable (language provision).",
+  "keywords": ["legislative language", "article 210"]
+},
+
+{
+  "id": "ART_211",
+  "title": "Restriction on Discussion (Article 211)",
+  "description": "No discussion shall take place in the Legislature regarding the conduct of judges of Supreme Court or High Court.",
+  "punishment": "Breach of constitutional restriction.",
+  "keywords": ["judicial independence", "article 211"]
+},
+
+{
+  "id": "ART_212",
+  "title": "Courts and Legislative Proceedings (Article 212)",
+  "description": "Courts shall not inquire into proceedings of the State Legislature for procedural irregularities.",
+  "punishment": "Judicial restraint mandated.",
+  "keywords": ["legislative immunity", "article 212"]
+},
+
+{
+  "id": "ART_213",
+  "title": "Ordinance-making Power of the Governor (Article 213)",
+  "description": "When the State Legislature is not in session and circumstances require immediate action, the Governor may promulgate Ordinances having the same force as an Act of the Legislature.",
+  "punishment": "Ordinance ceases to operate six weeks after reassembly unless approved.",
+  "keywords": [
+    "governor ordinance",
+    "ordinance power",
+    "article 213",
+    "state legislation",
+    "emergency law"
+  ]
+},
+
+{
+  "id": "ART_214",
+  "title": "High Courts for States (Article 214)",
+  "description": "There shall be a High Court for each State of India.",
+  "punishment": "Not applicable (constitutional mandate).",
+  "keywords": ["high court", "state judiciary", "article 214"]
+},
+
+{
+  "id": "ART_215",
+  "title": "High Court as Court of Record (Article 215)",
+  "description": "Every High Court shall be a court of record and shall have power to punish for contempt of itself.",
+  "punishment": "Punishment for contempt of court.",
+  "keywords": ["court of record", "contempt", "article 215"]
+},
+
+{
+  "id": "ART_216",
+  "title": "Constitution of High Courts (Article 216)",
+  "description": "Every High Court shall consist of a Chief Justice and such other Judges as the President may appoint.",
+  "punishment": "Not applicable (judicial structure).",
+  "keywords": ["high court judges", "chief justice", "article 216"]
+},
+
+{
+  "id": "ART_217",
+  "title": "Appointment and Conditions of High Court Judges (Article 217)",
+  "description": "Judges of High Courts are appointed by the President after consultation and hold office till age of 62 years.",
+  "punishment": "Removal by impeachment.",
+  "keywords": ["high court judges", "appointment", "article 217"]
+},
+
+{
+  "id": "ART_218",
+  "title": "Application of SC Judge Provisions to HC Judges (Article 218)",
+  "description": "Provisions relating to removal, salaries, and privileges of Supreme Court judges apply to High Court judges.",
+  "punishment": "Same removal procedure as SC judges.",
+  "keywords": ["high court judges", "removal", "article 218"]
+},
+
+{
+  "id": "ART_219",
+  "title": "Oath or Affirmation by High Court Judges (Article 219)",
+  "description": "Every Judge of a High Court shall take an oath before the Governor of the State.",
+  "punishment": "Cannot assume office without oath.",
+  "keywords": ["judge oath", "high court", "article 219"]
+},
+
+{
+  "id": "ART_220",
+  "title": "Restriction on Practice (Article 220)",
+  "description": "A retired High Court judge shall not plead or act in any court except the Supreme Court and other High Courts.",
+  "punishment": "Professional restriction imposed.",
+  "keywords": ["retired judge", "practice restriction", "article 220"]
+},
+
+{
+  "id": "ART_221",
+  "title": "Salaries and Allowances of High Court Judges (Article 221)",
+  "description": "Judges of High Courts shall receive salaries and pensions as determined by Parliament and charged on Consolidated Fund.",
+  "punishment": "Financial independence ensured.",
+  "keywords": ["judges salary", "high court", "article 221"]
+},
+
+{
+  "id": "ART_222",
+  "title": "Transfer of High Court Judges (Article 222)",
+  "description": "The President may transfer a Judge from one High Court to another after consultation with the Chief Justice of India.",
+  "punishment": "Administrative transfer.",
+  "keywords": ["judge transfer", "article 222", "high court"]
+},
+
+{
+  "id": "ART_223",
+  "title": "Acting Chief Justice (Article 223)",
+  "description": "When the office of Chief Justice is vacant, the President appoints an Acting Chief Justice.",
+  "punishment": "Not applicable (administrative continuity).",
+  "keywords": ["acting chief justice", "article 223"]
+},
+
+{
+  "id": "ART_224",
+  "title": "Additional and Acting Judges (Article 224)",
+  "description": "The President may appoint Additional or Acting Judges for temporary increase in workload or vacancy.",
+  "punishment": "Not applicable (judicial administration).",
+  "keywords": ["additional judges", "article 224"]
+},
+
+{
+  "id": "ART_224",
+  "title": "Additional and Acting Judges (Article 224)",
+  "description": "The President may appoint Additional or Acting Judges for temporary increase in workload or vacancy.",
+  "punishment": "Not applicable (judicial administration).",
+  "keywords": ["additional judges", "article 224"]
+},
+
+{
+  "id": "ART_224A",
+  "title": "Appointment of Retired Judges (Article 224A)",
+  "description": "The Chief Justice of a High Court may request retired judges to sit and act as judges.",
+  "punishment": "Temporary judicial service.",
+  "keywords": ["retired judges", "article 224A"]
+},
+
+{
+  "id": "ART_225",
+  "title": "Jurisdiction of High Courts (Article 225)",
+  "description": "Jurisdiction of existing High Courts remains as before unless altered by law.",
+  "punishment": "Not applicable (jurisdiction continuity).",
+  "keywords": ["high court jurisdiction", "article 225"]
+},
+
+{
+  "id": "ART_226",
+  "title": "Writ Jurisdiction of High Courts (Article 226)",
+  "description": "High Courts may issue writs for enforcement of Fundamental Rights and for any other purpose.",
+  "punishment": "Judicial remedy provision.",
+  "keywords": ["writs", "fundamental rights", "article 226"]
+},
+
+{
+  "id": "ART_227",
+  "title": "Superintendence of High Courts (Article 227)",
+  "description": "Every High Court has superintendence over all courts and tribunals within its jurisdiction.",
+  "punishment": "Judicial oversight authority.",
+  "keywords": ["superintendence", "high court", "article 227"]
+},
+
+{
+  "id": "ART_228",
+  "title": "Transfer of Cases to High Court (Article 228)",
+  "description": "The High Court may withdraw a case involving substantial constitutional questions from a subordinate court.",
+  "punishment": "Judicial transfer authority.",
+  "keywords": ["case transfer", "constitutional question", "article 228"]
+},
+
+{
+  "id": "ART_229",
+  "title": "Officers and Servants of High Courts (Article 229)",
+  "description": "Appointments and service conditions of High Court staff are controlled by the Chief Justice of the High Court.",
+  "punishment": "Administrative autonomy.",
+  "keywords": ["high court staff", "chief justice", "article 229"]
+},
+
+{
+  "id": "ART_230",
+  "title": "Extension of High Court Jurisdiction (Article 230)",
+  "description": "Parliament may extend the jurisdiction of a High Court to Union Territories.",
+  "punishment": "Not applicable (jurisdiction extension).",
+  "keywords": ["high court jurisdiction", "union territory", "article 230"]
+},
+
+{
+  "id": "ART_231",
+  "title": "Common High Court for Two or More States (Article 231)",
+  "description": "Parliament may establish a common High Court for two or more States or Union Territories.",
+  "punishment": "Not applicable (judicial structure).",
+  "keywords": ["common high court", "article 231"]
+},
+
+{
+  "id": "ART_233",
+  "title": "Appointment of District Judges (Article 233)",
+  "description": "Appointments, postings, and promotions of district judges are made by the Governor in consultation with the High Court.",
+  "punishment": "Invalid appointments can be challenged constitutionally.",
+  "keywords": ["district judges", "appointment", "high court", "article 233"]
+},
+
+{
+  "id": "ART_233A",
+  "title": "Validation of District Judge Appointments (Article 233A)",
+  "description": "Validates appointments of district judges made before the commencement of the Constitution (Twentieth Amendment) Act, 1966.",
+  "punishment": "Past appointments deemed valid.",
+  "keywords": ["appointment validation", "district judges", "article 233A"]
+},
+
+{
+  "id": "ART_234",
+  "title": "Recruitment of Judicial Officers (Article 234)",
+  "description": "Appointments of persons other than district judges to the judicial service are made by the Governor in consultation with the High Court and Public Service Commission.",
+  "punishment": "Appointments must follow prescribed consultation.",
+  "keywords": ["judicial officers", "recruitment", "psc", "article 234"]
+},
+
+{
+  "id": "ART_235",
+  "title": "Control of High Court Over Subordinate Courts (Article 235)",
+  "description": "The High Court has control over district courts and courts subordinate thereto, including disciplinary matters.",
+  "punishment": "Ensures judicial independence.",
+  "keywords": ["subordinate courts", "high court control", "article 235"]
+},
+
+{
+  "id": "ART_236",
+  "title": "Interpretation of Subordinate Courts Provisions (Article 236)",
+  "description": "Defines terms such as 'district judge' and 'judicial service' for this Chapter.",
+  "punishment": "Not applicable (definitions).",
+  "keywords": ["definitions", "judicial service", "article 236"]
+},
+
+{
+  "id": "ART_237",
+  "title": "Application of Provisions to Magistrates (Article 237)",
+  "description": "The Governor may apply provisions of this Chapter to magistrates as deemed appropriate.",
+  "punishment": "Application subject to state notification.",
+  "keywords": ["magistrates", "judicial service", "article 237"]
+},
+
+{
+  "id": "ART_238",
+  "title": "Part B States (Article 238) – Repealed",
+  "description": "This Article relating to Part B States was repealed by the Constitution (Seventh Amendment) Act, 1956.",
+  "punishment": "Not applicable (repealed provision).",
+  "keywords": ["repealed article", "part b states", "article 238"]
+},
+
+{
+  "id": "ART_239",
+  "title": "Administration of Union Territories (Article 239)",
+  "description": "Union Territories are administered by the President through an Administrator appointed by him.",
+  "punishment": "Administrative authority of the Union.",
+  "keywords": ["union territories", "administrator", "article 239"]
+},
+
+{
+  "id": "ART_239A",
+  "title": "Legislature or Council of Ministers for Certain Union Territories (Article 239A)",
+  "description": "Parliament may create legislatures or councils of ministers for certain Union Territories.",
+  "punishment": "Governed by Parliamentary law.",
+  "keywords": ["ut legislature", "council of ministers", "article 239A"]
+},
+
+{
+  "id": "ART_239AA",
+  "title": "Special Status of Delhi (Article 239AA)",
+  "description": "Provides for a Legislative Assembly and Council of Ministers for the National Capital Territory of Delhi.",
+  "punishment": "Governance subject to constitutional limitations.",
+  "keywords": ["delhi special status", "nct delhi", "article 239AA"]
+},
+
+{
+  "id": "ART_239AB",
+  "title": "President’s Rule in Union Territories (Article 239AB)",
+  "description": "Allows the President to suspend operation of Article 239AA in case of constitutional failure in Delhi.",
+  "punishment": "Central administration imposed.",
+  "keywords": ["presidents rule", "delhi", "article 239AB"]
+},
+
+{
+  "id": "ART_239B",
+  "title": "Ordinance Powers in Union Territories (Article 239B)",
+  "description": "Administrator may promulgate ordinances when the legislature is not in session.",
+  "punishment": "Ordinance lapses if not approved.",
+  "keywords": ["ordinance", "administrator powers", "article 239B"]
+},
+
+{
+  "id": "ART_240",
+  "title": "President’s Regulation-making Power (Article 240)",
+  "description": "President may make regulations for peace, progress, and good governance of certain Union Territories.",
+  "punishment": "Regulations have force of law.",
+  "keywords": ["presidential regulations", "union territories", "article 240"]
+},
+
+{
+  "id": "ART_241",
+  "title": "High Courts for Union Territories (Article 241)",
+  "description": "Parliament may establish High Courts or extend jurisdiction of High Courts to Union Territories.",
+  "punishment": "Judicial authority extended by law.",
+  "keywords": ["high courts", "union territories", "article 241"]
+},
+
+{
+  "id": "ART_242",
+  "title": "Coorg (Article 242) – Repealed",
+  "description": "This Article relating to the State of Coorg was repealed by the Constitution (Seventh Amendment) Act, 1956.",
+  "punishment": "Not applicable (repealed provision).",
+  "keywords": ["repealed article", "coorg", "article 242"]
+},
+
+{
+  "id": "ART_243",
+  "title": "Definitions (Article 243)",
+  "description": "Defines key terms such as Panchayat, Gram Sabha, village, district, and population for Part IX.",
+  "punishment": "Not applicable (definitions).",
+  "keywords": ["definitions", "panchayat", "gram sabha", "article 243"]
+},
+
+{
+  "id": "ART_243A",
+  "title": "Gram Sabha (Article 243A)",
+  "description": "Gram Sabha consists of all registered voters in a village and exercises powers as provided by State law.",
+  "punishment": "Not applicable (democratic body).",
+  "keywords": ["gram sabha", "village democracy", "article 243A"]
+},
+
+{
+  "id": "ART_243B",
+  "title": "Constitution of Panchayats (Article 243B)",
+  "description": "Provides for Panchayats at village, intermediate, and district levels in every State.",
+  "punishment": "Mandatory institutional setup.",
+  "keywords": ["panchayat levels", "local governance", "article 243B"]
+},
+
+{
+  "id": "ART_243C",
+  "title": "Composition of Panchayats (Article 243C)",
+  "description": "Members of Panchayats are elected directly; Chairpersons elected as per State law.",
+  "punishment": "Governed by State legislation.",
+  "keywords": ["panchayat composition", "elections", "article 243C"]
+},
+
+{
+  "id": "ART_243D",
+  "title": "Reservation in Panchayats (Article 243D)",
+  "description": "Reserves seats for SCs, STs, and women (not less than one-third) in Panchayats.",
+  "punishment": "Constitutional mandate for reservation.",
+  "keywords": ["reservation", "women", "SC ST", "article 243D"]
+},
+
+{
+  "id": "ART_243E",
+  "title": "Duration of Panchayats (Article 243E)",
+  "description": "Every Panchayat shall continue for five years unless dissolved earlier.",
+  "punishment": "Mandatory elections within time limit.",
+  "keywords": ["five year term", "panchayat duration", "article 243E"]
+},
+
+{
+  "id": "ART_243F",
+  "title": "Disqualification of Members (Article 243F)",
+  "description": "Provides grounds for disqualification of Panchayat members under State law.",
+  "punishment": "Loss of membership upon disqualification.",
+  "keywords": ["disqualification", "panchayat members", "article 243F"]
+},
+
+{
+  "id": "ART_243G",
+  "title": "Powers of Panchayats (Article 243G)",
+  "description": "States may endow Panchayats with powers to function as institutions of self-government.",
+  "punishment": "Administrative empowerment.",
+  "keywords": ["self government", "panchayat powers", "article 243G"]
+},
+
+{
+  "id": "ART_243H",
+  "title": "Financial Powers of Panchayats (Article 243H)",
+  "description": "Panchayats may levy, collect, and appropriate taxes, duties, tolls, and fees.",
+  "punishment": "Subject to State law.",
+  "keywords": ["taxation", "panchayat finance", "article 243H"]
+},
+
+{
+  "id": "ART_243I",
+  "title": "State Finance Commission (Article 243I)",
+  "description": "Governor constitutes a Finance Commission every five years to review Panchayat finances.",
+  "punishment": "Mandatory constitutional review.",
+  "keywords": ["finance commission", "panchayat funds", "article 243I"]
+},
+
+{
+  "id": "ART_243J",
+  "title": "Audit of Panchayat Accounts (Article 243J)",
+  "description": "State Legislature may provide for audit of Panchayat accounts.",
+  "punishment": "Financial accountability.",
+  "keywords": ["audit", "accounts", "article 243J"]
+},
+
+{
+  "id": "ART_243K",
+  "title": "Panchayat Elections (Article 243K)",
+  "description": "Elections are conducted under the supervision of the State Election Commission.",
+  "punishment": "Independent electoral authority.",
+  "keywords": ["state election commission", "panchayat elections", "article 243K"]
+},
+
+{
+  "id": "ART_243L",
+  "title": "Application to Union Territories (Article 243L)",
+  "description": "Provisions of Part IX apply to Union Territories with modifications.",
+  "punishment": "As prescribed by Parliament.",
+  "keywords": ["union territories", "panchayats", "article 243L"]
+},
+
+{
+  "id": "ART_243M",
+  "title": "Exemptions from Part IX (Article 243M)",
+  "description": "Certain areas like Scheduled Areas and tribal regions are exempted.",
+  "punishment": "Constitutional exemption.",
+  "keywords": ["scheduled areas", "tribal areas", "article 243M"]
+},
+
+{
+  "id": "ART_243N",
+  "title": "Continuance of Existing Laws (Article 243N)",
+  "description": "Existing Panchayat laws continue until amended or repealed.",
+  "punishment": "Transitional provision.",
+  "keywords": ["existing laws", "transition", "article 243N"]
+},
+
+{
+  "id": "ART_243O",
+  "title": "Bar on Court Interference (Article 243O)",
+  "description": "Courts cannot interfere in Panchayat electoral matters except through election petitions.",
+  "punishment": "Judicial restriction.",
+  "keywords": ["court bar", "election disputes", "article 243O"]
+},
+
+{
+  "id": "ART_243P",
+  "title": "Definitions (Article 243P)",
+  "description": "Defines terms such as Municipality, Municipal area, Nagar Panchayat, Municipal Council, and Municipal Corporation.",
+  "punishment": "Not applicable (definitions).",
+  "keywords": ["municipality", "definitions", "article 243P"]
+},
+
+{
+  "id": "ART_243Q",
+  "title": "Constitution of Municipalities (Article 243Q)",
+  "description": "Municipalities are constituted in urban areas based on population and development level.",
+  "punishment": "Mandatory urban local bodies.",
+  "keywords": ["municipality formation", "urban governance", "article 243Q"]
+},
+
+{
+  "id": "ART_243R",
+  "title": "Composition of Municipalities (Article 243R)",
+  "description": "Members are directly elected; State Legislature may include nominated members without voting rights.",
+  "punishment": "Governed by State law.",
+  "keywords": ["municipal members", "election", "article 243R"]
+},
+
+{
+  "id": "ART_243S",
+  "title": "Wards Committees (Article 243S)",
+  "description": "Wards Committees are constituted in municipalities with population above a specified limit.",
+  "punishment": "Decentralized urban governance.",
+  "keywords": ["wards committee", "municipality", "article 243S"]
+},
+
+{
+  "id": "ART_243T",
+  "title": "Reservation in Municipalities (Article 243T)",
+  "description": "Provides reservation for SCs, STs, and women (not less than one-third) in Municipal bodies.",
+  "punishment": "Constitutional reservation mandate.",
+  "keywords": ["reservation", "municipal seats", "article 243T"]
+},
+
+{
+  "id": "ART_243U",
+  "title": "Duration of Municipalities (Article 243U)",
+  "description": "Municipalities have a term of five years unless dissolved earlier.",
+  "punishment": "Mandatory election cycle.",
+  "keywords": ["five year term", "municipality duration", "article 243U"]
+},
+
+{
+  "id": "ART_243V",
+  "title": "Disqualification of Members (Article 243V)",
+  "description": "Grounds for disqualification of municipal members are prescribed by State law.",
+  "punishment": "Loss of office upon disqualification.",
+  "keywords": ["disqualification", "municipal members", "article 243V"]
+},
+
+{
+  "id": "ART_243W",
+  "title": "Powers of Municipalities (Article 243W)",
+  "description": "States may endow Municipalities with powers to function as institutions of self-government.",
+  "punishment": "Administrative empowerment.",
+  "keywords": ["urban self government", "municipal powers", "article 243W"]
+},
+
+{
+  "id": "ART_243X",
+  "title": "Financial Powers of Municipalities (Article 243X)",
+  "description": "Municipalities may levy and collect taxes, duties, tolls, and fees.",
+  "punishment": "Subject to State legislation.",
+  "keywords": ["municipal taxation", "finance", "article 243X"]
+},
+
+{
+  "id": "ART_243Y",
+  "title": "Finance Commission for Municipalities (Article 243Y)",
+  "description": "State Finance Commission reviews financial position of Municipalities every five years.",
+  "punishment": "Mandatory fiscal review.",
+  "keywords": ["finance commission", "municipal funds", "article 243Y"]
+},
+
+{
+  "id": "ART_243Z",
+  "title": "Audit of Municipal Accounts (Article 243Z)",
+  "description": "State Legislature may provide for audit of Municipal accounts.",
+  "punishment": "Financial accountability.",
+  "keywords": ["audit", "municipal accounts", "article 243Z"]
+},
+
+{
+  "id": "ART_243ZA",
+  "title": "Municipal Elections (Article 243ZA)",
+  "description": "Municipal elections are conducted by the State Election Commission.",
+  "punishment": "Independent electoral process.",
+  "keywords": ["municipal elections", "state election commission", "article 243ZA"]
+},
+
+{
+  "id": "ART_243ZB",
+  "title": "Application to Union Territories (Article 243ZB)",
+  "description": "Provisions of Part IXA apply to Union Territories with modifications.",
+  "punishment": "As provided by Parliament.",
+  "keywords": ["union territories", "municipalities", "article 243ZB"]
+},
+
+{
+  "id": "ART_243ZC",
+  "title": "Exemptions from Part IXA (Article 243ZC)",
+  "description": "Certain areas like Scheduled Areas and tribal regions are exempted.",
+  "punishment": "Constitutional exemption.",
+  "keywords": ["scheduled areas", "exemptions", "article 243ZC"]
+},
+
+{
+  "id": "ART_243ZD",
+  "title": "District Planning Committee (Article 243ZD)",
+  "description": "District Planning Committees consolidate plans prepared by Panchayats and Municipalities.",
+  "punishment": "Planning coordination mandate.",
+  "keywords": ["district planning", "local development", "article 243ZD"]
+},
+
+{
+  "id": "ART_243ZE",
+  "title": "Metropolitan Planning Committee (Article 243ZE)",
+  "description": "Metropolitan Planning Committees prepare development plans for metropolitan areas.",
+  "punishment": "Urban planning authority.",
+  "keywords": ["metropolitan planning", "urban development", "article 243ZE"]
+},
+
+{
+  "id": "ART_243ZF",
+  "title": "Continuance of Existing Laws (Article 243ZF)",
+  "description": "Existing municipal laws continue until amended or repealed.",
+  "punishment": "Transitional provision.",
+  "keywords": ["existing laws", "municipal transition", "article 243ZF"]
+},
+
+{
+  "id": "ART_243ZG",
+  "title": "Bar on Court Interference (Article 243ZG)",
+  "description": "Courts cannot interfere in municipal election matters except through election petitions.",
+  "punishment": "Judicial restriction.",
+  "keywords": ["court bar", "municipal elections", "article 243ZG"]
+},
+
+{
+  "id": "ART_243ZH",
+  "title": "Definitions (Article 243ZH)",
+  "description": "Defines terms such as co-operative society, board, office bearer, and member for Part IXB.",
+  "punishment": "Not applicable (definitions).",
+  "keywords": ["cooperative society", "definitions", "article 243ZH"]
+},
+
+{
+  "id": "ART_243ZI",
+  "title": "Incorporation of Co-operative Societies (Article 243ZI)",
+  "description": "State Legislature may make laws for incorporation, regulation, and winding up of co-operative societies.",
+  "punishment": "Regulated by State law.",
+  "keywords": ["cooperative incorporation", "state law", "article 243ZI"]
+},
+
+{
+  "id": "ART_243ZJ",
+  "title": "Board Members and Tenure (Article 243ZJ)",
+  "description": "Fixes maximum number of directors and a five-year term for the board of co-operative societies.",
+  "punishment": "Mandatory board structure.",
+  "keywords": ["cooperative board", "five year term", "article 243ZJ"]
+},
+
+{
+  "id": "ART_243ZK",
+  "title": "Election of Co-operative Board (Article 243ZK)",
+  "description": "Elections to the board shall be conducted before expiry of the term.",
+  "punishment": "Compulsory timely elections.",
+  "keywords": ["cooperative elections", "board election", "article 243ZK"]
+},
+
+{
+  "id": "ART_243ZL",
+  "title": "Supersession of Co-operative Board (Article 243ZL)",
+  "description": "Board may be superseded for a limited period under specified conditions.",
+  "punishment": "Temporary loss of board powers.",
+  "keywords": ["supersession", "cooperative board", "article 243ZL"]
+},
+
+{
+  "id": "ART_243ZM",
+  "title": "Audit of Co-operative Societies (Article 243ZM)",
+  "description": "Accounts of co-operative societies shall be audited by qualified auditors.",
+  "punishment": "Financial accountability.",
+  "keywords": ["audit", "cooperative accounts", "article 243ZM"]
+},
+
+{
+  "id": "ART_243ZN",
+  "title": "General Body Meetings (Article 243ZN)",
+  "description": "Annual General Body Meeting must be convened within a prescribed period.",
+  "punishment": "Mandatory compliance.",
+  "keywords": ["general body meeting", "cooperative society", "article 243ZN"]
+},
+
+{
+  "id": "ART_243ZO",
+  "title": "Right to Information (Article 243ZO)",
+  "description": "Members have access to information relating to the functioning of co-operative societies.",
+  "punishment": "Transparency obligation.",
+  "keywords": ["right to information", "cooperative members", "article 243ZO"]
+},
+
+{
+  "id": "ART_243ZP",
+  "title": "Submission of Returns (Article 243ZP)",
+  "description": "Co-operative societies must submit annual returns to authorities.",
+  "punishment": "Statutory reporting requirement.",
+  "keywords": ["returns", "cooperative reporting", "article 243ZP"]
+},
+
+{
+  "id": "ART_243ZQ",
+  "title": "Offences in Co-operative Societies (Article 243ZQ)",
+  "description": "State law may specify offences and penalties for co-operative societies.",
+  "punishment": "Penalties as prescribed by law.",
+  "keywords": ["offences", "penalties", "article 243ZQ"]
+},
+
+{
+  "id": "ART_243ZR",
+  "title": "Multi-State Co-operative Societies (Article 243ZR)",
+  "description": "Provisions apply to multi-state co-operative societies subject to Central law.",
+  "punishment": "Governed by Central legislation.",
+  "keywords": ["multi state cooperative", "central law", "article 243ZR"]
+},
+
+{
+  "id": "ART_243ZS",
+  "title": "Application to Union Territories (Article 243ZS)",
+  "description": "Provisions of Part IXB apply to Union Territories with modifications.",
+  "punishment": "As prescribed by Parliament.",
+  "keywords": ["union territories", "cooperative societies", "article 243ZS"]
+},
+
+{
+  "id": "ART_243ZT",
+  "title": "Continuance of Existing Laws (Article 243ZT)",
+  "description": "Existing co-operative laws continue until amended or repealed.",
+  "punishment": "Transitional provision.",
+  "keywords": ["existing laws", "cooperative transition", "article 243ZT"]
+},
+
+{
+  "id": "ART_244",
+  "title": "Administration of Scheduled and Tribal Areas (Article 244)",
+  "description": "Provides that Scheduled Areas and Tribal Areas shall be administered in accordance with the Fifth and Sixth Schedules of the Constitution.",
+  "punishment": "Special constitutional governance framework.",
+  "keywords": ["scheduled areas", "tribal areas", "fifth schedule", "sixth schedule", "article 244"]
+},
+
+{
+  "id": "ART_244A",
+  "title": "Autonomous State in Assam (Article 244A)",
+  "description": "Parliament may form an autonomous State within Assam comprising certain tribal areas and provide for a legislature or council of ministers.",
+  "punishment": "Special legislative arrangement.",
+  "keywords": ["assam autonomous state", "tribal areas", "article 244A"]
+},
+
+{
+  "id": "ART_245",
+  "title": "Extent of Laws (Article 245)",
+  "description": "Parliament may make laws for the whole or any part of India; State Legislatures may make laws for their respective States.",
+  "punishment": "Legislative competence defined.",
+  "keywords": ["parliament laws", "state laws", "article 245"]
+},
+
+{
+  "id": "ART_246",
+  "title": "Distribution of Legislative Powers (Article 246)",
+  "description": "Divides legislative subjects into Union List, State List, and Concurrent List under the Seventh Schedule.",
+  "punishment": "Constitutional division of powers.",
+  "keywords": ["union list", "state list", "concurrent list", "article 246"]
+},
+
+{
+  "id": "ART_246A",
+  "title": "Special Provision for Goods and Services Tax (Article 246A)",
+  "description": "Parliament and State Legislatures have concurrent powers to make laws regarding GST.",
+  "punishment": "Fiscal authority framework.",
+  "keywords": ["gst", "taxation", "article 246A"]
+},
+
+{
+  "id": "ART_247",
+  "title": "Power to Establish Additional Courts (Article 247)",
+  "description": "Parliament may establish courts for better administration of laws made by it.",
+  "punishment": "Judicial expansion authority.",
+  "keywords": ["additional courts", "parliament powers", "article 247"]
+},
+
+{
+  "id": "ART_248",
+  "title": "Residuary Powers (Article 248)",
+  "description": "Parliament has exclusive power to legislate on matters not enumerated in any list.",
+  "punishment": "Union supremacy.",
+  "keywords": ["residuary powers", "parliament", "article 248"]
+},
+
+{
+  "id": "ART_249",
+  "title": "Parliament’s Power in National Interest (Article 249)",
+  "description": "Parliament may legislate on State List matters if Rajya Sabha passes a resolution in national interest.",
+  "punishment": "Temporary Union law supremacy.",
+  "keywords": ["national interest", "rajya sabha", "article 249"]
+},
+
+{
+  "id": "ART_250",
+  "title": "Parliament’s Power During Emergency (Article 250)",
+  "description": "Parliament may legislate on State List matters during a national emergency.",
+  "punishment": "Emergency legislative authority.",
+  "keywords": ["emergency powers", "state list", "article 250"]
+},
+
+{
+  "id": "ART_251",
+  "title": "Union Law Prevails in Case of Conflict (Article 251)",
+  "description": "Union law prevails over State law on matters under Articles 249 and 250.",
+  "punishment": "Union law supremacy.",
+  "keywords": ["union supremacy", "conflict of laws", "article 251"]
+},
+
+{
+  "id": "ART_252",
+  "title": "Parliament’s Power with State Consent (Article 252)",
+  "description": "Parliament may legislate for two or more States with their consent on State List matters.",
+  "punishment": "Consent-based legislation.",
+  "keywords": ["state consent", "parliament law", "article 252"]
+},
+
+{
+  "id": "ART_253",
+  "title": "Legislation for International Treaties (Article 253)",
+  "description": "Parliament may make laws to implement international treaties and agreements.",
+  "punishment": "International obligation authority.",
+  "keywords": ["international treaties", "parliament power", "article 253"]
+},
+
+{
+  "id": "ART_254",
+  "title": "Repugnancy Between Union and State Laws (Article 254)",
+  "description": "Union law prevails over State law in case of inconsistency in Concurrent List matters.",
+  "punishment": "Union law supremacy unless President assents.",
+  "keywords": ["repugnancy", "concurrent list", "article 254"]
+},
+
+{
+  "id": "ART_255",
+  "title": "Procedural Requirements for Certain Bills (Article 255)",
+  "description": "Failure to comply with recommendation requirements does not invalidate an Act.",
+  "punishment": "Procedural safeguard.",
+  "keywords": ["legislative procedure", "recommendation", "article 255"]
+},
+
+{
+  "id": "ART_256",
+  "title": "Obligation of States and Union (Article 256)",
+  "description": "States must ensure compliance with laws made by Parliament; the Union may give directions to States.",
+  "punishment": "Union enforcement authority.",
+  "keywords": ["union directions", "state obligation", "article 256"]
+},
+
+{
+  "id": "ART_257",
+  "title": "Union Control over States (Article 257)",
+  "description": "Union may give directions to States regarding national importance and communication infrastructure.",
+  "punishment": "Union supervisory power.",
+  "keywords": ["union control", "states", "article 257"]
+},
+
+{
+  "id": "ART_258",
+  "title": "Delegation of Union Functions (Article 258)",
+  "description": "Union may entrust its executive functions to States with consent.",
+  "punishment": "Administrative cooperation.",
+  "keywords": ["delegation", "executive functions", "article 258"]
+},
+
+{
+  "id": "ART_258A",
+  "title": "Delegation of State Functions to Union (Article 258A)",
+  "description": "States may entrust their executive functions to the Union.",
+  "punishment": "Cooperative federalism.",
+  "keywords": ["state functions", "union delegation", "article 258A"]
+},
+
+{
+  "id": "ART_259",
+  "title": "Armed Forces in Aid of Civil Power (Article 259) – Repealed",
+  "description": "This Article relating to armed forces assistance was repealed by the Constitution (Seventh Amendment) Act, 1956.",
+  "punishment": "Not applicable (repealed).",
+  "keywords": ["repealed article", "armed forces", "article 259"]
+},
+
+{
+  "id": "ART_260",
+  "title": "Jurisdiction Outside India (Article 260)",
+  "description": "Union may exercise jurisdiction outside India as per agreements with foreign countries.",
+  "punishment": "International jurisdiction authority.",
+  "keywords": ["foreign jurisdiction", "international agreements", "article 260"]
+},
+
+{
+  "id": "ART_261",
+  "title": "Public Acts and Judicial Proceedings (Article 261)",
+  "description": "Full faith and credit shall be given to public acts, records, and judicial proceedings throughout India.",
+  "punishment": "Judicial recognition mandate.",
+  "keywords": ["full faith and credit", "judicial proceedings", "article 261"]
+},
+
+{
+  "id": "ART_262",
+  "title": "Water Dispute Adjudication (Article 262)",
+  "description": "Parliament may provide for adjudication of inter-State river water disputes.",
+  "punishment": "Special dispute resolution.",
+  "keywords": ["interstate water disputes", "tribunals", "article 262"]
+},
+
+{
+  "id": "ART_263",
+  "title": "Inter-State Council (Article 263)",
+  "description": "President may establish an Inter-State Council for coordination between States and the Union.",
+  "punishment": "Advisory coordination mechanism.",
+  "keywords": ["inter state council", "federal coordination", "article 263"]
+},
+
+{
+  "id": "ART_264",
+  "title": "Interpretation (Article 264)",
+  "description": "Defines terms used in Part XII relating to finance.",
+  "punishment": "Not applicable (interpretation clause).",
+  "keywords": ["finance definitions", "interpretation", "article 264"]
+},
+
+{
+  "id": "ART_264",
+  "title": "Interpretation (Article 264)",
+  "description": "Defines terms used in Part XII relating to finance.",
+  "punishment": "Not applicable (interpretation clause).",
+  "keywords": ["finance definitions", "interpretation", "article 264"]
+},
+
+{
+  "id": "ART_265",
+  "title": "Levy and Collection of Taxes (Article 265)",
+  "description": "No tax shall be levied or collected except by authority of law.",
+  "punishment": "Invalid taxation prohibited.",
+  "keywords": ["taxation", "authority of law", "article 265"]
+},
+
+{
+  "id": "ART_266",
+  "title": "Consolidated Fund and Public Account (Article 266)",
+  "description": "Establishes Consolidated Fund and Public Account of India and States.",
+  "punishment": "Financial discipline mandate.",
+  "keywords": ["consolidated fund", "public account", "article 266"]
+},
+
+{
+  "id": "ART_267",
+  "title": "Contingency Fund (Article 267)",
+  "description": "Provides for Contingency Funds for India and States to meet unforeseen expenditure.",
+  "punishment": "Emergency expenditure authority.",
+  "keywords": ["contingency fund", "emergency finance", "article 267"]
+},
+
+{
+  "id": "ART_268",
+  "title": "Stamp Duties (Article 268)",
+  "description": "Stamp duties are levied by the Union but collected and appropriated by the States.",
+  "punishment": "Revenue sharing mechanism.",
+  "keywords": ["stamp duty", "revenue sharing", "article 268"]
+},
+
+{
+  "id": "ART_269",
+  "title": "Assigned Taxes (Article 269)",
+  "description": "Certain taxes are levied and collected by the Union but assigned to States.",
+  "punishment": "Fiscal federalism.",
+  "keywords": ["assigned taxes", "inter state trade", "article 269"]
+},
+
+{
+  "id": "ART_269A",
+  "title": "IGST Provision (Article 269A)",
+  "description": "GST on inter-State supplies is levied and collected by the Union and apportioned between Union and States.",
+  "punishment": "GST revenue framework.",
+  "keywords": ["igst", "gst", "article 269A"]
+},
+
+{
+  "id": "ART_270",
+  "title": "Distribution of Taxes (Article 270)",
+  "description": "Taxes collected by the Union are distributed between Union and States.",
+  "punishment": "Revenue distribution mandate.",
+  "keywords": ["tax distribution", "finance commission", "article 270"]
+},
+
+{
+  "id": "ART_271",
+  "title": "Surcharge on Taxes (Article 271)",
+  "description": "Parliament may levy surcharge on certain taxes for Union purposes.",
+  "punishment": "Union fiscal power.",
+  "keywords": ["surcharge", "union revenue", "article 271"]
+},
+
+{
+  "id": "ART_272",
+  "title": "Distribution of Taxes (Article 272) – Repealed",
+  "description": "This Article was repealed by the Constitution (Eighty-eighth Amendment) Act, 2003.",
+  "punishment": "Not applicable (repealed).",
+  "keywords": ["repealed article", "tax distribution", "article 272"]
+},
+
+{
+  "id": "ART_273",
+  "title": "Grants in Lieu of Export Duties (Article 273)",
+  "description": "Provides for grants to States in lieu of export duties on jute and jute products.",
+  "punishment": "Compensatory grants.",
+  "keywords": ["export duty grants", "jute", "article 273"]
+},
+
+{
+  "id": "ART_274",
+  "title": "Recommendation for Financial Bills (Article 274)",
+  "description": "Certain financial bills affecting State taxation require prior Presidential recommendation.",
+  "punishment": "Legislative safeguard.",
+  "keywords": ["financial bills", "presidential recommendation", "article 274"]
+},
+{
+  "id": "ART_275",
+  "title": "Grants from Union to States (Article 275)",
+  "description": "Union may make grants to States in need of assistance.",
+  "punishment": "Financial support mechanism.",
+  "keywords": ["union grants", "state assistance", "article 275"]
+},
+
+{
+  "id": "ART_276",
+  "title": "Income Tax (Article 276)",
+  "description": "Provides for the levy of income tax by the Union and its collection and appropriation between Union and States.",
+  "punishment": "Taxation framework.",
+  "keywords": ["income tax", "union taxation", "article 276"]
+},
+
+{
+  "id": "ART_277",
+  "title": "Savings of Existing Taxes (Article 277)",
+  "description": "Existing taxes at the commencement of the Constitution continue until Parliament provides otherwise.",
+  "punishment": "Transitional safeguard.",
+  "keywords": ["existing taxes", "savings clause", "article 277"]
+},
+
+{
+  "id": "ART_278",
+  "title": "Agreements with States (Article 278) – Repealed",
+  "description": "This Article was repealed by the Constitution (Seventh Amendment) Act, 1956.",
+  "punishment": "Not applicable (repealed).",
+  "keywords": ["repealed article", "state agreements", "article 278"]
+},
+
+{
+  "id": "ART_279",
+  "title": "Net Proceeds of Taxes (Article 279)",
+  "description": "Defines how net proceeds of taxes are calculated for distribution.",
+  "punishment": "Revenue calculation rule.",
+  "keywords": ["net proceeds", "tax calculation", "article 279"]
+},
+
+{
+  "id": "ART_279A",
+  "title": "GST Council (Article 279A)",
+  "description": "Establishes the GST Council to make recommendations on GST matters.",
+  "punishment": "Cooperative fiscal governance.",
+  "keywords": ["gst council", "indirect tax", "article 279A"]
+},
+
+{
+  "id": "ART_280",
+  "title": "Finance Commission (Article 280)",
+  "description": "President constitutes a Finance Commission every five years to recommend revenue distribution.",
+  "punishment": "Fiscal balance mechanism.",
+  "keywords": ["finance commission", "revenue sharing", "article 280"]
+},
+
+{
+  "id": "ART_281",
+  "title": "Finance Commission Reports (Article 281)",
+  "description": "Recommendations of the Finance Commission are laid before Parliament.",
+  "punishment": "Parliamentary oversight.",
+  "keywords": ["finance commission report", "parliament", "article 281"]
+},
+
+{
+  "id": "ART_281",
+  "title": "Finance Commission Reports (Article 281)",
+  "description": "Recommendations of the Finance Commission are laid before Parliament.",
+  "punishment": "Parliamentary oversight.",
+  "keywords": ["finance commission report", "parliament", "article 281"]
+},
+
+{
+  "id": "ART_282",
+  "title": "Public Expenditure (Article 282)",
+  "description": "Union or State may make grants for any public purpose.",
+  "punishment": "Discretionary spending power.",
+  "keywords": ["public expenditure", "grants", "article 282"]
+},
+
+{
+  "id": "ART_283",
+  "title": "Custody of Funds (Article 283)",
+  "description": "Provides for custody and operation of Consolidated and Public Account funds.",
+  "punishment": "Financial custody rule.",
+  "keywords": ["custody of funds", "treasury", "article 283"]
+},
+
+{
+  "id": "ART_284",
+  "title": "Suitors’ Deposits (Article 284)",
+  "description": "Deals with custody of deposits made in courts.",
+  "punishment": "Judicial financial custody.",
+  "keywords": ["court deposits", "judicial funds", "article 284"]
+},
+
+{
+  "id": "ART_285",
+  "title": "Exemption from Taxation (Article 285)",
+  "description": "Union property is exempt from State taxation unless Parliament provides otherwise.",
+  "punishment": "Tax exemption rule.",
+  "keywords": ["tax exemption", "union property", "article 285"]
+},
+
+
+{
+  "id": "ART_286",
+  "title": "Restrictions on State Taxation (Article 286)",
+  "description": "States cannot tax inter-State or international trade sales.",
+  "punishment": "Trade protection rule.",
+  "keywords": ["interstate trade", "sales tax", "article 286"]
+},
+
+{
+  "id": "ART_287",
+  "title": "Electricity Tax Exemption (Article 287)",
+  "description": "Union property is exempt from State electricity tax.",
+  "punishment": "Fiscal exemption.",
+  "keywords": ["electricity tax", "union exemption", "article 287"]
+},
+
+{
+  "id": "ART_287",
+  "title": "Electricity Tax Exemption (Article 287)",
+  "description": "Union property is exempt from State electricity tax.",
+  "punishment": "Fiscal exemption.",
+  "keywords": ["electricity tax", "union exemption", "article 287"]
+},
+
+{
+  "id": "ART_288",
+  "title": "Water and Electricity Tax Exemption (Article 288)",
+  "description": "State taxation on water or electricity used by Union requires Presidential consent.",
+  "punishment": "Conditional taxation.",
+  "keywords": ["water tax", "electricity tax", "article 288"]
+},
+
+{
+  "id": "ART_289",
+  "title": "State Property Tax Exemption (Article 289)",
+  "description": "State property is exempt from Union taxation except for commercial activities.",
+  "punishment": "Limited tax immunity.",
+  "keywords": ["state property", "union tax", "article 289"]
+},
+
+{
+  "id": "ART_290",
+  "title": "Adjustment of Expenses (Article 290)",
+  "description": "Provides for adjustment of certain expenses between Union and States.",
+  "punishment": "Fiscal adjustment rule.",
+  "keywords": ["expense adjustment", "union states", "article 290"]
+},
+
+{
+  "id": "ART_290A",
+  "title": "Devaswom Fund Grants (Article 290A)",
+  "description": "Provides grants to Devaswom Funds in Kerala and Tamil Nadu.",
+  "punishment": "Religious endowment grants.",
+  "keywords": ["devaswom fund", "grants", "article 290A"]
+},
+
+{
+  "id": "ART_291",
+  "title": "Privy Purse (Article 291) – Repealed",
+  "description": "This Article relating to privy purses was repealed by the Constitution (Twenty-sixth Amendment) Act, 1971.",
+  "punishment": "Not applicable (repealed).",
+  "keywords": ["privy purse", "repealed article", "article 291"]
+},
+
+{
+  "id": "ART_292",
+  "title": "Borrowing by the Union (Article 292)",
+  "description": "The Government of India may borrow money upon the security of the Consolidated Fund of India within limits fixed by Parliament.",
+  "punishment": "Subject to Parliamentary limits.",
+  "keywords": ["union borrowing", "consolidated fund", "article 292"]
+},
+
+{
+  "id": "ART_293",
+  "title": "Borrowing by States (Article 293)",
+  "description": "States may borrow within India subject to limits imposed by their legislatures and with Union consent if indebted to the Union.",
+  "punishment": "Union control over State borrowing.",
+  "keywords": ["state borrowing", "union consent", "article 293"]
+},
+
+{
+  "id": "ART_294",
+  "title": "Succession to Property and Liabilities (Article 294)",
+  "description": "Property, assets, rights, liabilities, and obligations of the Government of India and States succeed as per constitutional allocation.",
+  "punishment": "Constitutional succession rule.",
+  "keywords": ["succession", "property transfer", "article 294"]
+},
+
+{
+  "id": "ART_295",
+  "title": "Succession in Special Cases (Article 295)",
+  "description": "Provides succession of property and liabilities relating to Indian States integrated into India.",
+  "punishment": "Applies as per constitutional integration.",
+  "keywords": ["indian states", "integration", "article 295"]
+},
+
+{
+  "id": "ART_296",
+  "title": "Escheat or Lapse (Article 296)",
+  "description": "Property without a legal owner shall vest in the Union or the State as per jurisdiction.",
+  "punishment": "State or Union acquires property.",
+  "keywords": ["escheat", "ownerless property", "article 296"]
+},
+
+{
+  "id": "ART_297",
+  "title": "Territorial Waters and Resources (Article 297)",
+  "description": "All lands, minerals, and resources under ocean waters vest in the Union of India.",
+  "punishment": "Union ownership.",
+  "keywords": ["territorial waters", "natural resources", "article 297"]
+},
+
+{
+  "id": "ART_298",
+  "title": "Trade and Business Powers (Article 298)",
+  "description": "Union and States may carry on trade, business, and make contracts for any purpose.",
+  "punishment": "Subject to constitutional limits.",
+  "keywords": ["government trade", "contracts", "article 298"]
+},
+
+{
+  "id": "ART_299",
+  "title": "Government Contracts (Article 299)",
+  "description": "Contracts made in the exercise of executive power must be expressed in the name of the President or Governor.",
+  "punishment": "Invalid if constitutional procedure not followed.",
+  "keywords": ["government contracts", "legal validity", "article 299"]
+},
+
+{
+  "id": "ART_300",
+  "title": "Suits by or Against Government (Article 300)",
+  "description": "The Government of India and States may sue or be sued as per law.",
+  "punishment": "Legal accountability of State.",
+  "keywords": ["government liability", "civil suits", "article 300"]
+},
+
+{
+  "id": "ART_300A",
+  "title": "Right to Property (Article 300A)",
+  "description": "No person shall be deprived of property except by authority of law.",
+  "punishment": "Unlawful deprivation is unconstitutional.",
+  "keywords": ["right to property", "legal authority", "article 300A"]
+},
+
+
+    {
+      "id": "ART_301",
+      "title": "Freedom of Trade, Commerce and Intercourse",
+      "description": "Trade, commerce and intercourse throughout the territory of India shall be free.",
+      "keywords": ["freedom of trade", "interstate commerce", "economic unity"]
+    },
+    {
+      "id": "ART_302",
+      "title": "Power of Parliament to Impose Restrictions",
+      "description": "Parliament may impose reasonable restrictions on the freedom of trade, commerce and intercourse in the public interest.",
+      "keywords": ["parliamentary power", "public interest", "reasonable restrictions"]
+    },
+    {
+      "id": "ART_303",
+      "title": "Restriction on Discriminatory Legislation",
+      "description": "Neither Parliament nor State Legislatures shall make laws giving preference to one State over another, except to deal with scarcity of goods.",
+      "keywords": ["non-discrimination", "preference between states", "scarcity exception"]
+    },
+    {
+      "id": "ART_304",
+      "title": "Restrictions on Trade by States",
+      "description": "States may impose non-discriminatory taxes on goods from other States and reasonable restrictions in public interest with prior Presidential sanction.",
+      "keywords": ["state taxation", "presidential sanction", "public interest"]
+    },
+    {
+      "id": "ART_305",
+      "title": "Saving of Existing Laws",
+      "description": "Existing laws relating to trade, commerce and intercourse are protected even if inconsistent with Article 301.",
+      "keywords": ["existing laws", "constitutional protection", "saving clause"]
+    },
+    {
+      "id": "ART_306",
+      "title": "Special Provisions (Omitted)",
+      "description": "This article provided special provisions for certain States and has been repealed.",
+      "keywords": ["repealed article", "special provisions"]
+    },
+    {
+      "id": "ART_307",
+      "title": "Appointment of Authority for Trade Regulation",
+      "description": "Parliament may appoint an authority to carry out the purposes of Articles 301 to 304.",
+      "keywords": ["regulatory authority", "trade regulation", "parliamentary control"]
+    },
+
+
+    {
+      "id": "ART_308",
+      "description": "This Part applies to persons appointed to public services and posts in connection with the affairs of the Union or of any State.",
+      "keywords": ["public services", "union services", "state services"]
+    },
+    {
+      "id": "ART_309",
+      "description": "Parliament or State Legislature may regulate the recruitment and conditions of service of persons serving the Union or a State.",
+      "keywords": ["recruitment rules", "conditions of service", "service law"]
+    },
+    {
+      "id": "ART_310",
+      "description": "Every person serving the Union or a State holds office during the pleasure of the President or the Governor respectively.",
+      "keywords": ["doctrine of pleasure", "president", "governor"]
+    },
+    {
+      "id": "ART_311",
+      "description": "No civil servant shall be dismissed, removed, or reduced in rank without an inquiry and reasonable opportunity of being heard.",
+      "keywords": ["civil servant protection", "natural justice", "disciplinary action"]
+    },
+    {
+      "id": "ART_312",
+      "description": "Parliament may create All-India Services common to the Union and the States if the Rajya Sabha passes a resolution.",
+      "keywords": ["all india services", "IAS", "IPS"]
+    },
+    {
+      "id": "ART_312A",
+      "description": "Parliament may vary or revoke conditions of service of officers of All-India Services.",
+      "keywords": ["service conditions", "all india services"]
+    },
+    {
+      "id": "ART_313",
+      "description": "Existing laws relating to public services shall continue in force until altered or repealed.",
+      "keywords": ["existing service laws", "continuity"]
+    },
+    {
+      "id": "ART_314",
+      "description": "This article relating to protection of certain public servants has been repealed.",
+      "keywords": ["repealed article"]
+    },
+    {
+      "id": "ART_315",
+      "description": "There shall be a Public Service Commission for the Union and for each State.",
+      "keywords": ["UPSC", "SPSC", "public service commission"]
+    },
+    {
+      "id": "ART_316",
+      "description": "Appointment and tenure of members of the Public Service Commission shall be governed by constitutional provisions.",
+      "keywords": ["PSC members", "tenure", "appointment"]
+    },
+    {
+      "id": "ART_317",
+      "description": "Members of a Public Service Commission may be removed only on specific grounds and by prescribed procedure.",
+      "keywords": ["removal of PSC members", "safeguards"]
+    },
+    {
+      "id": "ART_318",
+      "description": "The President or Governor may make regulations regarding conditions of service of PSC members.",
+      "keywords": ["service regulations", "PSC"]
+    },
+    {
+      "id": "ART_319",
+      "description": "Restrictions are placed on future employment of members after leaving the Public Service Commission.",
+      "keywords": ["post-retirement restrictions", "PSC members"]
+    },
+    {
+      "id": "ART_320",
+      "description": "Public Service Commissions shall be consulted on matters of recruitment and service conditions.",
+      "keywords": ["consultative role", "recruitment"]
+    },
+    {
+      "id": "ART_321",
+      "description": "Parliament or State Legislature may extend the functions of Public Service Commissions.",
+      "keywords": ["PSC functions", "legislative power"]
+    },
+    {
+      "id": "ART_322",
+      "description": "Expenses of the Public Service Commission shall be charged on the Consolidated Fund.",
+      "keywords": ["consolidated fund", "PSC expenses"]
+    },
+    {
+      "id": "ART_323",
+      "description": "Public Service Commissions shall present annual reports to the President or the Governor.",
+      "keywords": ["annual report", "accountability"]
+    },
+
+
+
+    {
+      "id": "ART_323A",
+      "description": "Parliament may provide for the establishment of Administrative Tribunals for adjudication of disputes related to recruitment and conditions of service of public servants.",
+      "keywords": ["administrative tribunals", "service matters", "public servants"]
+    },
+    {
+      "id": "ART_323B",
+      "description": "Parliament and State Legislatures may provide for the establishment of tribunals for matters such as taxation, industrial disputes, land reforms, and elections.",
+      "keywords": ["tribunals", "taxation", "industrial disputes", "land reforms", "elections"]
+    },
+
+    {
+      "id": "ART_324",
+      "description": "The superintendence, direction and control of elections to Parliament, State Legislatures, and the offices of President and Vice-President shall be vested in the Election Commission.",
+      "keywords": ["election commission", "free and fair elections", "electoral control"]
+    },
+    {
+      "id": "ART_325",
+      "description": "No person shall be ineligible for inclusion in an electoral roll on grounds only of religion, race, caste, sex, or any of them.",
+      "keywords": ["non-discrimination", "electoral roll", "equality"]
+    },
+    {
+      "id": "ART_326",
+      "description": "Elections to the House of the People and State Legislative Assemblies shall be based on adult suffrage.",
+      "keywords": ["adult suffrage", "universal franchise", "voting rights"]
+    },
+    {
+      "id": "ART_327",
+      "description": "Parliament may make laws relating to all matters connected with elections to Parliament and State Legislatures.",
+      "keywords": ["parliamentary power", "election laws"]
+    },
+    {
+      "id": "ART_328",
+      "description": "State Legislatures may make laws relating to elections to the Legislature of the State, subject to parliamentary law.",
+      "keywords": ["state election laws", "legislative power"]
+    },
+    {
+      "id": "ART_329",
+      "description": "Courts shall not interfere in electoral matters except through election petitions as provided by law.",
+      "keywords": ["judicial non-interference", "election disputes"]
+    },
+    {
+      "id": "ART_329A",
+      "description": "This article relating to special provisions as to elections to Parliament has been repealed.",
+      "keywords": ["repealed article"]
+    },
+
+
+    {
+      "id": "ART_330",
+      "description": "Seats shall be reserved in the House of the People for Scheduled Castes and Scheduled Tribes.",
+      "keywords": ["reservation", "scheduled castes", "scheduled tribes", "lok sabha"]
+    },
+    {
+      "id": "ART_331",
+      "description": "The President may nominate members of the Anglo-Indian community to the House of the People if they are not adequately represented.",
+      "keywords": ["anglo-indian nomination", "presidential nomination"]
+    },
+    {
+      "id": "ART_332",
+      "description": "Seats shall be reserved for Scheduled Castes and Scheduled Tribes in the Legislative Assemblies of the States.",
+      "keywords": ["state assembly reservation", "SC ST"]
+    },
+    {
+      "id": "ART_333",
+      "description": "The Governor may nominate members of the Anglo-Indian community to the Legislative Assembly of a State if they are not adequately represented.",
+      "keywords": ["anglo-indian nomination", "governor"]
+    },
+    {
+      "id": "ART_334",
+      "description": "Provisions for reservation of seats and special representation shall cease after a specified period unless extended.",
+      "keywords": ["reservation time limit", "constitutional amendment"]
+    },
+    {
+      "id": "ART_335",
+      "description": "Claims of Scheduled Castes and Scheduled Tribes shall be taken into consideration consistently with the maintenance of efficiency of administration.",
+      "keywords": ["administrative efficiency", "SC ST claims"]
+    },
+    {
+      "id": "ART_336",
+      "description": "Special provisions shall be made for the Anglo-Indian community in certain services during a transitional period.",
+      "keywords": ["anglo-indian services", "special provisions"]
+    },
+    {
+      "id": "ART_337",
+      "description": "Special provisions shall be made for the educational grants of the Anglo-Indian community.",
+      "keywords": ["educational grants", "anglo-indian community"]
+    },
+    {
+      "id": "ART_338",
+      "description": "There shall be a National Commission for the Scheduled Castes to investigate and monitor safeguards provided for them.",
+      "keywords": ["national commission", "scheduled castes"]
+    },
+    {
+      "id": "ART_338A",
+      "description": "There shall be a National Commission for the Scheduled Tribes to investigate and monitor safeguards provided for them.",
+      "keywords": ["national commission", "scheduled tribes"]
+    },
+    {
+      "id": "ART_338B",
+      "description": "There shall be a National Commission for Backward Classes to investigate and monitor safeguards provided for them.",
+      "keywords": ["national commission", "backward classes"]
+    },
+    {
+      "id": "ART_339",
+      "description": "The President may appoint a Commission to report on the administration of Scheduled Areas and the welfare of Scheduled Tribes.",
+      "keywords": ["scheduled areas", "tribal welfare"]
+    },
+    {
+      "id": "ART_340",
+      "description": "The President may appoint a Commission to investigate the conditions of socially and educationally backward classes.",
+      "keywords": ["backward classes commission", "SEBC"]
+    },
+    {
+      "id": "ART_341",
+      "description": "The President may specify the Scheduled Castes for a State or Union Territory.",
+      "keywords": ["scheduled castes list", "presidential notification"]
+    },
+    {
+      "id": "ART_342",
+      "description": "The President may specify the Scheduled Tribes for a State or Union Territory.",
+      "keywords": ["scheduled tribes list", "presidential notification"]
+    },
+    {
+      "id": "ART_343",
+      "description": "Hindi in Devanagari script shall be the official language of the Union, and English shall continue for official purposes as provided by law.",
+      "keywords": ["official language", "hindi", "english"]
+    },
+    {
+      "id": "ART_344",
+      "description": "A Commission and a Committee of Parliament shall be constituted to review the progressive use of Hindi for official purposes.",
+      "keywords": ["language commission", "progressive use of hindi"]
+    },
+    {
+      "id": "ART_345",
+      "description": "The Legislature of a State may adopt any one or more languages in use in the State or Hindi as the official language of the State.",
+      "keywords": ["state official language", "legislative power"]
+    },
+    {
+      "id": "ART_346",
+      "description": "The language for communication between States and between a State and the Union shall be as prescribed by law.",
+      "keywords": ["inter-state communication", "official language"]
+    },
+    {
+      "id": "ART_347",
+      "description": "The President may recognize a language spoken by a section of the population of a State for official purposes.",
+      "keywords": ["linguistic minority", "presidential recognition"]
+    },
+    {
+      "id": "ART_348",
+      "description": "Proceedings in the Supreme Court and High Courts and authoritative texts of laws shall be in English unless Parliament provides otherwise.",
+      "keywords": ["judicial language", "authoritative texts"]
+    },
+    {
+      "id": "ART_349",
+      "description": "Special procedure shall be followed for enacting laws related to language before the expiry of a specified period.",
+      "keywords": ["special procedure", "language legislation"]
+    },
+    {
+      "id": "ART_350",
+      "description": "Every person shall be entitled to submit a representation for the redress of grievances in any language used in the Union or State.",
+      "keywords": ["right to representation", "grievance redressal"]
+    },
+    {
+      "id": "ART_350A",
+      "description": "Every State and local authority shall provide facilities for instruction in the mother tongue at the primary stage of education to linguistic minority groups.",
+      "keywords": ["mother tongue instruction", "linguistic minorities"]
+    },
+    {
+      "id": "ART_350B",
+      "description": "There shall be a Special Officer for linguistic minorities to investigate and report on safeguards provided to them.",
+      "keywords": ["linguistic minorities", "special officer"]
+    },
+    {
+      "id": "ART_351",
+      "description": "The Union shall promote the spread of Hindi and develop it as a medium of expression for all elements of the composite culture of India.",
+      "keywords": ["promotion of hindi", "composite culture"]
+    },
+
+
+    {
+      "id": "ART_352",
+      "description": "The President may proclaim a National Emergency if satisfied that the security of India or any part thereof is threatened by war, external aggression, or armed rebellion.",
+      "keywords": ["national emergency", "article 352", "armed rebellion"]
+    },
+    {
+      "id": "ART_353",
+      "description": "During a National Emergency, the executive and legislative powers of the Union shall extend to the States as provided by the Constitution.",
+      "keywords": ["effect of emergency", "union powers"]
+    },
+    {
+      "id": "ART_354",
+      "description": "Provisions relating to distribution of revenues between the Union and the States may be modified during an Emergency.",
+      "keywords": ["financial provisions", "emergency powers"]
+    },
+    {
+      "id": "ART_355",
+      "description": "It shall be the duty of the Union to protect every State against external aggression and internal disturbance.",
+      "keywords": ["duty of union", "state protection"]
+    },
+    {
+      "id": "ART_356",
+      "description": "If the constitutional machinery of a State fails, the President may assume the functions of the State Government.",
+      "keywords": ["presidents rule", "state emergency"]
+    },
+    {
+      "id": "ART_357",
+      "description": "Parliament may confer powers on the President to make laws for a State under President’s Rule.",
+      "keywords": ["legislative power", "presidents rule"]
+    },
+    {
+      "id": "ART_358",
+      "description": "Fundamental Rights under Article 19 shall be suspended during a National Emergency.",
+      "keywords": ["suspension of rights", "article 19"]
+    },
+    {
+      "id": "ART_359",
+      "description": "The President may suspend the enforcement of certain Fundamental Rights during an Emergency.",
+      "keywords": ["suspension of enforcement", "fundamental rights"]
+    },
+    {
+      "id": "ART_360",
+      "description": "The President may proclaim a Financial Emergency if the financial stability of India is threatened.",
+      "keywords": ["financial emergency", "article 360"]
+    },
+
+    {
+  "id": "ART_361",
+  "description": "The President and the Governors shall not be answerable to any court for the exercise of the powers and duties of their office.",
+  "keywords": ["presidential immunity", "governor immunity"]
+},
+
+
   {
     "id": "ART_363",
     "description": "Courts shall not have jurisdiction in disputes arising out of treaties, agreements, or engagements entered into before the commencement of the Constitution with rulers of Indian States.",
@@ -8616,5 +11619,1540 @@
       "women reservation",
       "gender equality"
     ]
+  },
+
+
+  {
+    "id": "FUNCTIONAL_STRUCTURE_1",
+    "title": "President Powers and Functions",
+    "description": "Defines executive authority, veto powers, ordinance powers, and emergency roles of the President.",
+    "impact": "Clarifies constitutional executive authority and governance structure.",
+    "keywords": ["president powers", "executive authority", "veto", "ordinance"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_2",
+    "title": "Prime Minister and Council of Ministers",
+    "description": "Explains leadership of government, collective responsibility, and executive decision-making.",
+    "impact": "Defines real operational control of the Union Government.",
+    "keywords": ["prime minister", "council of ministers", "executive power"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_3",
+    "title": "Parliament Law-Making Process",
+    "description": "Covers bill introduction, debate, voting, assent, and legislative procedure.",
+    "impact": "Explains how laws are created and enforced.",
+    "keywords": ["law making", "bill process", "parliament"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_4",
+    "title": "Money Bill vs Ordinary Bill",
+    "description": "Distinguishes financial legislation from general laws and explains passage procedure.",
+    "impact": "Clarifies legislative authority over finance.",
+    "keywords": ["money bill", "finance bill", "legislative process"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_5",
+    "title": "Supreme Court Jurisdiction",
+    "description": "Defines original, appellate, and advisory jurisdiction of the Supreme Court.",
+    "impact": "Ensures understanding of highest judicial authority.",
+    "keywords": ["supreme court", "jurisdiction", "judiciary"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_6",
+    "title": "High Court and Subordinate Courts",
+    "description": "Explains structure and authority of state-level judiciary.",
+    "impact": "Supports access to justice at regional level.",
+    "keywords": ["high court", "subordinate courts", "judicial system"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_7",
+    "title": "Centre-State Legislative Relations",
+    "description": "Defines division of powers using Union, State, and Concurrent Lists.",
+    "impact": "Clarifies federal governance and jurisdiction.",
+    "keywords": ["federalism", "union list", "state list", "concurrent list"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_8",
+    "title": "Local Government Structure",
+    "description": "Explains Panchayati Raj and Municipal governance systems.",
+    "impact": "Strengthens grassroots administration understanding.",
+    "keywords": ["panchayat", "municipality", "local governance"]
+  },
+
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_1",
+    "title": "Basic Structure Doctrine",
+    "description": "Prevents Parliament from altering core constitutional principles.",
+    "impact": "Protects democratic framework and constitutional identity.",
+    "keywords": ["basic structure", "constitutional amendment"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_2",
+    "title": "Judicial Review",
+    "description": "Allows courts to examine constitutionality of laws and executive actions.",
+    "impact": "Ensures supremacy of the Constitution.",
+    "keywords": ["judicial review", "constitutional validity"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_3",
+    "title": "Doctrine of Severability",
+    "description": "Invalidates only unconstitutional parts of a law without striking entire statute.",
+    "impact": "Preserves legislative intent where possible.",
+    "keywords": ["severability", "constitutional law"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_4",
+    "title": "Doctrine of Pith and Substance",
+    "description": "Determines true nature of legislation for jurisdictional conflicts.",
+    "impact": "Resolves Centre-State legislative disputes.",
+    "keywords": ["pith and substance", "federal law"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_5",
+    "title": "Harmonious Construction",
+    "description": "Interprets constitutional provisions to avoid conflicts between them.",
+    "impact": "Maintains internal constitutional balance.",
+    "keywords": ["harmonious construction", "interpretation"]
+  },
+
+  {
+    "id": "JUDICIAL_EVOLUTION_1",
+    "title": "Expansion of Article 21",
+    "description": "Judicial interpretation expanded right to life to include dignity, privacy, and liberty.",
+    "impact": "Strengthened individual rights protections.",
+    "keywords": ["article 21", "life and liberty"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_2",
+    "title": "Right to Privacy Jurisprudence",
+    "description": "Recognised privacy as a fundamental constitutional right.",
+    "impact": "Influenced digital rights and data protection.",
+    "keywords": ["privacy", "fundamental rights"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_3",
+    "title": "Free Speech and Online Expression",
+    "description": "Defined constitutional limits and protections of digital speech.",
+    "impact": "Protected internet expression rights.",
+    "keywords": ["free speech", "online expression"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_4",
+    "title": "Public Interest Litigation Evolution",
+    "description": "Expanded access to justice through PIL mechanisms.",
+    "impact": "Enabled citizen participation in constitutional enforcement.",
+    "keywords": ["PIL", "access to justice"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_5",
+    "title": "Judicial Independence and Appointments",
+    "description": "Defined role of judiciary in appointment and autonomy issues.",
+    "impact": "Protected separation of powers.",
+    "keywords": ["judicial independence", "appointments"]
+  },
+
+  {
+    "id": "PRACTICAL_GOVERNANCE_1",
+    "title": "Election Commission Functions",
+    "description": "Regulates elections, political parties, and voting processes.",
+    "impact": "Ensures free and fair democratic elections.",
+    "keywords": ["election commission", "voting"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_2",
+    "title": "CAG and Public Financial Oversight",
+    "description": "Audits government accounts and public spending.",
+    "impact": "Promotes financial accountability.",
+    "keywords": ["CAG", "audit"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_3",
+    "title": "UPSC and Civil Services Recruitment",
+    "description": "Conducts recruitment for public services and administrative posts.",
+    "impact": "Ensures merit-based governance staffing.",
+    "keywords": ["UPSC", "civil services"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_4",
+    "title": "Anti-Defection Law",
+    "description": "Regulates political party switching by elected representatives.",
+    "impact": "Maintains political stability.",
+    "keywords": ["anti defection", "political law"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_5",
+    "title": "Ordinance Making Power",
+    "description": "Allows temporary laws when legislature is not in session.",
+    "impact": "Ensures emergency legislative functioning.",
+    "keywords": ["ordinance", "executive legislation"]
+  },
+{
+    "id": "PRACTICAL_GOVERNANCE_6",
+    "title": "Finance Commission Functions",
+    "description": "Recommends financial distribution between Union and States.",
+    "impact": "Ensures fiscal federalism.",
+    "keywords": ["finance commission", "federal finance"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_7",
+    "title": "NITI Aayog Policy Role",
+    "description": "Policy think tank guiding economic planning and development strategies.",
+    "impact": "Supports cooperative development governance.",
+    "keywords": ["niti aayog", "policy planning"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_8",
+    "title": "Central Vigilance Commission",
+    "description": "Supervises anti-corruption measures in government administration.",
+    "impact": "Enhances transparency and accountability.",
+    "keywords": ["CVC", "anti corruption"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_9",
+    "title": "Lokpal and Anti-Corruption Mechanism",
+    "description": "Independent authority investigating corruption allegations against public officials.",
+    "impact": "Strengthens public accountability.",
+    "keywords": ["lokpal", "anti corruption"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_10",
+    "title": "RTI Implementation Framework",
+    "description": "Operational process for citizens requesting government information.",
+    "impact": "Promotes transparency and citizen empowerment.",
+    "keywords": ["RTI", "transparency", "information rights"]
+  },
+
+  {
+    "id": "FUNC_STRUCT_01",
+    "title": "Separation of Powers",
+    "description": "Division of governmental responsibilities among Legislature, Executive, and Judiciary to prevent concentration of power.",
+    "impact": "Maintains checks and balances and ensures accountability in governance.",
+    "keywords": ["separation of powers", "checks and balances", "governance structure"]
+  },
+  {
+    "id": "FUNC_STRUCT_02",
+    "title": "Federal Structure of India",
+    "description": "Division of powers between Union and State governments through Union, State, and Concurrent Lists.",
+    "impact": "Ensures balanced distribution of authority across levels of government.",
+    "keywords": ["federalism", "union list", "state list", "concurrent list"]
+  },
+  {
+    "id": "FUNC_STRUCT_03",
+    "title": "Parliamentary Form of Government",
+    "description": "Executive is responsible to the Legislature and functions through the Council of Ministers headed by the Prime Minister.",
+    "impact": "Promotes democratic accountability and collective responsibility.",
+    "keywords": ["parliamentary system", "prime minister", "collective responsibility"]
+  },
+  {
+    "id": "FUNC_STRUCT_04",
+    "title": "Bicameral Legislature",
+    "description": "Structure of Parliament consisting of Lok Sabha and Rajya Sabha with distinct roles and powers.",
+    "impact": "Ensures representation of people and states in lawmaking.",
+    "keywords": ["lok sabha", "rajya sabha", "parliament structure"]
+  },
+  {
+    "id": "FUNC_STRUCT_05",
+    "title": "Independent Judiciary",
+    "description": "Judiciary functions independently from executive and legislative influence to uphold the Constitution.",
+    "impact": "Protects Fundamental Rights and ensures rule of law.",
+    "keywords": ["judicial independence", "rule of law", "constitutional protection"]
+  },
+  {
+    "id": "FUNC_STRUCT_06",
+    "title": "Single Citizenship",
+    "description": "Provides one citizenship for all Indians regardless of state affiliation.",
+    "impact": "Promotes national unity and equal legal status.",
+    "keywords": ["single citizenship", "national unity", "citizen rights"]
+  },
+  {
+    "id": "FUNC_STRUCT_07",
+    "title": "Integrated Judicial System",
+    "description": "Unified court structure with Supreme Court at the top followed by High Courts and subordinate courts.",
+    "impact": "Ensures uniformity in law interpretation across the country.",
+    "keywords": ["court hierarchy", "supreme court", "high courts"]
+  },
+  {
+    "id": "FUNC_STRUCT_08",
+    "title": "Emergency Provisions Framework",
+    "description": "Structural mechanism allowing the Union to assume greater powers during national, state, or financial emergencies.",
+    "impact": "Maintains stability and national security during crises.",
+    "keywords": ["emergency provisions", "national emergency", "president rule"]
+  },
+
+
+  {
+    "id": "FUNC_STRUCT_09",
+    "title": "Council of Ministers System",
+    "description": "Executive authority exercised through the Council of Ministers collectively responsible to Lok Sabha.",
+    "impact": "Ensures democratic accountability of executive decisions.",
+    "keywords": ["council of ministers", "executive power", "collective responsibility"]
+  },
+
+  {
+    "id": "FUNC_STRUCT_10",
+    "title": "Role of the President",
+    "description": "Constitutional head of the State with executive, legislative, and emergency powers.",
+    "impact": "Provides constitutional balance and ceremonial leadership.",
+    "keywords": ["president powers", "constitutional head", "executive authority"]
+  },
+
+
+  {
+    "id": "FUNC_STRUCT_11",
+    "title": "Role of the Prime Minister",
+    "description": "Head of the government responsible for policy direction and functioning of executive.",
+    "impact": "Central leadership in governance and administration.",
+    "keywords": ["prime minister", "executive leadership", "government head"]
+  },
+  {
+    "id": "FUNC_STRUCT_12",
+    "title": "Role of Governors in States",
+    "description": "Constitutional heads of states acting as link between Union and State governments.",
+    "impact": "Maintains federal coordination and constitutional oversight.",
+    "keywords": ["governor", "state executive", "federal link"]
+  },
+  {
+    "id": "FUNC_STRUCT_13",
+    "title": "Local Self-Government Structure",
+    "description": "Panchayati Raj and Municipal governance systems at local levels.",
+    "impact": "Strengthens grassroots democracy and decentralization.",
+    "keywords": ["panchayat", "municipality", "local governance"]
+  },
+  {
+    "id": "FUNC_STRUCT_14",
+    "title": "Election Commission Structure",
+    "description": "Independent constitutional body responsible for conducting free and fair elections.",
+    "impact": "Ensures democratic electoral process.",
+    "keywords": ["election commission", "free elections", "democracy"]
+  },
+
+
+  {
+    "id": "FUNCTIONAL_STRUCTURE_9",
+    "title": "Emergency Provisions Operational Structure",
+    "description": "Explains National, State, and Financial Emergency mechanisms and power shifts.",
+    "impact": "Defines crisis governance and constitutional control measures.",
+    "keywords": ["emergency provisions", "national emergency", "president rule"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_10",
+    "title": "Centre-State Financial Relations",
+    "description": "Distribution of taxes, grants, and fiscal responsibilities between Union and States.",
+    "impact": "Maintains financial balance in federal governance.",
+    "keywords": ["finance commission", "tax distribution", "federal finance"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_11",
+    "title": "Inter-State Council and Coordination Mechanisms",
+    "description": "Structures that facilitate cooperation and dispute resolution between states.",
+    "impact": "Strengthens cooperative federalism.",
+    "keywords": ["inter state council", "federal cooperation"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_12",
+    "title": "Administrative Tribunals Structure",
+    "description": "Specialized judicial bodies for service and administrative disputes.",
+    "impact": "Reduces burden on regular courts.",
+    "keywords": ["tribunals", "administrative justice"]
+  },
+
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_6",
+    "title": "Doctrine of Colourable Legislation",
+    "description": "Prevents legislature from indirectly doing what it cannot do directly.",
+    "impact": "Stops misuse of legislative power.",
+    "keywords": ["colourable legislation", "constitutional doctrine"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_7",
+    "title": "Doctrine of Eclipse",
+    "description": "Pre-constitutional laws inconsistent with Fundamental Rights remain dormant until conflict removed.",
+    "impact": "Preserves legal continuity.",
+    "keywords": ["doctrine of eclipse", "constitutional validity"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_8",
+    "title": "Doctrine of Waiver",
+    "description": "Determines whether individuals can waive Fundamental Rights protections.",
+    "impact": "Clarifies enforceability of rights.",
+    "keywords": ["waiver", "fundamental rights"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_9",
+    "title": "Doctrine of Territorial Nexus",
+    "description": "Allows laws to apply beyond territory if sufficient connection exists.",
+    "impact": "Supports jurisdictional legislative power.",
+    "keywords": ["territorial nexus", "jurisdiction"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_10",
+    "title": "Prospective Overruling",
+    "description": "Court decisions apply only to future cases without disturbing past actions.",
+    "impact": "Ensures legal stability during major rulings.",
+    "keywords": ["prospective overruling", "judicial decisions"]
+  },
+
+  {
+    "id": "JUDICIAL_EVOLUTION_6",
+    "title": "Kesavananda Bharati Case (1973)",
+    "description": "Established the Basic Structure Doctrine limiting Parliament’s amendment power.",
+    "impact": "Preserved constitutional identity.",
+    "keywords": ["kesavananda bharati", "basic structure"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_7",
+    "title": "Maneka Gandhi Case (1978)",
+    "description": "Expanded Article 21 to include due process and procedural fairness.",
+    "impact": "Strengthened personal liberty protections.",
+    "keywords": ["maneka gandhi", "article 21"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_8",
+    "title": "Minerva Mills Case (1980)",
+    "description": "Balanced Fundamental Rights and Directive Principles.",
+    "impact": "Reinforced limited amending power doctrine.",
+    "keywords": ["minerva mills", "constitutional balance"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_9",
+    "title": "Vishaka Guidelines Case (1997)",
+    "description": "Established workplace sexual harassment guidelines before legislation existed.",
+    "impact": "Advanced gender justice jurisprudence.",
+    "keywords": ["vishaka", "gender rights"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_10",
+    "title": "Puttaswamy Case (2017)",
+    "description": "Recognised Right to Privacy as a Fundamental Right.",
+    "impact": "Influenced digital rights and data protection laws.",
+    "keywords": ["privacy", "puttaswamy"]
+  },
+
+  {
+    "id": "PRACTICAL_GOVERNANCE_6",
+    "title": "Finance Commission Functions",
+    "description": "Recommends financial distribution between Union and States.",
+    "impact": "Ensures fiscal federalism.",
+    "keywords": ["finance commission", "federal finance"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_7",
+    "title": "NITI Aayog Policy Role",
+    "description": "Policy think tank guiding economic planning and development strategies.",
+    "impact": "Supports cooperative development governance.",
+    "keywords": ["niti aayog", "policy planning"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_8",
+    "title": "Central Vigilance Commission",
+    "description": "Supervises anti-corruption measures in government administration.",
+    "impact": "Enhances transparency and accountability.",
+    "keywords": ["CVC", "anti corruption"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_9",
+    "title": "Lokpal and Anti-Corruption Mechanism",
+    "description": "Independent authority investigating corruption allegations against public officials.",
+    "impact": "Strengthens public accountability.",
+    "keywords": ["lokpal", "anti corruption"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_10",
+    "title": "RTI Implementation Framework",
+    "description": "Operational process for citizens requesting government information.",
+    "impact": "Promotes transparency and citizen empowerment.",
+    "keywords": ["RTI", "transparency", "information rights"]
+  },
+
+  {
+    "id": "FUNCTIONAL_STRUCTURE_15",
+    "title": "Comptroller and Auditor General Structural Role",
+    "description": "Constitutional auditing authority ensuring accountability in public financial administration.",
+    "impact": "Strengthens fiscal transparency and governance oversight.",
+    "keywords": ["cag", "audit", "financial accountability"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_16",
+    "title": "Public Service Commissions Structure",
+    "description": "Union and State Public Service Commissions managing recruitment and administrative selection.",
+    "impact": "Ensures merit-based civil service appointments.",
+    "keywords": ["upsc", "spsc", "civil services"]
+  },
+
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_14",
+    "title": "Doctrine of Legitimate Expectation",
+    "description": "Protects citizens when government actions deviate from established practices or promises.",
+    "impact": "Enhances fairness in administrative law.",
+    "keywords": ["legitimate expectation", "administrative fairness"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_15",
+    "title": "Doctrine of Proportionality",
+    "description": "Tests whether government restrictions on rights are reasonable and balanced.",
+    "impact": "Prevents excessive state interference in individual freedoms.",
+    "keywords": ["proportionality", "rights restriction"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_16",
+    "title": "Manifest Arbitrariness Principle",
+    "description": "Allows courts to strike down laws that are irrational or arbitrary.",
+    "impact": "Strengthens constitutional scrutiny over legislation.",
+    "keywords": ["arbitrariness", "constitutional review"]
+  },
+
+  {
+    "id": "JUDICIAL_EVOLUTION_14",
+    "title": "Indra Sawhney Case (1992)",
+    "description": "Defined reservation policies and introduced the 50 percent cap rule.",
+    "impact": "Shaped affirmative action jurisprudence.",
+    "keywords": ["indra sawhney", "reservation policy"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_15",
+    "title": "I.R. Coelho Case (2007)",
+    "description": "Allowed judicial review of laws placed in Ninth Schedule after 1973.",
+    "impact": "Strengthened constitutional supremacy over legislative actions.",
+    "keywords": ["ir coelho", "ninth schedule"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_16",
+    "title": "NJAC Case (2015)",
+    "description": "Struck down National Judicial Appointments Commission protecting judicial independence.",
+    "impact": "Reinforced separation of powers in appointments.",
+    "keywords": ["njac", "judicial appointments"]
+  },
+
+  {
+    "id": "PRACTICAL_GOVERNANCE_14",
+    "title": "Election Model Code of Conduct",
+    "description": "Guidelines regulating political party behaviour during elections.",
+    "impact": "Maintains fairness during electoral campaigns.",
+    "keywords": ["model code", "election rules"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_15",
+    "title": "Public Grievance Redressal Mechanisms",
+    "description": "Government systems for handling citizen complaints and service issues.",
+    "impact": "Improves accountability and administrative responsiveness.",
+    "keywords": ["grievance redressal", "citizen services"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_16",
+    "title": "E-Governance and Digital Administration",
+    "description": "Digital platforms enabling online public service delivery and governance transparency.",
+    "impact": "Enhances efficiency and citizen accessibility.",
+    "keywords": ["e governance", "digital services"]
+  },
+
+
+  {
+    "id": "FUNCTIONAL_STRUCTURE_17",
+    "title": "Language Policy and Official Language Framework",
+    "description": "Defines use of Hindi, English, and regional languages in administration and governance.",
+    "impact": "Ensures linguistic inclusivity and administrative clarity.",
+    "keywords": ["official language", "language policy", "administration"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_18",
+    "title": "Union Territories Administrative Structure",
+    "description": "Governance model of Union Territories including Lieutenant Governors and legislative arrangements.",
+    "impact": "Clarifies centralized administrative control and local governance.",
+    "keywords": ["union territories", "lg", "ut governance"]
+  },
+
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_17",
+    "title": "Substantive Due Process Principle",
+    "description": "Expands judicial scrutiny over fairness and reasonableness of laws affecting life and liberty.",
+    "impact": "Strengthens protection against arbitrary state action.",
+    "keywords": ["due process", "article 21", "judicial review"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_18",
+    "title": "Transformative Constitutionalism",
+    "description": "Interprets Constitution as a living document promoting social justice and progressive rights.",
+    "impact": "Guides courts toward inclusive and evolving rights interpretation.",
+    "keywords": ["transformative constitution", "progressive rights"]
+  },
+
+  {
+    "id": "JUDICIAL_EVOLUTION_17",
+    "title": "Olga Tellis Case (1985)",
+    "description": "Recognised right to livelihood as part of the right to life under Article 21.",
+    "impact": "Expanded socio-economic rights protections.",
+    "keywords": ["olga tellis", "livelihood rights"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_18",
+    "title": "MC Mehta Environmental Jurisprudence",
+    "description": "Series of cases developing environmental rights and public liability principles.",
+    "impact": "Strengthened environmental protection through judicial innovation.",
+    "keywords": ["mc mehta", "environment law"]
+  },
+
+  {
+    "id": "PRACTICAL_GOVERNANCE_17",
+    "title": "Central Administrative Tribunal Functioning",
+    "description": "Handles disputes related to public service employment and administration.",
+    "impact": "Provides faster resolution for service matters.",
+    "keywords": ["cat", "service tribunal"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_18",
+    "title": "Consumer Protection Authorities",
+    "description": "Regulates unfair trade practices and resolves consumer disputes.",
+    "impact": "Strengthens consumer rights enforcement.",
+    "keywords": ["consumer court", "consumer rights"]
+  },
+
+  
+  {
+    "id": "FUNCTIONAL_STRUCTURE_19",
+    "title": "Delimitation and Constituency Structuring",
+    "description": "Process of redrawing electoral boundaries to ensure equal population representation.",
+    "impact": "Maintains democratic fairness in representation.",
+    "keywords": ["delimitation", "constituency", "representation"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_20",
+    "title": "Coalition Government Operational Structure",
+    "description": "Mechanisms for power-sharing and decision-making in multi-party governments.",
+    "impact": "Ensures stability and coordination in parliamentary governance.",
+    "keywords": ["coalition", "parliamentary system", "government formation"]
+  },
+
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_19",
+    "title": "Living Constitution Approach",
+    "description": "Interprets constitutional provisions dynamically based on evolving societal needs.",
+    "impact": "Allows Constitution to adapt to modern realities.",
+    "keywords": ["living constitution", "dynamic interpretation"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_20",
+    "title": "Purposive Interpretation Principle",
+    "description": "Courts interpret provisions based on legislative intent and constitutional objectives.",
+    "impact": "Ensures laws fulfill intended constitutional purposes.",
+    "keywords": ["purposive interpretation", "constitutional intent"]
+  },
+
+  {
+    "id": "JUDICIAL_EVOLUTION_19",
+    "title": "SR Bommai Case (1994)",
+    "description": "Limited misuse of President’s Rule and strengthened federalism principles.",
+    "impact": "Protected democratic state governments from arbitrary dismissal.",
+    "keywords": ["sr bommai", "president rule", "federalism"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_20",
+    "title": "NALSA Case (2014)",
+    "description": "Recognised transgender persons as third gender with constitutional rights.",
+    "impact": "Advanced gender identity and equality jurisprudence.",
+    "keywords": ["nalsa", "transgender rights"]
+  },
+
+  {
+    "id": "PRACTICAL_GOVERNANCE_19",
+    "title": "National Commission for Women",
+    "description": "Protects women’s rights through policy review, legal support, and awareness.",
+    "impact": "Strengthens gender justice mechanisms.",
+    "keywords": ["ncw", "women rights"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_20",
+    "title": "National Commission for Scheduled Castes and Tribes",
+    "description": "Monitors safeguards and rights of SC and ST communities.",
+    "impact": "Ensures social justice enforcement.",
+    "keywords": ["sc commission", "st commission", "social justice"]
+  },
+
+  
+  {
+    "id": "FUNCTIONAL_STRUCTURE_21",
+    "title": "Anti-Defection Operational Mechanism",
+    "description": "Procedural functioning of disqualification of legislators under the Tenth Schedule.",
+    "impact": "Prevents political instability caused by frequent party switching.",
+    "keywords": ["anti defection", "tenth schedule", "legislators"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_22",
+    "title": "Governor Discretionary Powers Framework",
+    "description": "Operational areas where Governors exercise independent judgment in state governance.",
+    "impact": "Clarifies constitutional checks within state executive.",
+    "keywords": ["governor discretion", "state executive"]
+  },
+
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_21",
+    "title": "Doctrine of Reasonable Classification",
+    "description": "Allows classification under equality law if it is based on intelligible differentia and rational nexus.",
+    "impact": "Shapes equality jurisprudence under Article 14.",
+    "keywords": ["reasonable classification", "article 14"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_22",
+    "title": "Strict Scrutiny Standard",
+    "description": "Higher level of judicial review applied in cases involving fundamental rights violations.",
+    "impact": "Ensures strong protection against discriminatory laws.",
+    "keywords": ["strict scrutiny", "rights protection"]
+  },
+
+  {
+    "id": "JUDICIAL_EVOLUTION_21",
+    "title": "ADM Jabalpur Case (1976) and Its Overruling",
+    "description": "Emergency-era judgment restricting rights later disapproved and reversed in subsequent jurisprudence.",
+    "impact": "Strengthened post-emergency civil liberty protections.",
+    "keywords": ["adm jabalpur", "emergency rights"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_22",
+    "title": "Joseph Shine Case (2018)",
+    "description": "Decriminalised adultery by striking down Section 497 IPC.",
+    "impact": "Advanced gender equality and personal autonomy.",
+    "keywords": ["joseph shine", "gender equality"]
+  },
+
+  {
+    "id": "PRACTICAL_GOVERNANCE_21",
+    "title": "Central Bureau of Investigation Role",
+    "description": "Investigative agency handling corruption and major criminal cases.",
+    "impact": "Supports enforcement of rule of law and accountability.",
+    "keywords": ["cbi", "investigation"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_22",
+    "title": "Enforcement Directorate Functions",
+    "description": "Investigates financial crimes and money laundering under economic laws.",
+    "impact": "Strengthens economic and financial enforcement.",
+    "keywords": ["ed", "money laundering"]
+  },
+
+
+  {
+    "id": "FUNCTIONAL_STRUCTURE_23",
+    "title": "Joint Sitting of Parliament Mechanism",
+    "description": "Procedure followed when Lok Sabha and Rajya Sabha disagree on a bill.",
+    "impact": "Ensures legislative deadlocks are resolved.",
+    "keywords": ["joint sitting", "parliament", "legislative process"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_24",
+    "title": "Parliamentary Committee System",
+    "description": "Role of standing and ad-hoc committees in detailed legislative scrutiny.",
+    "impact": "Improves quality and oversight of law-making.",
+    "keywords": ["parliament committee", "standing committee"]
+  },
+
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_23",
+    "title": "Doctrine of Constitutional Morality",
+    "description": "Promotes adherence to constitutional values beyond literal interpretation.",
+    "impact": "Guides progressive rights-based judicial decisions.",
+    "keywords": ["constitutional morality", "judicial values"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_24",
+    "title": "Golden Rule of Interpretation",
+    "description": "Courts interpret laws to avoid absurd or unjust outcomes.",
+    "impact": "Ensures practical and fair application of statutes.",
+    "keywords": ["golden rule", "legal interpretation"]
+  },
+
+  {
+    "id": "JUDICIAL_EVOLUTION_23",
+    "title": "Bachan Singh Case (1980)",
+    "description": "Established 'rarest of rare' doctrine for death penalty sentencing.",
+    "impact": "Shaped criminal sentencing jurisprudence.",
+    "keywords": ["bachan singh", "death penalty"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_24",
+    "title": "Shayara Bano Case (2017)",
+    "description": "Declared instant triple talaq unconstitutional.",
+    "impact": "Advanced gender justice and personal law reform.",
+    "keywords": ["shayara bano", "triple talaq"]
+  },
+
+  {
+    "id": "PRACTICAL_GOVERNANCE_23",
+    "title": "Goods and Services Tax Council Functioning",
+    "description": "Federal body coordinating indirect tax policies between Union and States.",
+    "impact": "Promotes cooperative fiscal governance.",
+    "keywords": ["gst council", "tax policy"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_24",
+    "title": "Election Petition and Dispute Resolution Process",
+    "description": "Judicial mechanism for challenging election results and irregularities.",
+    "impact": "Ensures fairness and accountability in elections.",
+    "keywords": ["election dispute", "petition"]
+  },
+
+  
+  {
+    "id": "FUNCTIONAL_STRUCTURE_25",
+    "title": "Vote of Confidence and No-Confidence Motion",
+    "description": "Parliamentary procedures used to test majority support of the government in Lok Sabha.",
+    "impact": "Ensures executive accountability to legislature.",
+    "keywords": ["no confidence", "confidence vote", "parliament"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_26",
+    "title": "Caretaker Government Convention",
+    "description": "Operational limits and responsibilities of a government during election period or transition.",
+    "impact": "Maintains neutrality and administrative continuity.",
+    "keywords": ["caretaker government", "election period"]
+  },
+
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_25",
+    "title": "Principle of Natural Justice",
+    "description": "Ensures fair hearing and absence of bias in administrative and judicial actions.",
+    "impact": "Protects procedural fairness and individual rights.",
+    "keywords": ["natural justice", "fair hearing"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_26",
+    "title": "Rule Against Excessive Delegation",
+    "description": "Prevents legislature from transferring essential law-making powers to executive bodies.",
+    "impact": "Maintains constitutional balance of power.",
+    "keywords": ["delegated legislation", "separation of powers"]
+  },
+
+  {
+    "id": "JUDICIAL_EVOLUTION_25",
+    "title": "AK Gopalan Case (1950)",
+    "description": "Early interpretation of personal liberty under Article 21 later expanded in subsequent cases.",
+    "impact": "Laid foundation for evolving liberty jurisprudence.",
+    "keywords": ["ak gopalan", "article 21"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_26",
+    "title": "Golaknath Case (1967)",
+    "description": "Held that Parliament could not amend Fundamental Rights, later modified by Kesavananda ruling.",
+    "impact": "Triggered major constitutional amendment debates.",
+    "keywords": ["golaknath", "fundamental rights"]
+  },
+
+  {
+    "id": "PRACTICAL_GOVERNANCE_25",
+    "title": "Public Accounts Committee Function",
+    "description": "Examines government expenditure and CAG audit reports in Parliament.",
+    "impact": "Strengthens financial accountability and legislative oversight.",
+    "keywords": ["pac", "public accounts"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_26",
+    "title": "Standing Committees on Departmental Affairs",
+    "description": "Parliamentary committees reviewing ministry performance and proposed legislation.",
+    "impact": "Enhances policy scrutiny and governance transparency.",
+    "keywords": ["standing committee", "parliament oversight"]
+  },
+
+  
+  {
+    "id": "FUNCTIONAL_STRUCTURE_27",
+    "title": "Money Bill Certification by Speaker",
+    "description": "Authority of Lok Sabha Speaker to certify whether a bill is a Money Bill under Article 110.",
+    "impact": "Determines legislative procedure and Rajya Sabha’s limited role.",
+    "keywords": ["money bill", "speaker power"]
+  },
+  {
+    "id": "FUNCTIONAL_STRUCTURE_28",
+    "title": "Ordinance Re-promulgation Limits",
+    "description": "Restrictions on repeated issuance of ordinances without legislative approval.",
+    "impact": "Prevents executive misuse of temporary law-making power.",
+    "keywords": ["ordinance", "executive power"]
+  },
+
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_27",
+    "title": "Principle of Harmonious Balance Between Rights and Restrictions",
+    "description": "Courts balance individual freedoms with reasonable state-imposed restrictions.",
+    "impact": "Maintains equilibrium between liberty and public order.",
+    "keywords": ["reasonable restrictions", "rights balance"]
+  },
+  {
+    "id": "CONSTITUTIONAL_INTERPRETATION_28",
+    "title": "Transformative Constitutionalism Doctrine",
+    "description": "Interprets Constitution as a tool for progressive social change and justice.",
+    "impact": "Supports expansion of civil liberties and equality.",
+    "keywords": ["transformative constitutionalism", "progressive law"]
+  },
+
+  {
+    "id": "JUDICIAL_EVOLUTION_27",
+    "title": "SR Bommai Case (1994)",
+    "description": "Defined limits on President’s Rule and strengthened federalism principles.",
+    "impact": "Prevented arbitrary dismissal of state governments.",
+    "keywords": ["sr bommai", "presidents rule"]
+  },
+  {
+    "id": "JUDICIAL_EVOLUTION_28",
+    "title": "Maneka Gandhi Case (1978)",
+    "description": "Expanded interpretation of Article 21 to include due process and fairness.",
+    "impact": "Revolutionized personal liberty jurisprudence.",
+    "keywords": ["maneka gandhi", "due process"]
+  },
+
+  {
+    "id": "PRACTICAL_GOVERNANCE_27",
+    "title": "Model Code of Conduct Implementation",
+    "description": "Election Commission guidelines ensuring fair practices during elections.",
+    "impact": "Promotes free and fair electoral processes.",
+    "keywords": ["model code", "election commission"]
+  },
+  {
+    "id": "PRACTICAL_GOVERNANCE_28",
+    "title": "Comptroller and Auditor General Audit Cycle",
+    "description": "Process of auditing government finances and reporting to Parliament.",
+    "impact": "Strengthens fiscal accountability and transparency.",
+    "keywords": ["cag audit", "financial oversight"]
+  },
+
+  
+  {
+    "id": "PRACTICAL_GOV_011",
+    "title": "Comptroller and Auditor General (CAG)",
+    "description": "Audits government revenue and expenditure to ensure financial accountability.",
+    "impact": "Strengthens transparency and prevents misuse of public funds.",
+    "keywords": ["CAG", "audit", "public finance", "accountability"]
+  },
+  {
+    "id": "PRACTICAL_GOV_012",
+    "title": "Attorney General of India",
+    "description": "Chief legal advisor to the Government of India and represents it in Supreme Court.",
+    "impact": "Ensures legal compliance of executive decisions.",
+    "keywords": ["attorney general", "legal advisor", "government law officer"]
+  },
+  {
+    "id": "PRACTICAL_GOV_013",
+    "title": "Advocate General of State",
+    "description": "Legal advisor to state government and represents state in High Court matters.",
+    "impact": "Supports state-level constitutional and legal governance.",
+    "keywords": ["advocate general", "state law officer", "legal representation"]
+  },
+  {
+    "id": "PRACTICAL_GOV_014",
+    "title": "Finance Commission",
+    "description": "Recommends distribution of financial resources between Union and States.",
+    "impact": "Maintains fiscal federalism and balanced development.",
+    "keywords": ["finance commission", "tax distribution", "fiscal federalism"]
+  },
+  {
+    "id": "PRACTICAL_GOV_015",
+    "title": "Inter-State Council",
+    "description": "Facilitates coordination and cooperation between states and central government.",
+    "impact": "Promotes cooperative federalism and conflict resolution.",
+    "keywords": ["interstate council", "federal cooperation", "center state relations"]
+  },
+
+  
+  {
+    "id": "PRACTICAL_GOV_016",
+    "title": "Parliamentary Committees System",
+    "description": "Committees like Public Accounts Committee and Estimates Committee examine bills and government expenditure in detail.",
+    "impact": "Improves legislative scrutiny and accountability of executive actions.",
+    "keywords": ["parliamentary committees", "PAC", "estimates committee", "legislative oversight"]
+  },
+  {
+    "id": "PRACTICAL_GOV_017",
+    "title": "Tribunals System in India",
+    "description": "Specialized judicial bodies created for speedy resolution of administrative and technical disputes.",
+    "impact": "Reduces burden on courts and ensures expert-based justice delivery.",
+    "keywords": ["tribunals", "administrative tribunals", "quasi judicial bodies"]
+  },
+  {
+    "id": "PRACTICAL_GOV_018",
+    "title": "Emergency Administration Procedures",
+    "description": "Operational functioning of governance during National, State, or Financial Emergency situations.",
+    "impact": "Ensures continuity of government and crisis management under constitutional framework.",
+    "keywords": ["emergency governance", "constitutional emergency", "crisis administration"]
+  },
+  {
+    "id": "PRACTICAL_GOV_019",
+    "title": "Local Self-Government Administration",
+    "description": "Execution and functioning of Panchayats and Municipalities under decentralization framework.",
+    "impact": "Strengthens grassroots democracy and local decision-making.",
+    "keywords": ["panchayat", "municipality", "local governance", "decentralization"]
+  },
+  {
+    "id": "PRACTICAL_GOV_020",
+    "title": "Election Process Administration",
+    "description": "Practical conduct of elections including voter registration, polling, counting, and result declaration.",
+    "impact": "Ensures free and fair democratic elections in India.",
+    "keywords": ["election process", "polling", "voter registration", "election management"]
+  },
+
+  
+  {
+    "id": "PRACTICAL_GOV_021",
+    "title": "Right to Information (RTI) Administration",
+    "description": "Process through which citizens request information from public authorities under the RTI Act.",
+    "impact": "Promotes transparency and accountability in government functioning.",
+    "keywords": ["RTI", "information access", "transparency", "public records"]
+  },
+  {
+    "id": "PRACTICAL_GOV_022",
+    "title": "Public Grievance Redressal Mechanisms",
+    "description": "Systems like CPGRAMS and Lokpal/Lokayukta that address citizen complaints against public services.",
+    "impact": "Improves citizen trust and responsiveness of administration.",
+    "keywords": ["grievance system", "lokpal", "complaint redressal", "citizen services"]
+  },
+  {
+    "id": "PRACTICAL_GOV_023",
+    "title": "Ordinance Making Procedure",
+    "description": "Executive power to issue ordinances when Parliament or State Legislature is not in session.",
+    "impact": "Allows urgent law-making but subject to later legislative approval.",
+    "keywords": ["ordinance", "executive legislation", "temporary law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_024",
+    "title": "Legislative Bill Passing Workflow",
+    "description": "Practical stages of a bill including drafting, readings, committee review, voting, and assent.",
+    "impact": "Ensures structured and democratic law-making process.",
+    "keywords": ["bill process", "legislation", "parliament procedure"]
+  },
+  {
+    "id": "PRACTICAL_GOV_025",
+    "title": "Administrative Rule-Making Process",
+    "description": "Procedure through which ministries create rules and regulations to implement laws passed by Parliament.",
+    "impact": "Enables effective execution of statutory provisions in governance.",
+    "keywords": ["delegated legislation", "rules", "regulations", "policy implementation"]
+  },
+
+  
+  {
+    "id": "PRACTICAL_GOV_026",
+    "title": "Election Commission Operational Process",
+    "description": "Procedures followed by the Election Commission for conducting free and fair elections including model code enforcement and result declaration.",
+    "impact": "Ensures democratic legitimacy and electoral transparency.",
+    "keywords": ["election commission", "elections", "model code of conduct", "voting process"]
+  },
+  {
+    "id": "PRACTICAL_GOV_027",
+    "title": "Comptroller and Auditor General (CAG) Audit Workflow",
+    "description": "Process of auditing government expenditures and presenting audit reports to Parliament and State Legislatures.",
+    "impact": "Strengthens financial accountability and checks misuse of public funds.",
+    "keywords": ["CAG", "audit", "public finance", "accountability"]
+  },
+  {
+    "id": "PRACTICAL_GOV_028",
+    "title": "Public Interest Litigation (PIL) Filing Procedure",
+    "description": "Practical steps for citizens or groups to approach courts for enforcement of public rights and social justice issues.",
+    "impact": "Expands access to justice and constitutional remedies.",
+    "keywords": ["PIL", "public rights", "judicial access", "social justice"]
+  },
+  {
+    "id": "PRACTICAL_GOV_029",
+    "title": "Central Vigilance Commission (CVC) Oversight Mechanism",
+    "description": "Process of monitoring corruption complaints and vigilance administration in central government bodies.",
+    "impact": "Promotes ethical governance and anti-corruption enforcement.",
+    "keywords": ["CVC", "vigilance", "anti corruption", "government oversight"]
+  },
+  {
+    "id": "PRACTICAL_GOV_030",
+    "title": "Policy Formulation and Cabinet Approval Cycle",
+    "description": "Real-world process of drafting policies, inter-ministerial consultations, cabinet approval, and implementation.",
+    "impact": "Ensures coordinated and structured public policy development.",
+    "keywords": ["policy making", "cabinet process", "government policy", "administration"]
+  },
+
+  
+  {"id":"PRACTICAL_GOV_031",
+  "title":"RTI Application Process",
+  "description":"Steps to file Right to Information requests and obtain public records.",
+  "impact":"Improves transparency and citizen oversight.",
+  "keywords":["RTI","transparency","information access"
+  ]},
+
+  {"id":"PRACTICAL_GOV_032",
+  "title":"Lokpal and Lokayukta Complaint Procedure",
+  "description":"Mechanism for filing corruption complaints against public officials.",
+  "impact":"Strengthens anti-corruption accountability.",
+  "keywords":["lokpal","lokayukta","complaint process"]
+},
+
+  {"id":"PRACTICAL_GOV_033",
+  "title":"Parliament Question Hour Functioning",
+  "description":"Process where MPs question ministers and demand accountability.","impact":"Enhances executive scrutiny.",
+  "keywords":["question hour","parliament oversight"]
+},
+
+  {
+    "id":"PRACTICAL_GOV_034",
+    "title":"Zero Hour Parliamentary Practice",
+    "description":"Informal mechanism to raise urgent public matters without notice.","impact":"Allows quick policy attention.",
+    "keywords":["zero hour","parliament practice"]
+  },
+
+  {
+    "id":"PRACTICAL_GOV_035",
+    "title":"Committee System in Parliament",
+    "description":"Role of standing and ad-hoc committees in legislative review.","impact":"Improves law scrutiny and expertise.",
+    "keywords":["parliament committee","legislation review"]
+  },
+
+ [
+  {
+    "id": "PRACTICAL_GOV_036",
+    "title": "Budget Preparation Process",
+    "description": "Steps followed by ministries and finance ministry to prepare union budget.",
+    "impact": "Ensures planned fiscal governance.",
+    "keywords": ["budget", "finance ministry"]
+  },
+  {
+    "id": "PRACTICAL_GOV_037",
+    "title": "Appropriation and Finance Bill Passage",
+    "description": "Procedures for approving government expenditure and taxation.",
+    "impact": "Controls public spending legally.",
+    "keywords": ["appropriation bill", "finance bill"]
+  },
+  {
+    "id": "PRACTICAL_GOV_038",
+    "title": "No Confidence Motion Procedure",
+    "description": "Method to test majority support of the government in Lok Sabha.",
+    "impact": "Maintains democratic accountability.",
+    "keywords": ["no confidence", "parliament"]
+  },
+  {
+    "id": "PRACTICAL_GOV_039",
+    "title": "Impeachment Process for Constitutional Authorities",
+    "description": "Procedure for removing President or judges for misconduct.",
+    "impact": "Protects constitutional integrity.",
+    "keywords": ["impeachment", "constitutional process"]
+  },
+  {
+    "id": "PRACTICAL_GOV_040",
+    "title": "Governor’s Role in State Administration",
+    "description": "Practical functions in state legislative and executive actions.",
+    "impact": "Maintains constitutional governance in states.",
+    "keywords": ["governor", "state administration"]
+  },
+  {
+    "id": "PRACTICAL_GOV_041",
+    "title": "State Public Service Commission Recruitment",
+    "description": "Operational process for hiring state civil servants.",
+    "impact": "Ensures merit-based state administration.",
+    "keywords": ["SPSC", "recruitment"]
+  },
+  {
+    "id": "PRACTICAL_GOV_042",
+    "title": "District Collector Administrative Functions",
+    "description": "Role in law and order, revenue, and disaster management.",
+    "impact": "Implements policies at district level.",
+    "keywords": ["district collector", "administration"]
+  },
+  {
+    "id": "PRACTICAL_GOV_043",
+    "title": "Police Administration Chain of Command",
+    "description": "Structure and operational procedures in policing.",
+    "impact": "Maintains internal security and law enforcement.",
+    "keywords": ["police", "law enforcement"]
+  },
+  {
+    "id": "PRACTICAL_GOV_044",
+    "title": "Disaster Management Authority Operations",
+    "description": "Coordination of national and state disaster response mechanisms.",
+    "impact": "Improves emergency preparedness.",
+    "keywords": ["disaster management", "NDMA"]
+  },
+  {
+    "id": "PRACTICAL_GOV_045",
+    "title": "NITI Aayog Policy Coordination Role",
+    "description": "Process of policy planning and cooperative federalism initiatives.",
+    "impact": "Enhances strategic governance planning.",
+    "keywords": ["niti aayog", "policy planning"]
+  },
+  {
+    "id": "PRACTICAL_GOV_046",
+    "title": "Inter-State Council Consultation Process",
+    "description": "Mechanism for resolving centre-state policy conflicts.",
+    "impact": "Promotes federal cooperation.",
+    "keywords": ["inter state council", "federalism"]
+  },
+  {
+    "id": "PRACTICAL_GOV_047",
+    "title": "Finance Commission Recommendation Cycle",
+    "description": "Steps for revenue sharing recommendations between centre and states.",
+    "impact": "Balances fiscal federalism.",
+    "keywords": ["finance commission", "revenue sharing"]
+  },
+  {
+    "id": "PRACTICAL_GOV_048",
+    "title": "GST Council Decision Making",
+    "description": "Collaborative tax policy decisions between centre and states.",
+    "impact": "Ensures uniform taxation policy.",
+    "keywords": ["GST council", "tax policy"]
+  },
+  {
+    "id": "PRACTICAL_GOV_049",
+    "title": "Municipal Corporation Budgeting Process",
+    "description": "Urban governance financial planning and approvals.",
+    "impact": "Improves city administration efficiency.",
+    "keywords": ["municipal budget", "urban governance"]
+  },
+  {
+    "id": "PRACTICAL_GOV_050",
+    "title": "Gram Sabha Decision Procedures",
+    "description": "Local rural governance meetings and development approvals.",
+    "impact": "Strengthens grassroots democracy.",
+    "keywords": ["gram sabha", "local governance"]
+  },
+  {
+    "id": "PRACTICAL_GOV_051",
+    "title": "E-Governance Service Delivery Workflow",
+    "description": "Digital public services and online governance processes.",
+    "impact": "Enhances accessibility and efficiency.",
+    "keywords": ["e governance", "digital services"]
+  },
+  {
+    "id": "PRACTICAL_GOV_052",
+    "title": "Digital India Governance Framework",
+    "description": "Operational model for digital transformation of government services.",
+    "impact": "Modernizes public administration.",
+    "keywords": ["digital india", "technology policy"]
+  },
+  {
+    "id": "PRACTICAL_GOV_053",
+    "title": "Public Grievance Redressal Mechanism",
+    "description": "Systems like CPGRAMS for handling citizen complaints.",
+    "impact": "Improves service accountability.",
+    "keywords": ["grievance", "citizen complaint"]
+  },
+  {
+    "id": "PRACTICAL_GOV_054",
+    "title": "Social Welfare Scheme Implementation Cycle",
+    "description": "Process from policy announcement to beneficiary delivery.",
+    "impact": "Ensures effective welfare governance.",
+    "keywords": ["welfare scheme", "implementation"]
+  },
+  {
+    "id": "PRACTICAL_GOV_055",
+    "title": "Public Procurement and Tendering Rules",
+    "description": "Government contract bidding and transparency procedures.",
+    "impact": "Reduces corruption in procurement.",
+    "keywords": ["tender", "procurement"]
+  },
+  {
+    "id": "PRACTICAL_GOV_056",
+    "title": "Environmental Clearance Approval Process",
+    "description": "Regulatory procedure for development projects.",
+    "impact": "Balances development and sustainability.",
+    "keywords": ["environment clearance", "regulation"]
+  },
+  {
+    "id": "PRACTICAL_GOV_057",
+    "title": "Information Technology Act Enforcement",
+    "description": "Operational enforcement of cyber laws and digital crimes.",
+    "impact": "Strengthens cybersecurity governance.",
+    "keywords": ["IT act", "cyber law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_058",
+    "title": "Data Protection Authority Functions",
+    "description": "Oversight of personal data governance and compliance.",
+    "impact": "Protects digital privacy rights.",
+    "keywords": ["data protection", "privacy law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_059",
+    "title": "National Human Rights Commission Inquiry Process",
+    "description": "Procedure for investigating human rights violations.",
+    "impact": "Promotes civil liberty protection.",
+    "keywords": ["NHRC", "human rights"]
+  },
+  {
+    "id": "PRACTICAL_GOV_060",
+    "title": "Consumer Dispute Redressal Commission Workflow",
+    "description": "Process for handling consumer complaints and disputes.",
+    "impact": "Strengthens consumer protection system.",
+    "keywords": ["consumer court", "dispute redressal"]
+  },
+
+  
+  {
+    "id": "PRACTICAL_GOV_061",
+    "title": "Lok Adalat Dispute Resolution Process",
+    "description": "Alternative dispute resolution through compromise settlements outside regular courts.",
+    "impact": "Reduces court burden and promotes faster justice.",
+    "keywords": ["lok adalat", "ADR", "settlement"]
+  },
+  {
+    "id": "PRACTICAL_GOV_062",
+    "title": "Fast Track Court Operations",
+    "description": "Special courts established to speed up trials of pending cases.",
+    "impact": "Improves judicial efficiency and case disposal rate.",
+    "keywords": ["fast track court", "trial", "justice delivery"]
+  },
+  {
+    "id": "PRACTICAL_GOV_063",
+    "title": "Legal Services Authority Aid Mechanism",
+    "description": "Provision of free legal aid to eligible citizens under Legal Services Authorities.",
+    "impact": "Ensures access to justice for economically weaker sections.",
+    "keywords": ["legal aid", "free lawyer", "justice access"]
+  },
+  {
+    "id": "PRACTICAL_GOV_064",
+    "title": "Online FIR Filing Procedure",
+    "description": "Digital mechanism to register police complaints through online portals.",
+    "impact": "Improves accessibility to law enforcement services.",
+    "keywords": ["FIR", "online complaint", "police service"]
+  },
+  {
+    "id": "PRACTICAL_GOV_065",
+    "title": "Passport Issuance Verification Workflow",
+    "description": "Administrative and police verification steps in issuing passports.",
+    "impact": "Ensures identity validation and national security.",
+    "keywords": ["passport", "verification", "citizen services"]
+  },
+  {
+    "id": "PRACTICAL_GOV_066",
+    "title": "Aadhaar Enrollment and Update Governance",
+    "description": "Operational framework for identity enrollment and biometric updates.",
+    "impact": "Strengthens digital identity management.",
+    "keywords": ["aadhaar", "identity", "UIDAI"]
+  },
+  {
+    "id": "PRACTICAL_GOV_067",
+    "title": "Income Tax Assessment Procedure",
+    "description": "Process of filing, scrutiny, and tax assessment by authorities.",
+    "impact": "Ensures fair taxation and compliance.",
+    "keywords": ["income tax", "assessment", "tax law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_068",
+    "title": "GST Return Filing Workflow",
+    "description": "Procedural steps for businesses to report tax liabilities digitally.",
+    "impact": "Promotes transparent tax compliance.",
+    "keywords": ["GST return", "tax filing", "business law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_069",
+    "title": "Labour Law Compliance Inspection",
+    "description": "Government inspection procedures for workplace law enforcement.",
+    "impact": "Protects worker rights and employment standards.",
+    "keywords": ["labour law", "inspection", "employment"]
+  },
+  {
+    "id": "PRACTICAL_GOV_070",
+    "title": "Factory License Approval Process",
+    "description": "Procedure for industrial safety approvals and operational licenses.",
+    "impact": "Ensures workplace safety compliance.",
+    "keywords": ["factory license", "industrial regulation"]
+  },
+  {
+    "id": "PRACTICAL_GOV_071",
+    "title": "Company Incorporation Registration",
+    "description": "Steps to legally establish companies through MCA portal.",
+    "impact": "Facilitates legal business formation.",
+    "keywords": ["company registration", "MCA", "corporate law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_072",
+    "title": "Trademark Registration Procedure",
+    "description": "Process for protecting brand names and intellectual property.",
+    "impact": "Encourages innovation and brand security.",
+    "keywords": ["trademark", "IPR", "brand law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_073",
+    "title": "Patent Filing Governance Process",
+    "description": "Procedure for applying and securing patents for inventions.",
+    "impact": "Supports technological innovation protection.",
+    "keywords": ["patent", "IPR", "innovation law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_074",
+    "title": "Cyber Crime Complaint Registration",
+    "description": "National cybercrime portal workflow for reporting digital offences.",
+    "impact": "Improves cyber law enforcement.",
+    "keywords": ["cyber crime", "online fraud", "complaint"]
+  },
+  {
+    "id": "PRACTICAL_GOV_075",
+    "title": "Digital Evidence Handling Procedure",
+    "description": "Legal processes for collecting and presenting electronic evidence.",
+    "impact": "Strengthens cybercrime investigations.",
+    "keywords": ["digital evidence", "forensics", "cyber law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_076",
+    "title": "Bail Application Procedure",
+    "description": "Steps to seek temporary release from custody through courts.",
+    "impact": "Protects individual liberty during trials.",
+    "keywords": ["bail", "criminal law", "court process"]
+  },
+  {
+    "id": "PRACTICAL_GOV_077",
+    "title": "Charge Sheet Filing Process",
+    "description": "Police procedure to submit investigation findings to courts.",
+    "impact": "Initiates formal criminal prosecution.",
+    "keywords": ["charge sheet", "criminal procedure"]
+  },
+  {
+    "id": "PRACTICAL_GOV_078",
+    "title": "Witness Protection Mechanism",
+    "description": "Government framework to ensure safety of witnesses in trials.",
+    "impact": "Encourages fair testimony and justice.",
+    "keywords": ["witness protection", "trial safety"]
+  },
+  {
+    "id": "PRACTICAL_GOV_079",
+    "title": "Prison Administration Oversight",
+    "description": "Operational governance of correctional facilities and inmate rights.",
+    "impact": "Ensures humane custodial management.",
+    "keywords": ["prison", "corrections", "custody"]
+  },
+  {
+    "id": "PRACTICAL_GOV_080",
+    "title": "Juvenile Justice Board Procedures",
+    "description": "Legal process for handling cases involving minors in conflict with law.",
+    "impact": "Protects child rights in justice system.",
+    "keywords": ["juvenile justice", "child law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_081",
+    "title": "Family Court Mediation Process",
+    "description": "Procedure for resolving matrimonial disputes through mediation.",
+    "impact": "Encourages amicable family dispute settlement.",
+    "keywords": ["family court", "mediation"]
+  },
+  {
+    "id": "PRACTICAL_GOV_082",
+    "title": "Domestic Violence Complaint Procedure",
+    "description": "Legal mechanism to file protection complaints under domestic violence laws.",
+    "impact": "Protects vulnerable individuals from abuse.",
+    "keywords": ["domestic violence", "protection order"]
+  },
+  {
+    "id": "PRACTICAL_GOV_083",
+    "title": "Maintenance Claim Filing Process",
+    "description": "Procedure to seek financial support under family laws.",
+    "impact": "Ensures economic protection of dependents.",
+    "keywords": ["maintenance", "family law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_084",
+    "title": "Adoption Legal Approval Process",
+    "description": "Steps for lawful adoption under child protection authorities.",
+    "impact": "Ensures child welfare and legal security.",
+    "keywords": ["adoption", "child welfare"]
+  },
+  {
+    "id": "PRACTICAL_GOV_085",
+    "title": "Property Registration Procedure",
+    "description": "Legal steps to register property ownership with government authorities.",
+    "impact": "Prevents ownership disputes.",
+    "keywords": ["property registration", "land law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_086",
+    "title": "Stamp Duty and Registration Compliance",
+    "description": "Tax and legal compliance in property transactions.",
+    "impact": "Ensures legal validity of documents.",
+    "keywords": ["stamp duty", "registration"]
+  },
+  {
+    "id": "PRACTICAL_GOV_087",
+    "title": "Land Record Digitization Systems",
+    "description": "Digital governance for maintaining land ownership records.",
+    "impact": "Reduces property fraud and disputes.",
+    "keywords": ["land record", "digital registry"]
+  },
+  {
+    "id": "PRACTICAL_GOV_088",
+    "title": "Urban Development Authority Approval",
+    "description": "Planning permission and building regulation processes.",
+    "impact": "Ensures lawful construction practices.",
+    "keywords": ["urban planning", "building approval"]
+  },
+  {
+    "id": "PRACTICAL_GOV_089",
+    "title": "Traffic Violation E-Challan System",
+    "description": "Digital enforcement of traffic laws and penalty collection.",
+    "impact": "Improves road safety compliance.",
+    "keywords": ["traffic challan", "road safety"]
+  },
+  {
+    "id": "PRACTICAL_GOV_090",
+    "title": "Motor Vehicle License Issuance Process",
+    "description": "Procedure for obtaining driving licenses and vehicle registrations.",
+    "impact": "Ensures regulated road usage.",
+    "keywords": ["driving license", "vehicle law"]
+  },
+  {
+    "id": "PRACTICAL_GOV_091",
+    "title": "Public Health Licensing and Regulation",
+    "description": "Approval process for hospitals and medical establishments.",
+    "impact": "Maintains healthcare quality standards.",
+    "keywords": ["health license", "medical regulation"]
+  },
+  {
+    "id": "PRACTICAL_GOV_092",
+    "title": "Drug Approval and Regulatory Process",
+    "description": "Steps for approving pharmaceuticals through regulatory authorities.",
+    "impact": "Ensures safe medical products.",
+    "keywords": ["drug approval", "health regulation"]
+  },
+  {
+    "id": "PRACTICAL_GOV_093",
+    "title": "Food Safety Inspection Procedure",
+    "description": "FSSAI inspection and compliance checks for food businesses.",
+    "impact": "Protects public health standards.",
+    "keywords": ["food safety", "FSSAI"]
+  },
+  {
+    "id": "PRACTICAL_GOV_094",
+    "title": "School Education Board Regulation",
+    "description": "Operational governance of school recognition and academic standards.",
+    "impact": "Maintains education quality assurance.",
+    "keywords": ["education board", "school regulation"]
+  },
+  {
+    "id": "PRACTICAL_GOV_095",
+    "title": "University Accreditation Process",
+    "description": "Higher education quality assurance through regulatory bodies.",
+    "impact": "Ensures academic credibility.",
+    "keywords": ["university", "accreditation"]
+  },
+  {
+    "id": "PRACTICAL_GOV_096",
+    "title": "Scholarship Scheme Administration",
+    "description": "Government process for distributing financial education support.",
+    "impact": "Promotes equitable educational access.",
+    "keywords": ["scholarship", "education aid"]
+  },
+  {
+    "id": "PRACTICAL_GOV_097",
+    "title": "Public Distribution System Operations",
+    "description": "Food subsidy delivery and ration card governance.",
+    "impact": "Supports food security programs.",
+    "keywords": ["PDS", "ration", "food security"]
+  },
+  {
+    "id": "PRACTICAL_GOV_098",
+    "title": "Direct Benefit Transfer Workflow",
+    "description": "Digital transfer of welfare funds to beneficiary bank accounts.",
+    "impact": "Reduces leakages and improves welfare delivery.",
+    "keywords": ["DBT", "welfare transfer"]
+  },
+  {
+    "id": "PRACTICAL_GOV_099",
+    "title": "Public Sector Undertaking Oversight",
+    "description": "Government supervision and audit of state-owned enterprises.",
+    "impact": "Ensures accountability in public corporations.",
+    "keywords": ["PSU", "public enterprise"]
+  },
+  {
+    "id": "PRACTICAL_GOV_100",
+    "title": "Citizen Charter Implementation",
+    "description": "Service delivery standards and timelines published by public authorities.",
+    "impact": "Improves transparency and citizen satisfaction.",
+    "keywords": ["citizen charter", "service standards"]
   }
+ ]
 ]
+ 
+
