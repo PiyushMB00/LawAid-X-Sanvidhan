@@ -13,6 +13,179 @@
             transform: rotate(360deg);
         }
     }
+
+    /* Modal Styling */
+    .law-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(15, 23, 42, 0.9);
+        z-index: 2000;
+        backdrop-filter: blur(8px);
+        padding: 2rem 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .law-modal-content {
+        background: var(--bg-lighter);
+        max-width: 650px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        border-radius: 16px;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        padding: 3rem 2rem;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: transparent;
+        border: none;
+        color: var(--text-secondary);
+        font-size: 2rem;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+
+    .close-modal:hover {
+        color: white;
+    }
+
+    .clickable-card {
+        background: var(--bg-lighter);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 2.5rem;
+        cursor: pointer;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+            border-color 0.3s ease,
+            box-shadow 0.3s ease,
+            background 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        --accent-color: var(--primary-color);
+    }
+
+    .clickable-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--accent-color);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .clickable-card:hover {
+        transform: translateY(-12px);
+        border-color: var(--accent-color);
+        background: rgba(30, 41, 59, 0.9);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7),
+            0 0 15px -5px var(--accent-color);
+    }
+
+    .clickable-card:hover::before {
+        opacity: 1;
+    }
+
+    /* Premium Category Modal Styling */
+    .category-modal-header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .category-badge-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .category-badge-circle {
+        width: 70px;
+        height: 70px;
+        background: var(--primary-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .category-modal-title {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(to right, #fff, #94a3b8);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .category-modal-summary {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        line-height: 1.7;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .category-info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+    .info-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .info-icon-green {
+        color: #10b981;
+        font-size: 1.4rem;
+    }
+
+    .info-icon-gold {
+        color: var(--gold-color);
+        font-size: 1.4rem;
+    }
+
+    .info-text strong {
+        display: block;
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .info-text p {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
 </style>
 {% endblock %}
 
@@ -31,199 +204,303 @@
             </button>
         </div>
 
-        <!-- Result Container -->
-        <div id="search-result-container" class="search-result-container"
-            style="display: none; margin-top: 2rem; width: 100%; max-width: 800px; margin-left: auto; margin-right: auto;">
-            <div class="card" style="text-align: left; background: rgba(30, 41, 59, 0.9);">
-                <div
-                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-                    <h3 style="color: var(--gold-color); display: flex; align-items: center; gap: 0.5rem;">
-                        <ion-icon name="sparkles-outline"></ion-icon> Explanation
-                    </h3>
-                    <button onclick="document.getElementById('search-result-container').style.display='none'"
-                        style="background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.2rem;">&times;</button>
-                </div>
-                <div id="ai-response-content" style="color: var(--text-color); line-height: 1.8;"></div>
-            </div>
+    </div>
+</div>
+
+<!-- Modal Overlay for Law Details -->
+<div id="law-modal-overlay" class="law-modal-overlay">
+    <div class="law-modal-content">
+        <button class="close-modal" id="close-law-modal">
+            <ion-icon name="close-circle"></ion-icon>
+        </button>
+        <div id="law-modal-body">
+            <!-- Content injected here -->
         </div>
     </div>
+</div>
 
-    <div class="grid-4" style="margin-bottom: 4rem;">
-        <div class="card">
-            <div class="card-icon"><ion-icon name="link-outline"></ion-icon></div>
-            <h3>Fundamental Rights</h3>
-            <p>Articles 12-35: Basic rights guaranteed to all citizens</p>
+<div class="grid-3" style="margin-bottom: 4rem;">
+    <div class="clickable-card" onclick="openLawModal('CAT_PREAMBLE')" style="--accent-color: #fbbf24;">
+        <div class="part-number" style="color: #fbbf24;">Intro</div>
+        <h3>Preamble</h3>
+        <p>The soul of the Constitution - justice, liberty, equality, and fraternity.</p>
+    </div>
+    <div class="clickable-card" onclick="openLawModal('CAT_RIGHTS')" style="--accent-color: #3b82f6;">
+        <div class="part-number" style="color: #3b82f6;">Part III</div>
+        <h3>Fundamental Rights</h3>
+        <p>Articles 12-35: The basic rights guaranteed to all Indian citizens.</p>
+    </div>
+    <div class="clickable-card" onclick="openLawModal('CAT_DIRECTIVE')" style="--accent-color: #10b981;">
+        <div class="part-number" style="color: #10b981;">Part IV</div>
+        <h3>Directive Principles</h3>
+        <p>Articles 36-51: Guidelines for the State to ensure social and economic justice.</p>
+    </div>
+    <div class="clickable-card" onclick="openLawModal('CAT_UNION')" style="--accent-color: #ef4444;">
+        <div class="part-number" style="color: #ef4444;">Part V</div>
+        <h3>The Union</h3>
+        <p>Articles 52-151: Structure and powers of the President, Parliament, and Judiciary.</p>
+    </div>
+    <div class="clickable-card" onclick="openLawModal('CAT_STATES')" style="--accent-color: #8b5cf6;">
+        <div class="part-number" style="color: #8b5cf6;">Part VI</div>
+        <h3>The States</h3>
+        <p>Articles 152-237: Structure and powers of the Governor, State Legislature, and High Courts.</p>
+    </div>
+    <div class="clickable-card" onclick="openLawModal('CAT_PANCHAYATS')" style="--accent-color: #f472b6;">
+        <div class="part-number" style="color: #f472b6;">Part IX</div>
+        <h3>Local Government</h3>
+        <p>Articles 243-243ZG: Powers and functions of Panchayats and Municipalities.</p>
+    </div>
+</div>
+
+<div class="section-alternate"
+    style="border-radius: 20px; padding: 3rem; margin: 4rem 0; border: 1px solid rgba(255, 255, 255, 0.05);">
+    <div class="section-content" style="text-align: center; max-width: 800px;">
+        <h4
+            style="color: var(--gold-color); font-size: 1.5rem; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
+            <ion-icon name="bulb-outline" style="font-size: 2rem;"></ion-icon>
+            The Living Document
+        </h4>
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; font-weight: 300;">
+            The Indian Constitution is the longest and most detailed constitution in the world. It serves as a
+            dynamic framework, evolving through amendments to meet the needs of a modern democratic India.
+        </p>
+    </div>
+</div>
+
+<div class="articles-section">
+    <h2 class="section-title">Essential Law & Rights Library</h2>
+    <div class="grid-3">
+        <div class="card article-card clickable-card" onclick="openLawModal('ART_14')" style="--accent-color: #fbbf24;">
+            <span
+                style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Article
+                14</span>
+            <h3 style="margin: 0.5rem 0 1rem;">Equality Before Law</h3>
+            <p>The state shall not deny to any person equality before the law or the equal protection of the laws
+                within the territory of India.</p>
+            <div class="info-box"
+                style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(0,0,0,0.2);">
+                <strong style="color: var(--primary-blue-light); display: block; margin-bottom: 0.5rem;">Key
+                    Principles:</strong>
+                <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                    <li>Prohibits discrimination</li>
+                    <li>Rule of Law foundation</li>
+                    <li>Equal legal protection</li>
+                </ul>
+            </div>
+            <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
+                View</button>
         </div>
-        <div class="card">
-            <div class="card-icon"><ion-icon name="document-text-outline"></ion-icon></div>
-            <h3>Directive Principles</h3>
-            <p>Articles 36-51: Guidelines for state policy</p>
+
+        <div class="card article-card clickable-card" onclick="openLawModal('ART_19')" style="--accent-color: #3b82f6;">
+            <span
+                style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Article
+                19</span>
+            <h3 style="margin: 0.5rem 0 1rem;">Freedom of Speech</h3>
+            <p>Ensures the right to freedom of speech and expression, peaceful assembly, association, and movement
+                across India.</p>
+            <div class="info-box"
+                style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(0,0,0,0.2);">
+                <strong style="color: var(--primary-blue-light); display: block; margin-bottom: 0.5rem;">Key
+                    Liberties:</strong>
+                <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                    <li>Six fundamental freedoms</li>
+                    <li>Democratic pillar</li>
+                    <li>Reasonable restrictions</li>
+                </ul>
+            </div>
+            <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
+                View</button>
         </div>
-        <div class="card" style="background: linear-gradient(135deg, #1e293b 0%, #3b4a63 100%);">
-            <div class="card-icon"><ion-icon name="settings-outline"></ion-icon></div>
-            <h3>Parliament Structure</h3>
-            <p>Articles 79-123: Organization of Legislature</p>
+
+        <div class="card article-card clickable-card" onclick="openLawModal('ART_21')" style="--accent-color: #10b981;">
+            <span
+                style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Article
+                21</span>
+            <h3 style="margin: 0.5rem 0 1rem;">Life and Liberty</h3>
+            <p>Guarantees that no person shall be deprived of their life or personal liberty except according to
+                legal procedures.</p>
+            <div class="info-box"
+                style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(0,0,0,0.2);">
+                <strong style="color: var(--primary-blue-light); display: block; margin-bottom: 0.5rem;">Core
+                    Protections:</strong>
+                <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                    <li>Right to dignity</li>
+                    <li>Privacy & Education</li>
+                    <li>Broad judicial scope</li>
+                </ul>
+            </div>
+            <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
+                View</button>
         </div>
-        <div class="card">
-            <div class="card-icon"><ion-icon name="scale-outline"></ion-icon></div>
-            <h3>Judiciary</h3>
-            <p>Articles 124-147: Court system and powers</p>
+
+        <div class="card article-card clickable-card" onclick="openLawModal('ART_32')" style="--accent-color: #ef4444;">
+            <span
+                style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Article
+                32</span>
+            <h3 style="margin: 0.5rem 0 1rem;">Constitutional Remedies</h3>
+            <p>The right to approach the Supreme Court directly for the enforcement of Fundamental Rights.</p>
+            <div class="info-box"
+                style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(0,0,0,0.2);">
+                <strong style="color: var(--primary-blue-light); display: block; margin-bottom: 0.5rem;">Legal
+                    Power:</strong>
+                <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                    <li>Writ jurisdiction</li>
+                    <li>Guardian of rights</li>
+                    <li>Direct SC access</li>
+                </ul>
+            </div>
+            <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
+                View</button>
+        </div>
+
+        <!-- New Logic Based Cards -->
+        <div class="card article-card clickable-card" onclick="openLawModal('RTE_2009')"
+            style="--accent-color: #8b5cf6;">
+            <span
+                style="font-family: 'Poppins'; font-weight: 700; color: #a855f7; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">RTE
+                Act
+                2009</span>
+            <h3 style="margin: 0.5rem 0 1rem;">Right to Education</h3>
+            <p>Ensures free and compulsory education for all children between 6 and 14 years of age.</p>
+            <div class="info-box"
+                style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(168, 85, 247, 0.2); background: rgba(0,0,0,0.2);">
+                <strong style="color: #c084fc; display: block; margin-bottom: 0.5rem;">Impact:</strong>
+                <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                    <li>Zero admission fees</li>
+                    <li>Neighborhood schooling</li>
+                    <li>Prohibits screening</li>
+                </ul>
+            </div>
+            <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
+                View</button>
+        </div>
+
+        <div class="card article-card clickable-card" onclick="openLawModal('MV_161')" style="--accent-color: #ef4444;">
+            <span
+                style="font-family: 'Poppins'; font-weight: 700; color: #ef4444; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">M.V.
+                Act
+                161</span>
+            <h3 style="margin: 0.5rem 0 1rem;">Hit & Run Recovery</h3>
+            <p>Legal provisions for compensation and immediate medical aid for victims of hit and run accidents.</p>
+            <div class="info-box"
+                style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(239, 68, 68, 0.2); background: rgba(0,0,0,0.2);">
+                <strong style="color: #f87171; display: block; margin-bottom: 0.5rem;">Guidelines:</strong>
+                <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                    <li>Mandatory compensation</li>
+                    <li>Interim relief</li>
+                    <li>Vehicle seizure</li>
+                </ul>
+            </div>
+            <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
+                View</button>
         </div>
     </div>
-
-    <div class="section-alternate"
-        style="border-radius: 20px; padding: 3rem; margin: 4rem 0; border: 1px solid rgba(255, 255, 255, 0.05);">
-        <div class="section-content" style="text-align: center; max-width: 800px;">
-            <h4
-                style="color: var(--gold-color); font-size: 1.5rem; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
-                <ion-icon name="bulb-outline" style="font-size: 2rem;"></ion-icon>
-                The Living Document
-            </h4>
-            <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; font-weight: 300;">
-                The Indian Constitution is the longest and most detailed constitution in the world. It serves as a
-                dynamic framework, evolving through amendments to meet the needs of a modern democratic India.
-            </p>
-        </div>
-    </div>
-
-    <div class="articles-section">
-        <h2 class="section-title">Featured Articles</h2>
-        <div class="grid-3">
-            <div class="card article-card">
-                <span
-                    style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Article
-                    14</span>
-                <h3 style="margin: 0.5rem 0 1rem;">Equality Before Law</h3>
-                <p>The state shall not deny to any person equality before the law or the equal protection of the laws
-                    within the territory of India.</p>
-                <div class="info-box"
-                    style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(0,0,0,0.2);">
-                    <strong style="color: var(--primary-blue-light); display: block; margin-bottom: 0.5rem;">Key
-                        Principles:</strong>
-                    <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
-                        <li>Prohibits discrimination</li>
-                        <li>Rule of Law foundation</li>
-                        <li>Equal legal protection</li>
-                    </ul>
-                </div>
-                <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
-                    View</button>
-            </div>
-
-            <div class="card article-card">
-                <span
-                    style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Article
-                    19</span>
-                <h3 style="margin: 0.5rem 0 1rem;">Freedom of Speech</h3>
-                <p>Ensures the right to freedom of speech and expression, peaceful assembly, association, and movement
-                    across India.</p>
-                <div class="info-box"
-                    style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(0,0,0,0.2);">
-                    <strong style="color: var(--primary-blue-light); display: block; margin-bottom: 0.5rem;">Key
-                        Liberties:</strong>
-                    <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
-                        <li>Six fundamental freedoms</li>
-                        <li>Democratic pillar</li>
-                        <li>Reasonable restrictions</li>
-                    </ul>
-                </div>
-                <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
-                    View</button>
-            </div>
-
-            <div class="card article-card">
-                <span
-                    style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Article
-                    21</span>
-                <h3 style="margin: 0.5rem 0 1rem;">Life and Liberty</h3>
-                <p>Guarantees that no person shall be deprived of their life or personal liberty except according to
-                    legal procedures.</p>
-                <div class="info-box"
-                    style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(0,0,0,0.2);">
-                    <strong style="color: var(--primary-blue-light); display: block; margin-bottom: 0.5rem;">Core
-                        Protections:</strong>
-                    <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
-                        <li>Right to dignity</li>
-                        <li>Privacy & Education</li>
-                        <li>Broad judicial scope</li>
-                    </ul>
-                </div>
-                <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
-                    View</button>
-            </div>
-
-            <div class="card article-card">
-                <span
-                    style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Article
-                    32</span>
-                <h3 style="margin: 0.5rem 0 1rem;">Constitutional Remedies</h3>
-                <p>The right to approach the Supreme Court directly for the enforcement of Fundamental Rights.</p>
-                <div class="info-box"
-                    style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(0,0,0,0.2);">
-                    <strong style="color: var(--primary-blue-light); display: block; margin-bottom: 0.5rem;">Legal
-                        Power:</strong>
-                    <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
-                        <li>Writ jurisdiction</li>
-                        <li>Guardian of rights</li>
-                        <li>Direct SC access</li>
-                    </ul>
-                </div>
-                <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
-                    View</button>
-            </div>
-
-            <div class="card article-card">
-                <span
-                    style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Article
-                    51-A</span>
-                <h3 style="margin: 0.5rem 0 1rem;">Fundamental Duties</h3>
-                <p>Outlines the duties of citizens towards the nation, including promoting harmony and protecting
-                    sovereignty.</p>
-                <div class="info-box"
-                    style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(0,0,0,0.2);">
-                    <strong
-                        style="color: var(--primary-blue-light); display: block; margin-bottom: 0.5rem;">Responsibilities:</strong>
-                    <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
-                        <li>11 core duties</li>
-                        <li>Civic consciousness</li>
-                        <li>Moral obligations</li>
-                    </ul>
-                </div>
-                <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
-                    View</button>
-            </div>
-
-            <div class="card article-card">
-                <span
-                    style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Article
-                    226</span>
-                <h3 style="margin: 0.5rem 0 1rem;">High Court Power</h3>
-                <p>Empowers High Courts to issue writs for the enforcement of rights and other legal purposes.</p>
-                <div class="info-box"
-                    style="padding: 1.25rem; margin: 1.5rem 0; border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(0,0,0,0.2);">
-                    <strong style="color: var(--primary-blue-light); display: block; margin-bottom: 0.5rem;">Judicial
-                        Writ:</strong>
-                    <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
-                        <li>Wide jurisdiction</li>
-                        <li>Local legal aid</li>
-                        <li>Speedy remedies</li>
-                    </ul>
-                </div>
-                <button class="cta-secondary" style="margin-top: auto; width: 100%; justify-content: center;">Detailed
-                    View</button>
-            </div>
-        </div>
-    </div>
+</div>
 </div>
 {% endblock %}
 
 {% block extra_scripts %}
 <script>
+    let lawsCache = null;
+
+    async function fetchLaws() {
+        if (lawsCache) return lawsCache;
+        try {
+            const response = await fetch('/api/laws');
+            lawsCache = await response.json();
+            return lawsCache;
+        } catch (error) {
+            console.error('Error fetching laws:', error);
+            return [];
+        }
+    }
+
+    async function openLawModal(lawId) {
+        const overlay = document.getElementById('law-modal-overlay');
+        const modalBody = document.getElementById('law-modal-body');
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+
+        const categoryData = {
+            'CAT_PREAMBLE': { num: '0', title: 'The Preamble', desc: 'The introductory statement of the Constitution that outlines its purpose and guiding principles.', empowerment: 'Identifies the source of authority and objectives of the Indian State.', coverage: 'Sovereignty, Socialism, Secularism, Democracy, Republic.' },
+            'CAT_RIGHTS': { num: '1', title: 'Fundamental Rights', desc: 'Essential human rights guaranteed to every citizen, protecting individual dignity and freedom.', empowerment: 'Challenge unconstitutional laws and protect against discrimination.', coverage: 'Equality (Art. 14-18), Freedom (Art. 19-22), Remedies (Art. 32)' },
+            'CAT_DIRECTIVE': { num: '2', title: 'Directive Principles', desc: 'Moral and political guidelines for the State to establish a welfare system and ensure social justice.', empowerment: 'Guide for creating a socialistic and fair society in modern India.', coverage: 'Social Justice, Labor Rights, Village Panchayats, UCC' },
+            'CAT_UNION': { num: '3', title: 'The Union', desc: 'The supreme legislative and executive structure of India, Consisting of President and Parliament.', empowerment: 'Ensures a unified national governance framework.', coverage: 'Executive, Parliament, President Powers' },
+            'CAT_STATES': { num: '4', title: 'The States', desc: 'The constitutional framework for State governments, ensuring federal balance.', empowerment: 'Protects state autonomy and provincial governance.', coverage: 'Governors, State Legislatures, High Courts' },
+            'CAT_PANCHAYATS': { num: '5', title: 'Local Government', desc: 'The grassroots level of Indian democracy, empowering rural and urban local bodies.', empowerment: 'Brings governance directly to the people at the village level.', coverage: 'Panchayats, Municipalities, Local Elections' },
+            // Core Law Articles Hardcoded to bypass laws.json issues
+            'ART_14': { title: 'Equality Before Law', desc: 'The state shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.', impact: 'Forms the foundation of the Rule of Law in India, ensuring no one is above the law.', keywords: ['Equality', 'RuleOfLaw', 'Article14'], type: 'article' },
+            'ART_19': { title: 'Freedom of Speech', desc: 'Guarantees the right to freedom of speech and expression, assembly, association, movement, and residence.', impact: 'The cornerstone of Indian democracy, enabling citizens to express opinions and hold the state accountable.', keywords: ['Freedom', 'Speech', 'Democracy'], type: 'article' },
+            'ART_21': { title: 'Life and Liberty', desc: 'No person shall be deprived of their life or personal liberty except according to legal procedures.', impact: 'The most celebrated right, expanded by courts to include right to privacy, dignity, and education.', keywords: ['Liberty', 'Privacy', 'Dignity'], type: 'article' },
+            'ART_32': { title: 'Constitutional Remedies', desc: 'The right to approach the Supreme Court directly for the enforcement of Fundamental Rights.', impact: 'Dr. Ambedkar called it the \"Heart and Soul\" of the Constitution as it makes all other rights enforceable.', keywords: ['Remedies', 'SupremeCourt', 'Writs'], type: 'article' },
+            'RTE_2009': { title: 'Right to Education', desc: 'Ensures free and compulsory education for all children between 6 and 14 years of age.', impact: 'Mandates 25% reservation for disadvantaged groups and prohibits all forms of screening during admission.', keywords: ['Education', 'ChildrenRights', 'Compulsory'], type: 'article' },
+            'MV_161': { title: 'Hit & Run Recovery', desc: 'Legal provisions for compensation and immediate medical aid for victims of hit and run accidents under the Motor Vehicles Act.', impact: 'Ensures victims receive interim relief and mandatory compensation even if the vehicle is not identified.', keywords: ['MotorVehicles', 'Compensation', 'Safety'], type: 'article' }
+        };
+
+        if (categoryData[lawId]) {
+            const d = categoryData[lawId];
+            if (lawId.startsWith('CAT_')) {
+                modalBody.innerHTML = `
+                    <div class="category-modal-header">
+                        <div class="category-badge-wrapper"><div class="category-badge-circle">${d.num}</div></div>
+                        <h2 class="category-modal-title">${d.title}</h2>
+                        <p class="category-modal-summary">${d.desc}</p>
+                    </div>
+                    <div class="category-info-grid">
+                        <div class="info-column"><div class="info-item"><ion-icon name="checkmark-circle-outline" class="info-icon-green"></ion-icon><div class="info-text"><strong>Key Empowerment</strong><p>${d.empowerment}</p></div></div></div>
+                        <div class="info-column"><div class="info-item"><ion-icon name="information-circle-outline" class="info-icon-gold"></ion-icon><div class="info-text"><strong>Coverage</strong><p>${d.coverage}</p></div></div></div>
+                    </div>`;
+            } else {
+                // Render standard article view using hardcoded data
+                modalBody.innerHTML = `
+                    <div style="text-align: left;">
+                        <div style="margin-bottom: 2rem;"><span style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid var(--gold-color); padding-bottom: 4px;">Law Reference</span><h2 style="margin-top: 1rem; color: white; font-size: 2rem;">${d.title}</h2></div>
+                        <div style="margin-bottom: 2rem; background: rgba(30, 41, 59, 0.4); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--primary-color);"><h4 style="color: var(--primary-color); margin-bottom: 0.75rem;"><ion-icon name="information-circle-outline"></ion-icon> Legal Definition</h4><p style="color: var(--text-color); font-size: 1.05rem; line-height: 1.7;">${d.desc}</p></div>
+                        <div style="margin-bottom: 2rem; background: rgba(16, 185, 129, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.2);"><h4 style="color: #10b981; margin-bottom: 0.75rem;"><ion-icon name="flash-outline"></ion-icon> Real-World Impact</h4><p style="color: #cbd5e1; line-height: 1.6;">${d.impact}</p></div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">${(d.keywords || []).map(k => `<span style="background: rgba(255,255,255,0.05); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: var(--text-muted);">#${k}</span>`).join('')}</div>
+                    </div>`;
+            }
+            return;
+        }
+
+        modalBody.innerHTML = '<div style="text-align: center; padding: 3rem;"><ion-icon name="hourglass-outline" class="spin" style="font-size: 3rem; color: var(--primary-color);"></ion-icon><p style="margin-top: 1rem; color: var(--text-secondary);">Loading details...</p></div>';
+        const laws = await fetchLaws();
+        const law = laws.find(l => l.id === lawId);
+        if (law) {
+            modalBody.innerHTML = `
+                <div style="text-align: left;">
+                    <div style="margin-bottom: 2rem;"><span style="font-family: 'Poppins'; font-weight: 700; color: var(--gold-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid var(--gold-color); padding-bottom: 4px;">Law Reference</span><h2 style="margin-top: 1rem; color: white; font-size: 2rem;">${law.title}</h2></div>
+                    <div style="margin-bottom: 2rem; background: rgba(30, 41, 59, 0.4); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--primary-color);"><h4 style="color: var(--primary-color); margin-bottom: 0.75rem;"><ion-icon name="information-circle-outline"></ion-icon> Legal Definition</h4><p style="color: var(--text-color); font-size: 1.05rem; line-height: 1.7;">${law.description}</p></div>
+                    ${law.punishment ? `<div style="margin-bottom: 2rem; background: rgba(239, 68, 68, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2);"><h4 style="color: #ef4444; margin-bottom: 0.75rem;"><ion-icon name="alert-circle-outline"></ion-icon> Punishment</h4><p style="color: #cbd5e1; line-height: 1.6;">${law.punishment}</p></div>` : ''}
+                    ${law.impact ? `<div style="margin-bottom: 2rem; background: rgba(16, 185, 129, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.2);"><h4 style="color: #10b981; margin-bottom: 0.75rem;"><ion-icon name="flash-outline"></ion-icon> Real-World Impact</h4><p style="color: #cbd5e1; line-height: 1.6;">${law.impact}</p></div>` : ''}
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">${(law.keywords || []).map(k => `<span style="background: rgba(255,255,255,0.05); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: var(--text-muted);">#${k}</span>`).join('')}</div>
+                </div>`;
+        } else {
+            modalBody.innerHTML = '<p style="color: white; text-align: center;">Law details not found.</p>';
+        }
+    }
+
+    function closeLawModal() {
+        const overlay = document.getElementById('law-modal-overlay');
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
         const searchInput = document.getElementById('search-input');
         const searchBtn = document.getElementById('search-btn');
         const resultContainer = document.getElementById('search-result-container');
         const responseContent = document.getElementById('ai-response-content');
+        const closeBtn = document.getElementById('close-law-modal');
+        const modalOverlay = document.getElementById('law-modal-overlay');
+
+        // Close modal listeners
+        if (closeBtn) closeBtn.addEventListener('click', closeLawModal);
+        if (modalOverlay) {
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) closeLawModal();
+            });
+        }
 
         async function performSearch() {
             const query = searchInput.value.trim();
@@ -232,7 +509,7 @@
             // Show loading state
             searchBtn.disabled = true;
             searchBtn.innerHTML = '<ion-icon name="hourglass-outline" class="spin"></ion-icon> Thinking...';
-            resultContainer.style.display = 'none';
+            // Note: We used to hide resultContainer here, but better to keep it if it was showing
 
             try {
                 const response = await fetch('/api/ask', {
@@ -246,9 +523,8 @@
                 if (data.error) {
                     alert('Error: ' + data.error);
                 } else {
-                    // Display result
-                    responseContent.innerHTML = data.response.replace(/\n/g, '<br>'); // Simple formatting
-                    resultContainer.style.display = 'block';
+                    // Display result in a result modal for consistency
+                    openLawModalWithContent('Explanation', data.response.replace(/\n/g, '<br>'));
                 }
             } catch (error) {
                 console.error('Search error:', error);
@@ -258,6 +534,20 @@
                 searchBtn.disabled = false;
                 searchBtn.innerHTML = '<ion-icon name="bulb-outline"></ion-icon> Explain';
             }
+        }
+
+        // Helper function for raw AI content in modal
+        function openLawModalWithContent(title, content) {
+            const overlay = document.getElementById('law-modal-overlay');
+            const modalBody = document.getElementById('law-modal-body');
+            overlay.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            modalBody.innerHTML = `
+                <h3 style="color: var(--gold-color); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+                    <ion-icon name="sparkles-outline"></ion-icon> ${title}
+                </h3>
+                <div style="color: var(--text-color); line-height: 1.8;">${content}</div>
+            `;
         }
 
         searchBtn.addEventListener('click', performSearch);

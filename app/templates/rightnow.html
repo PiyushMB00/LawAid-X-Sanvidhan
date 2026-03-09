@@ -3,108 +3,477 @@
 {% block title %}RightNow! - LawAid X Sanvidhaan{% endblock %}
 
 {% block extra_styles %}
+<style>
+    .rightnow-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem 6rem;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+    }
+
+    .card {
+        background: var(--bg-lighter);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 2.5rem;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+            border-color 0.3s ease,
+            box-shadow 0.3s ease,
+            background 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        --accent-color: var(--primary-color);
+    }
+
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--accent-color);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-12px);
+        border-color: var(--accent-color);
+        background: rgba(30, 41, 59, 0.9);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7),
+            0 0 15px -5px var(--accent-color);
+    }
+
+    .card:hover::before {
+        opacity: 1;
+    }
+
+    .card-icon {
+        width: 56px;
+        height: 56px;
+        background: rgba(239, 68, 68, 0.1);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card h3 {
+        color: white;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+        line-height: 1.7;
+    }
+
+    /* Premium Modal Styling (Matches Rights Library) */
+    .premium-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(12px);
+        z-index: 5000;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        padding: 2rem 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .premium-modal-overlay.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .premium-modal-content {
+        background: #0f172a;
+        max-width: 700px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        border-radius: 32px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+        position: relative;
+        animation: modalSlide 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes modalSlide {
+        from {
+            transform: translateY(30px) scale(0.95);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    .modal-header {
+        padding: 3rem 3rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .modal-badge-circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: white;
+        flex-shrink: 0;
+        box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);
+    }
+
+    .modal-title h4 {
+        color: #ef4444;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .modal-title h2 {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .modal-body {
+        padding: 1rem 3rem 3rem;
+    }
+
+    .modal-info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .info-col h5 {
+        color: var(--gold-color);
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .info-col p {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+    }
+
+    .btn-close-modal {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: var(--text-secondary);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        transition: all 0.2s;
+    }
+
+    .btn-close-modal:hover {
+        background: rgba(239, 68, 68, 0.1);
+        color: #ef4444;
+        transform: rotate(90deg);
+    }
+
+    .footer-actions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 5rem;
+        padding-bottom: 4rem;
+    }
+
+    @media (max-width: 768px) {
+        .modal-info-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-actions {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block content %}
 <div class="rightnow-container">
-    <div class="header-section hero">
+    <div class="header-section hero" style="text-align: center; margin-bottom: 4rem;">
         <h1><span class="highlight">RightNow!</span></h1>
-        <div class="subtitle">Immediate guidance for common legal situations</div>
+        <div class="subtitle" style="margin: 0 auto; max-width: 600px;">Immediate, actionable legal steps for when you
+            need help at this very second.</div>
     </div>
 
-    <div class="grid-3" style="margin-bottom: 4rem;">
-        <div class="card">
-            <div class="card-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
-            <h3 style="margin: 0.5rem 0 1rem;">Stopped by Police</h3>
-            <p>Know your legal rights when stopped, questioned, or detained by law enforcement authorities.</p>
-            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">Get Guidance
+    <div class="grid-3">
+        <div class="card" onclick="openRightNowModal('DOMESTIC_VIOLENCE')" style="--accent-color: #ef4444;">
+            <div class="card-icon" style="color: #ef4444; background: rgba(239, 68, 68, 0.1);"><ion-icon
+                    name="shield-outline"></ion-icon></div>
+            <h3>Domestic Violence</h3>
+            <p>Support for those facing physical, emotional, or financial abuse at home.</p>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rightnow/domestic-violence'">Get Guidance
                 →</button>
         </div>
-
-        <div class="card">
-            <div class="card-icon"><ion-icon name="home-outline"></ion-icon></div>
-            <h3 style="margin: 0.5rem 0 1rem;">Tenant Rights</h3>
-            <p>Understand your legal protection as a tenant against unlawful eviction and unfair demands.</p>
-            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">Get Guidance
+        <div class="card" onclick="openRightNowModal('POLICE_CUSTODY')" style="--accent-color: #3b82f6;">
+            <div class="card-icon" style="color: #3b82f6; background: rgba(59, 130, 246, 0.1);"><ion-icon
+                    name="hand-right-outline"></ion-icon></div>
+            <h3>Police Custody</h3>
+            <p>Your rights during arrest, detention, and the process of filing an FIR.</p>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rightnow/police-custody'">Get Guidance
                 →</button>
         </div>
-
-        <div class="card">
-            <div class="card-icon"><ion-icon name="briefcase-outline"></ion-icon></div>
-            <h3 style="margin: 0.5rem 0 1rem;">Workplace Safety</h3>
-            <p>Learn about harassment, discrimination, and labor practices to ensure your protection at work.</p>
-            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">Get Guidance
+        <div class="card" onclick="openRightNowModal('CONSUMER_FRAUD')" style="--accent-color: #10b981;">
+            <div class="card-icon" style="color: #10b981; background: rgba(16, 185, 129, 0.1);"><ion-icon
+                    name="cart-outline"></ion-icon></div>
+            <h3>Consumer Fraud</h3>
+            <p>Action against financial scams, defective products, or service deficiencies.</p>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rightnow/consumer-fraud'">Get Guidance
                 →</button>
         </div>
-
-        <div class="card">
-            <div class="card-icon"><ion-icon name="car-outline"></ion-icon></div>
-            <h3 style="margin: 0.5rem 0 1rem;">Traffic Incidents</h3>
-            <p>Critical steps to take after a road accident, including insurance claims and reports.</p>
-            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">Get Guidance
+        <div class="card" onclick="openRightNowModal('CYBER_STALKING')" style="--accent-color: #ec4899;">
+            <div class="card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);"><ion-icon
+                    name="laptop-outline"></ion-icon></div>
+            <h3>Cyber Stalking</h3>
+            <p>Protection and reporting procedures for online harassment and threats.</p>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rightnow/cyber-stalking'">Get Guidance
                 →</button>
         </div>
-
-        <div class="card">
-            <div class="card-icon"><ion-icon name="cash-outline"></ion-icon></div>
-            <h3 style="margin: 0.5rem 0 1rem;">Consumer Rights</h3>
-            <p>How to report defective products and services to claim refunds or compensations.</p>
-            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">Get Guidance
+        <div class="card" onclick="openRightNowModal('TENANT_EVICTION')" style="--accent-color: #f59e0b;">
+            <div class="card-icon" style="color: #f59e0b; background: rgba(245, 158, 11, 0.1);"><ion-icon
+                    name="home-outline"></ion-icon></div>
+            <h3>Tenant Eviction</h3>
+            <p>Rights against illegal eviction and harassment from landlords.</p>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rightnow/tenant-eviction'">Get Guidance
                 →</button>
         </div>
-
-        <div class="card">
-            <div class="card-icon"><ion-icon name="flash-outline"></ion-icon></div>
-            <h3 style="margin: 0.5rem 0 1rem;">Emergency Action</h3>
-            <p>Bail information, emergency contacts, and immediate legal assistance resources.</p>
-            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">Get Guidance
+        <div class="card" onclick="openRightNowModal('MEDICAL_NEGLIGENCE')" style="--accent-color: #ef4444;">
+            <div class="card-icon" style="color: #ef4444; background: rgba(239, 68, 68, 0.1);"><ion-icon
+                    name="medkit-outline"></ion-icon></div>
+            <h3>Medical Negligence</h3>
+            <p>Legal standing when facing inadequate care or malpractice in healthcare.</p>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rightnow/medical-negligence'">Get Guidance
                 →</button>
         </div>
     </div>
 
+    <!-- Stepper Section -->
     <div class="section-alternate"
-        style="border-radius: 24px; padding: 4rem 3rem; margin: 4rem 0; border: 1px solid rgba(255, 255, 255, 0.05);">
-        <h2 class="section-title">Actionable Legal Steps</h2>
-        <div class="grid-4">
-            <div class="step-card">
-                <div class="step-number-badge">1</div>
-                <h4>Assess Situation</h4>
-                <p>Identify if your issue is criminal, civil, labor, or family law related.</p>
+        style="border-radius: 32px; padding: 5rem 3rem; margin: 6rem 0; border: 1px solid rgba(255, 255, 255, 0.05); background: rgba(30, 41, 59, 0.2);">
+        <h2 class="section-title" style="margin-bottom: 4rem;">General Legal Action Plan</h2>
+        <div class="grid-4"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+            <div class="step-card" style="text-align: center;">
+                <div
+                    style="width: 40px; height: 40px; background: #ef4444; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin: 0 auto 1.5rem; font-weight: 800;">
+                    1</div>
+                <h4 style="color: white; margin-bottom: 0.5rem;">Assess</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Identify if the matter is police-related or
+                    civil.</p>
             </div>
-
-            <div class="step-card">
-                <div class="step-number-badge">2</div>
-                <h4>Know Your Law</h4>
-                <p>Confirm what specific rights apply to your current situation using our library.</p>
+            <div class="step-card" style="text-align: center;">
+                <div
+                    style="width: 40px; height: 40px; background: #ef4444; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin: 0 auto 1.5rem; font-weight: 800;">
+                    2</div>
+                <h4 style="color: white; margin-bottom: 0.5rem;">Inform</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Call family, a lawyer, or trigger the LawAid SOS
+                    Shield.</p>
             </div>
-
-            <div class="step-card">
-                <div class="step-number-badge">3</div>
-                <h4>Record Evidence</h4>
-                <p>Collect dates, witnesses, photos, and all relevant communications.</p>
+            <div class="step-card" style="text-align: center;">
+                <div
+                    style="width: 40px; height: 40px; background: #ef4444; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin: 0 auto 1.5rem; font-weight: 800;">
+                    3</div>
+                <h4 style="color: white; margin-bottom: 0.5rem;">Document</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Take photos, save texts, and record officer
+                    details.</p>
             </div>
-
-            <div class="step-card">
-                <div class="step-number-badge">4</div>
-                <h4>Legal Consultation</h4>
-                <p>Seek professional aid from lawyers or legal aid clinics immediately.</p>
+            <div class="step-card" style="text-align: center;">
+                <div
+                    style="width: 40px; height: 40px; background: #ef4444; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin: 0 auto 1.5rem; font-weight: 800;">
+                    4</div>
+                <h4 style="color: white; margin-bottom: 0.5rem;">Guidance</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Read the detailed LawAid guide for your specific
+                    situation.</p>
             </div>
         </div>
     </div>
 
-    <div class="grid-3" style="margin-top: 4rem; padding-bottom: 4rem;">
-        <button class="cta-secondary" style="justify-content: center;">
+    <!-- Final Redirect Buttons -->
+    <div class="footer-actions">
+        <a href="/emergency-directory" class="cta-secondary" style="justify-content: center; padding: 1.5rem;">
             <ion-icon name="call-outline"></ion-icon>
             Emergency Directory
-        </button>
-        <button class="cta-secondary" style="justify-content: center;">
+        </a>
+        <a href="/legal-aid" class="cta-secondary" style="justify-content: center; padding: 1.5rem;">
             <ion-icon name="scale-outline"></ion-icon>
             Legal Aid Locator
-        </button>
-        <button class="cta-secondary" style="justify-content: center;">
+        </a>
+        <a href="/document-generator" class="cta-secondary" style="justify-content: center; padding: 1.5rem;">
             <ion-icon name="document-text-outline"></ion-icon>
             Draft Notice
-        </button>
+        </a>
     </div>
 </div>
+
+<!-- Modal Overlay -->
+<div class="premium-modal-overlay" id="rightnow-modal-overlay">
+    <div class="premium-modal-content">
+        <button class="btn-close-modal" onclick="closeRightNowModal()">
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <div id="modal-content-inject">
+            <!-- Dynamic Content -->
+        </div>
+    </div>
+</div>
+
+<script>
+    const topicData = {
+        'DOMESTIC_VIOLENCE': {
+            badge: 'S',
+            title: 'Domestic Violence',
+            desc: 'Immediate protections and support systems for survivors of domestic abuse, including the PWDV Act.',
+            points: 'Protection Orders, Right to Residence, Interim Maintenance',
+            coverage: 'Physcial Abuse, Emotional Harm, Economic Deprivation'
+        },
+        'POLICE_CUSTODY': {
+            badge: 'P',
+            title: 'Police Custody',
+            desc: 'Your fundamental rights during arrest and detention to prevent custodial torture and ensure due process.',
+            points: 'Grounds of Arrest, Legal Aid Access, 24h Production',
+            coverage: 'D.K. Basu Guidelines, FIR Copy Right, Medical Checkups'
+        },
+        'CONSUMER_FRAUD': {
+            badge: 'C',
+            title: 'Consumer Fraud',
+            desc: 'Legal recourse against financial scams, defective products, and service failures in marketplace.',
+            points: 'Refund Rights, Replacement Claims, Damage Compensation',
+            coverage: 'UPI Scams, False Advertising, Substandard Goods'
+        },
+        'CYBER_STALKING': {
+            badge: 'L',
+            title: 'Cyber Stalking',
+            desc: 'Legal protections against online harassment, identity theft, and digital threats under IT Act.',
+            points: 'Cease and Desist, Platform Reporting, Evidence Logging',
+            coverage: 'Data Privacy, Image Misuse, Impersonation'
+        },
+        'TENANT_EVICTION': {
+            badge: 'H',
+            title: 'Tenant Eviction',
+            desc: 'Rights of tenants against illegal forceful eviction and harassment by landlords or owners.',
+            points: 'Notice Periods, Security Deposit, Essential Services',
+            coverage: 'Rent Control Act, Forced Entries, Utility Disconnections'
+        },
+        'MEDICAL_NEGLIGENCE': {
+            badge: 'M',
+            title: 'Medical Negligence',
+            desc: 'Legal steps to take when facing inadequate medical care or professional malpractice by hospitals.',
+            points: 'Medical Record Access, Expert Opinions, Consumer Forum Appeals',
+            coverage: 'Duty of Care, Breach of Trust, Informed Consent'
+        }
+    };
+
+    function openRightNowModal(id) {
+        const data = topicData[id];
+        if (!data) return;
+
+        const overlay = document.getElementById('rightnow-modal-overlay');
+        const inject = document.getElementById('modal-content-inject');
+
+        inject.innerHTML = `
+            <div class="modal-header">
+                <div class="modal-badge-circle">${data.badge}</div>
+                <div class="modal-title">
+                    <h4>RIGHTNOW! GUIDANCE</h4>
+                    <h2>${data.title}</h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+                    ${data.desc}
+                </p>
+                <div class="modal-info-grid">
+                    <div class="info-col">
+                        <h5><ion-icon name="checkmark-done-circle-outline"></ion-icon> Key Action Steps</h5>
+                        <p>${data.points}</p>
+                    </div>
+                    <div class="info-col">
+                        <h5><ion-icon name="book-outline"></ion-icon> Legal Protections</h5>
+                        <p>${data.coverage}</p>
+                    </div>
+                </div>
+                <div style="margin-top: 3rem; text-align: center;">
+                    <a href="/rightnow/${id.split('_')[1].toLowerCase()}" class="cta-primary" style="display: inline-flex; width: 100%; justify-content: center;">View Detailed Guidance</a>
+                </div>
+            </div>
+        `;
+
+        overlay.style.display = 'flex';
+        setTimeout(() => overlay.classList.add('active'), 10);
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeRightNowModal() {
+        const overlay = document.getElementById('rightnow-modal-overlay');
+        overlay.classList.remove('active');
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 400);
+    }
+
+    // Escape listener
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeRightNowModal();
+    });
+
+    // Outside click
+    document.getElementById('rightnow-modal-overlay').addEventListener('click', (e) => {
+        if (e.target.id === 'rightnow-modal-overlay') closeRightNowModal();
+    });
+</script>
 {% endblock %}

@@ -3,6 +3,136 @@
 {% block title %}Legal Document Generator - LawAid X Sanvidhaan{% endblock %}
 
 {% block extra_styles %}
+<style>
+    .premium-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(15, 23, 42, 0.9);
+        z-index: 5000;
+        backdrop-filter: blur(12px);
+        padding: 2rem 1rem;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .premium-modal-overlay.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .premium-modal-content {
+        background: #0f172a;
+        max-width: 650px;
+        width: 100%;
+        margin: auto;
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+        position: relative;
+        padding: 3rem 2rem;
+        transform: translateY(30px) scale(0.95);
+        opacity: 0;
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+    }
+
+    .premium-modal-overlay.active .premium-modal-content {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: transparent;
+        border: none;
+        color: var(--text-secondary);
+        font-size: 2rem;
+        cursor: pointer;
+        transition: color 0.2s;
+        z-index: 10;
+    }
+
+    .close-modal:hover {
+        color: white;
+    }
+
+    /* Document Generator Detail Modal Specifics */
+    .modal-header-doc {
+        padding: 1rem 1rem 0;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .modal-badge-circle {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: white;
+        flex-shrink: 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-title-doc h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .modal-title-doc h2 {
+        font-size: 1.75rem;
+        color: white;
+        margin: 0;
+    }
+
+    .modal-body-doc {
+        padding: 0 1rem;
+    }
+
+    .modal-info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .info-col h5 {
+        color: var(--gold-color);
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .info-col p {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .modal-info-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -13,35 +143,46 @@
     </div>
 
     <div class="grid-3" style="margin-bottom: 4rem;">
-        <div class="card">
-            <div class="card-icon"><ion-icon name="scale-outline"></ion-icon></div>
-            <h3 style="margin: 0.5rem 0 1rem;">Complaint Letter</h3>
-            <p>Generate formal complaints to authorities, police, or courts. Ideal for consumer, labor, and civil
-                matters.</p>
-            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">
-                <ion-icon name="create-outline"></ion-icon>
-                Start Generation
-            </button>
+        <div class="card clickable-card" onclick="openGeneratorActionModal('COMPLAINT_LETTER')"
+            style="--accent-color: #3b82f6; cursor: pointer;">
+            <div class="card-icon"
+                style="color: #3b82f6; background: rgba(59, 130, 246, 0.1); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; margin-bottom: 1.5rem;">
+                <ion-icon name="scale-outline"></ion-icon>
+            </div>
+            <h3 style="margin: 0.5rem 0 1rem; color: white;">Complaint Letter</h3>
+            <p style="color: var(--text-muted); line-height: 1.6;">Generate formal complaints to authorities, police, or
+                courts. Ideal for consumer, labor, and civil matters.</p>
+            <div class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;">
+                View Details
+            </div>
         </div>
 
-        <div class="card">
-            <div class="card-icon"><ion-icon name="document-text-outline"></ion-icon></div>
-            <h3 style="margin: 0.5rem 0 1rem;">Legal Notice</h3>
-            <p>Official notices for demanding payment, stopping harassment, or initiating formal legal proceedings.</p>
-            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">
-                <ion-icon name="create-outline"></ion-icon>
-                Draft Notice
-            </button>
+        <div class="card clickable-card" onclick="openGeneratorActionModal('LEGAL_NOTICE')"
+            style="--accent-color: #ef4444; cursor: pointer;">
+            <div class="card-icon"
+                style="color: #ef4444; background: rgba(239, 68, 68, 0.1); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; margin-bottom: 1.5rem;">
+                <ion-icon name="document-text-outline"></ion-icon>
+            </div>
+            <h3 style="margin: 0.5rem 0 1rem; color: white;">Legal Notice</h3>
+            <p style="color: var(--text-muted); line-height: 1.6;">Official notices for demanding payment, stopping
+                harassment, or initiating formal legal proceedings.</p>
+            <div class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;">
+                View Details
+            </div>
         </div>
 
-        <div class="card">
-            <div class="card-icon"><ion-icon name="reader-outline"></ion-icon></div>
-            <h3 style="margin: 0.5rem 0 1rem;">RTI Request</h3>
-            <p>Draft Right to Information requests to obtain documents and data from governmental authorities.</p>
-            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">
-                <ion-icon name="create-outline"></ion-icon>
-                Draft RTI
-            </button>
+        <div class="card clickable-card" onclick="openGeneratorActionModal('RTI_REQUEST')"
+            style="--accent-color: #10b981; cursor: pointer;">
+            <div class="card-icon"
+                style="color: #10b981; background: rgba(16, 185, 129, 0.1); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; margin-bottom: 1.5rem;">
+                <ion-icon name="reader-outline"></ion-icon>
+            </div>
+            <h3 style="margin: 0.5rem 0 1rem; color: white;">RTI Request</h3>
+            <p style="color: var(--text-muted); line-height: 1.6;">Draft Right to Information requests to obtain
+                documents and data from governmental authorities.</p>
+            <div class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;">
+                View Details
+            </div>
         </div>
     </div>
 
@@ -49,83 +190,272 @@
         style="border-radius: 20px; padding: 4rem 3rem; margin: 4rem 0; border: 1px solid rgba(255, 255, 255, 0.05);">
         <h2 class="section-title">Built-in Professionalism</h2>
         <div class="grid-3">
-            <div class="benefit">
-                <div class="benefit-icon" style="color: var(--gold-color);"><ion-icon
+            <div class="card clickable-card" onclick="openFeatureModal('verified')"
+                style="--accent-color: #fbbf24; padding: 2rem; cursor: pointer;">
+                <div style="font-size: 2rem; color: #fbbf24; margin-bottom: 1rem;"><ion-icon
                         name="checkmark-circle-outline"></ion-icon></div>
-                <div>
-                    <h4>Verified Templates</h4>
-                    <p>Templates checked by legal experts for Indian compliance.</p>
-                </div>
+                <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1.1rem;">Verified Templates</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Templates checked by legal experts for Indian
+                    compliance.</p>
             </div>
-            <div class="benefit">
-                <div class="benefit-icon" style="color: var(--gold-color);"><ion-icon name="locate-outline"></ion-icon>
-                </div>
-                <div>
-                    <h4>Smart Customization</h4>
-                    <p>Dynamic fields that adapt to your specific situation.</p>
-                </div>
+            <div class="card clickable-card" onclick="openFeatureModal('smart')"
+                style="--accent-color: #3b82f6; padding: 2rem; cursor: pointer;">
+                <div style="font-size: 2rem; color: #3b82f6; margin-bottom: 1rem;"><ion-icon
+                        name="locate-outline"></ion-icon></div>
+                <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1.1rem;">Smart Customization</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Dynamic fields that adapt to your specific
+                    situation.</p>
             </div>
-            <div class="benefit">
-                <div class="benefit-icon" style="color: var(--gold-color);"><ion-icon
+            <div class="card clickable-card" onclick="openFeatureModal('export')"
+                style="--accent-color: #8b5cf6; padding: 2rem; cursor: pointer;">
+                <div style="font-size: 2rem; color: #8b5cf6; margin-bottom: 1rem;"><ion-icon
                         name="download-outline"></ion-icon></div>
-                <div>
-                    <h4>PDF & Doc Export</h4>
-                    <p>High-quality exports ready for printing or submission.</p>
-                </div>
+                <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1.1rem;">PDF & Doc Export</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">High-quality exports ready for printing or
+                    submission.</p>
             </div>
-            <div class="benefit">
-                <div class="benefit-icon" style="color: var(--gold-color);"><ion-icon name="flash-outline"></ion-icon>
-                </div>
-                <div>
-                    <h4>Lawful Language</h4>
-                    <p>Automatic use of correct terminology for court standards.</p>
-                </div>
+            <div class="card clickable-card" onclick="openFeatureModal('lawful')"
+                style="--accent-color: #10b981; padding: 2rem; cursor: pointer;">
+                <div style="font-size: 2rem; color: #10b981; margin-bottom: 1rem;"><ion-icon
+                        name="flash-outline"></ion-icon></div>
+                <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1.1rem;">Lawful Language</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Automatic use of correct terminology for court
+                    standards.</p>
             </div>
-            <div class="benefit">
-                <div class="benefit-icon" style="color: var(--gold-color);"><ion-icon
+            <div class="card clickable-card" onclick="openFeatureModal('privacy')"
+                style="--accent-color: #ef4444; padding: 2rem; cursor: pointer;">
+                <div style="font-size: 2rem; color: #ef4444; margin-bottom: 1rem;"><ion-icon
                         name="lock-closed-outline"></ion-icon></div>
-                <div>
-                    <h4>Privacy First</h4>
-                    <p>End-to-end encryption for all your sensitive documents.</p>
-                </div>
+                <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1.1rem;">Privacy First</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">End-to-end encryption for all your sensitive
+                    documents.</p>
             </div>
-            <div class="benefit">
-                <div class="benefit-icon" style="color: var(--gold-color);"><ion-icon
+            <div class="card clickable-card" onclick="openFeatureModal('support')"
+                style="--accent-color: #ec4899; padding: 2rem; cursor: pointer;">
+                <div style="font-size: 2rem; color: #ec4899; margin-bottom: 1rem;"><ion-icon
                         name="chatbubble-ellipses-outline"></ion-icon></div>
-                <div>
-                    <h4>Support Center</h4>
-                    <p>Contextual help tips as you draft your legal paperwork.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section" style="padding: 0;">
-        <h3
-            style="margin-bottom: 2rem; font-family: 'Poppins', sans-serif; display: flex; align-items: center; gap: 0.75rem; justify-content: center;">
-            <ion-icon name="eye-outline" style="color: var(--gold-color); font-size: 1.5rem;"></ion-icon>
-            Document Structure Preview
-        </h3>
-        <div
-            style="background: rgba(15, 23, 42, 0.5); border-radius: 20px; padding: 3rem; font-family: 'Courier New', monospace; color: var(--text-secondary); line-height: 1.6; border: 1px solid rgba(255, 255, 255, 0.08); max-width: 900px; margin: 0 auto; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-            <div style="opacity: 0.7;">
-                [User Details Segment]<br>
-                [Authority Segment]<br>
-                <br>
-                <b style="color: white;">SUBJECT: FORMAL COMPLAINT REGARDING [INCIDENT_TYPE]</b><br>
-                <br>
-                Respected Authority,<br>
-                <br>
-                I am submitting this formal complaint to bring to your notice a serious issue regarding [detailed
-                subject matter].<br>
-                <br>
-                I have enclosed all relevant documentation and evidenciary proofs as Annexure A. I request your
-                immediate intervention and look forward to a resolution as per the statutory timelines.<br>
-                <br>
-                Yours sincerely,<br>
-                [Digital Authorization]
+                <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1.1rem;">Support Center</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Contextual help tips as you draft your legal
+                    paperwork.</p>
             </div>
         </div>
     </div>
 </div>
+
+<div class="section" style="padding: 0;">
+    <h3
+        style="margin-bottom: 2rem; font-family: 'Poppins', sans-serif; display: flex; align-items: center; gap: 0.75rem; justify-content: center;">
+        <ion-icon name="eye-outline" style="color: var(--gold-color); font-size: 1.5rem;"></ion-icon>
+        Document Structure Preview
+    </h3>
+    <div
+        style="background: rgba(15, 23, 42, 0.5); border-radius: 20px; padding: 3rem; font-family: 'Courier New', monospace; color: var(--text-secondary); line-height: 1.6; border: 1px solid rgba(255, 255, 255, 0.08); max-width: 900px; margin: 0 auto; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+        <div style="opacity: 0.7;">
+            [User Details Segment]<br>
+            [Authority Segment]<br>
+            <br>
+            <b style="color: white;">SUBJECT: FORMAL COMPLAINT REGARDING [INCIDENT_TYPE]</b><br>
+            <br>
+            Respected Authority,<br>
+            <br>
+            I am submitting this formal complaint to bring to your notice a serious issue regarding [detailed
+            subject matter].<br>
+            <br>
+            I have enclosed all relevant documentation and evidenciary proofs as Annexure A. I request your
+            immediate intervention and look forward to a resolution as per the statutory timelines.<br>
+            <br>
+            Yours sincerely,<br>
+            [Digital Authorization]
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Generator Action Modal -->
+<div id="generator-action-modal-overlay" class="premium-modal-overlay">
+    <div class="premium-modal-content">
+        <button onclick="closeGeneratorActionModal()" class="close-modal">
+            <ion-icon name="close-circle"></ion-icon>
+        </button>
+        <div id="action-modal-content-inject"></div>
+    </div>
+</div>
+
+<!-- Modal Overlay for Features -->
+<div id="feature-modal-overlay" class="premium-modal-overlay">
+    <div class="premium-modal-content">
+        <button onclick="closeFeatureModal()" class="close-modal">
+            <ion-icon name="close-circle"></ion-icon>
+        </button>
+        <div id="modal-content-inject"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    const actionData = {
+        'COMPLAINT_LETTER': {
+            icon: 'scale-outline', color: '#3b82f6', bg: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+            title: 'Complaint Letter',
+            desc: 'A formal letter addressed to an authority to report an incident, seek redressal, or raise a grievance officially.',
+            col1Header: 'Common Uses', col1Points: 'Consumer disputes, police non-cognizable reports, municipal issues, workplace grievances.',
+            col2Header: 'Required Info', col2Points: 'Specific dates, detailed incident description, names of parties involved, expected resolution.',
+            path: '/generator/complaint-letter'
+        },
+        'LEGAL_NOTICE': {
+            icon: 'document-text-outline', color: '#ef4444', bg: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+            title: 'Legal Notice',
+            desc: 'A formal written communication between parties, warning the receiver that the sender intends to undertake legal proceedings.',
+            col1Header: 'Common Uses', col1Points: 'Cheque bounce, breach of contract, property disputes, employer-employee payment disputes.',
+            col2Header: 'Required Info', col2Points: 'Cause of action, legal basis, specific monetary demands, exact timeframe for compliance.',
+            path: '/generator/legal-notice'
+        },
+        'RTI_REQUEST': {
+            icon: 'reader-outline', color: '#10b981', bg: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+            title: 'RTI Request',
+            desc: 'An application filed under the Right to Information Act, 2005, to obtain information from any Indian public authority.',
+            col1Header: 'Common Uses', col1Points: 'Status of applications, details of public expenditure, copies of government orders, policy details.',
+            col2Header: 'Required Info', col2Points: 'Exact information required, relevant time period, details of the Public Information Officer (PIO).',
+            path: '/generator/rti-request'
+        }
+    };
+
+    function openGeneratorActionModal(id) {
+        const data = actionData[id];
+        if (!data) return;
+        const overlay = document.getElementById('generator-action-modal-overlay');
+        const inject = document.getElementById('action-modal-content-inject');
+        inject.innerHTML = `
+            <div class="modal-header-doc">
+                <div class="modal-badge-circle" style="background: ${data.bg};"><ion-icon name="${data.icon}"></ion-icon></div>
+                <div class="modal-title-doc">
+                    <h4 style="color: ${data.color};">DOCUMENT GENERATOR</h4>
+                    <h2>${data.title}</h2>
+                </div>
+            </div>
+            <div class="modal-body-doc">
+                <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">${data.desc}</p>
+                <div class="modal-info-grid">
+                    <div class="info-col">
+                        <h5><ion-icon name="list-circle-outline"></ion-icon> ${data.col1Header}</h5>
+                        <p>${data.col1Points}</p>
+                    </div>
+                    <div class="info-col">
+                        <h5><ion-icon name="information-circle-outline"></ion-icon> ${data.col2Header}</h5>
+                        <p>${data.col2Points}</p>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <a href="${data.path}" class="cta-primary" style="display: inline-flex; width: 100%; justify-content: center; padding: 1.25rem; font-size: 1.1rem;">
+                        <ion-icon name="create-outline"></ion-icon> Start Drafting Now
+                    </a>
+                </div>
+            </div>
+        `;
+        overlay.style.display = 'flex';
+        setTimeout(() => overlay.classList.add('active'), 10);
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeGeneratorActionModal() {
+        const overlay = document.getElementById('generator-action-modal-overlay');
+        overlay.classList.remove('active');
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 400);
+    }
+
+    document.getElementById('generator-action-modal-overlay').addEventListener('click', function (e) {
+        if (e.target === this) closeGeneratorActionModal();
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && document.getElementById('generator-action-modal-overlay').style.display === 'flex') {
+            closeGeneratorActionModal();
+        }
+    });
+
+    const featureData = {
+        'verified': {
+            icon: 'checkmark-circle-outline', color: '#fbbf24',
+            title: 'Verified Templates',
+            desc: 'Our legal templates are rigorously checked by practicing Indian lawyers to ensure full compliance with current laws, court formats, and statutory requirements across all jurisdictions.',
+            points: 'Expert Reviewed, Court Compliant, Jurisdiction Ready'
+        },
+        'smart': {
+            icon: 'locate-outline', color: '#3b82f6',
+            title: 'Smart Customization',
+            desc: 'The generator uses intelligent forms that adapt to your specific legal situation, asking only relevant questions to build a perfectly tailored document.',
+            points: 'Dynamic Fields, Context Aware, Personalized Output'
+        },
+        'export': {
+            icon: 'download-outline', color: '#8b5cf6',
+            title: 'PDF & Doc Export',
+            desc: 'Instantly download your finished documents in high-resolution PDF for direct printing, or DOCX format if you need to make further manual edits with your lawyer.',
+            points: 'Print-Ready PDF, Editable DOCX, Permanent Storage'
+        },
+        'lawful': {
+            icon: 'flash-outline', color: '#10b981',
+            title: 'Lawful Language',
+            desc: 'The system automatically formats your plain-English inputs into formal legal terminology and court-accepted phrasing, giving your documents authority.',
+            points: 'Legalese Translation, Formal Structure, Authoritative Tone'
+        },
+        'privacy': {
+            icon: 'lock-closed-outline', color: '#ef4444',
+            title: 'Privacy First',
+            desc: 'Your sensitive personal and legal details are fully encrypted. We do not store your generated documents or personal identifiers on our servers after your session.',
+            points: 'Zero Data Retention, E2E Encryption, Complete Anonymity'
+        },
+        'support': {
+            icon: 'chatbubble-ellipses-outline', color: '#ec4899',
+            title: 'Support Center',
+            desc: 'Confused about a legal term while drafting? Our contextual tooltips and AI guidance provide instant explanations as you fill out the generator forms.',
+            points: 'Live Tooltips, AI Guidance, Term Glossary'
+        }
+    };
+
+    function openFeatureModal(id) {
+        const data = featureData[id];
+        if (!data) return;
+        const overlay = document.getElementById('feature-modal-overlay');
+        const inject = document.getElementById('modal-content-inject');
+        inject.innerHTML = `
+        <div class="modal-header" style="text-align: center; margin-bottom: 2rem;">
+            <div style="font-size: 3rem; color: ${data.color}; margin-bottom: 0.5rem;"><ion-icon name="${data.icon}"></ion-icon></div>
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem;">${data.title}</h2>
+        </div>
+        <div class="modal-body" style="padding: 0 1rem 1rem;">
+            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; text-align: center;">${data.desc}</p>
+            <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                <strong style="color: var(--gold-color); display: block; margin-bottom: 0.5rem;">Key Benefits:</strong>
+                <p style="color: white; margin: 0;">${data.points}</p>
+            </div>
+        </div>
+    `;
+        overlay.style.display = 'flex';
+        setTimeout(() => overlay.classList.add('active'), 10);
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeFeatureModal() {
+        const overlay = document.getElementById('feature-modal-overlay');
+        overlay.classList.remove('active');
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 400);
+    }
+
+    // Close on outside click
+    document.getElementById('feature-modal-overlay').addEventListener('click', function (e) {
+        if (e.target === this) closeFeatureModal();
+    });
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && document.getElementById('feature-modal-overlay').style.display === 'flex') {
+            closeFeatureModal();
+        }
+    });
+</script>
 {% endblock %}

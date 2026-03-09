@@ -2,185 +2,999 @@
 
 {% block title %}LawAid X Sanvidhaan - Know Your Rights{% endblock %}
 
+{% block extra_styles %}
+<style>
+    .card {
+        background: var(--bg-lighter);
+        padding: 2.5rem;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+            border-color 0.3s ease,
+            box-shadow 0.3s ease,
+            background 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        /* Default accent */
+        --accent-color: var(--primary-color);
+    }
+
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--accent-color);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-12px);
+        border-color: var(--accent-color);
+        background: rgba(30, 41, 59, 0.9);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7),
+            0 0 15px -5px var(--accent-color);
+    }
+
+    .card:hover::before {
+        opacity: 1;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: white;
+        font-weight: 700;
+    }
+
+    .card p {
+        color: #cbd5e1;
+        font-size: 0.95rem;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .card-icon-wrapper {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.05);
+        /* Fallback */
+    }
+
+    .card[style*="--accent-color: #3b82f6"] .card-icon-wrapper {
+        background: rgba(59, 130, 246, 0.1);
+    }
+
+    .card[style*="--accent-color: #10b981"] .card-icon-wrapper {
+        background: rgba(16, 185, 129, 0.1);
+    }
+
+    .card[style*="--accent-color: #f59e0b"] .card-icon-wrapper {
+        background: rgba(245, 158, 11, 0.1);
+    }
+
+    .card[style*="--accent-color: #ec4899"] .card-icon-wrapper {
+        background: rgba(236, 72, 153, 0.1);
+    }
+
+    .card[style*="--accent-color: #8b5cf6"] .card-icon-wrapper {
+        background: rgba(139, 92, 246, 0.1);
+    }
+
+    .card[style*="--accent-color: #ef4444"] .card-icon-wrapper {
+        background: rgba(239, 68, 68, 0.1);
+    }
+
+    .card[style*="--accent-color: #fbbf24"] .card-icon-wrapper {
+        background: rgba(251, 191, 36, 0.1);
+    }
+
+    .card[style*="--accent-color: #6366f1"] .card-icon-wrapper {
+        background: rgba(99, 102, 241, 0.1);
+    }
+
+    .card[style*="--accent-color: #14b8a6"] .card-icon-wrapper {
+        background: rgba(20, 184, 166, 0.1);
+    }
+
+    .card[style*="--accent-color: #22c55e"] .card-icon-wrapper {
+        background: rgba(34, 197, 94, 0.1);
+    }
+
+    .audience-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem;
+        text-align: left;
+    }
+
+    .audience-card h3 {
+        margin-bottom: 0.25rem;
+    }
+
+    .audience-card p {
+        font-size: 0.85rem;
+    }
+
+    /* Target Audience Card Specifics */
+    .audience-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+</style>
+{% endblock %}
+
 {% block content %}
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Know Your Rights<br>Use Them <span class="highlight">Now</span></h1>
-        <div class="subtitle">
-            A web-based AI legal help & rights platform<br>for Indian citizens
-        </div>
-        <div class="hero-cta">
-            <a href="/chat-ui" class="cta-primary">
-                <ion-icon name="chatbubbles-outline"></ion-icon>
-                Ask Legal Question
+<!-- Hero Section -->
+<div class="hero" style="padding-bottom: 2rem;">
+    <h1 style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 700; margin-bottom: 1rem;">Know
+        Your Rights,<br>Use Them <span style="color: #d4af37;">Now.</span></h1>
+    <div class="subtitle" style="font-size: 1.1rem; color: #cbd5e1; max-width: 600px; margin: 0 auto;">
+        A web-based AI legal help & rights platform<br>for Indian citizens
+    </div>
+</div>
+
+<!-- Core Features -->
+<div class="section" style="padding-top: 1rem;">
+    <div class="section-content">
+        <div class="grid-3" style="gap: 1.5rem; justify-content: center;">
+            <a href="/chat-ui" class="card">
+                <div class="card-icon-wrapper" style="color: #60a5fa;"><ion-icon name="chatbubbles-outline"></ion-icon>
+                </div>
+                <h3>Ask Legal Doubt</h3>
+                <p>Get instant AI legal advice and have your doubts cleared in simple language.</p>
             </a>
-            <a href="/constitution" class="cta-secondary">
-                <ion-icon name="book-outline"></ion-icon>
-                Explore Constitution
+
+            <a href="/constitution" class="card">
+                <div class="card-icon-wrapper" style="color: #fbbf24;"><ion-icon name="book-outline"></ion-icon></div>
+                <h3>Constitution Explainer</h3>
+                <p>Access articles and clauses of the Indian Constitution easily.</p>
+            </a>
+
+            <a href="/document-generator" class="card">
+                <div class="card-icon-wrapper" style="color: #34d399;"><ion-icon
+                        name="document-text-outline"></ion-icon></div>
+                <h3>Legal Document Generator</h3>
+                <p>Generate complaints, notices, or RTI requests in minutes.</p>
+            </a>
+
+            <a href="/rights-library" class="card">
+                <div class="card-icon-wrapper" style="color: #f472b6;"><ion-icon name="library-outline"></ion-icon>
+                </div>
+                <h3>Rights Library</h3>
+                <p>Understand your fundamental rights and basic duties.</p>
+            </a>
+
+            <a href="/rightnow" class="card">
+                <div class="card-icon-wrapper" style="color: #60a5fa;"><ion-icon name="scale-outline"></ion-icon></div>
+                <h3>Right Now!</h3>
+                <p>Immediate action steps and guidance for ongoing situations.</p>
+            </a>
+
+            <a href="/sos-shield" class="card">
+                <div class="card-icon-wrapper" style="color: #f87171;"><ion-icon name="shield-half-outline"></ion-icon>
+                </div>
+                <h3>SOS Shield</h3>
+                <p>One-tap emergency alerts and location tracking for safety.</p>
             </a>
         </div>
     </div>
+</div>
 
-    <!-- Core Features -->
-    <div class="section">
-        <div class="section-content">
-            <div class="grid-3">
-                <a href="/chat-ui" class="card">
-                    <div class="card-icon"><ion-icon name="document-text-outline"></ion-icon></div>
-                    <h3>Legal Assist</h3>
-                    <p><strong>AI-Powered Help + Document Creation</strong><br>Get instant legal answers and generate complaints, notices, or RTI requests in minutes.</p>
-                </a>
-
-                <a href="/constitution" class="card">
-                    <div class="card-icon"><ion-icon name="library-outline"></ion-icon></div>
-                    <h3>Learn Your Rights</h3>
-                    <p><strong>Constitution + Rights Library</strong><br>Understand the Indian Constitution, articles, and your fundamental rights in simple language.</p>
-                </a>
-
-                <a href="/sos-shield" class="card">
-                    <div class="card-icon"><ion-icon name="flash-outline"></ion-icon></div>
-                    <h3>Emergency & Action</h3>
-                    <p><strong>RightNow! Guidance + SOS Shield</strong><br>Immediate steps for legal situations and one-tap emergency alerts with location tracking.</p>
-                </a>
+<!-- Section 2: How It Works -->
+<div class="section section-alternate">
+    <div class="section-content">
+        <h2 class="section-title" style="margin-bottom: 3rem;">How LawAid X Sanvidhaan Works</h2>
+        <div class="grid-4" style="gap: 1.5rem;">
+            <div class="card" onclick="openSectionModal('tpl-ask-question')" style="text-align: center;">
+                <div
+                    style="background: var(--primary-color); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 600;">
+                    1</div>
+                <h4>Ask Question</h4>
+                <p>Ask legal questions in simple language using AI assistant</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-ai-analysis')" style="text-align: center;">
+                <div
+                    style="background: var(--primary-color); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 600;">
+                    2</div>
+                <h4>AI Analysis</h4>
+                <p>Our AI processes Indian constitutional and legal databases</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-get-answers')" style="text-align: center;">
+                <div
+                    style="background: var(--primary-color); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 600;">
+                    3</div>
+                <h4>Get Answers</h4>
+                <p>Receive verified legal information and simplified rights guidance</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-take-action')" style="text-align: center;">
+                <div
+                    style="background: var(--primary-color); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 600;">
+                    4</div>
+                <h4>Take Action</h4>
+                <p>Generate documents or use SOS shield to protect your rights</p>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Section 2: How It Works -->
-    <div class="section section-alternate">
-        <div class="section-content">
-            <h2 class="section-title">How LawAid X Sanvidhaan Works</h2>
-            <div class="grid-4">
-                <div class="step-card">
-                    <div class="step-number-badge">1</div>
-                    <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
-                    <h4>Ask Question</h4>
-                    <p>Ask legal questions in simple language using AI assistant</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number-badge">2</div>
-                    <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;"><ion-icon name="analytics-outline"></ion-icon></div>
-                    <h4>AI Analysis</h4>
-                    <p>Our AI processes Indian constitutional and legal databases</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number-badge">3</div>
-                    <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;"><ion-icon name="bulb-outline"></ion-icon></div>
-                    <h4>Get Answers</h4>
-                    <p>Receive clear, jargon-free explanations in seconds</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number-badge">4</div>
-                    <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
-                    <h4>Take Action</h4>
-                    <p>Use emergency SOS or generate notices immediately</p>
-                </div>
-            </div>
+<!-- Modal Overlay for Inner Cards -->
+<div id="section-modal-overlay" class="premium-modal-overlay"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(12px); z-index: 5000; opacity: 0; transition: opacity 0.4s ease; padding: 2rem 1rem; align-items: center; justify-content: center;">
+    <div class="premium-modal-content"
+        style="background: #0f172a; max-width: 700px; width: 100%; max-height: 90vh; overflow-y: auto; border-radius: 32px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8); position: relative;">
+        <button onclick="closeSectionModal()" class="btn-close-modal"
+            style="position: absolute; top: 2rem; right: 2rem; background: rgba(255, 255, 255, 0.05); border: none; width: 40px; height: 40px; border-radius: 50%; color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: all 0.2s;">
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <div id="section-modal-body" style="padding: 0;">
+            <!-- Template content injected here -->
         </div>
     </div>
+</div>
 
-    <!-- Section 3: Why Choose Us -->
-    <div class="section">
-        <div class="section-content">
-            <h2 class="section-title">Why Choose LawAid X Sanvidhaan?</h2>
-            <div class="grid-3">
-                <div class="benefit">
-                    <div class="benefit-icon"><ion-icon name="flag-outline"></ion-icon></div>
-                    <div>
-                        <h4>India-Focused</h4>
-                        <p>Built specifically for the Indian Constitution and legal system awareness.</p>
-                    </div>
-                </div>
-                <div class="benefit">
-                    <div class="benefit-icon"><ion-icon name="hardware-chip-outline"></ion-icon></div>
-                    <div>
-                        <h4>AI-Powered</h4>
-                        <p>Get instant answers backed by advanced Google Gemini AI technology.</p>
-                    </div>
-                </div>
-                <div class="benefit">
-                    <div class="benefit-icon"><ion-icon name="happy-outline"></ion-icon></div>
-                    <div>
-                        <h4>Simple Language</h4>
-                        <p>No complex legal jargon - we explain everything in plain language.</p>
-                    </div>
-                </div>
-            </div>
+<template id="tpl-ask-question">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color) 0%, #3b82f6 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);">
+            1</div>
+        <div class="modal-title">
+            <h4
+                style="color: var(--primary-color); text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                HOW IT WORKS</h4>
+            <h2 style="font-size: 2rem; color: white;">Ask Question</h2>
         </div>
     </div>
-
-    <!-- Section 4: SOS Shield Info -->
-    <div class="section section-alternate" style="border-top: 1px solid rgba(220, 38, 38, 0.2); border-bottom: 1px solid rgba(220, 38, 38, 0.2);">
-        <div class="section-content">
-            <h2 class="section-title"><ion-icon name="shield-checkmark-outline" style="color: #ef4444; vertical-align: middle;"></ion-icon> SOS Shield</h2>
-            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 3rem;">
-                    Your digital safety net for legal emergencies. Instant assistance and safety recording at your fingertips.
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            LawAid X Sanvidhaan is designed to be as simple as chatting with a friend. Just type your question in plain
+            language, and our AI will immediately begin analyzing your query.
+        </p>
+        <div class="modal-info-grid"
+            style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; background: rgba(30, 41, 59, 0.5); padding: 2rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
+            <h5
+                style="color: var(--gold-color); margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <ion-icon name="bulb-outline"></ion-icon> Try asking about:
+            </h5>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">• Landlord disputes and
+                    eviction</p>
+                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">• Consumer complaints</p>
+                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">• RTI filing procedures</p>
+                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">• Traffic rules & violations
                 </p>
-                <div class="grid-3">
-                    <div class="step-card" style="background: rgba(220, 38, 38, 0.05); border-color: rgba(220, 38, 38, 0.1);">
-                        <div class="card-icon" style="color: #ef4444; margin: 0 auto 1.5rem;"><ion-icon name="location-outline"></ion-icon></div>
-                        <h4 style="margin-top: 0;">Live Tracking</h4>
-                        <p>Share your real-time location with family in emergencies.</p>
-                    </div>
-                    <div class="step-card" style="background: rgba(220, 38, 38, 0.05); border-color: rgba(220, 38, 38, 0.1);">
-                        <div class="card-icon" style="color: #ef4444; margin: 0 auto 1.5rem;"><ion-icon name="megaphone-outline"></ion-icon></div>
-                        <h4 style="margin-top: 0;">Instant Alert</h4>
-                        <p>One-tap emergency alert system for critical situations.</p>
-                    </div>
-                    <div class="step-card" style="background: rgba(220, 38, 38, 0.05); border-color: rgba(220, 38, 38, 0.1);">
-                        <div class="card-icon" style="color: #ef4444; margin: 0 auto 1.5rem;"><ion-icon name="call-outline"></ion-icon></div>
-                        <h4 style="margin-top: 0;">Police Connect</h4>
-                        <p>Direct priority connection to local police controls.</p>
-                    </div>
-                </div>
-                <a href="/sos-shield" class="cta-primary" style="background: linear-gradient(135deg, #dc2626, #991b1b); box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3); margin-top: 3rem;">
-                    <ion-icon name="flash-outline"></ion-icon>
-                    Activate SOS Shield
-                </a>
             </div>
         </div>
     </div>
+</template>
 
-    <!-- Section 5: Legal Topics -->
-    <div class="section">
-        <div class="section-content">
-            <h2 class="section-title">Legal Topics Covering India</h2>
-            <div class="grid-3">
-                <div class="topic-item"><ion-icon name="hammer-outline" style="color: #3b82f6;"></ion-icon> Fundamental Rights</div>
-                <div class="topic-item"><ion-icon name="cart-outline" style="color: #10b981;"></ion-icon> Consumer Rights</div>
-                <div class="topic-item"><ion-icon name="laptop-outline" style="color: #f59e0b;"></ion-icon> Cyber Crime</div>
-                <div class="topic-item"><ion-icon name="people-circle-outline" style="color: #ec4899;"></ion-icon> Women & Child Safety</div>
-                <div class="topic-item"><ion-icon name="document-attach-outline" style="color: #8b5cf6;"></ion-icon> FIR & Police Procedures</div>
-                <div class="topic-item"><ion-icon name="card-outline" style="color: #ef4444;"></ion-icon> Digital Fraud</div>
-                <div class="topic-item"><ion-icon name="bulb-outline" style="color: #fbbf24;"></ion-icon> Legal Awareness</div>
-                <div class="topic-item"><ion-icon name="car-outline" style="color: #6366f1;"></ion-icon> Traffic Rules</div>
-                <div class="topic-item"><ion-icon name="briefcase-outline" style="color: #14b8a6;"></ion-icon> Employment Law</div>
+<template id="tpl-ai-analysis">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #10b981 0%, #059669 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);">
+            2</div>
+        <div class="modal-title">
+            <h4
+                style="color: #10b981; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                INTELLIGENT PROCESSING</h4>
+            <h2 style="font-size: 2rem; color: white;">AI Analysis</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Under the hood, our platform connects directly to Google Gemini AI, specifically instructed to reference the
+            Indian Constitution, IPC, and CRPC.
+        </p>
+        <div class="modal-info-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="info-col">
+                <h5
+                    style="color: #3b82f6; margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <ion-icon name="server-outline"></ion-icon> Legal Engine
+                </h5>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Cross-references query with current Indian
+                    statutes.</p>
+            </div>
+            <div class="info-col">
+                <h5
+                    style="color: #10b981; margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <ion-icon name="lock-closed-outline"></ion-icon> Privacy First
+                </h5>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Your data is anonymized and never used for
+                    training.</p>
             </div>
         </div>
     </div>
+</template>
 
-    <!-- Section 6: Audience -->
-    <div class="section section-alternate">
-        <div class="section-content">
-            <h2 class="section-title">Who is this for?</h2>
-            <div class="grid-3">
-                <div class="card" style="text-align: center; cursor: default;">
-                    <div class="card-icon" style="margin: 0 auto 1.5rem;"><ion-icon name="school-outline"></ion-icon></div>
-                    <h3>Students</h3>
-                    <p>Learning Constitutional values and basics of Indian law system.</p>
-                </div>
-                <div class="card" style="text-align: center; cursor: default;">
-                    <div class="card-icon" style="margin: 0 auto 1.5rem;"><ion-icon name="business-outline"></ion-icon></div>
-                    <h3>Citizens</h3>
-                    <p>Everyday Indians seeking legal awareness and rights protection.</p>
-                </div>
-                <div class="card" style="text-align: center; cursor: default;">
-                    <div class="card-icon" style="margin: 0 auto 1.5rem;"><ion-icon name="people-outline"></ion-icon></div>
-                    <h3>NGOs</h3>
-                    <p>Human rights defenders and social workers across the country.</p>
-                </div>
+<template id="tpl-get-answers">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);">
+            3</div>
+        <div class="modal-title">
+            <h4
+                style="color: #f59e0b; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                ACTIONABLE RESULTS</h4>
+            <h2 style="font-size: 2rem; color: white;">Get Answers</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Receive a detailed breakdown of your legal standing in seconds. Dense statutes are parsed into actionable
+            bullet points.
+        </p>
+        <div class="modal-info-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="info-col">
+                <h5
+                    style="color: #10b981; margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <ion-icon name="checkmark-done-outline"></ion-icon> Clear Rights
+                </h5>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Identify the specific laws that provide you
+                    protection.</p>
+            </div>
+            <div class="info-col">
+                <h5
+                    style="color: #ef4444; margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <ion-icon name="alert-circle-outline"></ion-icon> Limitations
+                </h5>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Understand any legal boundaries or risks
+                    involved.</p>
             </div>
         </div>
     </div>
+</template>
+
+<template id="tpl-take-action">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);">
+            4</div>
+        <div class="modal-title">
+            <h4
+                style="color: #ef4444; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                NEXT STEPS</h4>
+            <h2 style="font-size: 2rem; color: white;">Take Action</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            LawAid equips you with tools to take immediate next steps, whether it's an emergency or a dispute.
+        </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <a href="/document-generator" class="cta-primary" style="justify-content: center; padding: 1.25rem;">
+                <ion-icon name="document-text-outline"></ion-icon> Draft Notice
+            </a>
+            <a href="/sos-shield" class="cta-primary"
+                style="background: #ef4444; justify-content: center; padding: 1.25rem;">
+                <ion-icon name="shield-outline"></ion-icon> SOS Shield
+            </a>
+        </div>
+    </div>
+</template>
+
+<!-- Why Choose Us Templates -->
+<template id="tpl-india-focused">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0; box-shadow: 0 10px 20px rgba(255, 153, 51, 0.3);">
+            <ion-icon name="flag-outline" style="color: white;"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #FF9933; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                OUR ROOTS</h4>
+            <h2 style="font-size: 2rem; color: white;">India-Focused</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Built specifically for the nuances of the Indian legal system, referencing the Constitution, IPC, CrPC, and
+            local acts.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-ai-powered">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);">
+            <ion-icon name="hardware-chip-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #3b82f6; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                TECHNOLOGY</h4>
+            <h2 style="font-size: 2rem; color: white;">AI-Powered</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Leveraging Google Gemini to parse dense legal texts into easy-to-understand guidance quickly and accurately.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-simple-language">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #10b981 0%, #059669 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);">
+            <ion-icon name="happy-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #10b981; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                ACCESSIBILITY</h4>
+            <h2 style="font-size: 2rem; color: white;">Simple Language</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            No complex jargon. We break down the law into straightforward, actionable insights for every citizen.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-sos-shield">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);">
+            <ion-icon name="shield-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #ef4444; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                PROTECTION</h4>
+            <h2 style="font-size: 2rem; color: white;">SOS Shield</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            A one-tap emergency alert system that dispatches your live location to trusted contacts immediately.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-free-docs">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(168, 85, 247, 0.3);">
+            <ion-icon name="document-text-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #a855f7; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                EMPOWERMENT</h4>
+            <h2 style="font-size: 2rem; color: white;">Free Generation</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Draft legal notices, RTI requests, and complaints instantly without expensive lawyer fees.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-secure-private">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #22c55e; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                CONFIDENTIALITY</h4>
+            <h2 style="font-size: 2rem; color: white;">Secure & Private</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Your data is protected with strict confidentiality and industry-standard encryption protocols.
+        </p>
+    </div>
+</template>
+
+<!-- Legal Topics Templates -->
+<template id="tpl-topic-rights">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0;">
+            <ion-icon name="hammer-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #3b82f6; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                CONSTITUTIONAL FOCUS</h4>
+            <h2 style="font-size: 2rem; color: white;">Fundamental Rights</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Understand the core rights guaranteed to you, such as Equality, Freedom of Speech, and Protection of Life.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-topic-consumer">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #10b981 0%, #065f46 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0;">
+            <ion-icon name="cart-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #10b981; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                PROTECTION</h4>
+            <h2 style="font-size: 2rem; color: white;">Consumer Rights</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Take action against unfair trade practices and defective products under the Consumer Protection Act.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-topic-cyber">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #f59e0b 0%, #92400e 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0;">
+            <ion-icon name="laptop-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #f59e0b; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                DIGITAL JUSTICE</h4>
+            <h2 style="font-size: 2rem; color: white;">Cyber Crime</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Navigate the IT Act to report online harassment, financial fraud, and data breaches.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-topic-women">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #ec4899 0%, #9d174d 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0;">
+            <ion-icon name="heart-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #ec4899; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                SAFETY FIRST</h4>
+            <h2 style="font-size: 2rem; color: white;">Women & Child Safety</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Guidance on domestic violence laws, the POSH Act, and POCSO protecting minors.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-topic-fir">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6 0%, #5b21b6 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0;">
+            <ion-icon name="document-attach-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #8b5cf6; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                PROCEDURAL RIGHTS</h4>
+            <h2 style="font-size: 2rem; color: white;">FIR & Police</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Learn how to file an FIR and understand your rights during questioning or arrest.
+        </p>
+    </div>
+</template>
+<template id="tpl-topic-fraud">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);">
+            <ion-icon name="card-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #ef4444; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                PROTECT ASSETS</h4>
+            <h2 style="font-size: 2rem; color: white;">Digital Fraud</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Immediate steps and legal recourse to recover funds lost through UPI scams, phishing calls, or identity
+            theft.
+        </p>
+    </div>
+</template>
+<template id="tpl-topic-awareness">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(251, 191, 36, 0.3);">
+            <ion-icon name="bulb-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #fbbf24; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                EDUCATION</h4>
+            <h2 style="font-size: 2rem; color: white;">Legal Awareness</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            General guidance and educational resources aimed at increasing basic legal literacy among everyday citizens.
+        </p>
+    </div>
+</template>
+<template id="tpl-topic-traffic">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);">
+            <ion-icon name="car-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #6366f1; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                COMPLIANCE</h4>
+            <h2 style="font-size: 2rem; color: white;">Traffic Rules</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Understand the nuances of the Motor Vehicles Act, including challan disputes, your rights during traffic
+            stops, and accident liabilities.
+        </p>
+    </div>
+</template>
+<template id="tpl-topic-employment">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(20, 184, 166, 0.3);">
+            <ion-icon name="briefcase-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #14b8a6; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                WORKPLACE</h4>
+            <h2 style="font-size: 2rem; color: white;">Employment Law</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Protect yourself against wrongful termination, wage theft, and workplace discrimination with knowledge of
+            Indian labor codes.
+        </p>
+    </div>
+</template>
+
+<!-- Target Audience Templates -->
+<template id="tpl-audience-students">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(96, 165, 250, 0.3);">
+            <ion-icon name="school-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #60a5fa; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                FUTURE GENERATIONS</h4>
+            <h2 style="font-size: 2rem; color: white;">For Students</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            An interactive educational tool for youth to practically engage with constitutional values.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-audience-citizens">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #34d399 0%, #059669 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(52, 211, 153, 0.3);">
+            <ion-icon name="people-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #34d399; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                EMPOWERMENT</h4>
+            <h2 style="font-size: 2rem; color: white;">For Citizens</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Accessible legal knowledge for everyday Indians dealing with red tape or law enforcement.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-audience-ngos">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #f87171 0%, #dc2626 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(248, 113, 113, 0.3);">
+            <ion-icon name="business-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #f87171; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                SOCIAL IMPACT</h4>
+            <h2 style="font-size: 2rem; color: white;">For NGOs</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            A rapid-reference tool for social workers acting as the first line of legal defense.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-audience-rural">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #f472b6 0%, #db2777 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(244, 114, 182, 0.3);">
+            <ion-icon name="heart-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #f472b6; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                ACCESSIBILITY</h4>
+            <h2 style="font-size: 2rem; color: white;">For Rural Communities</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Bridging the massive justice gap in Tier 3/4 regions where physical access to affordable legal counsel is
+            geographically and economically impossible.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-audience-firsttime">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(251, 191, 36, 0.3);">
+            <ion-icon name="time-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #fbbf24; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                GUIDANCE</h4>
+            <h2 style="font-size: 2rem; color: white;">First-Time Legal Seekers</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Providing a non-intimidating, jargon-free starting point for individuals who have never interacted with the
+            formal legal system before.
+        </p>
+    </div>
+</template>
+
+<template id="tpl-audience-professionals">
+    <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        <div class="modal-badge-circle"
+            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(167, 139, 250, 0.3);">
+            <ion-icon name="person-outline"></ion-icon>
+        </div>
+        <div class="modal-title">
+            <h4
+                style="color: #a78bfa; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                CONVENIENCE</h4>
+            <h2 style="font-size: 2rem; color: white;">Working Professionals</h2>
+        </div>
+    </div>
+    <div class="modal-body" style="padding: 1rem 3rem 3rem;">
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+            Delivering quick, on-the-go legal sanity checks for rent agreements, workplace disputes, and consumer
+            matters without requiring time-consuming lawyer consultations.
+        </p>
+    </div>
+</template>
+
+<script>
+    function openSectionModal(templateId) {
+        const overlay = document.getElementById('section-modal-overlay');
+        const modalBody = document.getElementById('section-modal-body');
+        const template = document.getElementById(templateId);
+
+        if (template) {
+            modalBody.innerHTML = template.innerHTML;
+            overlay.style.display = 'flex';
+            setTimeout(() => {
+                overlay.style.opacity = '1';
+                document.body.style.overflow = 'hidden';
+            }, 10);
+        }
+    }
+
+    function closeSectionModal() {
+        const overlay = document.getElementById('section-modal-overlay');
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 400);
+    }
+
+    // Close on click outside
+    document.getElementById('section-modal-overlay')?.addEventListener('click', function (e) {
+        if (e.target === this) {
+            closeSectionModal();
+        }
+    });
+
+    // ESC to close
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeSectionModal();
+    });
+</script>
+
+<!-- Section 3: Why Choose Us -->
+<div class="section">
+    <div class="section-content">
+        <h2 class="section-title" style="margin-bottom: 3rem;">Why Choose LawAid X Sanvidhaan?</h2>
+        <div class="grid-3" style="gap: 1.5rem;">
+            <div class="card" onclick="openSectionModal('tpl-india-focused')" style="--accent-color: #FF9933;">
+                <div class="card-icon-wrapper" style="color: #FF9933;"><ion-icon name="flag-outline"></ion-icon></div>
+                <h3>India-Focused</h3>
+                <p>Built specifically for the Indian Constitution and legal system.</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-ai-powered')" style="--accent-color: #3b82f6;">
+                <div class="card-icon-wrapper" style="color: #3b82f6;"><ion-icon
+                        name="hardware-chip-outline"></ion-icon></div>
+                <h3>AI-Powered</h3>
+                <p>Get instant answers backed by advanced Google Gemini technology.</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-simple-language')" style="--accent-color: #10b981;">
+                <div class="card-icon-wrapper" style="color: #10b981;"><ion-icon name="happy-outline"></ion-icon></div>
+                <h3>Simple Language</h3>
+                <p>No complex legal jargon - we explain everything in plain language.</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-sos-shield')" style="--accent-color: #ef4444;">
+                <div class="card-icon-wrapper" style="color: #ef4444;"><ion-icon name="warning-outline"></ion-icon>
+                </div>
+                <h3>Emergency SOS Shield</h3>
+                <p>One-tap emergency alerts with location tracking.</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-free-docs')" style="--accent-color: #a855f7;">
+                <div class="card-icon-wrapper" style="color: #a855f7;"><ion-icon
+                        name="document-text-outline"></ion-icon></div>
+                <h3>Free Document Generation</h3>
+                <p>Instantly draft notices and RTI requests without expensive fees.</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-secure-private')" style="--accent-color: #22c55e;">
+                <div class="card-icon-wrapper" style="color: #22c55e;"><ion-icon
+                        name="shield-checkmark-outline"></ion-icon></div>
+                <h3>Secure & Private</h3>
+                <p>Your queries and documents remain completely private.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section 5: Legal Topics -->
+<div class="section section-alternate">
+    <div class="section-content">
+        <h2 class="section-title" style="margin-bottom: 3rem;">Legal Topics We Cover</h2>
+        <div class="grid-3" style="gap: 1.5rem;">
+            <div class="card" onclick="openSectionModal('tpl-topic-rights')"
+                style="--accent-color: #3b82f6; align-items: center; text-align: center; gap: 0.75rem;">
+                <div class="card-icon-wrapper" style="color: #3b82f6;"><ion-icon name="hammer-outline"></ion-icon></div>
+                <h3>Fundamental Rights</h3>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-topic-consumer')"
+                style="--accent-color: #10b981; align-items: center; text-align: center; gap: 0.75rem;">
+                <div class="card-icon-wrapper" style="color: #10b981;"><ion-icon name="cart-outline"></ion-icon></div>
+                <h3>Consumer Rights</h3>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-topic-cyber')"
+                style="--accent-color: #f59e0b; align-items: center; text-align: center; gap: 0.75rem;">
+                <div class="card-icon-wrapper" style="color: #f59e0b;"><ion-icon name="laptop-outline"></ion-icon></div>
+                <h3>Cyber Crime</h3>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-topic-women')"
+                style="--accent-color: #ec4899; align-items: center; text-align: center; gap: 0.75rem;">
+                <div class="card-icon-wrapper" style="color: #ec4899;"><ion-icon
+                        name="people-circle-outline"></ion-icon></div>
+                <h3>Women & Child Safety</h3>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-topic-fir')"
+                style="--accent-color: #8b5cf6; align-items: center; text-align: center; gap: 0.75rem;">
+                <div class="card-icon-wrapper" style="color: #8b5cf6;"><ion-icon
+                        name="document-attach-outline"></ion-icon></div>
+                <h3>FIR & Police Procedures</h3>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-topic-fraud')"
+                style="--accent-color: #ef4444; align-items: center; text-align: center; gap: 0.75rem;">
+                <div class="card-icon-wrapper" style="color: #ef4444; background: rgba(239, 68, 68, 0.1);"><ion-icon
+                        name="card-outline"></ion-icon></div>
+                <h3>Digital Fraud</h3>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-topic-awareness')"
+                style="--accent-color: #fbbf24; align-items: center; text-align: center; gap: 0.75rem;">
+                <div class="card-icon-wrapper" style="color: #fbbf24; background: rgba(251, 191, 36, 0.1);"><ion-icon
+                        name="bulb-outline"></ion-icon></div>
+                <h3>Legal Awareness</h3>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-topic-traffic')"
+                style="--accent-color: #6366f1; align-items: center; text-align: center; gap: 0.75rem;">
+                <div class="card-icon-wrapper" style="color: #6366f1; background: rgba(99, 102, 241, 0.1);"><ion-icon
+                        name="car-outline"></ion-icon></div>
+                <h3>Traffic Rules</h3>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-topic-employment')"
+                style="--accent-color: #14b8a6; align-items: center; text-align: center; gap: 0.75rem;">
+                <div class="card-icon-wrapper" style="color: #14b8a6; background: rgba(20, 184, 166, 0.1);"><ion-icon
+                        name="briefcase-outline"></ion-icon></div>
+                <h3>Employment Law</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section 6: Audience -->
+<div class="section">
+    <div class="section-content">
+        <h2 class="section-title" style="margin-bottom: 3rem;">Who Can Use LawAid X Sanvidhaan?</h2>
+        <div class="grid-3" style="gap: 1.5rem;">
+            <div class="card" onclick="openSectionModal('tpl-audience-students')" style="--accent-color: #60a5fa;">
+                <div class="card-icon-wrapper" style="color: #60a5fa; background: rgba(96, 165, 250, 0.1);"><ion-icon
+                        name="school-outline"></ion-icon></div>
+                <h3>Students</h3>
+                <p>Learning Constitutional values and basics of law.</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-audience-citizens')" style="--accent-color: #34d399;">
+                <div class="card-icon-wrapper" style="color: #34d399; background: rgba(52, 211, 153, 0.1);"><ion-icon
+                        name="people-outline"></ion-icon></div>
+                <h3>Citizens</h3>
+                <p>Everyday Indians seeking legal awareness.</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-audience-ngos')" style="--accent-color: #f87171;">
+                <div class="card-icon-wrapper" style="color: #f87171; background: rgba(248, 113, 113, 0.1);"><ion-icon
+                        name="business-outline"></ion-icon></div>
+                <h3>NGOs</h3>
+                <p>Human rights defenders and social workers.</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-audience-rural')" style="--accent-color: #f472b6;">
+                <div class="card-icon-wrapper" style="color: #f472b6; background: rgba(244, 114, 182, 0.1);"><ion-icon
+                        name="heart-outline"></ion-icon></div>
+                <h3>Rural Communities</h3>
+                <p>Simple interface for those far from legal help.</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-audience-firsttime')" style="--accent-color: #fbbf24;">
+                <div class="card-icon-wrapper" style="color: #fbbf24; background: rgba(251, 191, 36, 0.1);"><ion-icon
+                        name="time-outline"></ion-icon></div>
+                <h3>First-Time Legal Seekers</h3>
+                <p>Those who have never consulted a lawyer before.</p>
+            </div>
+            <div class="card" onclick="openSectionModal('tpl-audience-professionals')" style="--accent-color: #a78bfa;">
+                <div class="card-icon-wrapper" style="color: #a78bfa; background: rgba(167, 139, 250, 0.1);"><ion-icon
+                        name="person-outline"></ion-icon></div>
+                <h3>Working Professionals</h3>
+                <p>Quick legal opinions without leaving the office.</p>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

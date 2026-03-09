@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% block title %}Emergency Directory - LawAid X Sanvidhaan{% endblock %}
+
+{% block extra_styles %}
+<style>
+    .emergency-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 4rem 2rem 6rem;
+    }
+
+    .directory-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .contact-card {
+        background: var(--bg-lighter);
+        border-radius: 20px;
+        padding: 2.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        text-align: center;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(59, 130, 246, 0.3);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        background: rgba(239, 68, 68, 0.1);
+        color: #ef4444;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        font-size: 1.75rem;
+    }
+
+    .contact-card.police .contact-icon {
+        background: rgba(59, 130, 246, 0.1);
+        color: #3b82f6;
+    }
+
+    .contact-card.fire .contact-icon {
+        background: rgba(245, 158, 11, 0.1);
+        color: #f59e0b;
+    }
+
+    .contact-card.ambulance .contact-icon {
+        background: rgba(16, 185, 129, 0.1);
+        color: #10b981;
+    }
+
+    .contact-card.women .contact-icon {
+        background: rgba(236, 72, 153, 0.1);
+        color: #ec4899;
+    }
+
+    .number {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 1rem 0;
+        letter-spacing: 2px;
+        color: white;
+    }
+
+    .call-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 1rem;
+        padding: 0.5rem 1.25rem;
+        border-radius: 50px;
+        background: rgba(34, 197, 94, 0.12);
+        border: 1px solid rgba(34, 197, 94, 0.3);
+        color: #4ade80;
+        font-size: 0.85rem;
+        font-weight: 600;
+        transition: all 0.2s;
+    }
+
+    .contact-card:hover .call-pill {
+        background: rgba(34, 197, 94, 0.22);
+    }
+
+    .back-btn {
+        margin-bottom: 2rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="emergency-container">
+    <div class="back-btn">
+        <a href="/rightnow" class="cta-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            Back to RightNow!
+        </a>
+    </div>
+
+    <div class="header-section hero" style="text-align: center;">
+        <h1><span class="highlight">Emergency Directory</span></h1>
+        <p class="subtitle" style="margin: 0 auto; max-width: 700px;">Direct access to essential Indian helpline numbers
+            for immediate assistance.</p>
+    </div>
+
+    <div class="directory-grid">
+        <a href="tel:100" class="contact-card police">
+            <div class="contact-icon"><ion-icon name="shield-outline"></ion-icon></div>
+            <h3>National Police</h3>
+            <div class="number">100</div>
+            <p style="color: var(--text-muted);">For immediate police intervention and security assistance.</p>
+            <span class="call-pill"><ion-icon name="call-outline"></ion-icon> Tap to Call</span>
+        </a>
+
+        <a href="tel:1091" class="contact-card women">
+            <div class="contact-icon"><ion-icon name="woman-outline"></ion-icon></div>
+            <h3>Women Helpline</h3>
+            <div class="number">1091</div>
+            <p style="color: var(--text-muted);">Dedicated 24/7 support for women in distress or danger.</p>
+            <span class="call-pill"><ion-icon name="call-outline"></ion-icon> Tap to Call</span>
+        </a>
+
+        <a href="tel:102" class="contact-card ambulance">
+            <div class="contact-icon"><ion-icon name="medical-outline"></ion-icon></div>
+            <h3>Ambulance</h3>
+            <div class="number">102</div>
+            <p style="color: var(--text-muted);">For medical emergencies and ambulance requirements.</p>
+            <span class="call-pill"><ion-icon name="call-outline"></ion-icon> Tap to Call</span>
+        </a>
+
+        <a href="tel:101" class="contact-card fire">
+            <div class="contact-icon"><ion-icon name="flame-outline"></ion-icon></div>
+            <h3>Fire Department</h3>
+            <div class="number">101</div>
+            <p style="color: var(--text-muted);">Extinguishing fires and disaster management support.</p>
+            <span class="call-pill"><ion-icon name="call-outline"></ion-icon> Tap to Call</span>
+        </a>
+
+        <a href="tel:1098" class="contact-card child">
+            <div class="contact-icon"><ion-icon name="body-outline"></ion-icon></div>
+            <h3>Child Helpline</h3>
+            <div class="number">1098</div>
+            <p style="color: var(--text-muted);">National helpline for children in need of care and protection.</p>
+            <span class="call-pill"><ion-icon name="call-outline"></ion-icon> Tap to Call</span>
+        </a>
+
+        <a href="tel:108" class="contact-card">
+            <div class="contact-icon"><ion-icon name="alert-circle-outline"></ion-icon></div>
+            <h3>Disaster Management</h3>
+            <div class="number">108</div>
+            <p style="color: var(--text-muted);">General emergency and disaster response services.</p>
+            <span class="call-pill"><ion-icon name="call-outline"></ion-icon> Tap to Call</span>
+        </a>
+    </div>
+</div>
+{% endblock %}

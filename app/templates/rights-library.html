@@ -4,30 +4,221 @@
 
 {% block extra_styles %}
 <style>
-    .page-container {
-        min-height: 60vh;
+    .rights-library-wrapper {
+        padding-bottom: 5rem;
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card {
+        background: var(--bg-lighter);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 2.5rem;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+            border-color 0.3s ease,
+            box-shadow 0.3s ease,
+            background 0.3s ease;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        height: 100%;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        --accent-color: var(--primary-color);
+    }
+
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--accent-color);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-12px);
+        border-color: var(--accent-color);
+        background: rgba(30, 41, 59, 0.9);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7),
+            0 0 15px -5px var(--accent-color);
+    }
+
+    .card:hover::before {
+        opacity: 1;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+        background: rgba(59, 130, 246, 0.1);
+        width: 60px;
+        height: 60px;
+        display: flex;
         align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+    }
+
+    /* New styles for card-icon-wrapper */
+    .card-icon-wrapper {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+    }
+
+    /* Modal Styling */
+    .rights-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(15, 23, 42, 0.9);
+        z-index: 2000;
+        backdrop-filter: blur(8px);
+        padding: 2rem 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rights-modal-content {
+        background: var(--bg-lighter);
+        max-width: 650px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        border-radius: 16px;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        padding: 3rem 2rem;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: transparent;
+        border: none;
+        color: var(--text-secondary);
+        font-size: 2rem;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+
+    .close-modal:hover {
+        color: white;
+    }
+
+    /* Premium Category Modal Styling */
+    .category-modal-header {
         text-align: center;
-        padding: 4rem 2rem;
+        margin-bottom: 2.5rem;
     }
 
-    .page-container h1 {
-        font-size: 3rem;
+    .category-badge-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .category-badge-circle {
+        width: 70px;
+        height: 70px;
+        background: var(--primary-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .category-modal-title {
+        font-size: 2.2rem;
         margin-bottom: 1rem;
+        background: linear-gradient(to right, #fff, #94a3b8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
-    .page-container p {
-        font-size: 1.2rem;
-        color: var(--text-muted);
-        margin-bottom: 2rem;
+    .category-modal-summary {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        line-height: 1.7;
+        max-width: 500px;
+        margin: 0 auto;
     }
 
-    .page-container .coming-soon {
+    .category-info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+    .info-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .info-icon-green {
+        color: #10b981;
+        font-size: 1.4rem;
+    }
+
+    .info-icon-gold {
+        color: var(--gold-color);
+        font-size: 1.4rem;
+    }
+
+    .info-text strong {
+        display: block;
+        color: white;
         font-size: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .info-text p {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 640px) {
+        .category-info-grid {
+            grid-template-columns: 1fr;
+        }
     }
 </style>
 {% endblock %}
@@ -39,40 +230,74 @@
         <div class="subtitle">Browse various categories of legal rights and protections</div>
     </div>
 
-    <div class="cards-grid">
-        <div class="card">
-            <div class="card-icon"><ion-icon name="people-circle-outline"></ion-icon></div>
+    <div class="cards-grid grid-3">
+        <div class="card" onclick="openRightsModal('Civil')" style="--accent-color: #3b82f6;">
+            <div class="card-icon" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;"><ion-icon
+                    name="people-outline"></ion-icon></div>
             <h3>Civil Rights</h3>
             <p>Freedoms that protect individuals from government overreach and discrimination.</p>
-            <button class="cta-secondary" style="margin-top: 1rem; width: 100%; justify-content: center;">Explore Library</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rights-library/Civil'">Explore Library
+                →</button>
         </div>
 
-        <div class="card">
-            <div class="card-icon"><ion-icon name="trending-up-outline"></ion-icon></div>
+        <div class="card" onclick="openRightsModal('Economic')" style="--accent-color: #10b981;">
+            <div class="card-icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981;"><ion-icon
+                    name="trending-up-outline"></ion-icon></div>
             <h3>Economic Rights</h3>
             <p>Rights to work, fair wages, education, and an adequate standard of living.</p>
-            <button class="cta-secondary" style="margin-top: 1rem; width: 100%; justify-content: center;">Explore Library</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rights-library/Economic'">Explore Library
+                →</button>
         </div>
 
-        <div class="card">
-            <div class="card-icon"><ion-icon name="heart-outline"></ion-icon></div>
+        <div class="card" onclick="openRightsModal('Social')" style="--accent-color: #ec4899;">
+            <div class="card-icon" style="background: rgba(236, 72, 153, 0.1); color: #ec4899;"><ion-icon
+                    name="heart-outline"></ion-icon></div>
             <h3>Social Rights</h3>
             <p>Rights concerning family life, health care, and social security.</p>
-            <button class="cta-secondary" style="margin-top: 1rem; width: 100%; justify-content: center;">Explore Library</button>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rights-library/Social'">Explore Library
+                →</button>
         </div>
 
-        <div class="card">
-            <div class="card-icon"><ion-icon name="leaf-outline"></ion-icon></div>
+        <div class="card" onclick="openRightsModal('Environmental')" style="--accent-color: #22c55e;">
+            <div class="card-icon" style="background: rgba(34, 197, 94, 0.1); color: #22c55e;"><ion-icon
+                    name="leaf-outline"></ion-icon></div>
             <h3>Environmental Rights</h3>
-            <p>The right to a clean, healthy, and sustainable environment for all.</p>
-            <button class="cta-secondary" style="margin-top: 1rem; width: 100%; justify-content: center;">Explore Library</button>
+            <p>Right to a clean environment, safe water, and ecological protection.</p>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rights-library/Environmental'">Explore Library
+                →</button>
+        </div>
+
+        <div class="card" onclick="openRightsModal('Consumer')" style="--accent-color: #f59e0b;">
+            <div class="card-icon" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;"><ion-icon
+                    name="cart-outline"></ion-icon></div>
+            <h3>Consumer Rights</h3>
+            <p>Protection against unfair trade practices and substandard products.</p>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rights-library/Consumer'">Explore Library
+                →</button>
+        </div>
+
+        <div class="card" onclick="openRightsModal('Cultural')" style="--accent-color: #8b5cf6;">
+            <div class="card-icon" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6;"><ion-icon
+                    name="color-palette-outline"></ion-icon></div>
+            <h3>Cultural Rights</h3>
+            <p>Right to participate in cultural life and enjoy scientific progress.</p>
+            <button class="cta-primary" style="width: 100%; justify-content: center; margin-top: auto;"
+                onclick="event.stopPropagation(); window.location.href='/rights-library/Cultural'">Explore Library
+                →</button>
         </div>
     </div>
 
-    <div class="section-alternate" style="border-radius: 20px; padding: 3rem; text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); margin-top: 4rem; margin-bottom: 4rem;">
-        <h2 style="font-family: 'Poppins', sans-serif; margin-bottom: 1.5rem;">Coming Soon: Digital Library</h2>
+    <div class="section-alternate"
+        style="border-radius: 20px; padding: 3rem; text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); margin: 4rem auto; max-width: 1200px;">
+        <h2 style="font-family: 'Poppins', sans-serif; margin-bottom: 1.5rem;">Digital Justice Library</h2>
         <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto 2rem; line-height: 1.7;">
-            We are integrating a massive database of international and domestic laws, treaties, and simplified case studies to empower every citizen with legal knowledge.
+            We are curating a massive database of international and domestic laws to empower every citizen with legal
+            knowledge. Click any category above to learn more.
         </p>
         <div class="hero-cta" style="justify-content: center;">
             <a href="/" class="cta-primary">
@@ -82,4 +307,131 @@
         </div>
     </div>
 </div>
+
+<!-- Premium Rights Modal -->
+<div id="rights-modal-overlay" class="rights-modal-overlay">
+    <div class="rights-modal-content">
+        <button class="close-modal" id="close-law-modal" onclick="closeRightsModal()">
+            <ion-icon name="close-circle"></ion-icon>
+        </button>
+        <div id="rights-modal-body">
+            <!-- Content injected here -->
+        </div>
+    </div>
+</div>
+
+<script>
+    function openRightsModal(category) {
+        const overlay = document.getElementById('rights-modal-overlay');
+        const modalBody = document.getElementById('rights-modal-body');
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+
+        const categoryData = {
+            'Civil': {
+                num: 'C',
+                title: 'Civil Rights',
+                desc: 'Fundamental freedoms that protect citizens from government overreach and ensure equal treatment.',
+                empowerment: 'Freedom of speech, assembly, and protection from arbitrary arrest.',
+                coverage: 'Privacy, Justice, Equality, Religious Freedom.',
+                path: '/rights-library/Civil'
+            },
+            'Economic': {
+                num: 'E',
+                title: 'Economic Rights',
+                desc: 'Rights that guarantee the conditions necessary for a dignified life and financial security.',
+                empowerment: 'Right to fair wages, safe working conditions, and property ownership.',
+                coverage: 'Labor Rights, Social Security, Fair Housing, Right to Work.',
+                path: '/rights-library/Economic'
+            },
+            'Social': {
+                num: 'S',
+                title: 'Social Rights',
+                desc: 'Rights that promote well-being and social inclusion for every member of society.',
+                empowerment: 'Access to universal healthcare, quality education, and family support.',
+                coverage: 'Public Health, Education, Welfare, Family Protection.',
+                path: '/rights-library/Social'
+            },
+            'Environmental': {
+                num: 'V',
+                title: 'Environmental Rights',
+                desc: 'The collective right to live in a healthy environment and protect it for future generations.',
+                empowerment: 'Access to clean water, breathable air, and climate justice.',
+                coverage: 'Biodiversity, Pollution Control, Sustainable Resource Use.',
+                path: '/rights-library/Environmental'
+            },
+            'Consumer': {
+                num: 'U',
+                title: 'Consumer Rights',
+                desc: 'Safeguards for individuals against exploitation by manufacturers and service providers.',
+                empowerment: 'Right to safety, information, choice, and seeking redressal.',
+                coverage: 'Fair Pricing, Product Quality, Protection from Fraud.',
+                path: '/rights-library/Consumer'
+            },
+            'Cultural': {
+                num: 'L',
+                title: 'Cultural Rights',
+                desc: 'Provisions that ensure the preservation of linguistic and cultural identities for all groups.',
+                empowerment: 'Right to conserve language, script, and establish educational institutions.',
+                coverage: 'Minority Rights, Heritage Protection, Linguistic Diversity.',
+                path: '/rights-library/Cultural'
+            }
+        };
+
+        const d = categoryData[category];
+        if (d) {
+            modalBody.innerHTML = `
+                <div class="category-modal-header">
+                    <div class="category-badge-wrapper"><div class="category-badge-circle">${d.num}</div></div>
+                    <h2 class="category-modal-title">${d.title}</h2>
+                    <p class="category-modal-summary">${d.desc}</p>
+                </div>
+                <div class="category-info-grid">
+                    <div class="info-column">
+                        <div class="info-item">
+                            <ion-icon name="checkmark-circle-outline" class="info-icon-green"></ion-icon>
+                            <div class="info-text">
+                                <strong>Key Empowerment</strong>
+                                <p>${d.empowerment}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-column">
+                        <div class="info-item">
+                            <ion-icon name="information-circle-outline" class="info-icon-gold"></ion-icon>
+                            <div class="info-text">
+                                <strong>Coverage</strong>
+                                <p>${d.coverage}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="${d.path}" class="cta-primary" style="display: flex; width: 100%; justify-content: center; padding: 1.1rem; font-size: 1.05rem; border-radius: 12px;">
+                        <ion-icon name="library-outline"></ion-icon> Explore Library →
+                    </a>
+                </div>`;
+        }
+    }
+
+    function closeRightsModal() {
+        const overlay = document.getElementById('rights-modal-overlay');
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    // Close on click outside
+    document.getElementById('rights-modal-overlay').addEventListener('click', function (e) {
+        if (e.target === this) {
+            closeRightsModal();
+        }
+    });
+
+    // Close on ESC
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            closeRightsModal();
+        }
+    });
+</script>
 {% endblock %}

@@ -29,9 +29,10 @@
         </div>
         <nav id="desktop-nav">
             <a href="/">Home</a>
-            <a href="/chat-ui">Ask</a>
-            <!-- <a href="/articles">Articles</a> -->
-            <!-- <a href="/documents">Documents</a> -->
+            <a href="/chat-ui">Ask AI</a>
+            <a href="/rights-library">Rights</a>
+            <a href="/document-generator">Documents</a>
+            <a href="/emergency-directory">Emergency</a>
             <a href="/sos-shield" class="sos-btn">SOS Shield</a>
         </nav>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
@@ -43,9 +44,11 @@
     <div class="nav-overlay" id="navOverlay" onclick="toggleMobileMenu()"></div>
     <div class="mobile-nav" id="mobileNav">
         <button class="mobile-nav-close" onclick="toggleMobileMenu()">&times;</button>
-        <a href="/chat-ui">Ask</a>
-        <!-- <a href="/articles">Articles</a> -->
-        <!-- <a href="/documents">Documents</a> -->
+        <a href="/">Home</a>
+        <a href="/chat-ui">Ask AI</a>
+        <a href="/rights-library">Rights Library</a>
+        <a href="/document-generator">Document Generator</a>
+        <a href="/emergency-directory">Emergency Directory</a>
         <a href="/sos-shield" class="sos-btn">SOS Shield</a>
     </div>
 
@@ -57,33 +60,58 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
-                <h4>About LawAid X Sanvidhaan</h4>
-                <p style="color: var(--text-muted); font-size: 0.9rem;">
+            <div class="footer-section footer-about">
+                <div class="footer-brand">
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="LawAid X Sanvihaan logo"
+                        class="footer-brand-logo">
+                    <span class="footer-brand-name">LawAid X Sanvidhaan</span>
+                </div>
+                <p class="footer-desc">
                     A web-based AI platform designed to provide legal awareness and assistance to Indian citizens in
                     simple, accessible language.
                 </p>
             </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
-                <a href="/chat-ui">Ask Legal Doubt</a>
-                <a href="/constitution">Constitution Explainer</a>
-                <!-- <a href="/articles">Articles</a> -->
-                <!-- <a href="/documents">Documents</a> -->
-                <a href="/sos-shield">SOS Shield</a>
+                <a href="/chat-ui"><ion-icon name="chatbubble-ellipses-outline"></ion-icon> Ask Legal Doubt</a>
+                <a href="/constitution"><ion-icon name="book-outline"></ion-icon> Constitution Explainer</a>
+                <a href="/rightnow"><ion-icon name="flash-outline"></ion-icon> Right Now!</a>
+                <a href="/document-generator"><ion-icon name="document-text-outline"></ion-icon> Doc Generator</a>
+                <a href="/rights-library"><ion-icon name="library-outline"></ion-icon> Rights Library</a>
             </div>
             <div class="footer-section">
                 <h4>Contact</h4>
-                <p style="color: var(--text-muted); font-size: 0.9rem;">
-                    Email: support@lawaidxsanvidhaan.edu<br>
-                    Emergency: 100 (Police)
-                </p>
+                <a href="/emergency-directory">
+                    <ion-icon name="book-outline"></ion-icon> Emergency Directory
+                </a>
+                <a href="/sos-shield">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon> SOS Shield
+                </a>
+                <a href="/legal-aid">
+                    <ion-icon name="ribbon-outline"></ion-icon> Legal Aid Locator
+                </a>
             </div>
         </div>
+
+        <div class="footer-divider"></div>
+
         <div class="footer-bottom">
-            <p><strong>Academic Project Disclaimer:</strong> This is an educational project. For real legal advice,
-                please consult a qualified lawyer.</p>
-            <p style="margin-top: 0.5rem;">© 2026 LawAid X Sanvidhaan. College Project.</p>
+            <p class="footer-disclaimer">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                <span><strong>Academic Disclaimer:</strong> Educational project only. For real legal advice, consult a
+                    qualified lawyer.</span>
+            </p>
+
+            <div class="footer-sponsor">
+                <span class="sponsor-label">Sponsored by</span>
+                <div class="sponsor-badge">
+                    <img src="{{ url_for('static', filename='phoenix-pixels-logo.jpg') }}" alt="Phoenix Pixels Studios"
+                        class="sponsor-logo">
+                    <span class="sponsor-name">Phoenix Pixels Studios</span>
+                </div>
+            </div>
+
+            <p class="footer-copy">© 2026 LawAid X Sanvidhaan</p>
         </div>
     </footer>
 

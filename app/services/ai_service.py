@@ -92,3 +92,84 @@ def translate_text(text: str, target_lang: str = 'hi'):
         return response.text
     except Exception as e:
         return f"Translation failed: {str(e)}"
+
+
+def generate_legal_document(doc_type: str, full_name: str, address: str, subject: str, details: str) -> str:
+    """Generate a formal legal document using Gemini AI and return plain text."""
+
+    doc_type_labels = {
+        "complaint-letter": "Formal Complaint Letter",
+        "legal-notice": "Legal Notice",
+        "rti-request": "RTI Application under Right to Information Act, 2005",
+    }
+    doc_label = doc_type_labels.get(doc_type.lower(), "Legal Document")
+
+    today = __import__('datetime').date.today().strftime("%d %B %Y")
+
+    prompt = f"""You are an expert Indian legal document drafter. 
+Generate a complete, professional, and court-ready {doc_label} based on the information below.
+
+STRICT FORMATTING RULES:
+- Output ONLY plain text. No markdown, no HTML, no asterisks, no bullet symbols.
+- Use proper letter/document formatting with line breaks.
+- Include all standard legal sections for the document type.
+- Use formal, legally sound language appropriate for Indian courts/authorities.
+- At the end include: "Yours faithfully," followed by a blank signature line and the sender's name.
+- TODAY'S DATE: {today}
+
+SENDER DETAILS:
+Name: {full_name}
+Address: {address}
+
+SUBJECT / PURPOSE: {subject}
+
+FACTS / DETAILS:
+{details}
+
+Generate the complete {doc_label} now:"""
+
+    try:
+        if not api_key:
+            return _fallback_document(doc_label, full_name, address, subject, details, today)
+
+        model = genai.GenerativeModel('gemini-flash-latest')
+        response = model.generate_content(prompt)
+        return response.text.strip()
+    except Exception as e:
+        print(f"Gemini API Error in generate_legal_document: {str(e)}")
+        return _fallback_document(doc_label, full_name, address, subject, details, today)
+
+
+def _fallback_document(doc_label: str, full_name: str, address: str, subject: str, details: str, today: str) -> str:
+    """Returns a basic template document if AI is unavailable."""
+    return f"""Date: {today}
+
+From:
+{full_name}
+{address}
+
+To,
+The Concerned Authority,
+[Name of Authority / Department]
+[Address of Authority]
+
+Subject: {subject}
+
+Respected Sir/Madam,
+
+I, {full_name}, residing at the address mentioned above, hereby bring to your kind notice the following matter:
+
+{details}
+
+I, therefore, request you to kindly look into this matter and take appropriate action at the earliest. I hope this matter will receive your urgent attention.
+
+Thanking you,
+
+Yours faithfully,
+
+_________________________
+{full_name}
+Date: {today}
+
+[This is a system-generated document template. Please review and modify as needed before submission.]"""
+
