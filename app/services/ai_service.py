@@ -3,23 +3,37 @@ import os
 import json
 from dotenv import load_dotenv
 
-# Find the root directory (.env location)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-env_path = os.path.join(BASE_DIR, ".env")
+# Load environment variables
+load_dotenv(override=True)
 
-# Load environment variable with absolute path and override=True
-load_dotenv(dotenv_path=env_path, override=True)
+# Global config flag
+_configured = False
 
-# Configure Gemini
-api_key = os.getenv("GEMINI_API_KEY")
-if api_key:
-    genai.configure(api_key=api_key)
+def _configure_genai():
+    global _configured
+    if not _configured:
+        load_dotenv(override=True)
+        key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+        if key:
+            # Deep clean the key
+            key = key.strip("'\" \n\r\t")
+            # Force transport='rest' and try to specify API version v1
+            try:
+                genai.configure(api_key=key, transport='rest', client_options={"api_version": "v1"})
+                _configured = True
+                print("DEBUG: Gemini configured with v1 REST transport.")
+            except Exception as e:
+                print(f"DEBUG: Failed to configure with v1, trying default: {e}")
+                genai.configure(api_key=key)
+                _configured = True
+        return key
+    return os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
 
 # Load Knowledge Base
 def load_laws():
     try:
         file_path = os.path.join(os.path.dirname(__file__), "../data/laws.json")
-        with open(file_path, "r") as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             return json.load(f)
     except Exception as e:
         print(f"Error loading laws.json: {e}")
@@ -28,6 +42,8 @@ def load_laws():
 LAWS_DB = load_laws()
 
 def search_laws(query: str):
+    if not query:
+        return []
     query = query.lower()
     results = []
     for law in LAWS_DB:
@@ -67,19 +83,60 @@ def get_ai_response(question: str):
     """
 
     try:
-        if not api_key:
+        key = _configure_genai()
+        if not key:
             return "Configuration Error: GEMINI_API_KEY is missing. Please check your .env file."
             
-        model = genai.GenerativeModel('gemini-flash-latest')
-        response = model.generate_content(prompt)
-        return response.text
+        # Robust fallback strategy using EXACT confirmed models for this key
+        models_to_try = [
+            'gemini-2.0-flash', 
+            'gemini-flash-latest',
+            'gemini-pro-latest',
+            'gemini-2.0-flash-lite-preview-02-05',
+            'gemini-1.5-flash', # Keeping as fallback
+            'gemini-pro'
+        ]
+        
+        last_exception = None
+
+        # Diagnostic: Try to list models once to see what's available
+        if _configured:
+            try:
+                available_models = [m.name for m in genai.list_models()]
+                print(f"DEBUG: Available models for this key: {available_models}")
+            except Exception as e:
+                print(f"DEBUG: Could not list models: {e}")
+
+        for model_name in models_to_try:
+            try:
+                print(f"DEBUG: Trying model {model_name}...")
+                model = genai.GenerativeModel(model_name)
+                response = model.generate_content(prompt)
+                return response.text
+            except Exception as e:
+                last_exception = e
+                error_str = str(e).lower()
+                print(f"DEBUG: Model {model_name} failed: {e}")
+                
+                # If it's a key error, stop trying models
+                if "api_key_invalid" in error_str or "unauthorized" in error_str:
+                    break
+                    
+                continue
+        
+        # If all newer models fail, it's likely a project permissions issue
+        if last_exception:
+            raise last_exception
+        return "I apologize, but I could not find a working AI model for your project. Please ensure 'Generative Language API' is enabled in your Google Cloud console."
+
     except Exception as e:
-        print(f"Gemini API Error: {str(e)}")
-        return "I apologize, but I encountered an error connecting to the AI service. Please try again later."
+        error_msg = str(e)
+        print(f"Gemini API Error: {error_msg}")
+        return f"I apologize, but I encountered an error connecting to the AI service: {error_msg}. Please ensure your API key is valid and the Generative Language API is enabled for your project."
 
 def translate_text(text: str, target_lang: str = 'hi'):
     try:
-        model = genai.GenerativeModel('gemini-flash-latest')
+        _configure_genai()
         prompt = f"""Translate the following text to Hindi (Devanagari script). 
         
         INSTRUCTIONS:
@@ -88,8 +145,16 @@ def translate_text(text: str, target_lang: str = 'hi'):
         - Do not translate the tags themselves, only the content inside them.
         
         Text: {text}"""
-        response = model.generate_content(prompt)
-        return response.text
+
+        # Fallback for translation using confirmed models
+        for model_name in ['gemini-2.0-flash', 'gemini-flash-latest', 'gemini-1.5-flash', 'gemini-pro']:
+            try:
+                model = genai.GenerativeModel(model_name)
+                response = model.generate_content(prompt)
+                return response.text
+            except:
+                continue
+        return "Translation failed: No available models found or key is invalid for translation."
     except Exception as e:
         return f"Translation failed: {str(e)}"
 
@@ -129,12 +194,19 @@ FACTS / DETAILS:
 Generate the complete {doc_label} now:"""
 
     try:
-        if not api_key:
+        key = _configure_genai()
+        if not key:
             return _fallback_document(doc_label, full_name, address, subject, details, today)
 
-        model = genai.GenerativeModel('gemini-flash-latest')
-        response = model.generate_content(prompt)
-        return response.text.strip()
+        for model_name in ['gemini-2.0-flash', 'gemini-flash-latest', 'gemini-1.5-flash', 'gemini-pro']:
+            try:
+                model = genai.GenerativeModel(model_name)
+                response = model.generate_content(prompt)
+                return response.text.strip()
+            except:
+                continue
+        
+        return _fallback_document(doc_label, full_name, address, subject, details, today)
     except Exception as e:
         print(f"Gemini API Error in generate_legal_document: {str(e)}")
         return _fallback_document(doc_label, full_name, address, subject, details, today)
@@ -172,4 +244,3 @@ _________________________
 Date: {today}
 
 [This is a system-generated document template. Please review and modify as needed before submission.]"""
-

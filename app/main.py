@@ -46,12 +46,12 @@ async def ask_legal_ai(request: Request):
         # Accept both message and question fields for compatibility
         message = data.get("message") or data.get("question")
         if not message:
-            return {"error": "No message provided"}, 400
+            return JSONResponse({"error": "No message provided"}, status_code=400)
         answer = get_ai_response(message)
         return {"response": answer}
     except Exception as e:
         print(f"Server Error in /api/ask: {e}")
-        return {"error": "Internal Server Error", "detail": str(e)}, 500
+        return JSONResponse({"error": "Internal Server Error", "detail": str(e)}, status_code=500)
 
 @app.post("/api/translate")
 async def translate_legal_text(request: Request):
@@ -59,12 +59,12 @@ async def translate_legal_text(request: Request):
         data = await request.json()
         text = data.get("text")
         if not text:
-            return {"error": "No text provided"}, 400
+            return JSONResponse({"error": "No text provided"}, status_code=400)
         translated = translate_text(text)
         return {"translation": translated}
     except Exception as e:
         print(f"Server Error in /api/translate: {e}")
-        return {"error": "Internal Server Error", "detail": str(e)}, 500
+        return JSONResponse({"error": "Internal Server Error", "detail": str(e)}, status_code=500)
 
 @app.post("/api/generate-document")
 async def generate_document(request: Request):
@@ -96,63 +96,63 @@ app.include_router(sos.router, prefix="/sos", tags=["SOS"])
 
 @app.get("/", response_class=HTMLResponse)
 async def root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request, "index.html")
 
 @app.get("/chat-ui", response_class=HTMLResponse)
 async def chat_ui(request: Request):
-    return templates.TemplateResponse("chat.html", {"request": request})
+    return templates.TemplateResponse(request, "chat.html")
 
 @app.get("/constitution", response_class=HTMLResponse)
 async def constitution(request: Request):
-    return templates.TemplateResponse("constitution.html", {"request": request})
+    return templates.TemplateResponse(request, "constitution.html")
 
 @app.get("/document-generator", response_class=HTMLResponse)
 async def document_generator(request: Request):
-    return templates.TemplateResponse("document-generator.html", {"request": request})
+    return templates.TemplateResponse(request, "document-generator.html")
 
 @app.get("/generator/{doc_type}", response_class=HTMLResponse)
 async def generator_detail(request: Request, doc_type: str):
     doc_type = doc_type.lower()
-    return templates.TemplateResponse("generator-detail.html", {"request": request, "doc_type": doc_type})
+    return templates.TemplateResponse(request, "generator-detail.html", {"doc_type": doc_type})
 
 @app.get("/rights-library", response_class=HTMLResponse)
 async def rights_library(request: Request):
-    return templates.TemplateResponse("rights-library.html", {"request": request})
+    return templates.TemplateResponse(request, "rights-library.html")
 
 @app.get("/rights-library/{category}", response_class=HTMLResponse)
 async def rights_detail(request: Request, category: str):
     # Ensure category is lowercase for template matching or logic
     category = category.lower()
-    return templates.TemplateResponse("rights-detail.html", {"request": request, "category": category})
+    return templates.TemplateResponse(request, "rights-detail.html", {"category": category})
 
 @app.get("/rightnow", response_class=HTMLResponse)
 async def rightnow(request: Request):
-    return templates.TemplateResponse("rightnow.html", {"request": request})
+    return templates.TemplateResponse(request, "rightnow.html")
 
 @app.get("/rightnow/{topic}", response_class=HTMLResponse)
 async def rightnow_detail(request: Request, topic: str):
     topic = topic.lower()
-    return templates.TemplateResponse("rightnow-detail.html", {"request": request, "topic": topic})
+    return templates.TemplateResponse(request, "rightnow-detail.html", {"topic": topic})
 
 @app.get("/emergency-directory", response_class=HTMLResponse)
 async def emergency_directory(request: Request):
-    return templates.TemplateResponse("emergency-directory.html", {"request": request})
+    return templates.TemplateResponse(request, "emergency-directory.html")
 
 @app.get("/legal-aid", response_class=HTMLResponse)
 async def legal_aid(request: Request):
-    return templates.TemplateResponse("legal-aid.html", {"request": request})
+    return templates.TemplateResponse(request, "legal-aid.html")
 
 @app.get("/sos-shield", response_class=HTMLResponse)
 async def sos_shield(request: Request):
-    return templates.TemplateResponse("sos-shield.html", {"request": request})
+    return templates.TemplateResponse(request, "sos-shield.html")
 
 @app.get("/articles", response_class=HTMLResponse)
 async def articles(request: Request):
-    return templates.TemplateResponse("articles.html", {"request": request})
+    return templates.TemplateResponse(request, "articles.html")
 
 @app.get("/documents", response_class=HTMLResponse)
 async def documents(request: Request):
-    return templates.TemplateResponse("documents.html", {"request": request})
+    return templates.TemplateResponse(request, "documents.html")
 
 
 @app.get("/api/laws")
