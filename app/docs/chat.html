@@ -1,0 +1,328 @@
+{% extends "base.html" %}
+
+{% block title %}Ask Legal Doubt - LawAid X Sanvidhaan{% endblock %}
+
+{% block extra_styles %}
+<style>
+    .chat-page-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 120px);
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    #chat-container {
+        flex: 1;
+        overflow-y: auto;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        background: rgba(15, 23, 42, 0.3);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        margin-bottom: 1.5rem;
+        scrollbar-width: thin;
+        scrollbar-color: var(--primary-blue) transparent;
+    }
+
+    #chat-container::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    #chat-container::-webkit-scrollbar-thumb {
+        background: var(--primary-blue);
+        border-radius: 10px;
+    }
+
+    .message {
+        max-width: 80%;
+        padding: 1.25rem 1.5rem;
+        border-radius: 16px;
+        line-height: 1.6;
+        animation: fadeIn 0.3s ease;
+        position: relative;
+        font-size: 0.95rem;
+    }
+
+    .user-message {
+        align-self: flex-end;
+        background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+        color: white;
+        border-bottom-right-radius: 4px;
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+    }
+
+    .ai-message {
+        align-self: flex-start;
+        background: rgba(30, 41, 59, 0.8);
+        color: var(--text-color);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom-left-radius: 4px;
+    }
+
+    .message h4 {
+        margin: 0 0 0.75rem 0;
+        color: var(--gold-color);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .message ul {
+        padding-left: 1.25rem;
+        margin: 0.75rem 0;
+    }
+
+    .message li {
+        margin-bottom: 0.5rem;
+    }
+
+    .input-wrapper {
+        display: flex;
+        gap: 1rem;
+        background: rgba(30, 41, 59, 0.8);
+        padding: 1rem;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        align-items: center;
+    }
+
+    #user-input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        padding: 0.5rem;
+        outline: none;
+    }
+
+    .translate-btn {
+        background: rgba(212, 175, 55, 0.1);
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        color: var(--gold-color);
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.2s;
+    }
+
+    .translate-btn:hover {
+        background: rgba(212, 175, 55, 0.2);
+    }
+
+    .translation-block {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fbbf24;
+        font-style: italic;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Typing bubble */
+    .typing-bubble {
+        display: flex; align-items: center; gap: 0.6rem;
+        padding: 1rem 1.5rem;
+        background: rgba(30, 41, 59, 0.8);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 16px; border-bottom-left-radius: 4px;
+        align-self: flex-start;
+        max-width: 280px;
+        animation: fadeIn 0.3s ease;
+    }
+    .typing-dots {
+        display: flex; gap: 5px;
+    }
+    .typing-dots span {
+        width: 8px; height: 8px; border-radius: 50%;
+        background: var(--primary-color);
+        animation: bounce 1.2s infinite;
+    }
+    .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes bounce {
+        0%,60%,100% { transform: translateY(0); opacity: 0.4; }
+        30%          { transform: translateY(-6px); opacity: 1; }
+    }
+    .typing-timer {
+        font-size: 0.8rem; color: rgba(255,255,255,0.35);
+        min-width: 30px;
+    }
+    .slow-warn {
+        font-size: 0.8rem; color: rgba(255,165,0,0.7);
+        text-align: center; margin-top: 0.5rem;
+        animation: fadeIn 0.4s ease;
+    }
+    .cache-badge {
+        display: inline-flex; align-items: center; gap: 0.3rem;
+        font-size: 0.72rem; font-weight: 600;
+        color: #4ade80; background: rgba(34,197,94,0.08);
+        border: 1px solid rgba(34,197,94,0.2);
+        border-radius: 20px; padding: 0.2rem 0.6rem;
+        margin-left: 0.5rem; vertical-align: middle;
+    }
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+    .spin { animation: spin 1s linear infinite; display: inline-block; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="chat-page-wrapper">
+    <div class="header-section hero" style="padding: 1rem 0; text-align: left;">
+        <h1 style="font-size: 2rem;"><span class="highlight">Legal Assistant</span></h1>
+        <div class="subtitle" style="margin: 0;">AI-powered guidance for your legal doubts</div>
+    </div>
+
+    <div id="chat-container">
+        <div class="message ai-message">
+            <h4>Welcome to LawAid X Sanvidhaan</h4>
+            <p>I am your dedicated AI legal assistant. How can I assist you with your legal questions today?</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
+                <ion-icon name="information-circle-outline"></ion-icon> 
+                Note: This is for informational purposes only and not a substitute for professional legal advice.
+            </p>
+        </div>
+    </div>
+
+    <div class="input-wrapper">
+        <input type="text" id="user-input" placeholder="Type your legal question here..."
+            onkeypress="if(event.key === 'Enter') sendMessage()">
+        <button class="cta-primary" id="send-btn" onclick="sendMessage()" style="padding: 0.75rem 1.5rem;">
+            <ion-icon name="send-outline"></ion-icon>
+            Send
+        </button>
+    </div>
+</div>
+
+<script>
+    async function sendMessage() {
+        const input   = document.getElementById('user-input');
+        const message = input.value.trim();
+        if (!message) return;
+
+        const chat    = document.getElementById('chat-container');
+        const sendBtn = document.getElementById('send-btn');
+
+        // Add user bubble
+        const userDiv = document.createElement('div');
+        userDiv.className = 'message user-message';
+        userDiv.textContent = message;
+        chat.appendChild(userDiv);
+        input.value = '';
+
+        // Show typing indicator with live timer
+        const typingEl = document.createElement('div');
+        typingEl.className = 'typing-bubble';
+        typingEl.innerHTML = `
+            <div class="typing-dots">
+                <span></span><span></span><span></span>
+            </div>
+            <span class="typing-timer" id="elapsed-timer">0s</span>`;
+        chat.appendChild(typingEl);
+        chat.scrollTop = chat.scrollHeight;
+
+        // Elapsed timer
+        const startTs   = Date.now();
+        let   warnShown = false;
+        const timerInterval = setInterval(() => {
+            const elapsed = Math.round((Date.now() - startTs) / 1000);
+            const timerEl = document.getElementById('elapsed-timer');
+            if (timerEl) timerEl.textContent = elapsed + 's';
+
+            // Show slow-warning after 5s
+            if (elapsed >= 5 && !warnShown) {
+                warnShown = true;
+                const warn = document.createElement('div');
+                warn.className = 'slow-warn';
+                warn.id = 'slow-warn';
+                warn.innerHTML = '⏳ AI is processing your query, please wait…';
+                chat.appendChild(warn);
+                chat.scrollTop = chat.scrollHeight;
+            }
+        }, 1000);
+
+        // Disable send button
+        sendBtn.disabled = true;
+        const origHtml = sendBtn.innerHTML;
+        sendBtn.innerHTML = '<ion-icon name="sync-outline" class="spin"></ion-icon>';
+
+        try {
+            const res  = await fetch('/api/ask', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message })
+            });
+            if (!res.ok) throw new Error(`Server error: ${res.status}`);
+            const data    = await res.json();
+            const elapsed = ((Date.now() - startTs) / 1000).toFixed(1);
+            const fromCache = elapsed < 0.5;   // sub-500ms = almost certainly cache
+
+            // Build AI reply
+            const aiDiv = document.createElement('div');
+            aiDiv.className = 'message ai-message';
+
+            const timeBadge = fromCache
+                ? `<span class="cache-badge"><ion-icon name="flash-outline"></ion-icon> instant</span>`
+                : '';
+
+            aiDiv.innerHTML = data.response + timeBadge;
+            aiDiv.dataset.originalText = data.response;
+
+            const translateBtn = document.createElement('button');
+            translateBtn.className = 'translate-btn';
+            translateBtn.innerHTML = '<ion-icon name="language-outline"></ion-icon> Translate to Hindi';
+            translateBtn.onclick = () => translateMessage(aiDiv, data.response);
+            aiDiv.appendChild(translateBtn);
+
+            chat.appendChild(aiDiv);
+
+        } catch (err) {
+            const errDiv = document.createElement('div');
+            errDiv.className = 'message ai-message';
+            errDiv.style.border = '1px solid #ef4444';
+            errDiv.innerHTML = `<span style="color:#ef4444;">⚠️ ${err.message}. Please try again.</span>`;
+            chat.appendChild(errDiv);
+        } finally {
+            clearInterval(timerInterval);
+            typingEl.remove();
+            document.getElementById('slow-warn')?.remove();
+            sendBtn.disabled = false;
+            sendBtn.innerHTML = origHtml;
+            chat.scrollTop = chat.scrollHeight;
+        }
+    }
+
+    async function translateMessage(messageDiv, originalText) {
+        const existing = messageDiv.querySelector('.translation-block');
+        if (existing) { existing.remove(); return; }
+
+        try {
+            const res  = await fetch('/api/translate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text: originalText, target_lang: 'hi' })
+            });
+            const data = await res.json();
+            const transDiv = document.createElement('div');
+            transDiv.className = 'translation-block';
+            transDiv.innerHTML = '<strong>Hindi Translation:</strong><br>' + data.translation;
+            const btn = messageDiv.querySelector('.translate-btn');
+            messageDiv.insertBefore(transDiv, btn);
+        } catch (e) { console.error('Translation error:', e); }
+    }
+</script>
+{% endblock %}

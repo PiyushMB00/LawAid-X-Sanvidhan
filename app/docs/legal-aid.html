@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}Legal Aid Locator - LawAid X Sanvidhaan{% endblock %}
+
+{% block extra_styles %}
+<style>
+    .legal-aid-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 4rem 2rem 6rem;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+        margin-top: 4rem;
+    }
+
+    .info-card {
+        background: var(--bg-lighter);
+        border-radius: 20px;
+        padding: 3rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: transform 0.3s ease;
+    }
+
+    .info-card h2 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .info-card h2 ion-icon {
+        color: var(--primary-color);
+        font-size: 2rem;
+    }
+
+    .info-card p {
+        color: var(--text-secondary);
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+
+    .link-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .link-list li {
+        margin-bottom: 1rem;
+    }
+
+    .link-list a {
+        color: var(--gold-color);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 500;
+        transition: opacity 0.2s;
+    }
+
+    .link-list a:hover {
+        opacity: 0.8;
+    }
+
+    .nalsa-box {
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.05) 100%);
+        border-radius: 24px;
+        padding: 4rem;
+        margin-top: 4rem;
+        border: 1px solid rgba(59, 130, 246, 0.1);
+        text-align: center;
+    }
+
+    .nalsa-box h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="legal-aid-container">
+    <div class="back-btn">
+        <a href="/rightnow" class="cta-secondary"
+            style="display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem;">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            Back to RightNow!
+        </a>
+    </div>
+
+    <div class="header-section hero" style="text-align: center;">
+        <h1><span class="highlight">Legal Aid Locator</span></h1>
+        <p class="subtitle" style="margin: 0 auto; max-width: 800px;">Access free legal services provided by the
+            Government of India for those in need.</p>
+    </div>
+
+    <div class="nalsa-box">
+        <h2>NALSA</h2>
+        <p class="subtitle">National Legal Services Authority</p>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 1.5rem auto 2.5rem;">The primary body
+            responsible for providing free legal services to the weaker sections of society and organizing Lok Adalats
+            for amicable settlement of disputes.</p>
+        <a href="https://nalsa.gov.in/" target="_blank" class="cta-primary"
+            style="display: inline-flex; justify-content: center; width: auto;">Visit NALSA Website</a>
+    </div>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h2><ion-icon name="ribbon-outline"></ion-icon> Who is Eligible?</h2>
+            <p>Free legal services are available to:
+            <ul class="link-list" style="margin-top: 1rem; color: var(--text-muted);">
+                <li>• Women and Children</li>
+                <li>• Members of SC/ST</li>
+                <li>• Industrial Workmen</li>
+                <li>• Persons in custody</li>
+                <li>• Persons with annual income below mandated limit</li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h2><ion-icon name="business-outline"></ion-icon> State Authorities</h2>
+            <p>Every state has a State Legal Services Authority (SLSA). You can find your specific state's portal here:
+            </p>
+            <ul class="link-list">
+                <li><a href="https://dslsa.org/" target="_blank"><ion-icon name="link-outline"></ion-icon> Delhi State
+                        LSA</a></li>
+                <li><a href="https://mahalsaupload.org/" target="_blank"><ion-icon name="link-outline"></ion-icon>
+                        Maharashtra State LSA</a></li>
+                <li><a href="https://kelsa.nic.in/" target="_blank"><ion-icon name="link-outline"></ion-icon> Karnataka
+                        State LSA</a></li>
+                <li><a href="https://upslsa.up.nic.in/" target="_blank"><ion-icon name="link-outline"></ion-icon> Uttar
+                        Pradesh State LSA</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

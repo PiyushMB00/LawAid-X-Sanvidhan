@@ -1,0 +1,314 @@
+{% extends "base.html" %}
+
+{% block title %}Draft {{ doc_type | replace('-', ' ') | title }} - LawAid X Sanvidhaan{% endblock %}
+
+{% block extra_styles %}
+<style>
+    .generator-detail-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 4rem 2rem 6rem;
+    }
+
+    .doc-form-card {
+        background: #0f172a;
+        border-radius: 32px;
+        padding: 4rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-group {
+        margin-bottom: 2rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.75rem;
+        color: white;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 1.25rem;
+        background: rgba(30, 41, 59, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        color: white;
+        font-size: 1rem;
+        font-family: inherit;
+        transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-color: var(--gold-color);
+        background: rgba(30, 41, 59, 0.8);
+        box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.1);
+    }
+
+    textarea.form-control {
+        min-height: 200px;
+        resize: vertical;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .btn-submit {
+        flex: 1;
+        padding: 1.25rem;
+        background: var(--gold-color);
+        color: #0f172a;
+        border: none;
+        border-radius: 16px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        transition: all 0.3s ease;
+    }
+
+    .btn-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px -10px var(--gold-color);
+    }
+
+    .btn-back {
+        padding: 1.25rem 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .btn-back:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="generator-detail-container">
+    <div class="header-section hero" style="text-align: center; margin-bottom: 4rem;">
+        <h1 style="font-size: 3rem;"><span class="highlight">Drafting:</span> {{ doc_type | replace('-', ' ') | title }}
+        </h1>
+        <div class="subtitle" style="margin: 0 auto; max-width: 600px;">Fill in the specific details below to generate
+            your legally sound document.</div>
+    </div>
+
+    <div class="doc-form-card">
+        <form id="doc-generator-form">
+            <div class="form-group">
+                <label for="fullName">Your Full Legal Name</label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Complete Address</label>
+                <textarea id="address" class="form-control"
+                    placeholder="Your residential or official communication address..." style="min-height: 100px;"
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject / Purpose</label>
+                <input type="text" id="subject" class="form-control" placeholder="Brief subject of this document..."
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="details">Detailed Description of Facts</label>
+                <textarea id="details" class="form-control"
+                    placeholder="Explain the incident, grievance, or requirements clearly and chronologically..."
+                    required></textarea>
+            </div>
+
+            <div class="action-buttons">
+                <button type="button" class="btn-back" onclick="window.history.back()">
+                    <ion-icon name="arrow-back-outline"></ion-icon> Back
+                </button>
+                <button type="submit" class="btn-submit">
+                    <ion-icon name="document-text-outline"></ion-icon> Generate PDF Document
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+    const DOC_TYPE = "{{ doc_type }}";
+
+    document.getElementById('doc-generator-form').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const btn = document.querySelector('.btn-submit');
+        const originalHTML = btn.innerHTML;
+
+        const fullName = document.getElementById('fullName').value.trim();
+        const address = document.getElementById('address').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const details = document.getElementById('details').value.trim();
+
+        if (!fullName || !address || !subject || !details) {
+            showError('Please fill in all fields before generating.');
+            return;
+        }
+
+        // Show loading state
+        btn.innerHTML = '<ion-icon name="hourglass-outline"></ion-icon> Generating Document...';
+        btn.disabled = true;
+
+        try {
+            const response = await fetch('/api/generate-document', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    doc_type: DOC_TYPE,
+                    full_name: fullName,
+                    address: address,
+                    subject: subject,
+                    details: details
+                })
+            });
+
+            const data = await response.json();
+
+            if (!response.ok || data.error) {
+                throw new Error(data.error || 'Failed to generate document.');
+            }
+
+            // Generate PDF using jsPDF
+            downloadPDF(data.document, DOC_TYPE, fullName);
+
+            btn.innerHTML = '<ion-icon name="checkmark-circle-outline"></ion-icon> Downloaded!';
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+                btn.disabled = false;
+            }, 3000);
+
+        } catch (err) {
+            showError(err.message || 'An unexpected error occurred. Please try again.');
+            btn.innerHTML = originalHTML;
+            btn.disabled = false;
+        }
+    });
+
+    function downloadPDF(text, docType, fullName) {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
+
+        const pageW = doc.internal.pageSize.getWidth();
+        const pageH = doc.internal.pageSize.getHeight();
+        const margin = 20;
+        const usableW = pageW - margin * 2;
+        const lineHeight = 6;
+        let y = margin;
+
+        // --- Header bar ---
+        doc.setFillColor(15, 23, 42);
+        doc.rect(0, 0, pageW, 28, 'F');
+        doc.setTextColor(251, 191, 36); // gold
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(13);
+        doc.text('LawAid X Sanvidhaan', margin, 12);
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(9);
+        doc.setTextColor(180, 190, 210);
+        doc.text('AI-Powered Legal Document Generator  |  For Educational Use Only', margin, 20);
+
+        // Thin gold rule
+        doc.setDrawColor(251, 191, 36);
+        doc.setLineWidth(0.5);
+        doc.line(0, 28, pageW, 28);
+
+        y = 38;
+
+        // --- Document type label ---
+        const typeLabel = {
+            'complaint-letter': 'FORMAL COMPLAINT LETTER',
+            'legal-notice': 'LEGAL NOTICE',
+            'rti-request': 'RTI APPLICATION'
+        }[docType] || 'LEGAL DOCUMENT';
+
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(14);
+        doc.setTextColor(30, 41, 59);
+        const labelW = doc.getTextWidth(typeLabel);
+        doc.text(typeLabel, (pageW - labelW) / 2, y);
+
+        y += 4;
+        doc.setDrawColor(100, 116, 139);
+        doc.setLineWidth(0.3);
+        doc.line(margin, y, pageW - margin, y);
+        y += 8;
+
+        // --- Body text ---
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(10.5);
+        doc.setTextColor(30, 30, 30);
+
+        const lines = text.split('\n');
+        for (const rawLine of lines) {
+            const wrapped = doc.splitTextToSize(rawLine || ' ', usableW);
+            for (const wl of wrapped) {
+                if (y + lineHeight > pageH - 25) {
+                    addFooter(doc, pageW, pageH, margin);
+                    doc.addPage();
+                    y = margin + 5;
+                }
+                doc.text(wl, margin, y);
+                y += lineHeight;
+            }
+        }
+
+        // Footer on last page
+        addFooter(doc, pageW, pageH, margin);
+
+        // Save
+        const safeName = fullName.replace(/\s+/g, '_').toLowerCase();
+        doc.save(`${docType}_${safeName}.pdf`);
+    }
+
+    function addFooter(doc, pageW, pageH, margin) {
+        doc.setDrawColor(200, 200, 200);
+        doc.setLineWidth(0.3);
+        doc.line(margin, pageH - 18, pageW - margin, pageH - 18);
+        doc.setFont('helvetica', 'italic');
+        doc.setFontSize(7.5);
+        doc.setTextColor(150, 150, 150);
+        doc.text('Generated by LawAid X Sanvidhaan | This is an educational tool — not a substitute for professional legal advice.', margin, pageH - 12);
+        doc.setFont('helvetica', 'normal');
+        const pg = `Page ${doc.internal.getCurrentPageInfo().pageNumber}`;
+        doc.text(pg, pageW - margin - doc.getTextWidth(pg), pageH - 12);
+    }
+
+    function showError(msg) {
+        let errEl = document.getElementById('gen-error-msg');
+        if (!errEl) {
+            errEl = document.createElement('div');
+            errEl.id = 'gen-error-msg';
+            errEl.style.cssText = 'margin-top:1.5rem;padding:1rem 1.5rem;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.4);border-radius:12px;color:#f87171;font-size:0.95rem;text-align:center;';
+            document.querySelector('.action-buttons').after(errEl);
+        }
+        errEl.textContent = msg;
+        errEl.style.display = 'block';
+        setTimeout(() => { errEl.style.display = 'none'; }, 6000);
+    }
+</script>
+{% endblock %}

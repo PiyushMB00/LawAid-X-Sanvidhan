@@ -1,0 +1,341 @@
+{% extends "base.html" %}
+
+{% block title %}{{ category.replace('-', ' ').title() }} - Rights Library - LawAid X Sanvidhaan{% endblock %}
+
+{% block extra_styles %}
+<style>
+    .detail-container {
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+    }
+
+    .detail-hero {
+        text-align: center;
+        margin-bottom: 4rem;
+        padding: 0 2rem;
+    }
+
+    .detail-hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(to right, #fff, var(--primary-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .category-tag {
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        background: rgba(59, 130, 246, 0.1);
+        color: var(--primary-color);
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid rgba(59, 130, 246, 0.2);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .content-section {
+        background: var(--bg-lighter);
+        border-radius: 20px;
+        padding: 2.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: transform 0.3s ease;
+    }
+
+    .content-section:hover {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .content-section h2 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.75rem;
+        color: white;
+    }
+
+    .content-section h2 ion-icon {
+        color: var(--primary-color);
+    }
+
+    .content-section p {
+        color: var(--text-secondary);
+        line-height: 1.8;
+        font-size: 1.05rem;
+    }
+
+    .legal-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 1.5rem;
+    }
+
+    .legal-list li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 12px;
+        margin-bottom: 0.75rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .legal-list li ion-icon {
+        color: var(--gold-color);
+        font-size: 1.25rem;
+    }
+
+    .legal-list li strong {
+        color: white;
+        min-width: 100px;
+    }
+
+    .legal-list li span {
+        color: var(--text-muted);
+    }
+
+    .back-nav {
+        max-width: 1200px;
+        margin: 2rem auto 0;
+        padding: 0 2rem;
+    }
+
+    .back-nav a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+
+    .back-nav a:hover {
+        color: white;
+    }
+
+    .sidebar-widget {
+        background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.5));
+        border-radius: 16px;
+        padding: 1.5rem;
+        border: 1px solid rgba(59, 130, 246, 0.1);
+    }
+
+    .sidebar-widget h3 {
+        color: white;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .sidebar-widget h3 ion-icon {
+        color: #fbbf24;
+    }
+
+    .sidebar-widget p {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+    }
+
+    @media (max-width: 968px) {
+        .content-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .detail-hero h1 {
+            font-size: 2.5rem;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="detail-container">
+    <div class="back-nav">
+        <a href="/rights-library">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            Back to Library
+        </a>
+    </div>
+
+    {% set data = {
+    'civil': {
+    'tag': 'Fundamental Liberties',
+    'title': 'Civil Rights',
+    'desc': 'Civil rights are the basic freedoms that protect individuals from government overreach and ensure equal
+    citizenship. These rights form the bedrock of a democratic society, allowing people to live, speak, and worship
+    freely without fear of arbitrary state action.',
+    'legal': [
+    {'key': 'Article 19', 'val': 'Protection of certain rights regarding freedom of speech, etc.'},
+    {'key': 'Article 21', 'val': 'Protection of life and personal liberty.'},
+    {'key': 'Article 14', 'val': 'Equality before law and equal protection of laws.'}
+    ],
+    'impact': 'Empowers citizens to hold authority accountable, promotes social equality, and protects minority groups
+    from disenfranchisement.',
+    'fact': 'Civil rights ensure that every citizen, regardless of their background, has an equal standing in the eyes
+    of the law.'
+    },
+    'economic': {
+    'tag': 'Social Security',
+    'title': 'Economic Rights',
+    'desc': 'Economic rights are essential for an individual to live a life of dignity. They ensure access to the
+    resources needed for survival and growth, focusing on labor protections, fair compensation, and the right to own and
+    enjoy property.',
+    'legal': [
+    {'key': 'Article 39', 'val': 'Certain principles of policy to be followed by the State.'},
+    {'key': 'Article 41', 'val': 'Right to work, to education and to public assistance.'},
+    {'key': 'Article 43', 'val': 'Living wage, etc., for workers.'}
+    ],
+    'impact': 'Ensures a safety net for the vulnerable, promotes fair distribution of wealth, and protects workers from
+    exploitation.',
+    'fact': 'Economic rights are often called "second-generation rights" and are key to achieving social justice.'
+    },
+    'social': {
+    'tag': 'Welfare & Inclusion',
+    'title': 'Social Rights',
+    'desc': 'Social rights guarantee that every person has access to the basic human needs required for full
+    participation in society. This includes healthcare, education, social security, and the protection of the family
+    unit.',
+    'legal': [
+    {'key': 'Article 21A', 'val': 'Right to Education (Fundamental Right).'},
+    {'key': 'Article 47', 'val': 'Duty of the State to raise the level of nutrition and the standard of living.'},
+    {'key': 'Article 45', 'val': 'Provision for early childhood care and education.'}
+    ],
+    'impact': 'Improves the quality of life for all citizens, reduces systemic poverty, and ensures the next generation
+    is well-prepared for the future.',
+    'fact': 'The Right to Education (RTE) is a milestone in India\'s journey to securing social rights for all
+    children.'
+    },
+    'environmental': {
+    'tag': 'Eternal Protection',
+    'title': 'Environmental Rights',
+    'desc': 'Environmental rights recognize that a healthy planet is a prerequisite for human life. These rights protect
+    the air, water, and soil we depend on, ensuring that development does not come at the cost of the ecosystem or
+    future generations.',
+    'legal': [
+    {'key': 'Article 48A', 'val': 'Protection and improvement of environment and safeguarding of forests.'},
+    {'key': 'Article 51A(g)', 'val': 'Fundamental duty to protect and improve the natural environment.'},
+    {'key': 'EPA 1986', 'val': 'The Environment (Protection) Act provides broad state powers to protect nature.'}
+    ],
+    'impact': 'Protects biodiversity, ensures clean resources for all, and establishes the principle of "sustainable
+    development".',
+    'fact': 'India was one of the first countries in the world to include environmental protection in its Constitution.'
+    },
+    'consumer': {
+    'tag': 'Market Justice',
+    'title': 'Consumer Rights',
+    'desc': 'Consumer rights protect individuals from exploitation in the marketplace. These rights ensure that goods
+    and services meet safety standards, that pricing is transparent, and that there is a mechanism for redressal when
+    things go wrong.',
+    'legal': [
+    {'key': 'CPA 2019', 'val': 'The Consumer Protection Act establishes regulatory authorities and consumer courts.'},
+    {'key': 'Article 21', 'val': 'The Right to Life includes the right to safe and quality basic necessities.'},
+    {'key': 'RERA 2016', 'val': 'Protects home-buyers and helps boost investments in the real estate industry.'}
+    ],
+    'impact': 'Empowers the common citizen against corporate negligence, ensures fair competition, and maintains product
+    safety standards.',
+    'fact': 'In India, the Consumer Protection Act covers both offline and online transactions, including e-commerce.'
+    },
+    'cultural': {
+    'tag': 'Identity Protection',
+    'title': 'Cultural Rights',
+    'desc': 'Cultural and educational rights are fundamental to preserving India\'s diverse heritage. These rights
+    empower minority communities to maintain their distinct language, script, and traditions through their own
+    institutions.',
+    'legal': [
+    {'key': 'Article 29', 'val': 'Protection of interests of minorities regarding culture and language.'},
+    {'key': 'Article 30', 'val': 'Right of minorities to establish and administer educational institutions.'},
+    {'key': 'Article 350A', 'val': 'Facilities for instruction in mother-tongue at primary stage.'}
+    ],
+    'impact': 'Promotes a pluralistic society, prevents cultural assimilation, and ensures that minority voices are
+    preserved in the national fabric.',
+    'fact': 'Articles 29 and 30 are unique in that they specifically protect collective group rights alongside
+    individual ones.'
+    }
+    } %}
+
+    {% set c = data[category] if category in data else data['civil'] %}
+
+    <div class="detail-hero hero">
+        <div class="category-tag">{{ c.tag }}</div>
+        <h1>{{ c.title }}</h1>
+        <p class="subtitle" style="max-width: 800px; margin: 0 auto;">Comprehensive guide to your protections and legal
+            standing</p>
+    </div>
+
+    <div class="content-grid">
+        <div class="main-content">
+            <section class="content-section">
+                <h2><ion-icon name="book-outline"></ion-icon> Fundamental Overview</h2>
+                <p>{{ c.desc }}</p>
+            </section>
+
+            <section class="content-section">
+                <h2><ion-icon name="scale-outline"></ion-icon> Legal Framework</h2>
+                <p>The following provisions in the Indian legal system provide the foundation for {{ c.title }}:</p>
+                <ul class="legal-list">
+                    {% for item in c.legal %}
+                    <li>
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        <strong>{{ item.key }}</strong>
+                        <span>{{ item.val }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2><ion-icon name="shield-checkmark-outline"></ion-icon> Societal Impact</h2>
+                <p>{{ c.impact }}</p>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3><ion-icon name="bulb-outline"></ion-icon> Did You Know?</h3>
+                <p>{{ c.fact }}</p>
+            </div>
+
+            <div class="sidebar-widget"
+                style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.1);">
+                <h3 style="color: #10b981;"><ion-icon name="help-circle-outline" style="color: #10b981;"></ion-icon>
+                    Need Help?</h3>
+                <p>If you believe your {{ c.title }} are being violated, you can approach the High Courts (Art. 226) or
+                    the Supreme Court (Art. 32) of India.</p>
+                <a href="/chat-ui" class="cta-secondary"
+                    style="margin-top: 1rem; width: 100%; justify-content: center; font-size: 0.85rem;">Consult LawAid
+                    AI</a>
+            </div>
+        </aside>
+    </div>
+</div>
+{% endblock %}

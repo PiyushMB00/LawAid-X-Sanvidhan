@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+
+{% block title %}{{ topic.replace('-', ' ').title() }} - RightNow! - LawAid X Sanvidhaan{% endblock %}
+
+{% block extra_styles %}
+<style>
+    .detail-container {
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+    }
+
+    .detail-hero {
+        text-align: center;
+        margin-bottom: 4rem;
+        padding: 0 2rem;
+    }
+
+    .detail-hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(to right, #fff, #ef4444);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .category-tag {
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        background: rgba(239, 68, 68, 0.1);
+        color: #ef4444;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid rgba(239, 68, 68, 0.2);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .content-section {
+        background: var(--bg-lighter);
+        border-radius: 20px;
+        padding: 2.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .content-section h2 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .content-section h2 ion-icon {
+        color: #ef4444;
+    }
+
+    .step-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .step-list li {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .step-number {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        background: var(--primary-color);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.9rem;
+        box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    }
+
+    .step-content h4 {
+        color: white;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .step-content p {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .back-nav {
+        max-width: 1200px;
+        margin: 2rem auto 0;
+        padding: 0 2rem;
+    }
+
+    .back-nav a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+
+    .back-nav a:hover {
+        color: white;
+    }
+
+    .sidebar-widget {
+        background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.5));
+        border-radius: 16px;
+        padding: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        margin-bottom: 2rem;
+    }
+
+    .sidebar-widget h3 {
+        color: white;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .sidebar-widget h3 ion-icon {
+        color: #fbbf24;
+    }
+
+    .sidebar-widget p {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+    }
+
+    @media (max-width: 968px) {
+        .content-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="detail-container">
+    <div class="back-nav">
+        <a href="/rightnow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            Back to RightNow!
+        </a>
+    </div>
+
+    {% set data = {
+    'police': {
+    'tag': 'Police Action',
+    'title': 'Stopped by Police',
+    'desc': 'Understanding your rights during a police interaction is crucial for your safety and protection. Laws in
+    India provide specific protocols that law enforcement must follow when questioning or detaining a citizen.',
+    'steps': [
+    {'h': 'Remain Calm & Polite', 'p': 'Do not argue or run. Keep your hands visible. Respectful cooperation can prevent
+    escalation.'},
+    {'h': 'Right to Silence', 'p': 'You have the right to remain silent. You can choose not to answer any questions
+    other than providing your name and address.'},
+    {'h': 'Ask for Grounds', 'p': 'If detained, ask clearly on what grounds you are being held. You have a right to know
+    the reason for arrest.'},
+    {'h': 'Search Protocol', 'p': 'A personal search of a female can only be conducted by a female officer with strict
+    regard to decency.'}
+    ],
+    'tip': 'Record the encounter if possible, but do not interfere with police duties. Note down officer names and belt
+    numbers.'
+    },
+    'tenant': {
+    'tag': 'Housing Rights',
+    'title': 'Tenant Rights',
+    'desc': 'As a tenant in India, you are protected by various State Rent Control Acts. These laws prevent landlords
+    from arbitrary evictions and ensure fair living conditions.',
+    'steps': [
+    {'h': 'Eviction Notice', 'p': 'A landlord cannot evict you without a valid legal reason and a prior written notice
+    as per the agreement.'},
+    {'h': 'Basic Amenities', 'p': 'Landlords cannot cut off essential services like water or electricity to force you
+    out.'},
+    {'h': 'Fair Rent', 'p': 'Rent increases must follow the terms of the lease agreement or statutory limits.'},
+    {'h': 'Refund of Deposit', 'p': 'Upon vacating, the security deposit must be refunded after valid deductions for
+    repairs.'}
+    ],
+    'tip': 'Always have a registered Rent Agreement. It is your strongest legal shield in any dispute.'
+    },
+    'workplace': {
+    'tag': 'Employment Safety',
+    'title': 'Workplace Safety',
+    'desc': 'Every employee has the right to a safe and professional work environment. This includes protection from
+    harassment and ensuring fair labor practices.',
+    'steps': [
+    {'h': 'POSH Act Compliance', 'p': 'Women are protected against sexual harassment at the workplace by the POSH Act,
+    2013.'},
+    {'h': 'Safe Conditions', 'p': 'Employers must provide a hazard-free work environment and necessary safety gear.'},
+    {'h': 'Working Hours', 'p': 'Strict adherence to regulated working hours and overtime compensation is mandatory
+    under labor codes.'},
+    {'h': 'No Discrimination', 'p': 'Protection against discrimination based on gender, religion, or caste during
+    employment.'}
+    ],
+    'tip': 'Document all instances of harassment or safety violations. Contact your Internal Complaints Committee
+    (ICC).'
+    },
+    'traffic': {
+    'tag': 'Road Protocol',
+    'title': 'Traffic Incidents',
+    'desc': 'Handling a traffic accident or stop correctly can save you from unnecessary legal and financial stress. The
+    Motor Vehicles Act governs these situations.',
+    'steps': [
+    {'h': 'Immediate Assistance', 'p': 'The first duty is to provide medical aid to any injured persons. Law protects
+    Good Samaritans.'},
+    {'h': 'Notify Authorities', 'p': 'Report the accident to the nearest police station immediately.'},
+    {'h': 'Document Scene', 'p': 'Take photos of vehicle positions, damages, and the surroundings for insurance/legal
+    claims.'},
+    {'h': 'Exchange Info', 'p': 'Note down the vehicle number, license, and insurance details of the other party
+    involved.'}
+    ],
+    'tip': 'Do not flee the scene. "Hit and Run" carries much heavier penalties than an accidental collision.'
+    },
+    'consumer': {
+    'tag': 'Market Safety',
+    'title': 'Consumer Protection',
+    'desc': 'When you buy a product or service, you have the right to quality and safety. If you are cheated or receive
+    defective goods, you have a clear path to justice.',
+    'steps': [
+    {'h': 'Right to be Informed', 'p': 'Product labels must be accurate regarding price, origin, quality, and
+    ingredients.'},
+    {'h': 'Filing a Complaint', 'p': 'You can approach the District/State Consumer Forum even for small amounts without
+    a lawyer.'},
+    {'h': 'Beware of Fraud', 'p': 'Report unfair trade practices or misleading advertisements to the CCPA.'},
+    {'h': 'Refund/Replacement', 'p': 'Defective products must be replaced or refunded as per the Consumer Protection
+    Act.'}
+    ],
+    'tip': 'Always keep the original invoice (bill). It is the primary evidence for any consumer claim.'
+    },
+    'emergency': {
+    'tag': 'Immediate Action',
+    'title': 'Emergency Action',
+    'desc': 'In high-stakes legal emergencies like an arrest or immediate threat, knowing these four points can change
+    the outcome of your case.',
+    'steps': [
+    {'h': 'Right to a Lawyer', 'p': 'You have the right to consult and be defended by a legal practitioner of your
+    choice.'},
+    {'h': '24-Hour Rule', 'p': 'An arrested person must be produced before a Magistrate within 24 hours (excluding
+    travel time).'},
+    {'h': 'Bail Rights', 'p': 'In bailable offenses, bail is a matter of right. For non-bailable ones, a court must
+    decide.'},
+    {'h': 'Informing Kin', 'p': 'The police must inform one of your friends or relatives about your arrest and
+    whereabouts.'}
+    ],
+    'tip': 'Use the SOS Shield on LawAid if you feel you are in imminent danger.'
+    }
+    } %}
+
+    {% set c = data[topic] if topic in data else data['police'] %}
+
+    <div class="detail-hero hero">
+        <div class="category-tag">{{ c.tag }}</div>
+        <h1>{{ c.title }}</h1>
+        <p class="subtitle" style="max-width: 800px; margin: 0 auto;">Actionable guidance for your current situation</p>
+    </div>
+
+    <div class="content-grid">
+        <div class="main-content">
+            <section class="content-section">
+                <h2><ion-icon name="information-circle-outline"></ion-icon> Overview</h2>
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">{{ c.desc }}</p>
+            </section>
+
+            <section class="content-section">
+                <h2><ion-icon name="list-outline"></ion-icon> Key Action Steps</h2>
+                <ul class="step-list">
+                    {% for step in c.steps %}
+                    <li>
+                        <div class="step-number">{{ loop.index }}</div>
+                        <div class="step-content">
+                            <h4>{{ step.h }}</h4>
+                            <p>{{ step.p }}</p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3><ion-icon name="bulb-outline"></ion-icon> Pro Tip</h3>
+                <p>{{ c.tip }}</p>
+            </div>
+
+            <div class="sidebar-widget"
+                style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.1);">
+                <h3 style="color: #10b981;"><ion-icon name="call-outline" style="color: #10b981;"></ion-icon> Get
+                    Emergency Help</h3>
+                <p>If you need immediate help, use the Emergency Directory or trigger the SOS Shield.</p>
+                <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+                    <a href="/sos-shield" class="cta-primary" style="justify-content: center; background: #ef4444;">SOS
+                        Shield</a>
+                    <a href="/emergency-directory" class="cta-secondary" style="justify-content: center;">Emergency
+                        Directory</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+{% endblock %}
