@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
 from starlette.requests import Request
 from app.services.ai_service import get_ai_response, translate_text
@@ -42,12 +42,12 @@ async def ask_legal_ai(request: Request):
         # Accept both message and question fields for compatibility
         message = data.get("message") or data.get("question")
         if not message:
-            return {"error": "No message provided"}, 400
+            return JSONResponse({"error": "No message provided"}, status_code=400)
         answer = get_ai_response(message)
         return {"response": answer}
     except Exception as e:
         print(f"Server Error in /api/ask: {e}")
-        return {"error": "Internal Server Error", "detail": str(e)}, 500
+        return JSONResponse({"error": "Internal Server Error", "detail": str(e)}, status_code=500)
 
 @app.post("/api/translate")
 async def translate_legal_text(request: Request):
@@ -55,12 +55,12 @@ async def translate_legal_text(request: Request):
         data = await request.json()
         text = data.get("text")
         if not text:
-            return {"error": "No text provided"}, 400
+            return JSONResponse({"error": "No text provided"}, status_code=400)
         translated = translate_text(text)
         return {"translation": translated}
     except Exception as e:
         print(f"Server Error in /api/translate: {e}")
-        return {"error": "Internal Server Error", "detail": str(e)}, 500
+        return JSONResponse({"error": "Internal Server Error", "detail": str(e)}, status_code=500)
 
 app.include_router(sos.router, prefix="/sos", tags=["SOS"])
 

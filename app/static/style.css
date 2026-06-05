@@ -1,3 +1,6 @@
+/* ============================================
+   DARK THEME (Default)
+   ============================================ */
 :root {
   /* Primary Colors - Trust & Authority */
   --bg-color: #0f172a;
@@ -10,6 +13,7 @@
   --primary-blue-light: #3b82f6;
   --primary-blue-dark: #1e3a8a;
   --accent-color: #3b82f6;
+  --secondary-blue: #2563eb;
 
   /* Gold Accents */
   --gold-color: #d4af37;
@@ -32,6 +36,62 @@
   --border-color: rgba(255, 255, 255, 0.1);
   --input-bg: #1e2540;
   --text-primary: #ffffff;
+
+  /* Shadow */
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================================
+   LIGHT THEME (Ice Blue)
+   ============================================ */
+[data-theme="light"] {
+  /* Ice Blue Palette */
+  --ice-blue: #e0f4ff;
+  --powder-blue: #a8daff;
+  --sapphire: #1e88e5;
+  --deep-navy: #0d47a1;
+
+  /* Background Colors */
+  --bg-color: #f0f9ff;
+  --bg-lighter: #ffffff;
+  --bg-alternate: #e0f4ff;
+  --bg-tertiary: #a8daff;
+
+  /* Accent Colors */
+  --primary-blue: #1e88e5;
+  --primary-blue-light: #42a5f5;
+  --primary-blue-dark: #0d47a1;
+  --accent-color: #1e88e5;
+  --secondary-blue: #1976d2;
+
+  /* Gold Accents (adjusted for light theme) */
+  --gold-color: #f57c00;
+  --gold-light: #ff9800;
+
+  /* Text Colors */
+  --text-color: #0d47a1;
+  --text-muted: #546e7a;
+  --text-secondary: #37474f;
+
+  /* Surface Colors */
+  --surface-white: #ffffff;
+  --surface-light: #f0f9ff;
+  --surface-card: #ffffff;
+
+  /* Compatibility */
+  --primary-color: #1e88e5;
+  --primary-dark: #0d47a1;
+  --card-bg: #ffffff;
+  --border-color: rgba(30, 136, 229, 0.15);
+  --input-bg: #ffffff;
+  --text-primary: #0d47a1;
+
+  /* Shadow (more subtle for light theme) */
+  --shadow-sm: 0 2px 8px rgba(13, 71, 161, 0.08);
+  --shadow-md: 0 4px 16px rgba(13, 71, 161, 0.12);
+  --shadow-lg: 0 8px 32px rgba(13, 71, 161, 0.16);
 }
 
 * {
@@ -41,7 +101,12 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.7;
@@ -61,7 +126,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.3;
@@ -100,7 +165,7 @@ header {
 }
 
 .logo-text {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--text-color);
@@ -133,7 +198,7 @@ nav a {
 }
 
 nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -256,7 +321,7 @@ nav a:hover::after {
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 4rem;
   line-height: 1.15;
   margin-bottom: 1.5rem;
@@ -304,7 +369,7 @@ nav a:hover::after {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .cta-primary {
@@ -364,7 +429,7 @@ nav a:hover::after {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -411,7 +476,6 @@ nav a:hover::after {
 }
 
 @media (max-width: 768px) {
-
   .grid-4,
   .grid-3,
   .grid-2 {
@@ -447,7 +511,7 @@ nav a:hover::after {
 }
 
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -481,14 +545,22 @@ nav a:hover::after {
   justify-content: center;
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.15),
+    rgba(139, 92, 246, 0.15)
+  );
   border-radius: 14px;
   transition: all 0.3s ease;
 }
 
 .card:hover .card-icon {
   transform: scale(1.1) rotate(5deg);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(139, 92, 246, 0.25));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.25),
+    rgba(139, 92, 246, 0.25)
+  );
   color: #93c5fd;
 }
 
@@ -496,7 +568,7 @@ nav a:hover::after {
   margin-bottom: 0.75rem;
   font-size: 1.35rem;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: -0.01em;
   color: #ffffff;
 }
@@ -536,7 +608,11 @@ nav a:hover::after {
 .benefit-icon {
   font-size: 2rem;
   flex-shrink: 0;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1),
+    rgba(139, 92, 246, 0.1)
+  );
   width: 60px;
   height: 60px;
   display: flex;
@@ -580,7 +656,11 @@ nav a:hover::after {
   position: absolute;
   top: -15px;
   left: 30px;
-  background: linear-gradient(135deg, var(--primary-blue-light), var(--primary-blue));
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue-light),
+    var(--primary-blue)
+  );
   color: white;
   width: 35px;
   height: 35px;
@@ -686,7 +766,7 @@ footer {
 }
 
 .footer-logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
@@ -841,28 +921,6 @@ footer {
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
 }
 
-.search-bar button {
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-}
-
-.search-bar button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-}
-
-.search-bar button:active {
-  transform: translateY(0);
-}
-
 .categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -892,10 +950,12 @@ footer {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg,
-      transparent,
-      rgba(255, 255, 255, 0.1),
-      transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
@@ -929,9 +989,11 @@ footer {
 }
 
 .info-box {
-  background: linear-gradient(135deg,
-      rgba(59, 130, 246, 0.15),
-      rgba(79, 70, 229, 0.15));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.15),
+    rgba(79, 70, 229, 0.15)
+  );
   border-left: 5px solid #3b82f6;
   border-radius: 12px;
   padding: 2rem;
@@ -1043,7 +1105,7 @@ footer {
   line-height: 1.4;
 }
 
-.article-card>p {
+.article-card > p {
   color: var(--text-muted);
   font-size: 0.98rem;
   line-height: 1.7;
@@ -1426,9 +1488,11 @@ footer {
 }
 
 .quick-link-btn {
-  background: linear-gradient(135deg,
-      var(--primary-color),
-      var(--primary-dark));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-dark)
+  );
   color: white;
   padding: 1rem;
   border-radius: 8px;
