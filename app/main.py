@@ -11,7 +11,7 @@ import json
 from dotenv import load_dotenv
 
 # Initialize environment variables at entry point
-load_dotenv(override=True)
+load_dotenv()
 if not os.getenv("GEMINI_API_KEY"):
     print("WARNING: GEMINI_API_KEY not found in environment variables!")
 
