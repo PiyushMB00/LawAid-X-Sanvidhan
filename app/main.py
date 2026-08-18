@@ -65,8 +65,6 @@ async def translate_legal_text(request: Request):
     except Exception as e:
         print(f"Server Error in /api/translate: {e}")
         return JSONResponse({"error": "Internal Server Error", "detail": str(e)}, status_code=500)
-<<<<<<< HEAD
-=======
 
 @app.post("/api/generate-document")
 async def generate_document(request: Request):
@@ -92,7 +90,6 @@ async def generate_document(request: Request):
     except Exception as e:
         print(f"Server Error in /api/generate-document: {e}")
         return JSONResponse({"error": "Internal Server Error", "detail": str(e)}, status_code=500)
->>>>>>> d84ecf0b345383cbc898bb501e81e48006024e09
 
 app.include_router(sos.router, prefix="/sos", tags=["SOS"])
 
