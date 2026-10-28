@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Response
 from fastapi.templating import Jinja2Templates
 from starlette.requests import Request
 from app.services.ai_service import get_ai_response, translate_text, generate_legal_document
@@ -114,6 +114,10 @@ app.include_router(sos.router, prefix="/sos", tags=["SOS"])
 @app.get("/", response_class=HTMLResponse)
 async def root(request: Request):
     return templates.TemplateResponse(request, "index.html")
+
+@app.head("/")
+async def root_head():
+    return Response(status_code=200)
 
 @app.get("/chat-ui", response_class=HTMLResponse)
 async def chat_ui(request: Request):
