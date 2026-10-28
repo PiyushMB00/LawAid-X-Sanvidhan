@@ -25,6 +25,23 @@ def get_url_for(name, **kwargs):
 
 app = FastAPI(title="Lawaid X Sanvidhan Backend")
 
+@app.middleware("http")
+async def support_head_requests(request: Request, call_next):
+    if request.method == "HEAD":
+        request.scope["method"] = "GET"
+        response = await call_next(request)
+
+        from starlette.responses import Response
+        return Response(
+            content=None,
+            status_code=response.status_code,
+            headers=dict(response.headers),
+            media_type=None,
+        )
+
+    return await call_next(request)
+
+
 templates = Jinja2Templates(directory="app/templates")
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
