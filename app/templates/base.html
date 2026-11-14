@@ -28,12 +28,15 @@
             </a>
         </div>
         <nav id="desktop-nav">
-            <a href="/">Home</a>
-            <a href="/chat-ui">Ask AI</a>
-            <a href="/rights-library">Rights</a>
-            <a href="/document-generator">Documents</a>
-            <a href="/emergency-directory">Emergency</a>
-            <a href="/sos-shield" class="sos-btn">SOS Shield</a>
+            <a href="/" data-i18n="nav_home">Home</a>
+            <a href="/chat-ui" data-i18n="nav_ask_ai">Ask AI</a>
+            <a href="/rights-library" data-i18n="nav_rights">Rights</a>
+            <a href="/document-generator" data-i18n="nav_documents">Documents</a>
+            <a href="/emergency-directory" data-i18n="nav_emergency">Emergency</a>
+            <a href="/sos-shield" class="sos-btn" data-i18n="nav_sos">SOS Shield</a>
+            <button class="accessibility-toggle-btn" onclick="openAccessibilityModal()" title="Accessibility Settings">
+                <ion-icon name="accessibility-outline"></ion-icon>
+            </button>
         </nav>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
             <ion-icon name="menu-outline"></ion-icon>
@@ -44,12 +47,17 @@
     <div class="nav-overlay" id="navOverlay" onclick="toggleMobileMenu()"></div>
     <div class="mobile-nav" id="mobileNav">
         <button class="mobile-nav-close" onclick="toggleMobileMenu()">&times;</button>
-        <a href="/">Home</a>
-        <a href="/chat-ui">Ask AI</a>
-        <a href="/rights-library">Rights Library</a>
-        <a href="/document-generator">Document Generator</a>
-        <a href="/emergency-directory">Emergency Directory</a>
-        <a href="/sos-shield" class="sos-btn">SOS Shield</a>
+        <a href="/" data-i18n="nav_home">Home</a>
+        <a href="/chat-ui" data-i18n="nav_ask_ai">Ask AI</a>
+        <a href="/rights-library" data-i18n="nav_rights">Rights Library</a>
+        <a href="/document-generator" data-i18n="nav_documents">Document Generator</a>
+        <a href="/emergency-directory" data-i18n="nav_emergency">Emergency Directory</a>
+        <a href="/sos-shield" class="sos-btn" data-i18n="nav_sos">SOS Shield</a>
+        <button class="accessibility-toggle-btn" onclick="openAccessibilityModal(); toggleMobileMenu();"
+            style="width: 100%; border-radius: 10px; margin-top: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem;">
+            <ion-icon name="accessibility-outline"></ion-icon> <span data-i18n="accessibility_settings">Accessibility
+                Settings</span>
+        </button>
     </div>
 
     <!-- Main Content -->
@@ -96,26 +104,93 @@
         <div class="footer-divider"></div>
 
         <div class="footer-bottom">
-            <p class="footer-disclaimer">
+            <!-- <p class="footer-disclaimer">
                 <ion-icon name="information-circle-outline"></ion-icon>
                 <span><strong>Academic Disclaimer:</strong> Educational project only. For real legal advice, consult a
                     qualified lawyer.</span>
-            </p>
+            </p> -->
 
             <div class="footer-sponsor">
                 <span class="sponsor-label">Sponsored by</span>
-                <a href="https://phoenix-pixels-studios.onrender.com/">
-                    <div class="sponsor-badge">
-                        <img src="{{ url_for('static', filename='phoenix-pixels-logo.jpg') }}" alt="Phoenix Pixels Studios"
-                            class="sponsor-logo">
-                        <span class="sponsor-name">Phoenix Pixels Studios</span>
-                    </div>
+
+                <a href="https://phoenix-pixels-studios.onrender.com/" class="sponsor-badge" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visit Phoenix Pixels Studios website">
+
+                    <img src="{{ url_for('static', filename='phoenix-pixels-logo.jpg') }}" alt="Phoenix Pixels Studios"
+                        class="sponsor-logo">
+
+                    <span class="sponsor-name">Phoenix Pixels Studios</span>
                 </a>
             </div>
 
             <p class="footer-copy">© 2026 LawAid X Sanvidhaan</p>
         </div>
     </footer>
+
+    <!-- Accessibility Settings Modal -->
+    <div class="accessibility-modal-overlay" id="accessibilityModal">
+        <div class="accessibility-modal-content" role="dialog" aria-modal="true"
+            aria-labelledby="accessibilityModalTitle">
+            <button class="close-modal" onclick="closeAccessibilityModal()" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h2 id="accessibilityModalTitle"
+                    style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.5rem;"><ion-icon
+                        name="accessibility-outline"></ion-icon> <span data-i18n="accessibility_settings">Accessibility
+                        Settings</span></h2>
+                <p data-i18n="accessibility_subtitle"
+                    style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">Customize your viewing,
+                    language, and readability preferences.</p>
+            </div>
+            <div class="accessibility-settings-body">
+                <!-- Language Setting -->
+                <div class="setting-group">
+                    <label for="langSelect"><ion-icon name="language-outline"></ion-icon> <span
+                            data-i18n="language_label">Language</span></label>
+                    <select id="langSelect" class="form-control" onchange="changeLanguage(this.value)"
+                        style="width: 100%; padding: 0.75rem; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 10px;">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="mr">मराठी (Marathi)</option>
+                    </select>
+                </div>
+
+                <!-- Theme Setting -->
+                <div class="setting-group">
+                    <label><ion-icon name="contrast-outline"></ion-icon> <span
+                            data-i18n="theme_label">Theme</span></label>
+                    <div class="theme-options">
+                        <button type="button" class="theme-option-btn" data-theme-val="light"
+                            onclick="setTheme('light')" data-i18n="theme_light">Light</button>
+                        <button type="button" class="theme-option-btn" data-theme-val="dark" onclick="setTheme('dark')"
+                            data-i18n="theme_dark">Dark</button>
+                        <button type="button" class="theme-option-btn" data-theme-val="system"
+                            onclick="setTheme('system')" data-i18n="theme_system">System</button>
+                    </div>
+                </div>
+
+                <!-- Font Size Setting -->
+                <div class="setting-group">
+                    <label><ion-icon name="text-outline"></ion-icon> <span data-i18n="font_size_label">Font
+                            Size</span></label>
+                    <div class="fontsize-options">
+                        <button type="button" class="fontsize-option-btn" data-size-val="small"
+                            onclick="setFontSize('small')" data-i18n="font_small">Small</button>
+                        <button type="button" class="fontsize-option-btn" data-size-val="medium"
+                            onclick="setFontSize('medium')" data-i18n="font_medium">Medium</button>
+                        <button type="button" class="fontsize-option-btn" data-size-val="large"
+                            onclick="setFontSize('large')" data-i18n="font_large">Large</button>
+                        <button type="button" class="fontsize-option-btn" data-size-val="xlarge"
+                            onclick="setFontSize('xlarge')" data-i18n="font_xlarge">XL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="margin-top: 2rem; text-align: right;">
+                <button class="cta-primary" onclick="closeAccessibilityModal()" data-i18n="save_close"
+                    style="padding: 0.75rem 1.5rem; background: var(--primary-color); color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: 600;">Save
+                    & Close</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         function toggleMobileMenu() {
@@ -125,6 +200,8 @@
             navOverlay.classList.toggle('active');
         }
     </script>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
     {% block extra_scripts %}{% endblock %}
 </body>

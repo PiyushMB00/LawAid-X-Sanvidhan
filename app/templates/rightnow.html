@@ -131,7 +131,7 @@
         }
     }
 
-    .modal-header {
+    #rightnow-modal-overlay .modal-header {
         padding: 3rem 3rem 1rem;
         display: flex;
         align-items: center;
@@ -232,6 +232,128 @@
         .footer-actions {
             grid-template-columns: 1fr;
         }
+    }
+
+    /* RightNow Light Theme Overrides */
+    body.light-theme {
+        background-color: #F5E6CE !important;
+    }
+    body.light-theme .rightnow-container,
+    body.light-theme main {
+        background-color: #F5E6CE !important;
+    }
+    body.light-theme .hero h1 {
+        background: none !important;
+        --webkit-background-clip: unset !important;
+        --webkit-text-fill-color: #402514 !important;
+        color: #402514 !important;
+    }
+    body.light-theme .hero .subtitle {
+        color: #684B35 !important;
+    }
+    body.light-theme .card {
+        background: #FFFFFF !important;
+        color: #281609 !important;
+        border: 1px solid #DDC6A5 !important;
+        box-shadow: 0 4px 6px -1px rgba(64, 37, 20, 0.08);
+    }
+    body.light-theme .card:hover {
+        background: #FFFFFF !important;
+        border-color: #D65F00 !important;
+        box-shadow: 0 12px 24px -6px rgba(214, 95, 0, 0.2);
+    }
+    body.light-theme .card h3 {
+        color: #281609 !important;
+    }
+    body.light-theme .card p {
+        color: #684B35 !important;
+    }
+    body.light-theme .premium-modal-overlay {
+        background: rgba(245, 230, 206, 0.85) !important;
+        backdrop-filter: blur(8px) !important;
+    }
+    body.light-theme .premium-modal-content {
+        background: #FFF9EF !important;
+        color: #281609 !important;
+        border: 1px solid #DDC6A5 !important;
+        box-shadow: 0 25px 50px -12px rgba(64, 37, 20, 0.25);
+    }
+    body.light-theme .modal-title h2 {
+        color: #402514 !important;
+    }
+    body.light-theme .modal-summary {
+        color: #684B35 !important;
+    }
+    body.light-theme .info-col h5 {
+        color: #D65F00 !important;
+    }
+    body.light-theme .info-col p {
+        color: #684B35 !important;
+    }
+    body.light-theme .btn-close-modal {
+        background: #F7EBD8 !important;
+        color: #684B35 !important;
+    }
+    body.light-theme .btn-close-modal:hover {
+        background: rgba(201, 54, 54, 0.1) !important;
+        color: #C93636 !important;
+    }
+    body.light-theme .cta-primary {
+        background: #D65F00 !important;
+        color: #FFFFFF !important;
+        border-color: #D65F00 !important;
+    }
+    body.light-theme .cta-primary:hover {
+        background: #B84E00 !important;
+    }
+
+    /* General Legal Action Plan Light Theme Fixes */
+    body.light-theme .section-alternate {
+        background: #FFF9EF !important;
+        border: 1px solid #DDC6A5 !important;
+        color: #281609 !important;
+    }
+    body.light-theme .section-alternate h2.section-title {
+        color: #402514 !important;
+    }
+    body.light-theme .section-alternate .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 24px !important;
+    }
+    @media (max-width: 968px) {
+        body.light-theme .section-alternate .grid-4 {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+    @media (max-width: 640px) {
+        body.light-theme .section-alternate .grid-4 {
+            grid-template-columns: 1fr !important;
+        }
+    }
+    body.light-theme .step-card {
+        background: #FFFFFF !important;
+        border: 1px solid #E5CBAA !important;
+        border-radius: 20px !important;
+        padding: 2rem !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        box-shadow: 0 4px 6px -1px rgba(64, 37, 20, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    body.light-theme .step-card:hover {
+        transform: translateY(-4px) !important;
+        box-shadow: 0 10px 20px rgba(64, 37, 20, 0.1) !important;
+        border-color: #D65F00 !important;
+    }
+    body.light-theme .step-card h4 {
+        color: #402514 !important;
+    }
+    body.light-theme .step-card p {
+        color: #79583F !important;
     }
 </style>
 {% endblock %}

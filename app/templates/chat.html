@@ -177,6 +177,80 @@
         to { transform: rotate(360deg); }
     }
     .spin { animation: spin 1s linear infinite; display: inline-block; }
+
+    /* Light Theme Chatbot Overrides */
+    body.light-theme .chat-page-wrapper {
+        background-color: #F5E8D2;
+    }
+    body.light-theme #chat-container {
+        background: #FFF9EF;
+        border-color: #DDC6A5;
+        scrollbar-color: #D65F00 transparent;
+    }
+    body.light-theme #chat-container::-webkit-scrollbar-thumb {
+        background: #D65F00;
+    }
+    body.light-theme .ai-message {
+        background: #EEDDC1;
+        color: #281609;
+        border: 1px solid #DDC6A5;
+    }
+    body.light-theme .ai-message h4 {
+        color: #D65F00;
+    }
+    body.light-theme .ai-message p {
+        color: #281609;
+    }
+    body.light-theme .ai-message p[style*="color: var(--text-muted)"],
+    body.light-theme .ai-message .text-muted {
+        color: #684B35 !important;
+    }
+    body.light-theme .user-message {
+        background: #EEDDC1;
+        color: #402514;
+        box-shadow: 0 4px 15px rgba(40, 22, 9, 0.08);
+    }
+    body.light-theme .input-wrapper {
+        background: #FFF9EF;
+        border: 1px solid #DDC6A5;
+    }
+    body.light-theme #user-input {
+        color: #281609;
+    }
+    body.light-theme #user-input::placeholder {
+        color: #795F49;
+    }
+    body.light-theme #user-input::-webkit-input-placeholder { color: #795F49; }
+    body.light-theme #user-input::-moz-placeholder { color: #795F49; }
+    body.light-theme #user-input:-ms-input-placeholder { color: #795F49; }
+    body.light-theme #send-btn {
+        background: #D65F00 !important;
+        color: #FFFFFF !important;
+        border-color: #D65F00 !important;
+    }
+    body.light-theme #send-btn:hover {
+        background: #B84E00 !important;
+    }
+    body.light-theme .typing-bubble {
+        background: #FFFFFF;
+        border: 1px solid #DDC6A5;
+        color: #281609;
+    }
+    body.light-theme .typing-timer {
+        color: #684B35;
+    }
+    body.light-theme .slow-warn {
+        color: #D65F00;
+    }
+    body.light-theme .translate-btn {
+        background: rgba(214, 95, 0, 0.1);
+        border: 1px solid rgba(214, 95, 0, 0.3);
+        color: #D65F00;
+    }
+    body.light-theme .translation-block {
+        border-top: 1px solid #DDC6A5;
+        color: #684B35;
+    }
 </style>
 {% endblock %}
 

@@ -47,16 +47,28 @@
         position: absolute;
         top: 1.5rem;
         right: 1.5rem;
-        background: transparent;
+        background: rgba(255, 255, 255, 0.05);
         border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
         color: var(--text-secondary);
-        font-size: 2rem;
         cursor: pointer;
-        transition: color 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        transition: all 0.2s;
     }
 
     .close-modal:hover {
-        color: white;
+        background: rgba(239, 68, 68, 0.1);
+        color: #ef4444;
+        transform: rotate(90deg);
+    }
+
+    .articles-section .section-title::after {
+        display: none !important;
     }
 
     .clickable-card {
@@ -186,6 +198,166 @@
         font-size: 0.9rem;
         line-height: 1.5;
     }
+
+    /* Constitution Explainer Light Theme Overrides */
+    body.light-theme .constitution-container,
+    body.light-theme main {
+        background-color: #F5E6CE !important;
+    }
+    body.light-theme .hero h1,
+    body.light-theme h1.section-title,
+    body.light-theme .section-title {
+        background: none !important;
+        --webkit-background-clip: unset !important;
+        --webkit-text-fill-color: #321B0D !important;
+        color: #321B0D !important;
+    }
+    body.light-theme .articles-section .section-title::after {
+        display: none !important;
+    }
+    body.light-theme .hero .subtitle,
+    body.light-theme p {
+        color: #805A42 !important;
+    }
+    body.light-theme .clickable-card,
+    body.light-theme .card,
+    body.light-theme .article-card {
+        background: #FFFFFF !important;
+        color: #321B0D !important;
+        border: 1px solid #E8CBAA !important;
+        box-shadow: 0 4px 6px -1px rgba(64, 37, 20, 0.08);
+    }
+    body.light-theme .clickable-card:hover,
+    body.light-theme .card:hover {
+        background: #FFFFFF !important;
+        border-color: #E86600 !important;
+        box-shadow: 0 12px 24px -6px rgba(232, 102, 0, 0.2);
+    }
+    body.light-theme .clickable-card h3,
+    body.light-theme .card h3,
+    body.light-theme h3 {
+        color: #321B0D !important;
+    }
+    body.light-theme .clickable-card p,
+    body.light-theme .card p {
+        color: #805A42 !important;
+    }
+    body.light-theme .clickable-card span,
+    body.light-theme .card span {
+        color: #E86600 !important;
+    }
+    body.light-theme .info-box {
+        background: #FFFAF2 !important;
+        border: 1px solid #E8CBAA !important;
+        color: #805A42 !important;
+    }
+    body.light-theme .info-box strong {
+        color: #E86600 !important;
+    }
+    body.light-theme .info-box li {
+        color: #805A42 !important;
+    }
+    body.light-theme .law-modal-overlay {
+        background: rgba(64, 37, 20, 0.4) !important;
+    }
+    body.light-theme .law-modal-content {
+        background: #FFFAF2 !important;
+        color: #805A42 !important;
+        border: 1px solid #E8CBAA !important;
+        box-shadow: 0 25px 50px -12px rgba(64, 37, 20, 0.2);
+    }
+    body.light-theme .law-modal-content h2,
+    body.light-theme .category-modal-title {
+        background: none !important;
+        -webkit-text-fill-color: #321B0D !important;
+        color: #321B0D !important;
+    }
+    body.light-theme .law-modal-content span[style*="color: var(--gold-color)"] {
+        color: #C58A24 !important;
+        border-bottom-color: #C58A24 !important;
+    }
+    body.light-theme .law-modal-content div[style*="background: rgba(30, 41, 59, 0.4)"] {
+        background: #F5E6CE !important;
+        border-left-color: #E86600 !important;
+    }
+    body.light-theme .law-modal-content h4[style*="color: var(--primary-color)"] {
+        color: #E86600 !important;
+    }
+    body.light-theme .law-modal-content p[style*="color: var(--text-color)"] {
+        color: #805A42 !important;
+    }
+    body.light-theme .law-modal-content div[style*="background: rgba(16, 185, 129, 0.1)"] {
+        background: #E8F5E9 !important;
+        border-color: #16A36A !important;
+    }
+    body.light-theme .law-modal-content h4[style*="color: #10b981"] {
+        color: #16A36A !important;
+    }
+    body.light-theme .law-modal-content p[style*="color: #cbd5e1"] {
+        color: #805A42 !important;
+    }
+    body.light-theme .law-modal-content span[style*="background: rgba(255,255,255,0.05)"] {
+        background: #EFE0C7 !important;
+        color: #805A42 !important;
+    }
+    body.light-theme .category-modal-summary {
+        color: #805A42 !important;
+    }
+    body.light-theme .info-text strong {
+        color: #321B0D !important;
+    }
+    body.light-theme .info-text p {
+        color: #805A42 !important;
+    }
+    body.light-theme .info-icon-green {
+        color: #16A36A !important;
+    }
+    body.light-theme .info-icon-gold {
+        color: #E86600 !important;
+    }
+    body.light-theme .category-badge-circle {
+        background: #E86600 !important;
+        color: #FFFFFF !important;
+        box-shadow: 0 10px 20px rgba(232, 102, 0, 0.2) !important;
+    }
+    body.light-theme .close-modal {
+        background: #EFE0C7 !important;
+        color: #321B0D !important;
+        border-radius: 50% !important;
+        width: 40px !important;
+        height: 40px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        top: 1.5rem !important;
+        right: 1.5rem !important;
+        opacity: 1 !important;
+        border: none !important;
+        transition: all 0.2s ease !important;
+    }
+    body.light-theme .close-modal:hover {
+        background: #E8CBAA !important;
+    }
+    body.light-theme .section-alternate {
+        background: #FFFAF2 !important;
+        border: 1px solid #E8CBAA !important;
+        color: #321B0D !important;
+    }
+    body.light-theme .cta-secondary {
+        background: #E86600 !important;
+        color: #FFFFFF !important;
+        border: none !important;
+    }
+    body.light-theme .cta-secondary:hover {
+        background: #C45500 !important;
+        color: #FFFFFF !important;
+    }
+    body.light-theme a {
+        color: #2563EB;
+    }
+    body.light-theme a:hover {
+        color: #E86600;
+    }
 </style>
 {% endblock %}
 
@@ -211,7 +383,7 @@
 <div id="law-modal-overlay" class="law-modal-overlay">
     <div class="law-modal-content">
         <button class="close-modal" id="close-law-modal">
-            <ion-icon name="close-circle"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
         </button>
         <div id="law-modal-body">
             <!-- Content injected here -->
@@ -422,12 +594,12 @@
         document.body.style.overflow = 'hidden';
 
         const categoryData = {
-            'CAT_PREAMBLE': { num: '0', title: 'The Preamble', desc: 'The introductory statement of the Constitution that outlines its purpose and guiding principles.', empowerment: 'Identifies the source of authority and objectives of the Indian State.', coverage: 'Sovereignty, Socialism, Secularism, Democracy, Republic.' },
-            'CAT_RIGHTS': { num: '1', title: 'Fundamental Rights', desc: 'Essential human rights guaranteed to every citizen, protecting individual dignity and freedom.', empowerment: 'Challenge unconstitutional laws and protect against discrimination.', coverage: 'Equality (Art. 14-18), Freedom (Art. 19-22), Remedies (Art. 32)' },
-            'CAT_DIRECTIVE': { num: '2', title: 'Directive Principles', desc: 'Moral and political guidelines for the State to establish a welfare system and ensure social justice.', empowerment: 'Guide for creating a socialistic and fair society in modern India.', coverage: 'Social Justice, Labor Rights, Village Panchayats, UCC' },
-            'CAT_UNION': { num: '3', title: 'The Union', desc: 'The supreme legislative and executive structure of India, Consisting of President and Parliament.', empowerment: 'Ensures a unified national governance framework.', coverage: 'Executive, Parliament, President Powers' },
-            'CAT_STATES': { num: '4', title: 'The States', desc: 'The constitutional framework for State governments, ensuring federal balance.', empowerment: 'Protects state autonomy and provincial governance.', coverage: 'Governors, State Legislatures, High Courts' },
-            'CAT_PANCHAYATS': { num: '5', title: 'Local Government', desc: 'The grassroots level of Indian democracy, empowering rural and urban local bodies.', empowerment: 'Brings governance directly to the people at the village level.', coverage: 'Panchayats, Municipalities, Local Elections' },
+            'CAT_PREAMBLE': { num: '1', title: 'The Preamble', desc: 'The introductory statement of the Constitution that outlines its purpose and guiding principles.', empowerment: 'Identifies the source of authority and objectives of the Indian State.', coverage: 'Sovereignty, Socialism, Secularism, Democracy, Republic.' },
+            'CAT_RIGHTS': { num: '2', title: 'Fundamental Rights', desc: 'Essential human rights guaranteed to every citizen, protecting individual dignity and freedom.', empowerment: 'Challenge unconstitutional laws and protect against discrimination.', coverage: 'Equality (Art. 14-18), Freedom (Art. 19-22), Remedies (Art. 32)' },
+            'CAT_DIRECTIVE': { num: '3', title: 'Directive Principles', desc: 'Moral and political guidelines for the State to establish a welfare system and ensure social justice.', empowerment: 'Guide for creating a socialistic and fair society in modern India.', coverage: 'Social Justice, Labor Rights, Village Panchayats, UCC' },
+            'CAT_UNION': { num: '4', title: 'The Union', desc: 'The supreme legislative and executive structure of India, Consisting of President and Parliament.', empowerment: 'Ensures a unified national governance framework.', coverage: 'Executive, Parliament, President Powers' },
+            'CAT_STATES': { num: '5', title: 'The States', desc: 'The constitutional framework for State governments, ensuring federal balance.', empowerment: 'Protects state autonomy and provincial governance.', coverage: 'Governors, State Legislatures, High Courts' },
+            'CAT_PANCHAYATS': { num: '6', title: 'Local Government', desc: 'The grassroots level of Indian democracy, empowering rural and urban local bodies.', empowerment: 'Brings governance directly to the people at the village level.', coverage: 'Panchayats, Municipalities, Local Elections' },
             // Core Law Articles Hardcoded to bypass laws.json issues
             'ART_14': { title: 'Equality Before Law', desc: 'The state shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.', impact: 'Forms the foundation of the Rule of Law in India, ensuring no one is above the law.', keywords: ['Equality', 'RuleOfLaw', 'Article14'], type: 'article' },
             'ART_19': { title: 'Freedom of Speech', desc: 'Guarantees the right to freedom of speech and expression, assembly, association, movement, and residence.', impact: 'The cornerstone of Indian democracy, enabling citizens to express opinions and hold the state accountable.', keywords: ['Freedom', 'Speech', 'Democracy'], type: 'article' },

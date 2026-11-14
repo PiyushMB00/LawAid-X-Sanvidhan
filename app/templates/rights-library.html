@@ -117,16 +117,24 @@
         position: absolute;
         top: 1.5rem;
         right: 1.5rem;
-        background: transparent;
+        background: rgba(255, 255, 255, 0.05);
         border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
         color: var(--text-secondary);
-        font-size: 2rem;
         cursor: pointer;
-        transition: color 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        transition: all 0.2s;
     }
 
     .close-modal:hover {
-        color: white;
+        background: rgba(239, 68, 68, 0.1);
+        color: #ef4444;
+        transform: rotate(90deg);
     }
 
     /* Premium Category Modal Styling */
@@ -220,6 +228,87 @@
             grid-template-columns: 1fr;
         }
     }
+
+    /* Rights Library Light Theme Overrides */
+    body.light-theme .rights-library-wrapper {
+        background-color: #F5E8D2;
+    }
+    body.light-theme .cards-grid .card {
+        background: #FFFFFF !important;
+        color: #281609 !important;
+        border: 1px solid #DDC6A5 !important;
+        box-shadow: 0 4px 6px -1px rgba(64, 37, 20, 0.08);
+    }
+    body.light-theme .cards-grid .card:hover {
+        background: #FFFFFF !important;
+        border-color: #D65F00 !important;
+        box-shadow: 0 12px 24px -6px rgba(214, 95, 0, 0.2);
+    }
+    body.light-theme .cards-grid .card h3 {
+        color: #281609 !important;
+    }
+    body.light-theme .cards-grid .card p {
+        color: #795F49 !important;
+    }
+    body.light-theme .rights-modal-overlay {
+        background: rgba(245, 230, 206, 0.85) !important;
+        backdrop-filter: blur(8px) !important;
+    }
+    body.light-theme .rights-modal-content {
+        background: #FFF9EF !important;
+        color: #281609 !important;
+        border: 1px solid #DDC6A5 !important;
+        box-shadow: 0 25px 50px -12px rgba(64, 37, 20, 0.25);
+    }
+    body.light-theme .category-modal-title {
+        background: none !important;
+        -webkit-text-fill-color: #402514 !important;
+        color: #402514 !important;
+    }
+    body.light-theme .category-modal-summary {
+        color: #684B35 !important;
+    }
+    body.light-theme .info-text strong {
+        color: #402514 !important;
+    }
+    body.light-theme .info-text p {
+        color: #684B35 !important;
+    }
+    body.light-theme .info-icon-green {
+        color: #168348 !important;
+    }
+    body.light-theme .info-icon-gold {
+        color: #D65F00 !important;
+    }
+    body.light-theme .close-modal {
+        background: #EFE0C7 !important;
+        color: #321B0D !important;
+        border-radius: 50% !important;
+        width: 40px !important;
+        height: 40px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        top: 1.5rem !important;
+        right: 1.5rem !important;
+        opacity: 1 !important;
+        border: none !important;
+        transition: all 0.2s ease !important;
+    }
+    body.light-theme .close-modal:hover {
+        background: #E8CBAA !important;
+    }
+    body.light-theme .section-alternate {
+        background: #FFF9EF !important;
+        border: 1px solid #DDC6A5 !important;
+        color: #281609 !important;
+    }
+    body.light-theme .section-alternate h2 {
+        color: #281609 !important;
+    }
+    body.light-theme .section-alternate p {
+        color: #684B35 !important;
+    }
 </style>
 {% endblock %}
 
@@ -312,7 +401,7 @@
 <div id="rights-modal-overlay" class="rights-modal-overlay">
     <div class="rights-modal-content">
         <button class="close-modal" id="close-law-modal" onclick="closeRightsModal()">
-            <ion-icon name="close-circle"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
         </button>
         <div id="rights-modal-body">
             <!-- Content injected here -->

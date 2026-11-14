@@ -50,17 +50,25 @@
         position: absolute;
         top: 1.5rem;
         right: 1.5rem;
-        background: transparent;
+        background: rgba(255, 255, 255, 0.05);
         border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
         color: var(--text-secondary);
-        font-size: 2rem;
         cursor: pointer;
-        transition: color 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        transition: all 0.2s;
         z-index: 10;
     }
 
     .close-modal:hover {
-        color: white;
+        background: rgba(239, 68, 68, 0.1);
+        color: #ef4444;
+        transform: rotate(90deg);
     }
 
     /* Document Generator Detail Modal Specifics */
@@ -131,6 +139,135 @@
         .modal-info-grid {
             grid-template-columns: 1fr;
         }
+    }
+
+    /* Document Generator Light Theme Overrides */
+    body.light-theme .doc-generator-container,
+    body.light-theme main {
+        background-color: #F5E8D2 !important;
+    }
+    body.light-theme .hero h1 {
+        background: none !important;
+        -webkit-background-clip: unset !important;
+        -webkit-text-fill-color: #402514 !important;
+        color: #402514 !important;
+    }
+    body.light-theme .hero .subtitle {
+        color: #684B35 !important;
+    }
+    body.light-theme .card,
+    body.light-theme .clickable-card {
+        background: #FFF9EF !important;
+        color: #281609 !important;
+        border: 1px solid #DDC6A5 !important;
+        box-shadow: 0 4px 6px -1px rgba(64, 37, 20, 0.08);
+    }
+    body.light-theme .card:hover,
+    body.light-theme .clickable-card:hover {
+        background: #FFF9EF !important;
+        border-color: #D65F00 !important;
+        box-shadow: 0 12px 24px -6px rgba(214, 95, 0, 0.2);
+    }
+    body.light-theme .card h3,
+    body.light-theme .card h4 {
+        color: #281609 !important;
+    }
+    body.light-theme .card p {
+        color: #684B35 !important;
+    }
+    body.light-theme .card-icon {
+        color: #D65F00 !important;
+        background: rgba(214, 95, 0, 0.1) !important;
+    }
+    body.light-theme .premium-modal-overlay {
+        background: rgba(64, 37, 20, 0.4) !important;
+    }
+    body.light-theme .premium-modal-content {
+        background: #FFF9EF !important;
+        color: #281609 !important;
+        border: 1px solid #DDC6A5 !important;
+        box-shadow: 0 25px 50px -12px rgba(64, 37, 20, 0.25);
+    }
+    body.light-theme .modal-title-doc h2 {
+        color: #402514 !important;
+    }
+    body.light-theme .modal-title-doc h4 {
+        color: #D65F00 !important;
+    }
+    body.light-theme .info-col h5 {
+        color: #D65F00 !important;
+    }
+    body.light-theme .info-col p {
+        color: #684B35 !important;
+    }
+    body.light-theme .close-modal {
+        background: #EFE0C7 !important;
+        color: #321B0D !important;
+        border-radius: 50% !important;
+        width: 40px !important;
+        height: 40px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        top: 1.5rem !important;
+        right: 1.5rem !important;
+        opacity: 1 !important;
+        border: none !important;
+        transition: all 0.2s ease !important;
+    }
+    body.light-theme .close-modal:hover {
+        background: #E8CBAA !important;
+    }
+    body.light-theme .section-alternate {
+        background: #FFF9EF !important;
+        border: 1px solid #DDC6A5 !important;
+        color: #281609 !important;
+    }
+    body.light-theme .section-alternate h2 {
+        color: #402514 !important;
+    }
+    body.light-theme .section-alternate p {
+        color: #684B35 !important;
+    }
+    body.light-theme .modal-body-doc p {
+        color: #79543C !important;
+    }
+    body.light-theme #feature-modal-overlay h2 {
+        color: #321B0D !important;
+    }
+    body.light-theme #feature-modal-overlay .modal-body > p {
+        color: #79543C !important;
+    }
+    body.light-theme #feature-modal-overlay div[style*="background"] {
+        background: #F5E6CE !important;
+        border: 1px solid #DDC6A5 !important;
+    }
+    body.light-theme #feature-modal-overlay strong {
+        color: #D97706 !important;
+    }
+    body.light-theme #feature-modal-overlay div[style*="background"] p {
+        color: #65452F !important;
+    }
+
+    /* Document Structure Preview Light Theme Overrides */
+    body.light-theme .doc-preview-heading {
+        color: #402514 !important;
+    }
+    body.light-theme .doc-preview-heading ion-icon {
+        color: #D65F00 !important;
+    }
+    body.light-theme .doc-preview-box {
+        background: #FFFFFF !important;
+        color: #281609 !important;
+        border: 1px solid #DDC6A5 !important;
+        box-shadow: 0 10px 25px -5px rgba(64, 37, 20, 0.08) !important;
+    }
+    body.light-theme .doc-preview-inner {
+        color: #795F49 !important;
+        opacity: 1 !important;
+    }
+    body.light-theme .doc-preview-subject {
+        color: #402514 !important;
     }
 </style>
 {% endblock %}
@@ -243,18 +380,18 @@
 </div>
 
 <div class="section" style="padding: 0;">
-    <h3
+    <h3 class="doc-preview-heading"
         style="margin-bottom: 2rem; font-family: 'Poppins', sans-serif; display: flex; align-items: center; gap: 0.75rem; justify-content: center;">
         <ion-icon name="eye-outline" style="color: var(--gold-color); font-size: 1.5rem;"></ion-icon>
         Document Structure Preview
     </h3>
-    <div
+    <div class="doc-preview-box"
         style="background: rgba(15, 23, 42, 0.5); border-radius: 20px; padding: 3rem; font-family: 'Courier New', monospace; color: var(--text-secondary); line-height: 1.6; border: 1px solid rgba(255, 255, 255, 0.08); max-width: 900px; margin: 0 auto; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-        <div style="opacity: 0.7;">
+        <div class="doc-preview-inner" style="opacity: 0.7;">
             [User Details Segment]<br>
             [Authority Segment]<br>
             <br>
-            <b style="color: white;">SUBJECT: FORMAL COMPLAINT REGARDING [INCIDENT_TYPE]</b><br>
+            <b class="doc-preview-subject" style="color: white;">SUBJECT: FORMAL COMPLAINT REGARDING [INCIDENT_TYPE]</b><br>
             <br>
             Respected Authority,<br>
             <br>
@@ -275,7 +412,7 @@
 <div id="generator-action-modal-overlay" class="premium-modal-overlay">
     <div class="premium-modal-content">
         <button onclick="closeGeneratorActionModal()" class="close-modal">
-            <ion-icon name="close-circle"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
         </button>
         <div id="action-modal-content-inject"></div>
     </div>
@@ -285,7 +422,7 @@
 <div id="feature-modal-overlay" class="premium-modal-overlay">
     <div class="premium-modal-content">
         <button onclick="closeFeatureModal()" class="close-modal">
-            <ion-icon name="close-circle"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
         </button>
         <div id="modal-content-inject"></div>
     </div>

@@ -98,6 +98,67 @@
     .back-btn {
         margin-bottom: 2rem;
     }
+
+    /* Emergency Directory Light Theme Overrides */
+    body.light-theme {
+        background-color: #F5E6CE !important;
+    }
+    body.light-theme .emergency-container {
+        background-color: #F5E6CE !important;
+    }
+    body.light-theme .header-section h1 span.highlight,
+    body.light-theme h1 span.highlight {
+        background: none !important;
+        -webkit-background-clip: unset !important;
+        -webkit-text-fill-color: #402514 !important;
+        color: #402514 !important;
+    }
+    body.light-theme .header-section h1,
+    body.light-theme h1 {
+        color: #402514 !important;
+    }
+    body.light-theme .subtitle {
+        color: #684B35 !important;
+    }
+    body.light-theme .back-btn .cta-secondary {
+        background: #FFFAF2 !important;
+        color: #402514 !important;
+        border: 1px solid #DDC6A5 !important;
+    }
+    body.light-theme .back-btn .cta-secondary:hover {
+        background: #FEEEDD !important;
+        border-color: #D65F00 !important;
+        color: #D65F00 !important;
+    }
+    body.light-theme .contact-card {
+        background: #FFFAF2 !important;
+        border: 1px solid #DDC6A5 !important;
+        box-shadow: 0 4px 6px -1px rgba(64, 37, 20, 0.08);
+        color: #281609 !important;
+    }
+    body.light-theme .contact-card:hover {
+        transform: translateY(-5px);
+        border-color: #D65F00 !important;
+        box-shadow: 0 12px 30px rgba(64, 37, 20, 0.15);
+    }
+    body.light-theme .contact-card h3 {
+        color: #402514 !important;
+    }
+    body.light-theme .contact-card p {
+        color: #684B35 !important;
+    }
+    body.light-theme .number {
+        color: #281609 !important;
+    }
+    body.light-theme .call-pill {
+        background: rgba(22, 131, 72, 0.1) !important;
+        border: 1px solid rgba(22, 131, 72, 0.3) !important;
+        color: #168348 !important;
+    }
+    body.light-theme .contact-card:hover .call-pill {
+        background: rgba(22, 131, 72, 0.2) !important;
+        color: #126938 !important;
+    }
 </style>
 {% endblock %}
 

@@ -129,11 +129,184 @@
         font-size: 0.85rem;
     }
 
-    /* Target Audience Card Specifics */
-    .audience-card {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+    /* Homepage Light Theme Overrides */
+    body.light-theme .hero h1 span {
+        color: #E86600 !important;
+    }
+
+    body.light-theme .hero .subtitle {
+        color: #805A42 !important;
+    }
+
+    body.light-theme .card {
+        background: #FFFAF2 !important;
+        border: 1px solid #E8CBAA !important;
+        box-shadow: 0 4px 10px rgba(64, 37, 20, 0.08) !important;
+    }
+
+    body.light-theme .card:hover {
+        background: #FFFAF2 !important;
+        border-color: #E86600 !important;
+        box-shadow: 0 12px 30px rgba(232, 102, 0, 0.15) !important;
+    }
+
+    body.light-theme .card h3,
+    body.light-theme .card h4 {
+        color: #321B0D !important;
+    }
+
+    body.light-theme .card p {
+        color: #805A42 !important;
+    }
+
+    body.light-theme .card-icon-wrapper {
+        background: rgba(232, 102, 0, 0.08) !important;
+    }
+
+    /* Accent color and background overrides for light theme icons */
+    body.light-theme .card-icon-wrapper[style*="color: #60a5fa"],
+    body.light-theme .card-icon-wrapper[style*="color: #3b82f6"] {
+        color: #2563EB !important;
+        background: rgba(37, 99, 235, 0.1) !important;
+    }
+
+    body.light-theme .card-icon-wrapper[style*="color: #34d399"],
+    body.light-theme .card-icon-wrapper[style*="color: #10b981"],
+    body.light-theme .card-icon-wrapper[style*="color: #22c55e"],
+    body.light-theme .card-icon-wrapper[style*="color: #14b8a6"] {
+        color: #16A36A !important;
+        background: rgba(22, 163, 106, 0.1) !important;
+    }
+
+    body.light-theme .card-icon-wrapper[style*="color: #fbbf24"],
+    body.light-theme .card-icon-wrapper[style*="color: #f59e0b"] {
+        color: #D97706 !important;
+        background: rgba(217, 119, 6, 0.1) !important;
+    }
+
+    body.light-theme .card-icon-wrapper[style*="color: #f472b6"],
+    body.light-theme .card-icon-wrapper[style*="color: #ec4899"] {
+        color: #DB2777 !important;
+        background: rgba(219, 39, 119, 0.1) !important;
+    }
+
+    body.light-theme .card-icon-wrapper[style*="color: #f87171"],
+    body.light-theme .card-icon-wrapper[style*="color: #ef4444"] {
+        color: #DC2626 !important;
+        background: rgba(220, 38, 38, 0.1) !important;
+    }
+
+    body.light-theme .card-icon-wrapper[style*="color: #8b5cf6"],
+    body.light-theme .card-icon-wrapper[style*="color: #a855f7"],
+    body.light-theme .card-icon-wrapper[style*="color: #a78bfa"] {
+        color: #7C3AED !important;
+        background: rgba(124, 58, 237, 0.1) !important;
+    }
+
+    body.light-theme .card-icon-wrapper[style*="color: #6366f1"] {
+        color: #4F46E5 !important;
+        background: rgba(79, 70, 229, 0.1) !important;
+    }
+
+    body.light-theme .section-alternate {
+        background: #EFE0C7 !important;
+        border-top: 1px solid #E8CBAA;
+        border-bottom: 1px solid #E8CBAA;
+    }
+
+    body.light-theme .section-title {
+        color: #321B0D !important;
+    }
+
+    /* Modal Styling for Light Theme */
+    body.light-theme .premium-modal-overlay {
+        background: rgba(245, 230, 206, 0.85) !important;
+        backdrop-filter: blur(8px) !important;
+    }
+
+    body.light-theme .premium-modal-content {
+        background: #FFFAF2 !important;
+        border: 1px solid #E8CBAA !important;
+        box-shadow: 0 25px 50px -12px rgba(64, 37, 20, 0.2) !important;
+    }
+
+    body.light-theme .modal-title h2 {
+        color: #321B0D !important;
+    }
+
+    body.light-theme .modal-title h4 {
+        color: #E86600 !important;
+    }
+
+    body.light-theme .modal-body p {
+        color: #805A42 !important;
+    }
+
+    body.light-theme .modal-info-grid {
+        background: #FFFFFF !important;
+        border: 1px solid #E8CBAA !important;
+    }
+
+    body.light-theme .info-col h5 {
+        color: #E86600 !important;
+    }
+
+    body.light-theme .info-col h5[style*="color: #3b82f6"] {
+        color: #2563EB !important;
+    }
+
+    body.light-theme .info-col h5[style*="color: #10b981"] {
+        color: #16A36A !important;
+    }
+
+    body.light-theme .info-col h5[style*="color: #ef4444"] {
+        color: #DC2626 !important;
+    }
+
+    body.light-theme .info-col p {
+        color: #805A42 !important;
+    }
+
+    body.light-theme .btn-close-modal {
+        background: #EFE0C7 !important;
+        color: #321B0D !important;
+    }
+
+    body.light-theme .btn-close-modal:hover {
+        background: #E8CBAA !important;
+    }
+
+    /* Step numbers and badges in Light Theme */
+    body.light-theme .card div[style*="background: var(--primary-color)"],
+    body.light-theme .modal-badge-circle:not([style*="background: linear-gradient"]) {
+        background: #E86600 !important;
+        color: #FFFFFF !important;
+        box-shadow: 0 10px 20px rgba(232, 102, 0, 0.2) !important;
+    }
+
+    body.light-theme .modal-badge-circle[style*="background: linear-gradient"] {
+        box-shadow: 0 10px 20px rgba(64, 37, 20, 0.1) !important;
+    }
+
+    body.light-theme .modal-badge-circle ion-icon {
+        color: #FFFFFF !important;
+    }
+
+    body.light-theme .cta-primary {
+        background: #E86600 !important;
+        color: #FFFFFF !important;
+    }
+
+    body.light-theme .cta-primary:hover {
+        background: #C45500 !important;
+    }
+
+    body.light-theme .cta-primary[style*="background: #ef4444"] {
+        background: #DC2626 !important;
+    }
+
+    body.light-theme .cta-primary[style*="background: #ef4444"]:hover {
+        background: #B91C1C !important;
     }
 </style>
 {% endblock %}
@@ -250,7 +423,7 @@
 <template id="tpl-ask-question">
     <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
         <div class="modal-badge-circle"
-            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color) 0%, #3b82f6 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);">
+            style="width: 80px; height: 80px; border-radius: 50%; background: var(--primary-color); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);">
             1</div>
         <div class="modal-title">
             <h4
@@ -285,11 +458,11 @@
 <template id="tpl-ai-analysis">
     <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
         <div class="modal-badge-circle"
-            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #10b981 0%, #059669 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);">
+            style="width: 80px; height: 80px; border-radius: 50%; background: var(--primary-color); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);">
             2</div>
         <div class="modal-title">
             <h4
-                style="color: #10b981; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                style="color: var(--primary-color); text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
                 INTELLIGENT PROCESSING</h4>
             <h2 style="font-size: 2rem; color: white;">AI Analysis</h2>
         </div>
@@ -298,24 +471,22 @@
         <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
             Under the hood, our platform connects directly to Google Gemini AI, specifically instructed to reference the
             Indian Constitution, IPC, and CRPC.
-        </p>
-        <div class="modal-info-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-            <div class="info-col">
-                <h5
-                    style="color: #3b82f6; margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <ion-icon name="server-outline"></ion-icon> Legal Engine
-                </h5>
-                <p style="font-size: 0.85rem; color: var(--text-muted);">Cross-references query with current Indian
-                    statutes.</p>
-            </div>
-            <div class="info-col">
-                <h5
-                    style="color: #10b981; margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <ion-icon name="lock-closed-outline"></ion-icon> Privacy First
-                </h5>
-                <p style="font-size: 0.85rem; color: var(--text-muted);">Your data is anonymized and never used for
-                    training.</p>
-            </div>
+        <div class="modal-info-grid"
+            style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; background: rgba(30, 41, 59, 0.5); padding: 2rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
+            <h5
+                style="color: var(--gold-color); margin-bottom: 0.2rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <ion-icon name="bulb-outline"></ion-icon> Legal Engine
+            </h5>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">Cross-references query with
+                current Indianstatutes.
+            </p>
+            <h5
+                style="color: var(--gold-color); margin-bottom: 0.2rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <ion-icon name="bulb-outline"></ion-icon> Privacy First
+            </h5>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">Your data is anonymized and never
+                used fortraining.
+            </p>
         </div>
     </div>
 </template>
@@ -323,11 +494,11 @@
 <template id="tpl-get-answers">
     <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
         <div class="modal-badge-circle"
-            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);">
+            style="width: 80px; height: 80px; border-radius: 50%; background: var(--primary-color); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);">
             3</div>
         <div class="modal-title">
             <h4
-                style="color: #f59e0b; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                style="color: var(--primary-color); text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
                 ACTIONABLE RESULTS</h4>
             <h2 style="font-size: 2rem; color: white;">Get Answers</h2>
         </div>
@@ -336,24 +507,22 @@
         <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
             Receive a detailed breakdown of your legal standing in seconds. Dense statutes are parsed into actionable
             bullet points.
-        </p>
-        <div class="modal-info-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-            <div class="info-col">
-                <h5
-                    style="color: #10b981; margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <ion-icon name="checkmark-done-outline"></ion-icon> Clear Rights
-                </h5>
-                <p style="font-size: 0.85rem; color: var(--text-muted);">Identify the specific laws that provide you
-                    protection.</p>
-            </div>
-            <div class="info-col">
-                <h5
-                    style="color: #ef4444; margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <ion-icon name="alert-circle-outline"></ion-icon> Limitations
-                </h5>
-                <p style="font-size: 0.85rem; color: var(--text-muted);">Understand any legal boundaries or risks
-                    involved.</p>
-            </div>
+        <div class="modal-info-grid"
+            style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; background: rgba(30, 41, 59, 0.5); padding: 2rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
+            <h5
+                style="color: var(--gold-color); margin-bottom: 0.2rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <ion-icon name="bulb-outline"></ion-icon> Clear Rights
+            </h5>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">Identify the specific laws that provide you
+                protection.
+            </p>
+            <h5
+                style="color: var(--gold-color); margin-bottom: 0.2rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <ion-icon name="bulb-outline"></ion-icon> Limitations
+            </h5>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">Understand any legal boundaries or risks
+                involved.
+            </p>
         </div>
     </div>
 </template>
@@ -361,11 +530,11 @@
 <template id="tpl-take-action">
     <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
         <div class="modal-badge-circle"
-            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);">
+            style="width: 80px; height: 80px; border-radius: 50%; background: var(--primary-color); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 800; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);">
             4</div>
         <div class="modal-title">
             <h4
-                style="color: #ef4444; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                style="color: var(--primary-color); text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
                 NEXT STEPS</h4>
             <h2 style="font-size: 2rem; color: white;">Take Action</h2>
         </div>
@@ -390,7 +559,7 @@
 <template id="tpl-india-focused">
     <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
         <div class="modal-badge-circle"
-            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0; box-shadow: 0 10px 20px rgba(255, 153, 51, 0.3);">
+            style="width: 80px; height: 80px; border-radius: 50%; background: #FF9933; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0; box-shadow: 0 10px 20px rgba(255, 153, 51, 0.3);">
             <ion-icon name="flag-outline" style="color: white;"></ion-icon>
         </div>
         <div class="modal-title">
@@ -452,13 +621,13 @@
     <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
         <div class="modal-badge-circle"
             style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);">
-            <ion-icon name="shield-outline"></ion-icon>
+            <ion-icon name="warning-outline"></ion-icon>
         </div>
         <div class="modal-title">
             <h4
                 style="color: #ef4444; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
                 PROTECTION</h4>
-            <h2 style="font-size: 2rem; color: white;">SOS Shield</h2>
+            <h2 style="font-size: 2rem; color: white;">Emergency SOS Shield</h2>
         </div>
     </div>
     <div class="modal-body" style="padding: 1rem 3rem 3rem;">
@@ -491,12 +660,12 @@
 <template id="tpl-secure-private">
     <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
         <div class="modal-badge-circle"
-            style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0; box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);">
-            <ion-icon name="lock-closed-outline"></ion-icon>
+            style="width: 80px; height: 80px; border-radius: 50%; background: #FF9933; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0; box-shadow: 0 10px 20px rgba(255, 153, 51, 0.3);">
+            <ion-icon name="shield-checkmark-outline"></ion-icon>
         </div>
         <div class="modal-title">
             <h4
-                style="color: #22c55e; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                style="color: #FF9933; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.5rem;">
                 CONFIDENTIALITY</h4>
             <h2 style="font-size: 2rem; color: white;">Secure & Private</h2>
         </div>
@@ -573,7 +742,7 @@
     <div class="modal-header" style="padding: 3rem 3rem 1rem; display: flex; align-items: center; gap: 2rem;">
         <div class="modal-badge-circle"
             style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #ec4899 0%, #9d174d 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; flex-shrink: 0;">
-            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon name="people-circle-outline"></ion-icon>
         </div>
         <div class="modal-title">
             <h4
@@ -883,8 +1052,8 @@
                 <h3>Free Document Generation</h3>
                 <p>Instantly draft notices and RTI requests without expensive fees.</p>
             </div>
-            <div class="card" onclick="openSectionModal('tpl-secure-private')" style="--accent-color: #22c55e;">
-                <div class="card-icon-wrapper" style="color: #22c55e;"><ion-icon
+            <div class="card" onclick="openSectionModal('tpl-secure-private')" style="--accent-color: #FF9933;">
+                <div class="card-icon-wrapper" style="color: #FF9933;"><ion-icon
                         name="shield-checkmark-outline"></ion-icon></div>
                 <h3>Secure & Private</h3>
                 <p>Your queries and documents remain completely private.</p>
