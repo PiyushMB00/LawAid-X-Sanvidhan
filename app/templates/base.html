@@ -23,8 +23,11 @@
     <header>
         <div class="logo">
             <a href="/">
-                <img src="{{ url_for('static', filename='logo.png') }}" alt="LawAid X Sanvihaan">
-                <h3 style="color: var(--primary-color);">LawAid X Sanvihaan</h3>
+                <img
+                 id="site-logo" src="{{ url_for('static', filename='logo.png') }}"
+                    data-light-logo="{{ url_for('static', filename='logo.png') }}"
+                    data-dark-logo="{{ url_for('static', filename='logo2.png') }}" alt="LawAid X Sanvihaan">
+                <h2 style="color: var(--primary-color);">LawAid X Sanvihaan</h2>
             </a>
         </div>
         <nav id="desktop-nav">

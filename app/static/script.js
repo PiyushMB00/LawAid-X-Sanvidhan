@@ -79,9 +79,10 @@ function closeAccessibilityModal() {
 }
 
 function setTheme(theme) {
-    localStorage.setItem('lawoid_theme', theme);
+    localStorage.setItem('lawaid_theme', theme);
     applyTheme(theme);
     updateActiveButtons('theme', theme);
+    updateSiteLogo();
 }
 
 function applyTheme(theme) {
@@ -98,8 +99,28 @@ function applyTheme(theme) {
     }
 }
 
+function updateSiteLogo() {
+    const logo = document.getElementById('site-logo');
+    if (!logo) return;
+
+    const isLightTheme = document.body.classList.contains('light-theme');
+
+    logo.src = isLightTheme
+        ? logo.dataset.lightLogo
+        : logo.dataset.darkLogo;
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const savedTheme = localStorage.getItem('lawaid_theme');
+
+    if (savedTheme === 'system') {
+        applyTheme('system');
+        updateSiteLogo();
+    }
+});
+
 function setFontSize(size) {
-    localStorage.setItem('lawoid_fontsize', size);
+    localStorage.setItem('lawaid_fontsize', size);
     applyFontSize(size);
     updateActiveButtons('fontsize', size);
 }
@@ -114,7 +135,7 @@ function applyFontSize(size) {
 }
 
 function changeLanguage(lang) {
-    localStorage.setItem('lawoid_lang', lang);
+    localStorage.setItem('lawaid_lang', lang);
     applyLanguage(lang);
     const select = document.getElementById('langSelect');
     if (select) select.value = lang;
@@ -151,9 +172,9 @@ function updateActiveButtons(type, val) {
 }
 
 function initAccessibilitySettings() {
-    const savedTheme = localStorage.getItem('lawoid_theme') || 'dark';
-    const savedFontSize = localStorage.getItem('lawoid_fontsize') || 'medium';
-    const savedLang = localStorage.getItem('lawoid_lang') || 'en';
+    const savedTheme = localStorage.getItem('lawaid_theme') || 'dark';
+    const savedFontSize = localStorage.getItem('lawaid_fontsize') || 'medium';
+    const savedLang = localStorage.getItem('lawaid_lang') || 'en';
 
     setTheme(savedTheme);
     setFontSize(savedFontSize);
